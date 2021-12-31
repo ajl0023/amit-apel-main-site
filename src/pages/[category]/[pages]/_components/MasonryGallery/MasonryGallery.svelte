@@ -1,13 +1,15 @@
 <script>
-  import { params, ready } from "@roxi/routify";
+  import { params, ready, route, metatags } from "@roxi/routify";
   import Colcade from "colcade";
-  import { tick } from "svelte";
+  import { onDestroy, onMount, tick } from "svelte";
   import { galleryModal } from "../../../../_components/GalleryModal/store";
   import MasonryImage from "./MasonryImage.svelte";
-  let container;
+  import { masonryStore } from "./store";
   export let modal;
+  let container;
+
   let images = [];
-  let calcGridFunc;
+
   fetch(
     modal
       ? `http://localhost:9999/.netlify/functions/get-full-images/?category=${$params.pages}&property=${$galleryModal.selected.key}`
@@ -16,25 +18,23 @@
     .then((res) => res.json())
     .then(async (data) => {
       images = data;
+
       await tick();
+
       if (images.length >= 4) {
         new Colcade(container, {
           columns: ".grid-col",
           items: ".grid-item",
         });
       }
-    })
-    .then(() => {
-      setTimeout(() => {
-        $ready();
-      }, 1000);
     });
+  $ready();
   let masonry;
 </script>
 
 <div class="wrapper">
   {#if images.length >= 4}
-    <div bind:this={container} class="container">
+    <div bind:this={container} class="container masonry-container">
       <div class="grid-col grid-col--1" />
       <div class="grid-col grid-col--2" />
       <div class="grid-col grid-col--3" />
@@ -73,23 +73,7 @@
     display: flex;
     justify-content: center;
   }
-  .grid {
-    border: 1px solid;
-  }
-  .image-container {
-    position: relative;
-    img {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      display: block;
-    }
-  }
-  .grid:after {
-    display: block;
-    content: "";
-    clear: both;
-  }
+
   .grid-col {
     float: left;
     margin-right: 20px;
@@ -107,9 +91,7 @@
     width: 100%;
     display: none;
   }
-  .image-container {
-    width: 100%;
-  }
+
   @media (min-width: 568px) {
     .grid-col {
       width: 48%;

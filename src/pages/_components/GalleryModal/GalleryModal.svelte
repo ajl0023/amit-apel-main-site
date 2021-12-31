@@ -8,13 +8,11 @@
 
   let images = [];
   let carousel;
-  onMount(async () => {
-    
-  });
+
   fetch(
     true
-      ? `${window.location.hostname}/.netlify/functions/get-full-images/?category=${$params.pages}&property=${$galleryModal.selected.key}`
-      : `${window.location.hostname}/.netlify/functions/images/?category=${$params.pages}`
+      ? `http://localhost:9999/.netlify/functions/get-full-images/?category=${$params.pages}&property=${$galleryModal.selected.key}`
+      : `http://localhost:9999/.netlify/functions/images/?category=${$params.pages}`
   )
     .then((res) => res.json())
     .then(async (data) => {
@@ -43,28 +41,28 @@
 
 <div class="container">
   <div
-    on:click="{() => {
+    on:click={() => {
       galleryModal.closeModal();
-    }}"
+    }}
     class="close-x close-main"
-  ></div>
+  />
   <h3 class="main-header">
     {$galleryModal.selected.label}
   </h3>
   <div class="content-container">
     <div class="main-image-container">
-      <img src="{$galleryModal.selected.url}" alt="" />
+      <img src={$galleryModal.selected.url} alt="" />
     </div>
     {#if images.length > 0}
       <div class="flex-image-gallery-container">
         <div class="image-container">
-          <img src="{images[2].url}" alt="" />
+          <img src={images[2].url} alt="" />
         </div>
         <div class="image-container">
-          <img src="{images[5].url}" alt="" />
+          <img src={images[5].url} alt="" />
         </div>
         <div class="image-container">
-          <img src="{images[7].url}" alt="" />
+          <img src={images[7].url} alt="" />
         </div>
       </div>
     {/if}
@@ -84,27 +82,27 @@
     {#if images.length > 0}
       <div class="flex-image-gallery-container">
         <div class="image-container">
-          <img src="{images[3].url}" alt="" />
+          <img src={images[3].url} alt="" />
         </div>
         <div class="image-container">
-          <img src="{images[9].url}" alt="" />
+          <img src={images[9].url} alt="" />
         </div>
       </div>
     {/if}
     <div class="carousel-container">
-      <span on:click="{handleCarouselLeft}" class="control left">
+      <span on:click={handleCarouselLeft} class="control left">
         <LeftArrow />
       </span>
       {#if images.length > 0}
-        <Carousel bind:this="{carousel}" perPage="{1}">
+        <Carousel bind:this={carousel} perPage={1}>
           {#each images.slice(10, 20) as data}
             <div class="image-container">
-              <img class="carousel-image" src="{data.url}" alt="" />
+              <img class="carousel-image" src={data.url} alt="" />
             </div>
           {/each}
         </Carousel>
       {/if}
-      <span on:click="{handleCarouselRight}" class="control right">
+      <span on:click={handleCarouselRight} class="control right">
         <RightArrow /></span
       >
     </div>

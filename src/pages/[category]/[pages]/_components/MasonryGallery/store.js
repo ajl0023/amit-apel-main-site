@@ -6,6 +6,7 @@ export const store = () => {
     grid: null,
     content: [],
     gridItems: [],
+    imagesLoaded: false,
   };
   const { subscribe, set, update } = writable(state);
 
