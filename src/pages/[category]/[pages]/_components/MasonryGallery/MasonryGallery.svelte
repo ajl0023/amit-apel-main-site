@@ -1,3 +1,6 @@
+<script context="module">
+</script>
+
 <script>
   import { params, ready, route, metatags } from "@roxi/routify";
   import Colcade from "colcade";
@@ -12,8 +15,8 @@
 
   fetch(
     modal
-      ? `http://localhost:9999/.netlify/functions/get-full-images/?category=${$params.pages}&property=${$galleryModal.selected.key}`
-      : `http://localhost:9999/.netlify/functions/images/?category=${$params.pages}`
+      ? `${window.location.origin}/.netlify/functions/get-full-images/?category=${$params.pages}&property=${$galleryModal.selected.key}`
+      : `${window.location.origin}/.netlify/functions/images/?category=${$params.pages}`
   )
     .then((res) => res.json())
     .then(async (data) => {

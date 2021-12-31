@@ -59,13 +59,13 @@
     };
   });
 
-  // dist/assets/MasonryGallery.bb229cdc.js
-  var require_MasonryGallery_bb229cdc = __commonJS((exports) => {
+  // dist/assets/MasonryGallery.21f86552.js
+  var require_MasonryGallery_21f86552 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => Ce3
+      default: () => be3
     });
-    var import_layout_73a8721b = require_layout_73a8721b();
+    var import_layout_29d89fa6 = require_layout_29d89fa6();
     var X4 = {exports: {}};
     /*!
     * Colcade v0.2.0
@@ -161,8 +161,8 @@
         function o16(e2) {
           var s2 = e2.getAttribute("data-colcade"), r = s2.split(","), v2 = {};
           r.forEach(function(y) {
-            var k4 = y.split(":"), b2 = k4[0].trim(), C3 = k4[1].trim();
-            v2[b2] = C3;
+            var k4 = y.split(":"), w3 = k4[0].trim(), b2 = k4[1].trim();
+            v2[w3] = b2;
           }), new t(e2, v2);
         }
         t.data = function(e2) {
@@ -180,19 +180,19 @@
             return r(this, v2), this;
           };
           function s2(v2, y, k4) {
-            var b2;
-            return v2.each(function(C3, j4) {
+            var w3;
+            return v2.each(function(b2, j4) {
               var E2 = e2.data(j4, "colcade");
               if (!!E2) {
                 var A4 = E2[y].apply(E2, k4);
-                b2 = b2 === void 0 ? A4 : b2;
+                w3 = w3 === void 0 ? A4 : w3;
               }
-            }), b2 !== void 0 ? b2 : v2;
+            }), w3 !== void 0 ? w3 : v2;
           }
           function r(v2, y) {
-            v2.each(function(k4, b2) {
-              var C3 = e2.data(b2, "colcade");
-              C3 ? (C3.option(y), C3.layout()) : (C3 = new t(b2, y), e2.data(b2, "colcade", C3));
+            v2.each(function(k4, w3) {
+              var b2 = e2.data(w3, "colcade");
+              b2 ? (b2.option(y), b2.layout()) : (b2 = new t(w3, y), e2.data(w3, "colcade", b2));
             });
           }
         }, t.makeJQueryPlugin();
@@ -238,15 +238,15 @@
         }};
     }
     function de3(c2) {
-      let i3, t, n, l2, u2, o16, d3, a2 = c2[0].label + "", f, h2, m3, e2, s2, r, v2, y, k4, b2 = c2[0].label + "", C3, j4, E2, A4;
+      let i3, t, n, l2, u2, o16, d3, a2 = c2[0].label + "", f, h2, m3, e2, s2, r, v2, y, k4, w3 = c2[0].label + "", b2, j4, E2, A4;
       return {c() {
-        i3 = xt("div"), t = xt("div"), n = xt("div"), l2 = xt("div"), u2 = xt("div"), o16 = xt("div"), d3 = xt("h5"), f = Ee(a2), h2 = Gt(), m3 = xt("img"), v2 = Gt(), y = xt("div"), k4 = xt("h5"), C3 = Ee(b2), lt(d3, "class", "label"), lt(o16, "class", "label-container svelte-l6jqiu"), lt(u2, "class", "hover-container svelte-l6jqiu"), lt(m3, "width", e2 = c2[0].width), lt(m3, "height", s2 = c2[0].height), lt(m3, "class", "image lazy svelte-l6jqiu"), lt(m3, "data-src", r = c2[0].url), lt(m3, "alt", ""), lt(l2, "class", "image-container svelte-l6jqiu"), Ie(n, "padding-bottom", c2[0].height / c2[0].width * 100 + "%"), lt(n, "class", "aspect-ratio-box svelte-l6jqiu"), lt(k4, "class", "label"), lt(y, "class", "label-container svelte-l6jqiu"), lt(i3, "class", j4 = "item-container " + c2[3].category + " svelte-l6jqiu"), Qr(i3, "image-container-margin", c2[1] || c2[3].category === "design");
-      }, m(w3, I2) {
-        C(w3, i3, I2), fs(i3, t), fs(t, n), fs(n, l2), fs(l2, u2), fs(u2, o16), fs(o16, d3), fs(d3, f), fs(l2, h2), fs(l2, m3), fs(t, v2), fs(t, y), fs(y, k4), fs(k4, C3), E2 || (A4 = [us(ue3.call(null, m3)), Gr(i3, "click", c2[4])], E2 = true);
-      }, p(w3, [I2]) {
-        I2 & 1 && a2 !== (a2 = w3[0].label + "") && Jr(f, a2), I2 & 1 && e2 !== (e2 = w3[0].width) && lt(m3, "width", e2), I2 & 1 && s2 !== (s2 = w3[0].height) && lt(m3, "height", s2), I2 & 1 && r !== (r = w3[0].url) && lt(m3, "data-src", r), I2 & 1 && Ie(n, "padding-bottom", w3[0].height / w3[0].width * 100 + "%"), I2 & 1 && b2 !== (b2 = w3[0].label + "") && Jr(C3, b2), I2 & 8 && j4 !== (j4 = "item-container " + w3[3].category + " svelte-l6jqiu") && lt(i3, "class", j4), I2 & 10 && Qr(i3, "image-container-margin", w3[1] || w3[3].category === "design");
-      }, i: $, o: $, d(w3) {
-        w3 && S(i3), E2 = false, D(A4);
+        i3 = xt("div"), t = xt("div"), n = xt("div"), l2 = xt("div"), u2 = xt("div"), o16 = xt("div"), d3 = xt("h5"), f = Ee(a2), h2 = Gt(), m3 = xt("img"), v2 = Gt(), y = xt("div"), k4 = xt("h5"), b2 = Ee(w3), lt(d3, "class", "label"), lt(o16, "class", "label-container svelte-l6jqiu"), lt(u2, "class", "hover-container svelte-l6jqiu"), lt(m3, "width", e2 = c2[0].width), lt(m3, "height", s2 = c2[0].height), lt(m3, "class", "image lazy svelte-l6jqiu"), lt(m3, "data-src", r = c2[0].url), lt(m3, "alt", ""), lt(l2, "class", "image-container svelte-l6jqiu"), Ie(n, "padding-bottom", c2[0].height / c2[0].width * 100 + "%"), lt(n, "class", "aspect-ratio-box svelte-l6jqiu"), lt(k4, "class", "label"), lt(y, "class", "label-container svelte-l6jqiu"), lt(i3, "class", j4 = "item-container " + c2[3].category + " svelte-l6jqiu"), Qr(i3, "image-container-margin", c2[1] || c2[3].category === "design");
+      }, m(C3, I2) {
+        C(C3, i3, I2), fs(i3, t), fs(t, n), fs(n, l2), fs(l2, u2), fs(u2, o16), fs(o16, d3), fs(d3, f), fs(l2, h2), fs(l2, m3), fs(t, v2), fs(t, y), fs(y, k4), fs(k4, b2), E2 || (A4 = [us(ue3.call(null, m3)), Gr(i3, "click", c2[4])], E2 = true);
+      }, p(C3, [I2]) {
+        I2 & 1 && a2 !== (a2 = C3[0].label + "") && Jr(f, a2), I2 & 1 && e2 !== (e2 = C3[0].width) && lt(m3, "width", e2), I2 & 1 && s2 !== (s2 = C3[0].height) && lt(m3, "height", s2), I2 & 1 && r !== (r = C3[0].url) && lt(m3, "data-src", r), I2 & 1 && Ie(n, "padding-bottom", C3[0].height / C3[0].width * 100 + "%"), I2 & 1 && w3 !== (w3 = C3[0].label + "") && Jr(b2, w3), I2 & 8 && j4 !== (j4 = "item-container " + C3[3].category + " svelte-l6jqiu") && lt(i3, "class", j4), I2 & 10 && Qr(i3, "image-container-margin", C3[1] || C3[3].category === "design");
+      }, i: $, o: $, d(C3) {
+        C3 && S(i3), E2 = false, D(A4);
       }};
     }
     function he3(c2, i3, t) {
@@ -254,7 +254,7 @@
       tt(c2, h, (a2) => t(2, n = a2)), tt(c2, ii, (a2) => t(3, l2 = a2));
       let {img: u2} = i3, {modal: o16} = i3;
       const d3 = () => {
-        import_layout_73a8721b.g.openModal(u2, n.page);
+        import_layout_29d89fa6.g.openModal(u2, n.page);
       };
       return c2.$$set = (a2) => {
         "img" in a2 && t(0, u2 = a2.img), "modal" in a2 && t(1, o16 = a2.modal);
@@ -421,9 +421,9 @@
     }
     function ve3(c2, i3, t) {
       let n, l2, u2;
-      tt(c2, ri, (m3) => t(5, n = m3)), tt(c2, ii, (m3) => t(6, l2 = m3)), tt(c2, import_layout_73a8721b.g, (m3) => t(7, u2 = m3));
+      tt(c2, ri, (m3) => t(5, n = m3)), tt(c2, ii, (m3) => t(6, l2 = m3)), tt(c2, import_layout_29d89fa6.g, (m3) => t(7, u2 = m3));
       let {modal: o16} = i3, d3, a2 = [];
-      fetch(o16 ? `http://localhost:9999/.netlify/functions/get-full-images/?category=${l2.pages}&property=${u2.selected.key}` : `http://localhost:9999/.netlify/functions/images/?category=${l2.pages}`).then((m3) => m3.json()).then(async (m3) => {
+      fetch(o16 ? `${window.location.origin}/.netlify/functions/get-full-images/?category=${l2.pages}&property=${u2.selected.key}` : `${window.location.origin}/.netlify/functions/images/?category=${l2.pages}`).then((m3) => m3.json()).then(async (m3) => {
         t(2, a2 = m3), await Te(), a2.length >= 4 && new ce3(d3, {columns: ".grid-col", items: ".grid-item"});
       }), n();
       let f;
@@ -436,7 +436,7 @@
         "modal" in m3 && t(0, o16 = m3.modal);
       }, [o16, d3, a2, f, h2];
     }
-    var Ce3 = class extends Rt {
+    var be3 = class extends Rt {
       constructor(i3) {
         super();
         St(this, i3, ve3, ge3, at, {modal: 0});
@@ -1995,8 +1995,8 @@
     };
   });
 
-  // dist/assets/_layout.73a8721b.js
-  var require_layout_73a8721b = __commonJS((exports) => {
+  // dist/assets/_layout.29d89fa6.js
+  var require_layout_29d89fa6 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       _: () => Et3,
@@ -2234,7 +2234,7 @@
     var Ee3 = (r) => ({});
     var Ze3 = (r) => ({});
     var Pe3 = (r) => ({});
-    function ke3(r) {
+    function we3(r) {
       let e2, i3, n, a2, o16, l2;
       const c2 = r[24]["left-control"], u2 = rs(c2, r, r[23], Pe3), d3 = r[24]["right-control"], t = rs(d3, r, r[23], Ee3);
       return {c() {
@@ -2251,7 +2251,7 @@
         s2 && S(e2), u2 && u2.d(s2), s2 && S(i3), s2 && S(n), t && t.d(s2), o16 = false, D(l2);
       }};
     }
-    function we3(r) {
+    function ke3(r) {
       let e2, i3 = {length: r[9]}, n = [];
       for (let a2 = 0; a2 < i3.length; a2 += 1)
         n[a2] = Se3(ye3(r, i3, a2));
@@ -2298,15 +2298,15 @@
     function xe3(r) {
       let e2, i3, n, a2, o16;
       const l2 = r[24].default, c2 = rs(l2, r, r[23], null);
-      let u2 = r[1] && ke3(r), d3 = r[0] && we3(r);
+      let u2 = r[1] && we3(r), d3 = r[0] && ke3(r);
       return {c() {
         e2 = xt("div"), i3 = xt("div"), c2 && c2.c(), n = Gt(), u2 && u2.c(), a2 = Gt(), d3 && d3.c(), lt(i3, "class", "slides"), lt(e2, "class", "carousel svelte-1xf33f8");
       }, m(t, s2) {
         C(t, e2, s2), fs(e2, i3), c2 && c2.m(i3, null), r[25](i3), fs(e2, n), u2 && u2.m(e2, null), fs(e2, a2), d3 && d3.m(e2, null), o16 = true;
       }, p(t, s2) {
-        c2 && c2.p && (!o16 || s2[0] & 8388608) && as(c2, l2, t, t[23], o16 ? is(l2, t[23], s2, null) : cs(t[23]), null), t[1] ? u2 ? (u2.p(t, s2), s2[0] & 2 && w(u2, 1)) : (u2 = ke3(t), u2.c(), w(u2, 1), u2.m(e2, a2)) : u2 && (st(), k(u2, 1, 1, () => {
+        c2 && c2.p && (!o16 || s2[0] & 8388608) && as(c2, l2, t, t[23], o16 ? is(l2, t[23], s2, null) : cs(t[23]), null), t[1] ? u2 ? (u2.p(t, s2), s2[0] & 2 && w(u2, 1)) : (u2 = we3(t), u2.c(), w(u2, 1), u2.m(e2, a2)) : u2 && (st(), k(u2, 1, 1, () => {
           u2 = null;
-        }), ot()), t[0] ? d3 ? d3.p(t, s2) : (d3 = we3(t), d3.c(), d3.m(e2, null)) : d3 && (d3.d(1), d3 = null);
+        }), ot()), t[0] ? d3 ? d3.p(t, s2) : (d3 = ke3(t), d3.c(), d3.m(e2, null)) : d3 && (d3.d(1), d3 = null);
       }, i(t) {
         o16 || (w(c2, t), w(u2), o16 = true);
       }, o(t) {
@@ -2333,7 +2333,7 @@
       function T2(v2) {
         y.goTo(v2);
       }
-      function k4() {
+      function w3() {
         clearInterval(O5);
       }
       function b2() {
@@ -2352,7 +2352,7 @@
         "perPage" in v2 && i3(10, u2 = v2.perPage), "loop" in v2 && i3(11, d3 = v2.loop), "autoplay" in v2 && i3(12, t = v2.autoplay), "duration" in v2 && i3(13, s2 = v2.duration), "easing" in v2 && i3(14, h2 = v2.easing), "startIndex" in v2 && i3(15, g2 = v2.startIndex), "draggable" in v2 && i3(16, m3 = v2.draggable), "multipleDrag" in v2 && i3(17, E2 = v2.multipleDrag), "dots" in v2 && i3(0, C3 = v2.dots), "controls" in v2 && i3(1, P = v2.controls), "threshold" in v2 && i3(18, A4 = v2.threshold), "rtl" in v2 && i3(19, j4 = v2.rtl), "$$scope" in v2 && i3(23, c2 = v2.$$scope);
       }, r.$$.update = () => {
         r.$$.dirty[0] & 4194304 && (n = y ? y.innerElements : []), r.$$.dirty[0] & 4195328 && i3(6, a2 = y ? y.perPage : u2), r.$$.dirty[0] & 4194368 && i3(9, o16 = y ? Math.ceil(y.innerElements.length / a2) : []);
-      }, [C3, P, x2, $4, S3, T2, a2, Z2, N3, o16, u2, d3, t, s2, h2, g2, m3, E2, A4, j4, k4, b2, y, c2, l2, Fe3, Ae3];
+      }, [C3, P, x2, $4, S3, T2, a2, Z2, N3, o16, u2, d3, t, s2, h2, g2, m3, E2, A4, j4, w3, b2, y, c2, l2, Fe3, Ae3];
     }
     var et3 = class extends Rt {
       constructor(e2) {
@@ -2507,7 +2507,7 @@
     function at3(r) {
       let e2, i3, n, a2, o16 = r[2].selected.label + "", l2, c2, u2, d3, t, s2, h2, g2, m3, E2, C3, P, A4, j4, Z2, N3, y, O5, R4, x2, $4, S3 = r[0].length > 0 && De3(r), T2 = r[0].length > 0 && Le3(r);
       j4 = new nt3({});
-      let k4 = r[0].length > 0 && He3(r);
+      let w3 = r[0].length > 0 && He3(r);
       return O5 = new rt3({}), {c() {
         e2 = xt("div"), i3 = xt("div"), n = Gt(), a2 = xt("h3"), l2 = Ee(o16), c2 = Gt(), u2 = xt("div"), d3 = xt("div"), t = xt("img"), h2 = Gt(), S3 && S3.c(), g2 = Gt(), m3 = xt("div"), m3.innerHTML = `<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias vero
         dolore odit nostrum ab fuga autem at maxime repellat natus nesciunt
@@ -2517,26 +2517,26 @@
         tempore modi tenetur pariatur cum illo. Lorem ipsum dolor sit amet,
         consectetur adipisicing elit. Molestias vero dolore odit nostrum ab fuga
         autem at maxime repellat natus nesciunt beatae, et quae tempore modi
-        tenetur pariatur cum illo.</p>`, E2 = Gt(), T2 && T2.c(), C3 = Gt(), P = xt("div"), A4 = xt("span"), K(j4.$$.fragment), Z2 = Gt(), k4 && k4.c(), N3 = Gt(), y = xt("span"), K(O5.$$.fragment), lt(i3, "class", "close-x close-main"), lt(a2, "class", "main-header svelte-1opibi3"), ve(t.src, s2 = r[2].selected.url) || lt(t, "src", s2), lt(t, "alt", ""), lt(t, "class", "svelte-1opibi3"), lt(d3, "class", "main-image-container svelte-1opibi3"), lt(m3, "class", "description-container svelte-1opibi3"), lt(A4, "class", "control left svelte-1opibi3"), lt(y, "class", "control right svelte-1opibi3"), lt(P, "class", "carousel-container svelte-1opibi3"), lt(u2, "class", "content-container svelte-1opibi3"), lt(e2, "class", "container svelte-1opibi3");
+        tenetur pariatur cum illo.</p>`, E2 = Gt(), T2 && T2.c(), C3 = Gt(), P = xt("div"), A4 = xt("span"), K(j4.$$.fragment), Z2 = Gt(), w3 && w3.c(), N3 = Gt(), y = xt("span"), K(O5.$$.fragment), lt(i3, "class", "close-x close-main"), lt(a2, "class", "main-header svelte-1opibi3"), ve(t.src, s2 = r[2].selected.url) || lt(t, "src", s2), lt(t, "alt", ""), lt(t, "class", "svelte-1opibi3"), lt(d3, "class", "main-image-container svelte-1opibi3"), lt(m3, "class", "description-container svelte-1opibi3"), lt(A4, "class", "control left svelte-1opibi3"), lt(y, "class", "control right svelte-1opibi3"), lt(P, "class", "carousel-container svelte-1opibi3"), lt(u2, "class", "content-container svelte-1opibi3"), lt(e2, "class", "container svelte-1opibi3");
       }, m(b2, X4) {
-        C(b2, e2, X4), fs(e2, i3), fs(e2, n), fs(e2, a2), fs(a2, l2), fs(e2, c2), fs(e2, u2), fs(u2, d3), fs(d3, t), fs(u2, h2), S3 && S3.m(u2, null), fs(u2, g2), fs(u2, m3), fs(u2, E2), T2 && T2.m(u2, null), fs(u2, C3), fs(u2, P), fs(P, A4), H(j4, A4, null), fs(P, Z2), k4 && k4.m(P, null), fs(P, N3), fs(P, y), H(O5, y, null), R4 = true, x2 || ($4 = [Gr(i3, "click", r[5]), Gr(A4, "click", r[3]), Gr(y, "click", r[4])], x2 = true);
+        C(b2, e2, X4), fs(e2, i3), fs(e2, n), fs(e2, a2), fs(a2, l2), fs(e2, c2), fs(e2, u2), fs(u2, d3), fs(d3, t), fs(u2, h2), S3 && S3.m(u2, null), fs(u2, g2), fs(u2, m3), fs(u2, E2), T2 && T2.m(u2, null), fs(u2, C3), fs(u2, P), fs(P, A4), H(j4, A4, null), fs(P, Z2), w3 && w3.m(P, null), fs(P, N3), fs(P, y), H(O5, y, null), R4 = true, x2 || ($4 = [Gr(i3, "click", r[5]), Gr(A4, "click", r[3]), Gr(y, "click", r[4])], x2 = true);
       }, p(b2, [X4]) {
-        (!R4 || X4 & 4) && o16 !== (o16 = b2[2].selected.label + "") && Jr(l2, o16), (!R4 || X4 & 4 && !ve(t.src, s2 = b2[2].selected.url)) && lt(t, "src", s2), b2[0].length > 0 ? S3 ? S3.p(b2, X4) : (S3 = De3(b2), S3.c(), S3.m(u2, g2)) : S3 && (S3.d(1), S3 = null), b2[0].length > 0 ? T2 ? T2.p(b2, X4) : (T2 = Le3(b2), T2.c(), T2.m(u2, C3)) : T2 && (T2.d(1), T2 = null), b2[0].length > 0 ? k4 ? (k4.p(b2, X4), X4 & 1 && w(k4, 1)) : (k4 = He3(b2), k4.c(), w(k4, 1), k4.m(P, N3)) : k4 && (st(), k(k4, 1, 1, () => {
-          k4 = null;
+        (!R4 || X4 & 4) && o16 !== (o16 = b2[2].selected.label + "") && Jr(l2, o16), (!R4 || X4 & 4 && !ve(t.src, s2 = b2[2].selected.url)) && lt(t, "src", s2), b2[0].length > 0 ? S3 ? S3.p(b2, X4) : (S3 = De3(b2), S3.c(), S3.m(u2, g2)) : S3 && (S3.d(1), S3 = null), b2[0].length > 0 ? T2 ? T2.p(b2, X4) : (T2 = Le3(b2), T2.c(), T2.m(u2, C3)) : T2 && (T2.d(1), T2 = null), b2[0].length > 0 ? w3 ? (w3.p(b2, X4), X4 & 1 && w(w3, 1)) : (w3 = He3(b2), w3.c(), w(w3, 1), w3.m(P, N3)) : w3 && (st(), k(w3, 1, 1, () => {
+          w3 = null;
         }), ot());
       }, i(b2) {
-        R4 || (w(j4.$$.fragment, b2), w(k4), w(O5.$$.fragment, b2), R4 = true);
+        R4 || (w(j4.$$.fragment, b2), w(w3), w(O5.$$.fragment, b2), R4 = true);
       }, o(b2) {
-        k(j4.$$.fragment, b2), k(k4), k(O5.$$.fragment, b2), R4 = false;
+        k(j4.$$.fragment, b2), k(w3), k(O5.$$.fragment, b2), R4 = false;
       }, d(b2) {
-        b2 && S(e2), S3 && S3.d(), T2 && T2.d(), B(j4), k4 && k4.d(), B(O5), x2 = false, D($4);
+        b2 && S(e2), S3 && S3.d(), T2 && T2.d(), B(j4), w3 && w3.d(), B(O5), x2 = false, D($4);
       }};
     }
     function ot3(r, e2, i3) {
       let n, a2;
       tt(r, ii, (s2) => i3(7, n = s2)), tt(r, oe3, (s2) => i3(2, a2 = s2));
       let o16 = [], l2;
-      fetch(`http://localhost:9999/.netlify/functions/get-full-images/?category=${n.pages}&property=${a2.selected.key}`).then((s2) => s2.json()).then(async (s2) => {
+      fetch(`${window.location.origin}/.netlify/functions/get-full-images/?category=${n.pages}&property=${a2.selected.key}`).then((s2) => s2.json()).then(async (s2) => {
         i3(0, o16 = s2), await Te();
       });
       const c2 = () => {
@@ -2638,7 +2638,7 @@
       let n, a2, o16;
       tt(r, ii, (t) => i3(4, n = t)), tt(r, oe3, (t) => i3(1, a2 = t)), tt(r, h, (t) => i3(2, o16 = t));
       let l2;
-      const c2 = {"private-homes": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_bb229cdc()), ["assets/MasonryGallery.bb229cdc.js", "assets/vendor.7a90e960.js", "assets/marqueeHandlerStore.ae4d30b1.js", "assets/index.950b2ba9.js", "assets/pageLayout.73119d76.js"]), "multi-units": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_bb229cdc()), ["assets/MasonryGallery.bb229cdc.js", "assets/vendor.7a90e960.js", "assets/marqueeHandlerStore.ae4d30b1.js", "assets/index.950b2ba9.js", "assets/pageLayout.73119d76.js"]), concept: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_bb229cdc()), ["assets/MasonryGallery.bb229cdc.js", "assets/vendor.7a90e960.js", "assets/marqueeHandlerStore.ae4d30b1.js", "assets/index.950b2ba9.js", "assets/pageLayout.73119d76.js"]), sculptures: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_bb229cdc()), ["assets/MasonryGallery.bb229cdc.js", "assets/vendor.7a90e960.js", "assets/marqueeHandlerStore.ae4d30b1.js", "assets/index.950b2ba9.js", "assets/pageLayout.73119d76.js"]), "meet-amit-apel": async () => o15(() => Promise.resolve().then(() => require_MeetAmitApel_70f4b289()), ["assets/MeetAmitApel.70f4b289.js", "assets/vendor.7a90e960.js"]), "meet-the-team": async () => o15(() => Promise.resolve().then(() => require_MeetTheTeam_a4d6805a()), ["assets/MeetTheTeam.a4d6805a.js", "assets/vendor.7a90e960.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]), press: async () => o15(() => Promise.resolve().then(() => require_Press_a91ef19e()), ["assets/Press.a91ef19e.js", "assets/vendor.7a90e960.js", "assets/index.e6e77149.js"]), "contact-us": async () => o15(() => Promise.resolve().then(() => require_Contact_c70b4a8c()), ["assets/Contact.c70b4a8c.js", "assets/vendor.7a90e960.js"]), furniture: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_bb229cdc()), ["assets/MasonryGallery.bb229cdc.js", "assets/vendor.7a90e960.js", "assets/marqueeHandlerStore.ae4d30b1.js", "assets/index.950b2ba9.js", "assets/pageLayout.73119d76.js"]), "malibu-rebuild": async () => o15(() => Promise.resolve().then(() => require_MalibuRebuild_6ff904f7()), ["assets/MalibuRebuild.6ff904f7.js", "assets/vendor.7a90e960.js"]), "what-we-do": async () => o15(() => Promise.resolve().then(() => require_WhatWeDo_59561047()), ["assets/WhatWeDo.59561047.js", "assets/vendor.7a90e960.js"]), aviator: async () => o15(() => Promise.resolve().then(() => require_Developments_5285008a()), ["assets/Developments.5285008a.js", "assets/vendor.7a90e960.js", "assets/pageLayout.73119d76.js"]), maliview: async () => o15(() => Promise.resolve().then(() => require_Developments_5285008a()), ["assets/Developments.5285008a.js", "assets/vendor.7a90e960.js", "assets/pageLayout.73119d76.js"]), map: async () => o15(() => Promise.resolve().then(() => require_Map_df6f5f7c()), ["assets/Map.df6f5f7c.js", "assets/vendor.7a90e960.js"])}, u2 = async (t) => {
+      const c2 = {"private-homes": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_21f86552()), ["assets/MasonryGallery.21f86552.js", "assets/vendor.7a90e960.js", "assets/marqueeHandlerStore.ae4d30b1.js", "assets/index.e88c9679.js", "assets/pageLayout.73119d76.js"]), "multi-units": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_21f86552()), ["assets/MasonryGallery.21f86552.js", "assets/vendor.7a90e960.js", "assets/marqueeHandlerStore.ae4d30b1.js", "assets/index.e88c9679.js", "assets/pageLayout.73119d76.js"]), concept: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_21f86552()), ["assets/MasonryGallery.21f86552.js", "assets/vendor.7a90e960.js", "assets/marqueeHandlerStore.ae4d30b1.js", "assets/index.e88c9679.js", "assets/pageLayout.73119d76.js"]), sculptures: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_21f86552()), ["assets/MasonryGallery.21f86552.js", "assets/vendor.7a90e960.js", "assets/marqueeHandlerStore.ae4d30b1.js", "assets/index.e88c9679.js", "assets/pageLayout.73119d76.js"]), "meet-amit-apel": async () => o15(() => Promise.resolve().then(() => require_MeetAmitApel_70f4b289()), ["assets/MeetAmitApel.70f4b289.js", "assets/vendor.7a90e960.js"]), "meet-the-team": async () => o15(() => Promise.resolve().then(() => require_MeetTheTeam_a4d6805a()), ["assets/MeetTheTeam.a4d6805a.js", "assets/vendor.7a90e960.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]), press: async () => o15(() => Promise.resolve().then(() => require_Press_a91ef19e()), ["assets/Press.a91ef19e.js", "assets/vendor.7a90e960.js", "assets/index.e6e77149.js"]), "contact-us": async () => o15(() => Promise.resolve().then(() => require_Contact_c70b4a8c()), ["assets/Contact.c70b4a8c.js", "assets/vendor.7a90e960.js"]), furniture: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_21f86552()), ["assets/MasonryGallery.21f86552.js", "assets/vendor.7a90e960.js", "assets/marqueeHandlerStore.ae4d30b1.js", "assets/index.e88c9679.js", "assets/pageLayout.73119d76.js"]), "malibu-rebuild": async () => o15(() => Promise.resolve().then(() => require_MalibuRebuild_6ff904f7()), ["assets/MalibuRebuild.6ff904f7.js", "assets/vendor.7a90e960.js"]), "what-we-do": async () => o15(() => Promise.resolve().then(() => require_WhatWeDo_59561047()), ["assets/WhatWeDo.59561047.js", "assets/vendor.7a90e960.js"]), aviator: async () => o15(() => Promise.resolve().then(() => require_Developments_5285008a()), ["assets/Developments.5285008a.js", "assets/vendor.7a90e960.js", "assets/pageLayout.73119d76.js"]), maliview: async () => o15(() => Promise.resolve().then(() => require_Developments_5285008a()), ["assets/Developments.5285008a.js", "assets/vendor.7a90e960.js", "assets/pageLayout.73119d76.js"]), map: async () => o15(() => Promise.resolve().then(() => require_Map_df6f5f7c()), ["assets/Map.df6f5f7c.js", "assets/vendor.7a90e960.js"])}, u2 = async (t) => {
         t && (h.setPage(t), i3(0, l2 = (await c2[t]()).default));
       };
       return Zr(() => {
@@ -5442,7 +5442,7 @@
     return n;
   }
 
-  // dist/assets/index.950b2ba9.js
+  // dist/assets/index.e88c9679.js
   var R3 = function() {
     const t = document.createElement("link").relList;
     return t && t.supports && t.supports("modulepreload") ? "modulepreload" : "preload";
@@ -5459,8 +5459,8 @@
         return;
       const n = document.createElement("link");
       if (n.rel = s2 ? "stylesheet" : R3, s2 || (n.as = "script", n.crossOrigin = ""), n.href = r, document.head.appendChild(n), s2)
-        return new Promise((c2, _) => {
-          n.addEventListener("load", c2), n.addEventListener("error", _);
+        return new Promise((c2, d3) => {
+          n.addEventListener("load", c2), n.addEventListener("error", d3);
         });
     })).then(() => t());
   };
@@ -7256,14 +7256,14 @@
   var X3 = x({});
   var Y3 = x({duration: 4e3});
 
-  // dist/assets/index.950b2ba9.js
-  var b = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => o15(() => Promise.resolve().then(() => require_fallback_4002f8a9()), ["assets/_fallback.4002f8a9.js", "assets/vendor.7a90e960.js"]).then((e2) => e2.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, path: "/:category/:pages/index", id: "__category__pages_index", component: () => o15(() => Promise.resolve().then(() => require_index_9961be11()), ["assets/index.9961be11.js", "assets/vendor.7a90e960.js"]).then((e2) => e2.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_73a8721b()).then(function(e2) {
+  // dist/assets/index.e88c9679.js
+  var A3 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => o15(() => Promise.resolve().then(() => require_fallback_4002f8a9()), ["assets/_fallback.4002f8a9.js", "assets/vendor.7a90e960.js"]).then((e2) => e2.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, path: "/:category/:pages/index", id: "__category__pages_index", component: () => o15(() => Promise.resolve().then(() => require_index_9961be11()), ["assets/index.9961be11.js", "assets/vendor.7a90e960.js"]).then((e2) => e2.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_29d89fa6()).then(function(e2) {
     return e2._;
-  }), ["assets/_layout.73a8721b.js", "assets/vendor.7a90e960.js", "assets/pageLayout.73119d76.js", "assets/marqueeHandlerStore.ae4d30b1.js"]).then((e2) => e2.default)}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/index", id: "__category_index", component: () => o15(() => Promise.resolve().then(() => require_index_3a6f5274()), ["assets/index.3a6f5274.js", "assets/vendor.7a90e960.js", "assets/pageLayout.73119d76.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]).then((e2) => e2.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category", id: "__category__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_506d8936()), ["assets/_layout.506d8936.js", "assets/vendor.7a90e960.js", "assets/crossfade.0f47b3ac.js", "assets/marqueeHandlerStore.ae4d30b1.js"]).then((e2) => e2.default)}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => o15(() => Promise.resolve().then(() => require_index_bc32f0df()), ["assets/index.bc32f0df.js", "assets/vendor.7a90e960.js"]).then((e2) => e2.default)}], isLayout: true, path: "/", id: "__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_214709fd()), ["assets/_layout.214709fd.js", "assets/vendor.7a90e960.js", "assets/index.e6e77149.js", "assets/crossfade.0f47b3ac.js", "assets/pageLayout.73119d76.js", "assets/marqueeHandlerStore.ae4d30b1.js"]).then((e2) => e2.default)};
-  var {tree: k3, routes: A3} = li(b);
+  }), ["assets/_layout.29d89fa6.js", "assets/vendor.7a90e960.js", "assets/pageLayout.73119d76.js", "assets/marqueeHandlerStore.ae4d30b1.js"]).then((e2) => e2.default)}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/index", id: "__category_index", component: () => o15(() => Promise.resolve().then(() => require_index_3a6f5274()), ["assets/index.3a6f5274.js", "assets/vendor.7a90e960.js", "assets/pageLayout.73119d76.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]).then((e2) => e2.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category", id: "__category__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_506d8936()), ["assets/_layout.506d8936.js", "assets/vendor.7a90e960.js", "assets/crossfade.0f47b3ac.js", "assets/marqueeHandlerStore.ae4d30b1.js"]).then((e2) => e2.default)}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => o15(() => Promise.resolve().then(() => require_index_bc32f0df()), ["assets/index.bc32f0df.js", "assets/vendor.7a90e960.js"]).then((e2) => e2.default)}], isLayout: true, path: "/", id: "__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_214709fd()), ["assets/_layout.214709fd.js", "assets/vendor.7a90e960.js", "assets/index.e6e77149.js", "assets/crossfade.0f47b3ac.js", "assets/pageLayout.73119d76.js", "assets/marqueeHandlerStore.ae4d30b1.js"]).then((e2) => e2.default)};
+  var {tree: k3, routes: b} = li(A3);
   function D3(e2) {
     let t, a2;
-    return t = new ci({props: {routes: A3}}), {c() {
+    return t = new ci({props: {routes: b}}), {c() {
       K(t.$$.fragment);
     }, m(r, s2) {
       H(t, r, s2), a2 = true;
