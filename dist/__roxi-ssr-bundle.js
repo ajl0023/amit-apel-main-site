@@ -59,13 +59,13 @@
     };
   });
 
-  // dist/assets/MasonryGallery.4842739d.js
-  var require_MasonryGallery_4842739d = __commonJS((exports) => {
+  // dist/assets/MasonryGallery.901b4303.js
+  var require_MasonryGallery_901b4303 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => be3
     });
-    var import_layout_c0d786c0 = require_layout_c0d786c0();
+    var import_layout_f06b753c = require_layout_f06b753c();
     var X4 = {exports: {}};
     /*!
     * Colcade v0.2.0
@@ -254,7 +254,7 @@
       Y(c2, h, (l2) => t(2, n = l2)), Y(c2, Ar, (l2) => t(3, a2 = l2));
       let {img: u2} = i3, {modal: o16} = i3;
       const d3 = () => {
-        import_layout_c0d786c0.g.openModal(u2, n.page);
+        import_layout_f06b753c.g.openModal(u2, n.page);
       };
       return c2.$$set = (l2) => {
         "img" in l2 && t(0, u2 = l2.img), "modal" in l2 && t(1, o16 = l2.modal);
@@ -421,7 +421,7 @@
     }
     function ve3(c2, i3, t) {
       let n, a2, u2;
-      Y(c2, Or, (m3) => t(5, n = m3)), Y(c2, Ar, (m3) => t(6, a2 = m3)), Y(c2, import_layout_c0d786c0.g, (m3) => t(7, u2 = m3));
+      Y(c2, Or, (m3) => t(5, n = m3)), Y(c2, Ar, (m3) => t(6, a2 = m3)), Y(c2, import_layout_f06b753c.g, (m3) => t(7, u2 = m3));
       let o16, {modal: d3} = i3, l2 = [];
       fetch(d3 ? `http://localhost:9999/.netlify/functions/get-full-images/?category=${a2.pages}&property=${u2.selected.key}` : `http://localhost:9999/.netlify/functions/images/?category=${a2.pages}`).then((m3) => m3.json()).then(async (m3) => {
         t(2, l2 = m3), await Ce(), l2.length >= 4 && new ce3(o16, {columns: ".grid-col", items: ".grid-item"});
@@ -1908,8 +1908,8 @@
     };
   });
 
-  // dist/assets/Developments.fd7ad16c.js
-  var require_Developments_fd7ad16c = __commonJS((exports) => {
+  // dist/assets/Developments.cf8f4ea3.js
+  var require_Developments_cf8f4ea3 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => U3
@@ -1931,7 +1931,7 @@
       Y(n, Or, (c2) => v2(3, l2 = c2)), Y(n, Ar, (c2) => v2(0, s2 = c2));
       const o16 = e.pages.byTitle[s2.pages];
       function p(c2) {
-        c2.preventDefault(), window.open(o16.link);
+        c2.preventDefault(), window.open(o16.data.link);
       }
       return Er(() => {
         l2();
@@ -1999,8 +1999,8 @@
     };
   });
 
-  // dist/assets/_layout.c0d786c0.js
-  var require_layout_c0d786c0 = __commonJS((exports) => {
+  // dist/assets/_layout.f06b753c.js
+  var require_layout_f06b753c = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       _: () => Et3,
@@ -2643,7 +2643,7 @@
       let n, a2, o16;
       Y(r, Ar, (t) => i3(4, n = t)), Y(r, ce3, (t) => i3(1, a2 = t)), Y(r, h, (t) => i3(2, o16 = t));
       let l2;
-      const c2 = {"private-homes": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_4842739d()), ["assets/MasonryGallery.4842739d.js", "assets/vendor.1b3eca0c.js", "assets/marqueeHandlerStore.e8027723.js", "assets/index.38f84795.js", "assets/pageLayout.73119d76.js"]), "multi-units": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_4842739d()), ["assets/MasonryGallery.4842739d.js", "assets/vendor.1b3eca0c.js", "assets/marqueeHandlerStore.e8027723.js", "assets/index.38f84795.js", "assets/pageLayout.73119d76.js"]), concept: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_4842739d()), ["assets/MasonryGallery.4842739d.js", "assets/vendor.1b3eca0c.js", "assets/marqueeHandlerStore.e8027723.js", "assets/index.38f84795.js", "assets/pageLayout.73119d76.js"]), sculptures: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_4842739d()), ["assets/MasonryGallery.4842739d.js", "assets/vendor.1b3eca0c.js", "assets/marqueeHandlerStore.e8027723.js", "assets/index.38f84795.js", "assets/pageLayout.73119d76.js"]), "meet-amit-apel": async () => o15(() => Promise.resolve().then(() => require_MeetAmitApel_9f8100b8()), ["assets/MeetAmitApel.9f8100b8.js", "assets/vendor.1b3eca0c.js"]), "meet-the-team": async () => o15(() => Promise.resolve().then(() => require_MeetTheTeam_bb5c33e9()), ["assets/MeetTheTeam.bb5c33e9.js", "assets/vendor.1b3eca0c.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]), press: async () => o15(() => Promise.resolve().then(() => require_Press_aed38500()), ["assets/Press.aed38500.js", "assets/vendor.1b3eca0c.js", "assets/index.e6e77149.js"]), "contact-us": async () => o15(() => Promise.resolve().then(() => require_Contact_b45f45b4()), ["assets/Contact.b45f45b4.js", "assets/vendor.1b3eca0c.js"]), furniture: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_4842739d()), ["assets/MasonryGallery.4842739d.js", "assets/vendor.1b3eca0c.js", "assets/marqueeHandlerStore.e8027723.js", "assets/index.38f84795.js", "assets/pageLayout.73119d76.js"]), "malibu-rebuild": async () => o15(() => Promise.resolve().then(() => require_MalibuRebuild_cfaf5742()), ["assets/MalibuRebuild.cfaf5742.js", "assets/vendor.1b3eca0c.js"]), "what-we-do": async () => o15(() => Promise.resolve().then(() => require_WhatWeDo_7ecf53f4()), ["assets/WhatWeDo.7ecf53f4.js", "assets/vendor.1b3eca0c.js"]), aviator: async () => o15(() => Promise.resolve().then(() => require_Developments_fd7ad16c()), ["assets/Developments.fd7ad16c.js", "assets/vendor.1b3eca0c.js", "assets/pageLayout.73119d76.js"]), maliview: async () => o15(() => Promise.resolve().then(() => require_Developments_fd7ad16c()), ["assets/Developments.fd7ad16c.js", "assets/vendor.1b3eca0c.js", "assets/pageLayout.73119d76.js"]), map: async () => o15(() => Promise.resolve().then(() => require_Map_b1e0096d()), ["assets/Map.b1e0096d.js", "assets/vendor.1b3eca0c.js"])}, u2 = async (t) => {
+      const c2 = {"private-homes": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_901b4303()), ["assets/MasonryGallery.901b4303.js", "assets/vendor.1b3eca0c.js", "assets/marqueeHandlerStore.e8027723.js", "assets/index.940743ea.js", "assets/pageLayout.73119d76.js"]), "multi-units": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_901b4303()), ["assets/MasonryGallery.901b4303.js", "assets/vendor.1b3eca0c.js", "assets/marqueeHandlerStore.e8027723.js", "assets/index.940743ea.js", "assets/pageLayout.73119d76.js"]), concept: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_901b4303()), ["assets/MasonryGallery.901b4303.js", "assets/vendor.1b3eca0c.js", "assets/marqueeHandlerStore.e8027723.js", "assets/index.940743ea.js", "assets/pageLayout.73119d76.js"]), sculptures: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_901b4303()), ["assets/MasonryGallery.901b4303.js", "assets/vendor.1b3eca0c.js", "assets/marqueeHandlerStore.e8027723.js", "assets/index.940743ea.js", "assets/pageLayout.73119d76.js"]), "meet-amit-apel": async () => o15(() => Promise.resolve().then(() => require_MeetAmitApel_9f8100b8()), ["assets/MeetAmitApel.9f8100b8.js", "assets/vendor.1b3eca0c.js"]), "meet-the-team": async () => o15(() => Promise.resolve().then(() => require_MeetTheTeam_bb5c33e9()), ["assets/MeetTheTeam.bb5c33e9.js", "assets/vendor.1b3eca0c.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]), press: async () => o15(() => Promise.resolve().then(() => require_Press_aed38500()), ["assets/Press.aed38500.js", "assets/vendor.1b3eca0c.js", "assets/index.e6e77149.js"]), "contact-us": async () => o15(() => Promise.resolve().then(() => require_Contact_b45f45b4()), ["assets/Contact.b45f45b4.js", "assets/vendor.1b3eca0c.js"]), furniture: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_901b4303()), ["assets/MasonryGallery.901b4303.js", "assets/vendor.1b3eca0c.js", "assets/marqueeHandlerStore.e8027723.js", "assets/index.940743ea.js", "assets/pageLayout.73119d76.js"]), "malibu-rebuild": async () => o15(() => Promise.resolve().then(() => require_MalibuRebuild_cfaf5742()), ["assets/MalibuRebuild.cfaf5742.js", "assets/vendor.1b3eca0c.js"]), "what-we-do": async () => o15(() => Promise.resolve().then(() => require_WhatWeDo_7ecf53f4()), ["assets/WhatWeDo.7ecf53f4.js", "assets/vendor.1b3eca0c.js"]), aviator: async () => o15(() => Promise.resolve().then(() => require_Developments_cf8f4ea3()), ["assets/Developments.cf8f4ea3.js", "assets/vendor.1b3eca0c.js", "assets/pageLayout.73119d76.js"]), maliview: async () => o15(() => Promise.resolve().then(() => require_Developments_cf8f4ea3()), ["assets/Developments.cf8f4ea3.js", "assets/vendor.1b3eca0c.js", "assets/pageLayout.73119d76.js"]), map: async () => o15(() => Promise.resolve().then(() => require_Map_b1e0096d()), ["assets/Map.b1e0096d.js", "assets/vendor.1b3eca0c.js"])}, u2 = async (t) => {
         t && (h.setPage(t), i3(0, l2 = (await c2[t]()).default));
       };
       return Er(() => {
@@ -5283,7 +5283,7 @@
   };
   V && uo(Ut, window.lazyLoadOptions);
 
-  // dist/assets/index.38f84795.js
+  // dist/assets/index.940743ea.js
   var I2 = function() {
     const t = document.createElement("link").relList;
     return t && t.supports && t.supports("modulepreload") ? "modulepreload" : "preload";
@@ -7097,10 +7097,10 @@
   var X3 = x({});
   var Y3 = x({duration: 4e3});
 
-  // dist/assets/index.38f84795.js
-  var $3 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => o15(() => Promise.resolve().then(() => require_fallback_cc5901bb()), ["assets/_fallback.cc5901bb.js", "assets/vendor.1b3eca0c.js"]).then((e2) => e2.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, path: "/:category/:pages/index", id: "__category__pages_index", component: () => o15(() => Promise.resolve().then(() => require_index_16396c69()), ["assets/index.16396c69.js", "assets/vendor.1b3eca0c.js"]).then((e2) => e2.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_c0d786c0()).then(function(e2) {
+  // dist/assets/index.940743ea.js
+  var $3 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => o15(() => Promise.resolve().then(() => require_fallback_cc5901bb()), ["assets/_fallback.cc5901bb.js", "assets/vendor.1b3eca0c.js"]).then((e2) => e2.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, path: "/:category/:pages/index", id: "__category__pages_index", component: () => o15(() => Promise.resolve().then(() => require_index_16396c69()), ["assets/index.16396c69.js", "assets/vendor.1b3eca0c.js"]).then((e2) => e2.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_f06b753c()).then(function(e2) {
     return e2._;
-  }), ["assets/_layout.c0d786c0.js", "assets/vendor.1b3eca0c.js", "assets/pageLayout.73119d76.js", "assets/marqueeHandlerStore.e8027723.js"]).then((e2) => e2.default)}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/index", id: "__category_index", component: () => o15(() => Promise.resolve().then(() => require_index_e6f76b7a()), ["assets/index.e6f76b7a.js", "assets/vendor.1b3eca0c.js", "assets/pageLayout.73119d76.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]).then((e2) => e2.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category", id: "__category__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_f5367225()), ["assets/_layout.f5367225.js", "assets/vendor.1b3eca0c.js", "assets/crossfade.021cee75.js", "assets/marqueeHandlerStore.e8027723.js"]).then((e2) => e2.default)}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => o15(() => Promise.resolve().then(() => require_index_0383ebf4()), ["assets/index.0383ebf4.js", "assets/vendor.1b3eca0c.js"]).then((e2) => e2.default)}], isLayout: true, path: "/", id: "__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_50592e07()), ["assets/_layout.50592e07.js", "assets/vendor.1b3eca0c.js", "assets/index.e6e77149.js", "assets/crossfade.021cee75.js", "assets/pageLayout.73119d76.js", "assets/marqueeHandlerStore.e8027723.js"]).then((e2) => e2.default)};
+  }), ["assets/_layout.f06b753c.js", "assets/vendor.1b3eca0c.js", "assets/pageLayout.73119d76.js", "assets/marqueeHandlerStore.e8027723.js"]).then((e2) => e2.default)}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/index", id: "__category_index", component: () => o15(() => Promise.resolve().then(() => require_index_e6f76b7a()), ["assets/index.e6f76b7a.js", "assets/vendor.1b3eca0c.js", "assets/pageLayout.73119d76.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]).then((e2) => e2.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category", id: "__category__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_f5367225()), ["assets/_layout.f5367225.js", "assets/vendor.1b3eca0c.js", "assets/crossfade.021cee75.js", "assets/marqueeHandlerStore.e8027723.js"]).then((e2) => e2.default)}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => o15(() => Promise.resolve().then(() => require_index_0383ebf4()), ["assets/index.0383ebf4.js", "assets/vendor.1b3eca0c.js"]).then((e2) => e2.default)}], isLayout: true, path: "/", id: "__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_50592e07()), ["assets/_layout.50592e07.js", "assets/vendor.1b3eca0c.js", "assets/index.e6e77149.js", "assets/crossfade.021cee75.js", "assets/pageLayout.73119d76.js", "assets/marqueeHandlerStore.e8027723.js"]).then((e2) => e2.default)};
   var {tree: k2, routes: A3} = Nr($3);
   function D3(e2) {
     let t, n;

@@ -6,7 +6,8 @@
   const pageDetails = pageLayoutMaster["pages"]["byTitle"][$params.pages];
   function reDirect(e) {
     e.preventDefault();
-    window.open(pageDetails.link);
+
+    window.open(pageDetails.data.link);
   }
   onMount(() => {
     $ready();
