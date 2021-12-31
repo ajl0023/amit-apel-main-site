@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+# Includes all Markdown files inside the "files/" directory.
+
+  node_bundler = "esbuild"

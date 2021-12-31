@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap");
+.close-x::after,
+.close-x::before {
+  background-color: black;
+  content: "";
+
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform-origin: center center;
+}
+.close-x::before {
+  height: 2px;
+  width: 100%;
+}
+
+.close-x::after {
+  height: 100%;
+  width: 2px;
+}
+.close-x {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  z-index: 5;
+  left: 20px;
+  cursor: pointer;
+}
