@@ -8,11 +8,21 @@
 
   let images = [];
   let carousel;
-
+  cons;
   fetch(
     true
-      ? `${window.location.origin}/.netlify/functions/get-full-images/?category=${$params.pages}&property=${$galleryModal.selected.key}`
-      : `${window.location.origin}/.netlify/functions/images/?category=${$params.pages}`
+      ? `${
+          window.location.origin === "http://jsdom.ssr"
+            ? "http://localhost:9999"
+            : window.location.origin
+        }/.netlify/functions/get-full-images/?category=${
+          $params.pages
+        }&property=${$galleryModal.selected.key}`
+      : `${
+          window.location.origin === "http://jsdom.ssr"
+            ? "http://localhost:9999"
+            : window.location.origin
+        }/.netlify/functions/images/?category=${$params.pages}`
   )
     .then((res) => res.json())
     .then(async (data) => {

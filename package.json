@@ -25,29 +25,32 @@
     "build:static": "spank"
   },
   "devDependencies": {
+    "@beyonk/svelte-carousel": "^2.8.0",
     "@roxi/routify": "^2.14.0",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.10",
+    "cross-env": "^7.0.3",
     "fkill": "^7.1.0",
     "npm-run-all": "^4.1.5",
-    "svelte": "^3.35.0",
-    "cross-env": "^7.0.3",
-    "spassr": "^2.4.1-0",
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.10",
-    "svelte-hmr": "^0.14.4",
-    "vite": "^2.3.7",
+    "postcss": "^8.2.4",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.1",
-    "vite-main-js": "^0.0.1",
-    "svelte-preprocess": "^4.6.3",
-    "postcss": "^8.2.4",
     "sass": "^1.44.0",
     "spank": "^1.5.0",
-    "@beyonk/svelte-carousel": "^2.8.0"
+    "spassr": "^2.4.1-0",
+    "svelte": "^3.35.0",
+    "svelte-hmr": "^0.14.4",
+    "svelte-preprocess": "^4.6.3",
+    "svelte-preprocessor-fetch": "^1.0.7",
+    "vite": "^2.3.7",
+    "vite-main-js": "^0.0.1"
   },
   "dependencies": {
     "@use-gesture/vanilla": "^10.2.2",
     "colcade": "^0.2.0",
     "gsap": "^3.8.0",
+    "require-from-string": "^2.0.2",
     "svelte-feather-icons": "^3.5.0",
+    "svelte-partial-hydrating-prerenderer": "^0.2.2",
     "vanilla-lazyload": "^17.5.0"
   },
   "routify": {

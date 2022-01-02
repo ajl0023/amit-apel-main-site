@@ -1,9 +1,12 @@
 const { appConfig } = require("./package.json");
 const viteMainJs = require("vite-main-js");
-const autoPreprocess = require("svelte-preprocess");
+const preprocessFetch = require("svelte-preprocessor-fetch");
+const preprocess = require("svelte-preprocess");
 const { svelte } = require("@sveltejs/vite-plugin-svelte");
 const { port } = appConfig;
 const production = process.env.NODE_ENV === "production";
+const buildVars = require("./src/svelte-build-vars/index.js");
+
 module.exports = {
   server: {
     port: port,
@@ -29,13 +32,8 @@ module.exports = {
   plugins: [
     viteMainJs(),
     svelte({
-      preprocess: [
-        autoPreprocess({
-          postcss: {
-            plugins: [],
-          },
-        }),
-      ],
+      preprocess: [preprocess(), buildVars.default()],
+
       emitCss: true,
       hot: !production,
     }),
