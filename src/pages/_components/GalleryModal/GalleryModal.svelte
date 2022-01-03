@@ -8,7 +8,7 @@
 
   let images = [];
   let carousel;
-  cons;
+
   fetch(
     true
       ? `${
