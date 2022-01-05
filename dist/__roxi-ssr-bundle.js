@@ -1913,53 +1913,53 @@
     };
   });
 
-  // dist/assets/Developments.0d8974e2.js
-  var require_Developments_0d8974e2 = __commonJS((exports) => {
+  // dist/assets/Developments.026ffb5f.js
+  var require_Developments_026ffb5f = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => $4
+      default: () => x2
     });
     function A3(i3) {
-      let r2, e, t, s2, v2, p3, f2, n3, _ = i3[1].pages + "", j4, B3, h, g3, z3, b4 = i3[0].data.description + "", w3, G2, u3, I3, y, d3, k4, H3, L2;
+      let n3, e, t, s2, o16, v2, p3, f2, _ = i3[0].page + "", j4, M2, h, g3, z3, b4 = i3[1].data.description + "", w3, B3, u3, G2, y, d3, k4, H3, I3;
       return {c() {
-        r2 = xt("div"), e = Gt(), t = xt("div"), s2 = xt("div"), v2 = xt("div"), p3 = xt("h5"), f2 = Ee("Project, "), n3 = xt("span"), j4 = Ee(_), B3 = Gt(), h = xt("div"), g3 = xt("div"), z3 = xt("p"), w3 = Ee(b4), G2 = Gt(), u3 = xt("button"), u3.textContent = "visit site", I3 = Gt(), y = xt("div"), d3 = xt("img"), lt(r2, "class", "page-container"), lt(n3, "class", "property-header svelte-czlh85"), lt(p3, "class", "main-header svelte-czlh85"), lt(v2, "class", "header-container svelte-czlh85"), lt(z3, "class", "description svelte-czlh85"), lt(g3, "class", "text-content-container svelte-czlh85"), lt(h, "class", "text-wrapper svelte-czlh85"), lt(u3, "class", "redirect-button svelte-czlh85"), lt(s2, "class", "left-page svelte-czlh85"), lt(d3, "class", "main-image svelte-czlh85"), ve(d3.src, k4 = i3[0].data.img) || lt(d3, "src", k4), lt(d3, "alt", ""), lt(y, "class", "main-image-container svelte-czlh85"), lt(t, "class", "container svelte-czlh85");
-      }, m(o16, m3) {
-        C(o16, r2, m3), C(o16, e, m3), C(o16, t, m3), fs(t, s2), fs(s2, v2), fs(v2, p3), fs(p3, f2), fs(p3, n3), fs(n3, j4), fs(s2, B3), fs(s2, h), fs(h, g3), fs(g3, z3), fs(z3, w3), fs(s2, G2), fs(s2, u3), fs(t, I3), fs(t, y), fs(y, d3), H3 || (L2 = Gr(u3, "click", i3[2]), H3 = true);
-      }, p(o16, m3) {
-        m3 & 2 && _ !== (_ = o16[1].pages + "") && Jr(j4, _), m3 & 1 && b4 !== (b4 = o16[0].data.description + "") && Jr(w3, b4), m3 & 1 && !ve(d3.src, k4 = o16[0].data.img) && lt(d3, "src", k4);
-      }, d(o16) {
-        o16 && S(r2), o16 && S(e), o16 && S(t), H3 = false, L2();
+        n3 = xt("div"), e = Gt(), t = xt("div"), s2 = xt("div"), o16 = xt("div"), v2 = xt("h5"), p3 = Ee("Project, "), f2 = xt("span"), j4 = Ee(_), M2 = Gt(), h = xt("div"), g3 = xt("div"), z3 = xt("p"), w3 = Ee(b4), B3 = Gt(), u3 = xt("button"), u3.textContent = "visit site", G2 = Gt(), y = xt("div"), d3 = xt("img"), lt(n3, "class", "page-container"), lt(f2, "class", "property-header svelte-czlh85"), lt(v2, "class", "main-header svelte-czlh85"), lt(o16, "class", "header-container svelte-czlh85"), lt(z3, "class", "description svelte-czlh85"), lt(g3, "class", "text-content-container svelte-czlh85"), lt(h, "class", "text-wrapper svelte-czlh85"), lt(u3, "class", "redirect-button svelte-czlh85"), lt(s2, "class", "left-page svelte-czlh85"), lt(d3, "class", "main-image svelte-czlh85"), ve(d3.src, k4 = i3[1].data.img) || lt(d3, "src", k4), lt(d3, "alt", ""), lt(y, "class", "main-image-container svelte-czlh85"), lt(t, "class", "container svelte-czlh85");
+      }, m(c2, m3) {
+        C(c2, n3, m3), C(c2, e, m3), C(c2, t, m3), fs(t, s2), fs(s2, o16), fs(o16, v2), fs(v2, p3), fs(v2, f2), fs(f2, j4), fs(s2, M2), fs(s2, h), fs(h, g3), fs(g3, z3), fs(z3, w3), fs(s2, B3), fs(s2, u3), fs(t, G2), fs(t, y), fs(y, d3), H3 || (I3 = Gr(u3, "click", i3[2]), H3 = true);
+      }, p(c2, m3) {
+        m3 & 1 && _ !== (_ = c2[0].page + "") && Jr(j4, _), m3 & 2 && b4 !== (b4 = c2[1].data.description + "") && Jr(w3, b4), m3 & 2 && !ve(d3.src, k4 = c2[1].data.img) && lt(d3, "src", k4);
+      }, d(c2) {
+        c2 && S(n3), c2 && S(e), c2 && S(t), H3 = false, I3();
       }};
     }
-    function X3(i3) {
-      let r2, e = i3[0].data && A3(i3);
+    function W4(i3) {
+      let n3, e = i3[1].data && A3(i3);
       return {c() {
-        e && e.c(), r2 = ct();
+        e && e.c(), n3 = ct();
       }, m(t, s2) {
-        e && e.m(t, s2), C(t, r2, s2);
+        e && e.m(t, s2), C(t, n3, s2);
       }, p(t, [s2]) {
-        t[0].data ? e ? e.p(t, s2) : (e = A3(t), e.c(), e.m(r2.parentNode, r2)) : e && (e.d(1), e = null);
+        t[1].data ? e ? e.p(t, s2) : (e = A3(t), e.c(), e.m(n3.parentNode, n3)) : e && (e.d(1), e = null);
       }, i: $, o: $, d(t) {
-        e && e.d(t), t && S(r2);
+        e && e.d(t), t && S(n3);
       }};
     }
-    function Y3(i3, r2, e) {
-      let t, s2, v2;
-      tt(i3, ri, (n3) => e(4, t = n3)), tt(i3, b, (n3) => e(3, s2 = n3)), tt(i3, ii, (n3) => e(1, v2 = n3));
-      let p3;
-      function f2(n3) {
-        n3.preventDefault(), window.open(p3.data.link);
+    function X3(i3, n3, e) {
+      let t, s2;
+      tt(i3, ri, (p3) => e(3, t = p3)), tt(i3, b, (p3) => e(0, s2 = p3));
+      let o16;
+      function v2(p3) {
+        p3.preventDefault(), window.open(o16.data.link);
       }
       return Zr(() => {
         t();
       }), i3.$$.update = () => {
-        i3.$$.dirty & 8 && e(0, p3 = g.pages.byTitle[s2.page]);
-      }, [p3, v2, f2, s2];
+        i3.$$.dirty & 1 && e(1, o16 = g.pages.byTitle[s2.page]);
+      }, [s2, o16, v2];
     }
-    var $4 = class extends Rt {
-      constructor(r2) {
+    var x2 = class extends Rt {
+      constructor(n3) {
         super();
-        St(this, r2, Y3, X3, at, {});
+        St(this, n3, X3, W4, at, {});
       }
     };
   });
@@ -2018,8 +2018,8 @@
     };
   });
 
-  // dist/assets/_layout.20ce476a.js
-  var require_layout_20ce476a = __commonJS((exports) => {
+  // dist/assets/_layout.b4831c8e.js
+  var require_layout_b4831c8e = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => U3
@@ -2063,13 +2063,13 @@
       }, m(s2, c2) {
         C(s2, e, c2), H(n3, e, null), fs(e, i3), fs(e, a3), t && H(t, a3, null), m3 = true;
       }, p(s2, [c2]) {
-        const P = {};
-        if (c2 & 1 && (P.pages = s2[0]), n3.$set(P), p3 !== (p3 = s2[1])) {
+        const b4 = {};
+        if (c2 & 1 && (b4.pages = s2[0]), n3.$set(b4), p3 !== (p3 = s2[1])) {
           if (t) {
             st();
-            const b4 = t;
-            k(b4.$$.fragment, 1, 0, () => {
-              B(b4, 1);
+            const P = t;
+            k(P.$$.fragment, 1, 0, () => {
+              B(P, 1);
             }), ot();
           }
           p3 ? (t = new p3($4()), K(t.$$.fragment), w(t.$$.fragment, 1), H(t, a3, null)) : t = null;
@@ -2091,7 +2091,7 @@
       let i3, a3;
       tt(r2, ii, (p3) => n3(2, a3 = p3));
       let t;
-      const _ = {"private-homes": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), "multi-units": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), concept: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), sculptures: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), "meet-amit-apel": async () => o15(() => Promise.resolve().then(() => require_MeetAmitApel_2b104951()), ["assets/MeetAmitApel.2b104951.js", "assets/vendor.e1944527.js"]), "meet-the-team": async () => o15(() => Promise.resolve().then(() => require_MeetTheTeam_663f99d6()), ["assets/MeetTheTeam.663f99d6.js", "assets/vendor.e1944527.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]), press: async () => o15(() => Promise.resolve().then(() => require_Press_808f6f07()), ["assets/Press.808f6f07.js", "assets/vendor.e1944527.js", "assets/index.e6e77149.js"]), "contact-us": async () => o15(() => Promise.resolve().then(() => require_Contact_3d509989()), ["assets/Contact.3d509989.js", "assets/vendor.e1944527.js"]), furniture: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), "malibu-rebuild": async () => o15(() => Promise.resolve().then(() => require_MalibuRebuild_81ef3f46()), ["assets/MalibuRebuild.81ef3f46.js", "assets/vendor.e1944527.js"]), "what-we-do": async () => o15(() => Promise.resolve().then(() => require_WhatWeDo_7821ca72()), ["assets/WhatWeDo.7821ca72.js", "assets/vendor.e1944527.js"]), aviator: async () => o15(() => Promise.resolve().then(() => require_Developments_0d8974e2()), ["assets/Developments.0d8974e2.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js"]), maliview: async () => o15(() => Promise.resolve().then(() => require_Developments_0d8974e2()), ["assets/Developments.0d8974e2.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js"]), map: async () => o15(() => Promise.resolve().then(() => require_Map_44f83f36()), ["assets/Map.44f83f36.js", "assets/vendor.e1944527.js"])}, m3 = async (p3) => {
+      const _ = {"private-homes": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), "multi-units": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), concept: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), sculptures: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), "meet-amit-apel": async () => o15(() => Promise.resolve().then(() => require_MeetAmitApel_2b104951()), ["assets/MeetAmitApel.2b104951.js", "assets/vendor.e1944527.js"]), "meet-the-team": async () => o15(() => Promise.resolve().then(() => require_MeetTheTeam_663f99d6()), ["assets/MeetTheTeam.663f99d6.js", "assets/vendor.e1944527.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]), press: async () => o15(() => Promise.resolve().then(() => require_Press_808f6f07()), ["assets/Press.808f6f07.js", "assets/vendor.e1944527.js", "assets/index.e6e77149.js"]), "contact-us": async () => o15(() => Promise.resolve().then(() => require_Contact_3d509989()), ["assets/Contact.3d509989.js", "assets/vendor.e1944527.js"]), furniture: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), "malibu-rebuild": async () => o15(() => Promise.resolve().then(() => require_MalibuRebuild_81ef3f46()), ["assets/MalibuRebuild.81ef3f46.js", "assets/vendor.e1944527.js"]), "what-we-do": async () => o15(() => Promise.resolve().then(() => require_WhatWeDo_7821ca72()), ["assets/WhatWeDo.7821ca72.js", "assets/vendor.e1944527.js"]), aviator: async () => o15(() => Promise.resolve().then(() => require_Developments_026ffb5f()), ["assets/Developments.026ffb5f.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js"]), maliview: async () => o15(() => Promise.resolve().then(() => require_Developments_026ffb5f()), ["assets/Developments.026ffb5f.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js"]), map: async () => o15(() => Promise.resolve().then(() => require_Map_44f83f36()), ["assets/Map.44f83f36.js", "assets/vendor.e1944527.js"])}, m3 = async (p3) => {
         p3 && (b.setPage(p3), n3(1, t = (await _[p3]()).default));
       };
       return r2.$$.update = () => {
@@ -5631,7 +5631,7 @@
     return n3;
   }
 
-  // dist/assets/index.16b664da.js
+  // dist/assets/index.1dcda87d.js
   var R4 = function() {
     const t = document.createElement("link").relList;
     return t && t.supports && t.supports("modulepreload") ? "modulepreload" : "preload";
@@ -7467,12 +7467,12 @@
   var W3 = x({});
   var z2 = x({duration: 4e3});
 
-  // dist/assets/index.16b664da.js
-  var A2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => o15(() => Promise.resolve().then(() => require_fallback_1421d854()), ["assets/_fallback.1421d854.js", "assets/vendor.e1944527.js"]).then((e) => e.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, path: "/:category/:pages/index", id: "__category__pages_index", component: () => o15(() => Promise.resolve().then(() => require_index_864edcd6()), ["assets/index.864edcd6.js", "assets/vendor.e1944527.js"]).then((e) => e.default)}], isLayout: true, path: "/:category/:pages", id: "__category__pages__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_20ce476a()), ["assets/_layout.20ce476a.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js"]).then((e) => e.default)}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/index", id: "__category_index", component: () => o15(() => Promise.resolve().then(() => require_index_6a05038b()), ["assets/index.6a05038b.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]).then((e) => e.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category", id: "__category__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_a1ccc88e()), ["assets/_layout.a1ccc88e.js", "assets/vendor.e1944527.js", "assets/crossfade.dd4a75f8.js", "assets/store.24c541cf.js", "assets/marqueeHandlerStore.6791448c.js"]).then((e) => e.default)}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => o15(() => Promise.resolve().then(() => require_index_f5946c52()), ["assets/index.f5946c52.js", "assets/vendor.e1944527.js"]).then((e) => e.default)}], isLayout: true, path: "/", id: "__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_52c6ed68()), ["assets/_layout.52c6ed68.js", "assets/vendor.e1944527.js", "assets/index.e6e77149.js", "assets/crossfade.dd4a75f8.js", "assets/marqueeHandlerStore.6791448c.js"]).then((e) => e.default)};
-  var {tree: k3, routes: D3} = li(A2);
-  function b3(e) {
+  // dist/assets/index.1dcda87d.js
+  var A2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => o15(() => Promise.resolve().then(() => require_fallback_1421d854()), ["assets/_fallback.1421d854.js", "assets/vendor.e1944527.js"]).then((e) => e.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, path: "/:category/:pages/index", id: "__category__pages_index", component: () => o15(() => Promise.resolve().then(() => require_index_864edcd6()), ["assets/index.864edcd6.js", "assets/vendor.e1944527.js"]).then((e) => e.default)}], isLayout: true, path: "/:category/:pages", id: "__category__pages__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_b4831c8e()), ["assets/_layout.b4831c8e.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js"]).then((e) => e.default)}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/index", id: "__category_index", component: () => o15(() => Promise.resolve().then(() => require_index_6a05038b()), ["assets/index.6a05038b.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]).then((e) => e.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category", id: "__category__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_a1ccc88e()), ["assets/_layout.a1ccc88e.js", "assets/vendor.e1944527.js", "assets/crossfade.dd4a75f8.js", "assets/store.24c541cf.js", "assets/marqueeHandlerStore.6791448c.js"]).then((e) => e.default)}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => o15(() => Promise.resolve().then(() => require_index_f5946c52()), ["assets/index.f5946c52.js", "assets/vendor.e1944527.js"]).then((e) => e.default)}], isLayout: true, path: "/", id: "__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_52c6ed68()), ["assets/_layout.52c6ed68.js", "assets/vendor.e1944527.js", "assets/index.e6e77149.js", "assets/crossfade.dd4a75f8.js", "assets/marqueeHandlerStore.6791448c.js"]).then((e) => e.default)};
+  var {tree: k3, routes: b3} = li(A2);
+  function D3(e) {
     let t, n3;
-    return t = new ci({props: {routes: D3}}), {c() {
+    return t = new ci({props: {routes: b3}}), {c() {
       K(t.$$.fragment);
     }, m(r2, s2) {
       H(t, r2, s2), n3 = true;
@@ -7492,7 +7492,7 @@
   var O4 = class extends Rt {
     constructor(t) {
       super();
-      St(this, t, j3, b3, at, {});
+      St(this, t, j3, D3, at, {});
     }
   };
   qr(O4, {target: document.body}, "routify-app");

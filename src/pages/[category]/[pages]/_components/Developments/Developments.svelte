@@ -26,7 +26,9 @@
     <div class="left-page">
       <div class="header-container">
         <h5 class="main-header">
-          Project, <span class="property-header">{$params.pages}</span>
+          Project, <span class="property-header"
+            >{$marqueeHandlerStore.page}</span
+          >
         </h5>
       </div>
       <div class="text-wrapper">
