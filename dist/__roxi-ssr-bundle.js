@@ -59,11 +59,11 @@
     };
   });
 
-  // dist/assets/MasonryGallery.2312de3a.js
-  var require_MasonryGallery_2312de3a = __commonJS((exports) => {
+  // dist/assets/MasonryGallery.c9a163b1.js
+  var require_MasonryGallery_c9a163b1 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => Ie3
+      default: () => qe3
     });
     var $4 = {exports: {}};
     /*!
@@ -72,113 +72,113 @@
     * by David DeSandro
     * MIT license
     */
-    (function(s2) {
-      (function(i3, t) {
-        s2.exports ? s2.exports = t() : i3.Colcade = t();
+    (function(r2) {
+      (function(n3, t) {
+        r2.exports ? r2.exports = t() : n3.Colcade = t();
       })(window, function() {
-        function t(e, r2) {
-          if (e = h(e), e && e.colcadeGUID) {
+        function t(e, i3) {
+          if (e = m3(e), e && e.colcadeGUID) {
             var c2 = u3[e.colcadeGUID];
-            return c2.option(r2), c2;
+            return c2.option(i3), c2;
           }
-          this.element = e, this.options = {}, this.option(r2), this.create();
+          this.element = e, this.options = {}, this.option(i3), this.create();
         }
-        var n3 = t.prototype;
-        n3.option = function(e) {
+        var a3 = t.prototype;
+        a3.option = function(e) {
           this.options = d3(this.options, e);
         };
-        var l = 0, u3 = {};
-        n3.create = function() {
+        var s2 = 0, u3 = {};
+        a3.create = function() {
           this.errorCheck();
-          var e = this.guid = ++l;
+          var e = this.guid = ++s2;
           this.element.colcadeGUID = e, u3[e] = this, this.reload(), this._windowResizeHandler = this.onWindowResize.bind(this), this._loadHandler = this.onLoad.bind(this), window.addEventListener("resize", this._windowResizeHandler), this.element.addEventListener("load", this._loadHandler, true);
-        }, n3.errorCheck = function() {
+        }, a3.errorCheck = function() {
           var e = [];
           if (this.element || e.push("Bad element: " + this.element), this.options.columns || e.push("columns option required: " + this.options.columns), this.options.items || e.push("items option required: " + this.options.items), e.length)
             throw new Error("[Colcade error] " + e.join(". "));
-        }, n3.reload = function() {
+        }, a3.reload = function() {
           this.updateColumns(), this.updateItems(), this.layout();
-        }, n3.updateColumns = function() {
-          this.columns = m3(this.options.columns, this.element);
-        }, n3.updateItems = function() {
-          this.items = m3(this.options.items, this.element);
-        }, n3.getActiveColumns = function() {
+        }, a3.updateColumns = function() {
+          this.columns = h(this.options.columns, this.element);
+        }, a3.updateItems = function() {
+          this.items = h(this.options.items, this.element);
+        }, a3.getActiveColumns = function() {
           return this.columns.filter(function(e) {
-            var r2 = getComputedStyle(e);
-            return r2.display != "none";
+            var i3 = getComputedStyle(e);
+            return i3.display != "none";
           });
-        }, n3.layout = function() {
+        }, a3.layout = function() {
           this.activeColumns = this.getActiveColumns(), this._layout();
-        }, n3._layout = function() {
+        }, a3._layout = function() {
           this.columnHeights = this.activeColumns.map(function() {
             return 0;
           }), this.layoutItems(this.items);
-        }, n3.layoutItems = function(e) {
+        }, a3.layoutItems = function(e) {
           e.forEach(this.layoutItem, this);
-        }, n3.layoutItem = function(e) {
-          var r2 = Math.min.apply(Math, this.columnHeights), c2 = this.columnHeights.indexOf(r2);
+        }, a3.layoutItem = function(e) {
+          var i3 = Math.min.apply(Math, this.columnHeights), c2 = this.columnHeights.indexOf(i3);
           this.activeColumns[c2].appendChild(e), this.columnHeights[c2] += e.offsetHeight || 1;
-        }, n3.append = function(e) {
-          var r2 = this.getQueryItems(e);
-          this.items = this.items.concat(r2), this.layoutItems(r2);
-        }, n3.prepend = function(e) {
-          var r2 = this.getQueryItems(e);
-          this.items = r2.concat(this.items), this._layout();
-        }, n3.getQueryItems = function(e) {
-          e = o16(e);
-          var r2 = document.createDocumentFragment();
+        }, a3.append = function(e) {
+          var i3 = this.getQueryItems(e);
+          this.items = this.items.concat(i3), this.layoutItems(i3);
+        }, a3.prepend = function(e) {
+          var i3 = this.getQueryItems(e);
+          this.items = i3.concat(this.items), this._layout();
+        }, a3.getQueryItems = function(e) {
+          e = l(e);
+          var i3 = document.createDocumentFragment();
           return e.forEach(function(c2) {
-            r2.appendChild(c2);
-          }), m3(this.options.items, r2);
-        }, n3.measureColumnHeight = function(e) {
-          var r2 = this.element.getBoundingClientRect();
+            i3.appendChild(c2);
+          }), h(this.options.items, i3);
+        }, a3.measureColumnHeight = function(e) {
+          var i3 = this.element.getBoundingClientRect();
           this.activeColumns.forEach(function(c2, g3) {
             if (!e || c2.contains(e)) {
               var w3 = c2.lastElementChild.getBoundingClientRect();
-              this.columnHeights[g3] = w3.bottom - r2.top;
+              this.columnHeights[g3] = w3.bottom - i3.top;
             }
           }, this);
-        }, n3.onWindowResize = function() {
+        }, a3.onWindowResize = function() {
           clearTimeout(this.resizeTimeout), this.resizeTimeout = setTimeout(function() {
             this.onDebouncedResize();
           }.bind(this), 100);
-        }, n3.onDebouncedResize = function() {
-          var e = this.getActiveColumns(), r2 = e.length == this.activeColumns.length, c2 = true;
+        }, a3.onDebouncedResize = function() {
+          var e = this.getActiveColumns(), i3 = e.length == this.activeColumns.length, c2 = true;
           this.activeColumns.forEach(function(g3, w3) {
             c2 = c2 && g3 == e[w3];
-          }), !(r2 && c2) && (this.activeColumns = e, this._layout());
-        }, n3.onLoad = function(e) {
+          }), !(i3 && c2) && (this.activeColumns = e, this._layout());
+        }, a3.onLoad = function(e) {
           this.measureColumnHeight(e.target);
-        }, n3.destroy = function() {
+        }, a3.destroy = function() {
           this.items.forEach(function(e) {
             this.element.appendChild(e);
           }, this), window.removeEventListener("resize", this._windowResizeHandler), this.element.removeEventListener("load", this._loadHandler, true), delete this.element.colcadeGUID, delete u3[this.guid];
         }, _(function() {
-          var e = m3("[data-colcade]");
-          e.forEach(a3);
+          var e = h("[data-colcade]");
+          e.forEach(o16);
         });
-        function a3(e) {
-          var r2 = e.getAttribute("data-colcade"), c2 = r2.split(","), g3 = {};
+        function o16(e) {
+          var i3 = e.getAttribute("data-colcade"), c2 = i3.split(","), g3 = {};
           c2.forEach(function(w3) {
             var I3 = w3.split(":"), y = I3[0].trim(), b4 = I3[1].trim();
             g3[y] = b4;
           }), new t(e, g3);
         }
         t.data = function(e) {
-          e = h(e);
-          var r2 = e && e.colcadeGUID;
-          return r2 && u3[r2];
+          e = m3(e);
+          var i3 = e && e.colcadeGUID;
+          return i3 && u3[i3];
         }, t.makeJQueryPlugin = function(e) {
           if (e = e || window.jQuery, !e)
             return;
           e.fn.colcade = function(g3) {
             if (typeof g3 == "string") {
               var w3 = Array.prototype.slice.call(arguments, 1);
-              return r2(this, g3, w3);
+              return i3(this, g3, w3);
             }
             return c2(this, g3), this;
           };
-          function r2(g3, w3, I3) {
+          function i3(g3, w3, I3) {
             var y;
             return g3.each(function(b4, j4) {
               var z3 = e.data(j4, "colcade");
@@ -195,28 +195,28 @@
             });
           }
         }, t.makeJQueryPlugin();
-        function d3(e, r2) {
-          for (var c2 in r2)
-            e[c2] = r2[c2];
+        function d3(e, i3) {
+          for (var c2 in i3)
+            e[c2] = i3[c2];
           return e;
         }
-        function o16(e) {
-          var r2 = [];
+        function l(e) {
+          var i3 = [];
           if (Array.isArray(e))
-            r2 = e;
+            i3 = e;
           else if (e && typeof e.length == "number")
             for (var c2 = 0; c2 < e.length; c2++)
-              r2.push(e[c2]);
+              i3.push(e[c2]);
           else
-            r2.push(e);
-          return r2;
+            i3.push(e);
+          return i3;
         }
-        function m3(e, r2) {
-          r2 = r2 || document;
-          var c2 = r2.querySelectorAll(e);
-          return o16(c2);
+        function h(e, i3) {
+          i3 = i3 || document;
+          var c2 = i3.querySelectorAll(e);
+          return l(c2);
         }
-        function h(e) {
+        function m3(e) {
           return typeof e == "string" && (e = document.querySelector(e)), e;
         }
         function _(e) {
@@ -229,225 +229,226 @@
         return t;
       });
     })($4);
-    var me3 = $4.exports;
-    function fe3(s2) {
-      const i3 = document.lazyLoadInstance;
+    var fe3 = $4.exports;
+    function ge3(r2) {
+      const n3 = document.lazyLoadInstance;
       if (window.location.origin !== "http://jsdom.ssr")
-        return i3.update(), {update(t) {
-          Ut.resetStatus(s2), i3.update();
+        return n3.update(), {update(t) {
+          Ut.resetStatus(r2), n3.update();
         }};
     }
-    function ge3(s2) {
-      let i3, t, n3, l, u3, a3, d3, o16 = s2[0].label + "", m3, h, _, e, r2, c2, g3, w3, I3, y, b4 = s2[0].label + "", j4, z3, M2, Q2;
+    function pe3(r2) {
+      let n3, t, a3, s2, u3, o16, d3, l = r2[0].label + "", h, m3, _, e, i3, c2, g3, w3, I3, y, b4 = r2[0].label + "", j4, z3, M2, Q2;
       return {c() {
-        i3 = xt("div"), t = xt("div"), n3 = xt("div"), l = xt("div"), u3 = xt("div"), a3 = xt("div"), d3 = xt("h5"), m3 = Ee(o16), h = Gt(), _ = xt("img"), w3 = Gt(), I3 = xt("div"), y = xt("h5"), j4 = Ee(b4), lt(d3, "class", "label"), lt(a3, "class", "label-container svelte-l6jqiu"), lt(u3, "class", "hover-container svelte-l6jqiu"), lt(_, "width", e = s2[0].width), lt(_, "height", r2 = s2[0].height), lt(_, "class", "image lazy svelte-l6jqiu"), lt(_, "data-src", c2 = s2[0].url), lt(_, "alt", ""), lt(l, "class", "image-container svelte-l6jqiu"), Ie(n3, "padding-bottom", s2[0].height / s2[0].width * 100 + "%"), lt(n3, "class", "aspect-ratio-box svelte-l6jqiu"), lt(y, "class", "label"), lt(I3, "class", "label-container svelte-l6jqiu"), lt(i3, "class", z3 = "item-container " + s2[2].category + " svelte-l6jqiu"), Qr(i3, "image-container-margin", s2[1] || s2[2].category === "design");
+        n3 = xt("div"), t = xt("div"), a3 = xt("div"), s2 = xt("div"), u3 = xt("div"), o16 = xt("div"), d3 = xt("h5"), h = Ee(l), m3 = Gt(), _ = xt("img"), w3 = Gt(), I3 = xt("div"), y = xt("h5"), j4 = Ee(b4), lt(d3, "class", "label"), lt(o16, "class", "label-container svelte-l6jqiu"), lt(u3, "class", "hover-container svelte-l6jqiu"), lt(_, "width", e = r2[0].width), lt(_, "height", i3 = r2[0].height), lt(_, "class", "image lazy svelte-l6jqiu"), lt(_, "data-src", c2 = r2[0].url), lt(_, "alt", ""), lt(s2, "class", "image-container svelte-l6jqiu"), Ie(a3, "padding-bottom", r2[0].height / r2[0].width * 100 + "%"), lt(a3, "class", "aspect-ratio-box svelte-l6jqiu"), lt(y, "class", "label"), lt(I3, "class", "label-container svelte-l6jqiu"), lt(n3, "class", z3 = "item-container " + r2[2].category + " svelte-l6jqiu"), Qr(n3, "image-container-margin", r2[1] || r2[2].category === "design");
       }, m(C3, k4) {
-        C(C3, i3, k4), fs(i3, t), fs(t, n3), fs(n3, l), fs(l, u3), fs(u3, a3), fs(a3, d3), fs(d3, m3), fs(l, h), fs(l, _), fs(t, w3), fs(t, I3), fs(I3, y), fs(y, j4), M2 || (Q2 = [us(g3 = fe3.call(null, _, s2[0].url)), Gr(i3, "click", s2[4])], M2 = true);
+        C(C3, n3, k4), fs(n3, t), fs(t, a3), fs(a3, s2), fs(s2, u3), fs(u3, o16), fs(o16, d3), fs(d3, h), fs(s2, m3), fs(s2, _), fs(t, w3), fs(t, I3), fs(I3, y), fs(y, j4), M2 || (Q2 = [us(g3 = ge3.call(null, _, r2[0].url)), Gr(n3, "click", r2[4])], M2 = true);
       }, p(C3, [k4]) {
-        k4 & 1 && o16 !== (o16 = C3[0].label + "") && Jr(m3, o16), k4 & 1 && e !== (e = C3[0].width) && lt(_, "width", e), k4 & 1 && r2 !== (r2 = C3[0].height) && lt(_, "height", r2), k4 & 1 && c2 !== (c2 = C3[0].url) && lt(_, "data-src", c2), g3 && X(g3.update) && k4 & 1 && g3.update.call(null, C3[0].url), k4 & 1 && Ie(n3, "padding-bottom", C3[0].height / C3[0].width * 100 + "%"), k4 & 1 && b4 !== (b4 = C3[0].label + "") && Jr(j4, b4), k4 & 4 && z3 !== (z3 = "item-container " + C3[2].category + " svelte-l6jqiu") && lt(i3, "class", z3), k4 & 6 && Qr(i3, "image-container-margin", C3[1] || C3[2].category === "design");
+        k4 & 1 && l !== (l = C3[0].label + "") && Jr(h, l), k4 & 1 && e !== (e = C3[0].width) && lt(_, "width", e), k4 & 1 && i3 !== (i3 = C3[0].height) && lt(_, "height", i3), k4 & 1 && c2 !== (c2 = C3[0].url) && lt(_, "data-src", c2), g3 && X(g3.update) && k4 & 1 && g3.update.call(null, C3[0].url), k4 & 1 && Ie(a3, "padding-bottom", C3[0].height / C3[0].width * 100 + "%"), k4 & 1 && b4 !== (b4 = C3[0].label + "") && Jr(j4, b4), k4 & 4 && z3 !== (z3 = "item-container " + C3[2].category + " svelte-l6jqiu") && lt(n3, "class", z3), k4 & 6 && Qr(n3, "image-container-margin", C3[1] || C3[2].category === "design");
       }, i: $, o: $, d(C3) {
-        C3 && S(i3), M2 = false, D(Q2);
+        C3 && S(n3), M2 = false, D(Q2);
       }};
     }
-    function ve3(s2, i3, t) {
-      let n3, l;
-      tt(s2, ii, (o16) => t(2, n3 = o16)), tt(s2, f, (o16) => t(3, l = o16));
-      let {img: u3} = i3, {modal: a3} = i3;
+    function ve3(r2, n3, t) {
+      let a3, s2;
+      tt(r2, ii, (l) => t(2, a3 = l)), tt(r2, f, (l) => t(3, s2 = l));
+      let {img: u3} = n3, {modal: o16} = n3;
       const d3 = () => {
-        ["private-homes", "multi-units"].includes(n3.pages) ? f.openModal(u3, "spec") : f.openModal(u3, "basic"), u3.label.replace(/\s/g, ""), fetch(`${window.location.origin === "http://jsdom.ssr" ? "http://localhost:9999" : window.location.origin}/.netlify/functions/get-full-images/?category=${n3.pages}&property=${l.selected.key}`).then((m3) => m3.json()).then(async (m3) => {
-          ls(f, l.images = m3, l), await Te();
+        ["private-homes", "multi-units"].includes(a3.pages) ? f.openModal(u3, "spec") : f.openModal(u3, "basic"), u3.label.replace(/\s/g, ""), fetch(`${window.location.origin === "http://jsdom.ssr" ? "http://localhost:9999" : window.location.origin}/.netlify/functions/get-full-images/?category=${a3.pages}&property=${s2.selected.key}`).then((h) => h.json()).then(async (h) => {
+          ls(f, s2.images = h, s2), await Te();
         });
       };
-      return s2.$$set = (o16) => {
-        "img" in o16 && t(0, u3 = o16.img), "modal" in o16 && t(1, a3 = o16.modal);
-      }, [u3, a3, n3, l, d3];
+      return r2.$$set = (l) => {
+        "img" in l && t(0, u3 = l.img), "modal" in l && t(1, o16 = l.modal);
+      }, [u3, o16, a3, s2, d3];
     }
     var x2 = class extends Rt {
-      constructor(i3) {
+      constructor(n3) {
         super();
-        St(this, i3, ve3, ge3, at, {img: 0, modal: 1});
+        St(this, n3, ve3, pe3, at, {img: 0, modal: 1});
       }
     };
-    function ee3(s2, i3, t) {
-      const n3 = s2.slice();
-      return n3[9] = i3[t], n3;
+    function ee3(r2, n3, t) {
+      const a3 = r2.slice();
+      return a3[10] = n3[t], a3;
     }
-    function te3(s2, i3, t) {
-      const n3 = s2.slice();
-      return n3[9] = i3[t], n3;
+    function te3(r2, n3, t) {
+      const a3 = r2.slice();
+      return a3[10] = n3[t], a3;
     }
-    function pe3(s2) {
-      let i3, t, n3 = s2[2], l = [];
-      for (let a3 = 0; a3 < n3.length; a3 += 1)
-        l[a3] = ie3(ee3(s2, n3, a3));
-      const u3 = (a3) => k(l[a3], 1, 1, () => {
-        l[a3] = null;
+    function _e3(r2) {
+      let n3, t, a3 = r2[2], s2 = [];
+      for (let o16 = 0; o16 < a3.length; o16 += 1)
+        s2[o16] = ie3(ee3(r2, a3, o16));
+      const u3 = (o16) => k(s2[o16], 1, 1, () => {
+        s2[o16] = null;
       });
       return {c() {
-        i3 = xt("div");
-        for (let a3 = 0; a3 < l.length; a3 += 1)
-          l[a3].c();
-        lt(i3, "class", "na-masonry-container svelte-kc6cgm");
-      }, m(a3, d3) {
-        C(a3, i3, d3);
-        for (let o16 = 0; o16 < l.length; o16 += 1)
-          l[o16].m(i3, null);
+        n3 = xt("div");
+        for (let o16 = 0; o16 < s2.length; o16 += 1)
+          s2[o16].c();
+        lt(n3, "class", "na-masonry-container svelte-kc6cgm");
+      }, m(o16, d3) {
+        C(o16, n3, d3);
+        for (let l = 0; l < s2.length; l += 1)
+          s2[l].m(n3, null);
         t = true;
-      }, p(a3, d3) {
+      }, p(o16, d3) {
         if (d3 & 15) {
-          n3 = a3[2];
-          let o16;
-          for (o16 = 0; o16 < n3.length; o16 += 1) {
-            const m3 = ee3(a3, n3, o16);
-            l[o16] ? (l[o16].p(m3, d3), w(l[o16], 1)) : (l[o16] = ie3(m3), l[o16].c(), w(l[o16], 1), l[o16].m(i3, null));
+          a3 = o16[2];
+          let l;
+          for (l = 0; l < a3.length; l += 1) {
+            const h = ee3(o16, a3, l);
+            s2[l] ? (s2[l].p(h, d3), w(s2[l], 1)) : (s2[l] = ie3(h), s2[l].c(), w(s2[l], 1), s2[l].m(n3, null));
           }
-          for (st(), o16 = n3.length; o16 < l.length; o16 += 1)
-            u3(o16);
+          for (st(), l = a3.length; l < s2.length; l += 1)
+            u3(l);
           ot();
         }
-      }, i(a3) {
+      }, i(o16) {
         if (!t) {
-          for (let d3 = 0; d3 < n3.length; d3 += 1)
-            w(l[d3]);
+          for (let d3 = 0; d3 < a3.length; d3 += 1)
+            w(s2[d3]);
           t = true;
         }
-      }, o(a3) {
-        l = l.filter(Boolean);
-        for (let d3 = 0; d3 < l.length; d3 += 1)
-          k(l[d3]);
+      }, o(o16) {
+        s2 = s2.filter(Boolean);
+        for (let d3 = 0; d3 < s2.length; d3 += 1)
+          k(s2[d3]);
         t = false;
-      }, d(a3) {
-        a3 && S(i3), Vr(l, a3);
+      }, d(o16) {
+        o16 && S(n3), Vr(s2, o16);
       }};
     }
-    function _e3(s2) {
-      let i3, t, n3, l, u3, a3, d3, o16, m3 = s2[2], h = [];
-      for (let e = 0; e < m3.length; e += 1)
-        h[e] = ne3(te3(s2, m3, e));
-      const _ = (e) => k(h[e], 1, 1, () => {
-        h[e] = null;
+    function ye3(r2) {
+      let n3, t, a3, s2, u3, o16, d3, l, h = r2[2], m3 = [];
+      for (let e = 0; e < h.length; e += 1)
+        m3[e] = ne3(te3(r2, h, e));
+      const _ = (e) => k(m3[e], 1, 1, () => {
+        m3[e] = null;
       });
       return {c() {
-        i3 = xt("div"), t = xt("div"), n3 = Gt(), l = xt("div"), u3 = Gt(), a3 = xt("div"), d3 = Gt();
-        for (let e = 0; e < h.length; e += 1)
-          h[e].c();
-        lt(t, "class", "grid-col grid-col--1 svelte-kc6cgm"), lt(l, "class", "grid-col grid-col--2 svelte-kc6cgm"), lt(a3, "class", "grid-col grid-col--3 svelte-kc6cgm"), lt(i3, "class", "container masonry-container svelte-kc6cgm");
-      }, m(e, r2) {
-        C(e, i3, r2), fs(i3, t), fs(i3, n3), fs(i3, l), fs(i3, u3), fs(i3, a3), fs(i3, d3);
-        for (let c2 = 0; c2 < h.length; c2 += 1)
-          h[c2].m(i3, null);
-        s2[6](i3), o16 = true;
-      }, p(e, r2) {
-        if (r2 & 15) {
-          m3 = e[2];
+        n3 = xt("div"), t = xt("div"), a3 = Gt(), s2 = xt("div"), u3 = Gt(), o16 = xt("div"), d3 = Gt();
+        for (let e = 0; e < m3.length; e += 1)
+          m3[e].c();
+        lt(t, "class", "grid-col grid-col--1 svelte-kc6cgm"), lt(s2, "class", "grid-col grid-col--2 svelte-kc6cgm"), lt(o16, "class", "grid-col grid-col--3 svelte-kc6cgm"), lt(n3, "class", "container masonry-container svelte-kc6cgm");
+      }, m(e, i3) {
+        C(e, n3, i3), fs(n3, t), fs(n3, a3), fs(n3, s2), fs(n3, u3), fs(n3, o16), fs(n3, d3);
+        for (let c2 = 0; c2 < m3.length; c2 += 1)
+          m3[c2].m(n3, null);
+        r2[6](n3), l = true;
+      }, p(e, i3) {
+        if (i3 & 15) {
+          h = e[2];
           let c2;
-          for (c2 = 0; c2 < m3.length; c2 += 1) {
-            const g3 = te3(e, m3, c2);
-            h[c2] ? (h[c2].p(g3, r2), w(h[c2], 1)) : (h[c2] = ne3(g3), h[c2].c(), w(h[c2], 1), h[c2].m(i3, null));
+          for (c2 = 0; c2 < h.length; c2 += 1) {
+            const g3 = te3(e, h, c2);
+            m3[c2] ? (m3[c2].p(g3, i3), w(m3[c2], 1)) : (m3[c2] = ne3(g3), m3[c2].c(), w(m3[c2], 1), m3[c2].m(n3, null));
           }
-          for (st(), c2 = m3.length; c2 < h.length; c2 += 1)
+          for (st(), c2 = h.length; c2 < m3.length; c2 += 1)
             _(c2);
           ot();
         }
       }, i(e) {
-        if (!o16) {
-          for (let r2 = 0; r2 < m3.length; r2 += 1)
-            w(h[r2]);
-          o16 = true;
+        if (!l) {
+          for (let i3 = 0; i3 < h.length; i3 += 1)
+            w(m3[i3]);
+          l = true;
         }
       }, o(e) {
-        h = h.filter(Boolean);
-        for (let r2 = 0; r2 < h.length; r2 += 1)
-          k(h[r2]);
-        o16 = false;
+        m3 = m3.filter(Boolean);
+        for (let i3 = 0; i3 < m3.length; i3 += 1)
+          k(m3[i3]);
+        l = false;
       }, d(e) {
-        e && S(i3), Vr(h, e), s2[6](null);
+        e && S(n3), Vr(m3, e), r2[6](null);
       }};
     }
-    function ie3(s2) {
-      let i3, t, n3, l;
-      return t = new x2({props: {modal: s2[0], masonry: s2[3], img: s2[9], grid: s2[1]}}), {c() {
-        i3 = xt("div"), K(t.$$.fragment), n3 = Gt(), lt(i3, "class", "na-image-container");
-      }, m(u3, a3) {
-        C(u3, i3, a3), H(t, i3, null), fs(i3, n3), l = true;
-      }, p(u3, a3) {
+    function ie3(r2) {
+      let n3, t, a3, s2;
+      return t = new x2({props: {modal: r2[0], masonry: r2[3], img: r2[10], grid: r2[1]}}), {c() {
+        n3 = xt("div"), K(t.$$.fragment), a3 = Gt(), lt(n3, "class", "na-image-container");
+      }, m(u3, o16) {
+        C(u3, n3, o16), H(t, n3, null), fs(n3, a3), s2 = true;
+      }, p(u3, o16) {
         const d3 = {};
-        a3 & 1 && (d3.modal = u3[0]), a3 & 4 && (d3.img = u3[9]), a3 & 2 && (d3.grid = u3[1]), t.$set(d3);
+        o16 & 1 && (d3.modal = u3[0]), o16 & 4 && (d3.img = u3[10]), o16 & 2 && (d3.grid = u3[1]), t.$set(d3);
       }, i(u3) {
-        l || (w(t.$$.fragment, u3), l = true);
+        s2 || (w(t.$$.fragment, u3), s2 = true);
       }, o(u3) {
-        k(t.$$.fragment, u3), l = false;
+        k(t.$$.fragment, u3), s2 = false;
       }, d(u3) {
-        u3 && S(i3), B(t);
+        u3 && S(n3), B(t);
       }};
     }
-    function ne3(s2) {
-      let i3, t, n3, l;
-      return t = new x2({props: {modal: s2[0], masonry: s2[3], img: s2[9], grid: s2[1]}}), {c() {
-        i3 = xt("div"), K(t.$$.fragment), n3 = Gt(), lt(i3, "class", "grid-item");
-      }, m(u3, a3) {
-        C(u3, i3, a3), H(t, i3, null), fs(i3, n3), l = true;
-      }, p(u3, a3) {
+    function ne3(r2) {
+      let n3, t, a3, s2;
+      return t = new x2({props: {modal: r2[0], masonry: r2[3], img: r2[10], grid: r2[1]}}), {c() {
+        n3 = xt("div"), K(t.$$.fragment), a3 = Gt(), lt(n3, "class", "grid-item");
+      }, m(u3, o16) {
+        C(u3, n3, o16), H(t, n3, null), fs(n3, a3), s2 = true;
+      }, p(u3, o16) {
         const d3 = {};
-        a3 & 1 && (d3.modal = u3[0]), a3 & 4 && (d3.img = u3[9]), a3 & 2 && (d3.grid = u3[1]), t.$set(d3);
+        o16 & 1 && (d3.modal = u3[0]), o16 & 4 && (d3.img = u3[10]), o16 & 2 && (d3.grid = u3[1]), t.$set(d3);
       }, i(u3) {
-        l || (w(t.$$.fragment, u3), l = true);
+        s2 || (w(t.$$.fragment, u3), s2 = true);
       }, o(u3) {
-        k(t.$$.fragment, u3), l = false;
+        k(t.$$.fragment, u3), s2 = false;
       }, d(u3) {
-        u3 && S(i3), B(t);
+        u3 && S(n3), B(t);
       }};
     }
-    function ye3(s2) {
-      let i3, t, n3, l;
-      const u3 = [_e3, pe3], a3 = [];
-      function d3(o16, m3) {
-        return o16[2].length >= 4 ? 0 : 1;
+    function we3(r2) {
+      let n3, t, a3, s2;
+      const u3 = [ye3, _e3], o16 = [];
+      function d3(l, h) {
+        return l[2].length >= 4 ? 0 : 1;
       }
-      return t = d3(s2), n3 = a3[t] = u3[t](s2), {c() {
-        i3 = xt("div"), n3.c(), lt(i3, "class", "wrapper svelte-kc6cgm");
-      }, m(o16, m3) {
-        C(o16, i3, m3), a3[t].m(i3, null), l = true;
-      }, p(o16, [m3]) {
-        let h = t;
-        t = d3(o16), t === h ? a3[t].p(o16, m3) : (st(), k(a3[h], 1, 1, () => {
-          a3[h] = null;
-        }), ot(), n3 = a3[t], n3 ? n3.p(o16, m3) : (n3 = a3[t] = u3[t](o16), n3.c()), w(n3, 1), n3.m(i3, null));
-      }, i(o16) {
-        l || (w(n3), l = true);
-      }, o(o16) {
-        k(n3), l = false;
-      }, d(o16) {
-        o16 && S(i3), a3[t].d();
+      return t = d3(r2), a3 = o16[t] = u3[t](r2), {c() {
+        n3 = xt("div"), a3.c(), lt(n3, "class", "wrapper svelte-kc6cgm");
+      }, m(l, h) {
+        C(l, n3, h), o16[t].m(n3, null), s2 = true;
+      }, p(l, [h]) {
+        let m3 = t;
+        t = d3(l), t === m3 ? o16[t].p(l, h) : (st(), k(o16[m3], 1, 1, () => {
+          o16[m3] = null;
+        }), ot(), a3 = o16[t], a3 ? a3.p(l, h) : (a3 = o16[t] = u3[t](l), a3.c()), w(a3, 1), a3.m(n3, null));
+      }, i(l) {
+        s2 || (w(a3), s2 = true);
+      }, o(l) {
+        k(a3), s2 = false;
+      }, d(l) {
+        l && S(n3), o16[t].d();
       }};
     }
-    function we3(s2, i3, t) {
-      let n3, l, u3;
-      tt(s2, ii, (e) => t(7, l = e)), tt(s2, b, (e) => t(5, u3 = e));
-      let {modal: a3} = i3, d3, o16 = [];
+    function Ce3(r2, n3, t) {
+      let a3, s2, u3, o16;
+      tt(r2, ri, (i3) => t(7, s2 = i3)), tt(r2, ii, (i3) => t(8, u3 = i3)), tt(r2, b, (i3) => t(5, o16 = i3));
+      let {modal: d3} = n3, l, h = [];
       Zr(() => {
       });
       let m3;
-      function h() {
-        fetch(`${window.location.origin}/.netlify/functions/images/?category=${l.pages}`).then((e) => e.json()).then(async (e) => {
-          t(2, o16 = e), await Te(), o16.length >= 4 && new me3(d3, {columns: ".grid-col", items: ".grid-item"});
+      function _() {
+        fetch(`${window.location.origin}/.netlify/functions/images/?category=${u3.pages}`).then((i3) => i3.json()).then(async (i3) => {
+          t(2, h = i3), await Te(), h.length >= 4 && new fe3(l, {columns: ".grid-col", items: ".grid-item"});
         });
       }
-      function _(e) {
-        Re[e ? "unshift" : "push"](() => {
-          d3 = e, t(1, d3);
+      s2();
+      function e(i3) {
+        Re[i3 ? "unshift" : "push"](() => {
+          l = i3, t(1, l);
         });
       }
-      return s2.$$set = (e) => {
-        "modal" in e && t(0, a3 = e.modal);
-      }, s2.$$.update = () => {
-        s2.$$.dirty & 32 && t(4, {page: n3} = u3, n3), s2.$$.dirty & 16 && h();
-      }, [a3, d3, o16, m3, n3, u3, _];
+      return r2.$$set = (i3) => {
+        "modal" in i3 && t(0, d3 = i3.modal);
+      }, r2.$$.update = () => {
+        r2.$$.dirty & 32 && t(4, {page: a3} = o16, a3), r2.$$.dirty & 16 && _();
+      }, [d3, l, h, m3, a3, o16, e];
     }
-    var Ie3 = class extends Rt {
-      constructor(i3) {
+    var qe3 = class extends Rt {
+      constructor(n3) {
         super();
-        St(this, i3, we3, ye3, at, {modal: 0});
+        St(this, n3, Ce3, we3, at, {modal: 0});
       }
     };
   });
@@ -2003,8 +2004,8 @@
     };
   });
 
-  // dist/assets/_layout.4becabb6.js
-  var require_layout_4becabb6 = __commonJS((exports) => {
+  // dist/assets/_layout.435f3968.js
+  var require_layout_435f3968 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => U3
@@ -2045,16 +2046,16 @@
       }
       return p3 && (t = new p3($4())), {c() {
         e = xt("div"), K(n3.$$.fragment), i3 = Gt(), a3 = xt("div"), t && K(t.$$.fragment), lt(a3, "class", "page-container svelte-thyq0b"), lt(e, "class", "page-content-container page-content-container-anim svelte-thyq0b");
-      }, m(s2, l) {
-        C(s2, e, l), H(n3, e, null), fs(e, i3), fs(e, a3), t && H(t, a3, null), m3 = true;
-      }, p(s2, [l]) {
-        const P = {};
-        if (l & 1 && (P.pages = s2[0]), n3.$set(P), p3 !== (p3 = s2[1])) {
+      }, m(s2, c2) {
+        C(s2, e, c2), H(n3, e, null), fs(e, i3), fs(e, a3), t && H(t, a3, null), m3 = true;
+      }, p(s2, [c2]) {
+        const b4 = {};
+        if (c2 & 1 && (b4.pages = s2[0]), n3.$set(b4), p3 !== (p3 = s2[1])) {
           if (t) {
             st();
-            const T2 = t;
-            k(T2.$$.fragment, 1, 0, () => {
-              B(T2, 1);
+            const P = t;
+            k(P.$$.fragment, 1, 0, () => {
+              B(P, 1);
             }), ot();
           }
           p3 ? (t = new p3($4()), K(t.$$.fragment), w(t.$$.fragment, 1), H(t, a3, null)) : t = null;
@@ -2076,7 +2077,7 @@
       let i3, a3;
       tt(r2, ii, (p3) => n3(2, a3 = p3));
       let t;
-      const _ = {"private-homes": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_2312de3a()), ["assets/MasonryGallery.2312de3a.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), "multi-units": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_2312de3a()), ["assets/MasonryGallery.2312de3a.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), concept: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_2312de3a()), ["assets/MasonryGallery.2312de3a.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), sculptures: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_2312de3a()), ["assets/MasonryGallery.2312de3a.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), "meet-amit-apel": async () => o15(() => Promise.resolve().then(() => require_MeetAmitApel_2b104951()), ["assets/MeetAmitApel.2b104951.js", "assets/vendor.e1944527.js"]), "meet-the-team": async () => o15(() => Promise.resolve().then(() => require_MeetTheTeam_420b5ec0()), ["assets/MeetTheTeam.420b5ec0.js", "assets/vendor.e1944527.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]), press: async () => o15(() => Promise.resolve().then(() => require_Press_808f6f07()), ["assets/Press.808f6f07.js", "assets/vendor.e1944527.js", "assets/index.e6e77149.js"]), "contact-us": async () => o15(() => Promise.resolve().then(() => require_Contact_3d509989()), ["assets/Contact.3d509989.js", "assets/vendor.e1944527.js"]), furniture: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_2312de3a()), ["assets/MasonryGallery.2312de3a.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), "malibu-rebuild": async () => o15(() => Promise.resolve().then(() => require_MalibuRebuild_81ef3f46()), ["assets/MalibuRebuild.81ef3f46.js", "assets/vendor.e1944527.js"]), "what-we-do": async () => o15(() => Promise.resolve().then(() => require_WhatWeDo_7821ca72()), ["assets/WhatWeDo.7821ca72.js", "assets/vendor.e1944527.js"]), aviator: async () => o15(() => Promise.resolve().then(() => require_Developments_63c61d72()), ["assets/Developments.63c61d72.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js"]), maliview: async () => o15(() => Promise.resolve().then(() => require_Developments_63c61d72()), ["assets/Developments.63c61d72.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js"]), map: async () => o15(() => Promise.resolve().then(() => require_Map_44f83f36()), ["assets/Map.44f83f36.js", "assets/vendor.e1944527.js"])}, m3 = async (p3) => {
+      const _ = {"private-homes": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), "multi-units": async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), concept: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), sculptures: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), "meet-amit-apel": async () => o15(() => Promise.resolve().then(() => require_MeetAmitApel_2b104951()), ["assets/MeetAmitApel.2b104951.js", "assets/vendor.e1944527.js"]), "meet-the-team": async () => o15(() => Promise.resolve().then(() => require_MeetTheTeam_420b5ec0()), ["assets/MeetTheTeam.420b5ec0.js", "assets/vendor.e1944527.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]), press: async () => o15(() => Promise.resolve().then(() => require_Press_808f6f07()), ["assets/Press.808f6f07.js", "assets/vendor.e1944527.js", "assets/index.e6e77149.js"]), "contact-us": async () => o15(() => Promise.resolve().then(() => require_Contact_3d509989()), ["assets/Contact.3d509989.js", "assets/vendor.e1944527.js"]), furniture: async () => o15(() => Promise.resolve().then(() => require_MasonryGallery_c9a163b1()), ["assets/MasonryGallery.c9a163b1.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js"]), "malibu-rebuild": async () => o15(() => Promise.resolve().then(() => require_MalibuRebuild_81ef3f46()), ["assets/MalibuRebuild.81ef3f46.js", "assets/vendor.e1944527.js"]), "what-we-do": async () => o15(() => Promise.resolve().then(() => require_WhatWeDo_7821ca72()), ["assets/WhatWeDo.7821ca72.js", "assets/vendor.e1944527.js"]), aviator: async () => o15(() => Promise.resolve().then(() => require_Developments_63c61d72()), ["assets/Developments.63c61d72.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js"]), maliview: async () => o15(() => Promise.resolve().then(() => require_Developments_63c61d72()), ["assets/Developments.63c61d72.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js"]), map: async () => o15(() => Promise.resolve().then(() => require_Map_44f83f36()), ["assets/Map.44f83f36.js", "assets/vendor.e1944527.js"])}, m3 = async (p3) => {
         p3 && (b.setPage(p3), n3(1, t = (await _[p3]()).default));
       };
       return r2.$$.update = () => {
@@ -5580,7 +5581,7 @@
     return n3;
   }
 
-  // dist/assets/index.96d55244.js
+  // dist/assets/index.33309e4b.js
   var R4 = function() {
     const t = document.createElement("link").relList;
     return t && t.supports && t.supports("modulepreload") ? "modulepreload" : "preload";
@@ -7416,12 +7417,12 @@
   var W3 = x({});
   var z2 = x({duration: 4e3});
 
-  // dist/assets/index.96d55244.js
-  var b3 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => o15(() => Promise.resolve().then(() => require_fallback_1421d854()), ["assets/_fallback.1421d854.js", "assets/vendor.e1944527.js"]).then((e) => e.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, path: "/:category/:pages/index", id: "__category__pages_index", component: () => o15(() => Promise.resolve().then(() => require_index_864edcd6()), ["assets/index.864edcd6.js", "assets/vendor.e1944527.js"]).then((e) => e.default)}], isLayout: true, path: "/:category/:pages", id: "__category__pages__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_4becabb6()), ["assets/_layout.4becabb6.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js"]).then((e) => e.default)}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/index", id: "__category_index", component: () => o15(() => Promise.resolve().then(() => require_index_6a05038b()), ["assets/index.6a05038b.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]).then((e) => e.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category", id: "__category__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_4cce746c()), ["assets/_layout.4cce746c.js", "assets/vendor.e1944527.js", "assets/crossfade.dd4a75f8.js", "assets/store.24c541cf.js", "assets/marqueeHandlerStore.6791448c.js"]).then((e) => e.default)}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => o15(() => Promise.resolve().then(() => require_index_f5946c52()), ["assets/index.f5946c52.js", "assets/vendor.e1944527.js"]).then((e) => e.default)}], isLayout: true, path: "/", id: "__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_52c6ed68()), ["assets/_layout.52c6ed68.js", "assets/vendor.e1944527.js", "assets/index.e6e77149.js", "assets/crossfade.dd4a75f8.js", "assets/marqueeHandlerStore.6791448c.js"]).then((e) => e.default)};
-  var {tree: k3, routes: A2} = li(b3);
-  function D3(e) {
+  // dist/assets/index.33309e4b.js
+  var A2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => o15(() => Promise.resolve().then(() => require_fallback_1421d854()), ["assets/_fallback.1421d854.js", "assets/vendor.e1944527.js"]).then((e) => e.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, path: "/:category/:pages/index", id: "__category__pages_index", component: () => o15(() => Promise.resolve().then(() => require_index_864edcd6()), ["assets/index.864edcd6.js", "assets/vendor.e1944527.js"]).then((e) => e.default)}], isLayout: true, path: "/:category/:pages", id: "__category__pages__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_435f3968()), ["assets/_layout.435f3968.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js"]).then((e) => e.default)}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/index", id: "__category_index", component: () => o15(() => Promise.resolve().then(() => require_index_6a05038b()), ["assets/index.6a05038b.js", "assets/vendor.e1944527.js", "assets/marqueeHandlerStore.6791448c.js", "assets/store.24c541cf.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]).then((e) => e.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category", id: "__category__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_4cce746c()), ["assets/_layout.4cce746c.js", "assets/vendor.e1944527.js", "assets/crossfade.dd4a75f8.js", "assets/store.24c541cf.js", "assets/marqueeHandlerStore.6791448c.js"]).then((e) => e.default)}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => o15(() => Promise.resolve().then(() => require_index_f5946c52()), ["assets/index.f5946c52.js", "assets/vendor.e1944527.js"]).then((e) => e.default)}], isLayout: true, path: "/", id: "__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_52c6ed68()), ["assets/_layout.52c6ed68.js", "assets/vendor.e1944527.js", "assets/index.e6e77149.js", "assets/crossfade.dd4a75f8.js", "assets/marqueeHandlerStore.6791448c.js"]).then((e) => e.default)};
+  var {tree: k3, routes: D3} = li(A2);
+  function b3(e) {
     let t, n3;
-    return t = new ci({props: {routes: A2}}), {c() {
+    return t = new ci({props: {routes: D3}}), {c() {
       K(t.$$.fragment);
     }, m(r2, s2) {
       H(t, r2, s2), n3 = true;
@@ -7441,7 +7442,7 @@
   var O4 = class extends Rt {
     constructor(t) {
       super();
-      St(this, t, j3, D3, at, {});
+      St(this, t, j3, b3, at, {});
     }
   };
   qr(O4, {target: document.body}, "routify-app");

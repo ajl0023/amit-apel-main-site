@@ -28,6 +28,7 @@
         }
       });
   }
+  $ready();
   $: page, fetchImages();
 </script>
 
