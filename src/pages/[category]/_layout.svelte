@@ -9,18 +9,7 @@
 
   import Navbar from "./_components/Navbar/Navbar.svelte";
   import { marqueeHandlerStore } from "./_stores/marqueeHandlerStore";
-  onMount(() => {
-    window.addEventListener("keydown", (e) => {
-      {
-        if (e.key === "z") {
-          $goto("./private-homes");
-        }
-        if (e.key === "x") {
-          $goto("./multi-units");
-        }
-      }
-    });
-  });
+
   const { receive, send } = $transition;
   onMount(() => {
     marqueeHandlerStore.setCategory($params.category);
