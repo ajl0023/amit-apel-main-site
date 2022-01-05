@@ -1,14 +1,9 @@
 <script>
-  import { goto,params } from "@roxi/routify";
+  import { goto, params } from "@roxi/routify";
   import { pageLayoutMaster } from "../../../../pageLayout";
   import { marqueeHandlerStore } from "../../_stores/marqueeHandlerStore";
   import LeftArrow from "./LeftArrow.svelte";
-
-  let categoryDetails =
-    pageLayoutMaster["categories"]["byTitle"][$params.category];
-  const pagesArr = categoryDetails.pages.map((page) => {
-    return pageLayoutMaster["pages"]["byTitle"][page.key];
-  });
+  import ListIcon from "./images/ListIcon.svelte";
 </script>
 
 <div class="top-nav-container">
@@ -24,35 +19,23 @@
         alt=""
       />
     </div>
-
-    <LeftArrow />
-  </div>
-  {#if $params.pages}
-    <div class="nav-bottom">
-      <ul class="nav-alt-list">
-        {#each pagesArr as title}
-          <li
-            on:click="{() => {
-              $goto(`./${title.urlFormatted}`);
-
-              marqueeHandlerStore.setPage(title.urlFormatted);
-            }}"
-            class="list-item"
-          >
-            <h4
-              class="page-title"
-              class:underline="{title.urlFormatted === $params.pages}"
-            >
-              {title.title}
-            </h4>
-          </li>
-        {/each}
-      </ul>
+    <div class="icon-container">
+      <LeftArrow />{#if $params.pages}
+        <ListIcon />
+      {/if}
     </div>
-  {/if}
+  </div>
 </div>
 
 <style lang="scss">
+  .icon-container {
+    position: absolute;
+    left: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .top-nav-container {
     width: 100%;
     background-color: rgb(111, 63, 138);
@@ -81,31 +64,6 @@
 
       justify-content: center;
       align-items: center;
-    }
-    .nav-bottom {
-      margin-right: -20px;
-      margin-top: 10px;
-      .nav-alt-list {
-        .underline {
-          &:after {
-            content: "";
-            display: block;
-            height: 2px;
-            width: 100%;
-            background-color: white;
-          }
-        }
-        font-family: "Fira Sans Condensed", sans-serif;
-        text-transform: uppercase;
-        color: white;
-        display: flex;
-        list-style: none;
-        .list-item {
-          cursor: pointer;
-          font-size: 1.3em;
-          margin-right: 20px;
-        }
-      }
     }
   }
 </style>

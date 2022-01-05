@@ -31,39 +31,39 @@
   <div class="container">
     <div class="card-layout-container">
       <div class="card-outline aspect-ratio">
-        <div class="three-by-two aspect-ratio" />
-        <div bind:this={outline} class="card-outline" />
+        <div class="three-by-two aspect-ratio"></div>
+        <div bind:this="{outline}" class="card-outline"></div>
       </div>
       <div
-        on:click={() => {
+        on:click="{() => {
           cardStore.manualExit();
-        }}
+        }}"
         class="arrow-image-container"
       >
         <img
-          src={"https://res.cloudinary.com/dt4xntymn/image/upload/v1638853734/mainSite/meet%20the%20team/cardArrow_lz4ufg.png"}
+          src="{'https://res.cloudinary.com/dt4xntymn/image/upload/v1638853734/mainSite/meet%20the%20team/cardArrow_lz4ufg.png'}"
           alt=""
         />
       </div>
       <div draggable="false" class="aspect-ratio">
-        <ul bind:this={stack} class="card-wrapper">
+        <ul bind:this="{stack}" class="card-wrapper">
           {#each cardImages as card, i}
             <Card
-              {observer}
-              {stack}
-              {outline}
-              {dropPosition}
-              shouldReturn={false}
-              index={i}
-              image={{
+              observer="{observer}"
+              stack="{stack}"
+              outline="{outline}"
+              dropPosition="{dropPosition}"
+              shouldReturn="{false}"
+              index="{i}"
+              image="{{
                 front: card.front,
                 back: card.back,
-              }}
-              rotate={rotatedCards.includes(i) ? i * 2 : 0}
+              }}"
+              rotate="{rotatedCards.includes(i) ? i * 2 : 0}"
             />
           {/each}
         </ul>
-        <div class="three-by-two aspect-ratio" />
+        <div class="three-by-two aspect-ratio"></div>
       </div>
     </div>
   </div>
