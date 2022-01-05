@@ -1,5 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-  ><path d="M0 0h24v24H0z"></path><path
+<svg class="arrow" style="width:24px;height:24px" viewBox="0 0 24 24">
+  <path
     fill="white"
-    d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg
->
+    d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"></path>
+</svg>
+
+<style lang="scss">
+  .arrow {
+    position: relative;
+
+  }
+</style>

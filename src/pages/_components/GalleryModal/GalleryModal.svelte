@@ -80,6 +80,10 @@
       </span>
     </div>
   </div>
+  <!-- Assume this is where your nav menu is -->
+  <footer class="safe-bottom">
+    <!-- More stuff... -->
+  </footer>
 </div>
 
 <style lang="scss">
