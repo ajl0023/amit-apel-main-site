@@ -147,7 +147,7 @@
     margin: auto;
 
     overflow-y: auto;
-
+    overflow-x: hidden;
     .main-image-container {
       position: relative;
       width: 100%;
@@ -185,16 +185,23 @@
     font-family: "Fira Sans Condensed", sans-serif;
   }
   .control.right {
-    right: -2vw;
+    right: -40px;
     top: 0;
     bottom: 0;
     margin: auto;
+    @media screen and (max-width: 990px) {
+      right: 20px;
+    }
   }
   .control.left {
-    left: -2vw;
+    left: -40px;
     top: 0;
     bottom: 0;
     margin: auto;
+    z-index: 1;
+    @media screen and (max-width: 990px) {
+      left: 20px;
+    }
   }
 
   .control {
