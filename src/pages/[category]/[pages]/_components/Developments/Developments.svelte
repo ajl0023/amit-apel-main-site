@@ -1,9 +1,15 @@
 <script>
   import { params, ready } from "@roxi/routify";
-  import { onMount } from "svelte";
+  import { onDestroy, onMount } from "svelte";
   import { pageLayoutMaster } from "../../../../../pageLayout";
+  import { marqueeHandlerStore } from "../../../_stores/marqueeHandlerStore";
 
-  const pageDetails = pageLayoutMaster["pages"]["byTitle"][$params.pages];
+  let pageDetails;
+
+  $: {
+    pageDetails =
+      pageLayoutMaster["pages"]["byTitle"][$marqueeHandlerStore.page];
+  }
   function reDirect(e) {
     e.preventDefault();
 
@@ -14,27 +20,29 @@
   });
 </script>
 
-<div class="page-container" />
-<div class="container">
-  <div class="left-page">
-    <div class="header-container">
-      <h5 class="main-header">
-        Project, <span class="property-header">{$params.pages}</span>
-      </h5>
-    </div>
-    <div class="text-wrapper">
-      <div class="text-content-container">
-        <p class="description">
-          {pageDetails.data.description}
-        </p>
+{#if pageDetails.data}
+  <div class="page-container"></div>
+  <div class="container">
+    <div class="left-page">
+      <div class="header-container">
+        <h5 class="main-header">
+          Project, <span class="property-header">{$params.pages}</span>
+        </h5>
       </div>
+      <div class="text-wrapper">
+        <div class="text-content-container">
+          <p class="description">
+            {pageDetails.data.description}
+          </p>
+        </div>
+      </div>
+      <button on:click="{reDirect}" class="redirect-button">visit site</button>
     </div>
-    <button on:click={reDirect} class="redirect-button">visit site</button>
+    <div class="main-image-container">
+      <img class="main-image" src="{pageDetails.data.img}" alt="" />
+    </div>
   </div>
-  <div class="main-image-container">
-    <img class="main-image" src={pageDetails.data.img} alt="" />
-  </div>
-</div>
+{/if}
 
 <style lang="scss">
   .left-page {
