@@ -1,42 +1,51 @@
 <script>
   import { params, ready } from "@roxi/routify";
   import Colcade from "colcade";
-  import { tick } from "svelte";
-  import { galleryModal } from "../../../../_components/GalleryModal/store";
+  import { onDestroy, onMount, tick } from "svelte";
+  import { marqueeHandlerStore } from "../../../_stores/marqueeHandlerStore";
   import MasonryImage from "./MasonryImage.svelte";
   export let modal;
+
   let container;
   let images = [];
-  fetch(
-    modal
-      ? `${window.location.origin}/.netlify/functions/get-full-images/?category=${$params.pages}&property=${$galleryModal.selected.key}`
-      : `${window.location.origin}/.netlify/functions/images/?category=${$params.pages}`
-  )
-    .then((res) => res.json())
-    .then(async (data) => {
-      images = data;
-      await tick();
-      if (images.length >= 4) {
-        new Colcade(container, {
-          columns: ".grid-col",
-          items: ".grid-item",
-        });
-      }
-    });
-  $ready();
+  $: ({ page } = $marqueeHandlerStore);
+  onMount(() => {});
+
   let masonry;
+  function fetchImages() {
+    fetch(
+      `${window.location.origin}/.netlify/functions/images/?category=${$params.pages}`
+    )
+      .then((res) => res.json())
+      .then(async (data) => {
+        images = data;
+        await tick();
+        if (images.length >= 4) {
+          new Colcade(container, {
+            columns: ".grid-col",
+            items: ".grid-item",
+          });
+        }
+      });
+  }
+  $: page, fetchImages();
 </script>
 
 <div class="wrapper">
   {#if images.length >= 4}
-    <div bind:this={container} class="container masonry-container">
-      <div class="grid-col grid-col--1" />
-      <div class="grid-col grid-col--2" />
-      <div class="grid-col grid-col--3" />
+    <div bind:this="{container}" class="container masonry-container">
+      <div class="grid-col grid-col--1"></div>
+      <div class="grid-col grid-col--2"></div>
+      <div class="grid-col grid-col--3"></div>
 
       {#each images as img}
         <div class="grid-item">
-          <MasonryImage {modal} {masonry} {img} grid={container} />
+          <MasonryImage
+            modal="{modal}"
+            masonry="{masonry}"
+            img="{img}"
+            grid="{container}"
+          />
         </div>
       {/each}
     </div>
@@ -44,7 +53,12 @@
     <div class="na-masonry-container">
       {#each images as img}
         <div class="na-image-container">
-          <MasonryImage {modal} {masonry} {img} grid={container} />
+          <MasonryImage
+            modal="{modal}"
+            masonry="{masonry}"
+            img="{img}"
+            grid="{container}"
+          />
         </div>
       {/each}
     </div>

@@ -79,36 +79,36 @@
 </script>
 
 <div class="hidden-wrapper">
-  <div class="button-container">
-    <button
-      on:click={() => {
-        scrollTl.reverse();
-      }}
-    />
-    <button
-      on:click={() => {
-        scrollTl.play();
-      }}
-    />
+  <div class="button-wrapper">
+    <div class="button-container">
+      <button
+        on:click="{() => {
+          scrollTl.reverse();
+        }}"></button>
+      <button
+        on:click="{() => {
+          scrollTl.play();
+        }}"></button>
+    </div>
   </div>
-  <div bind:this={wrapper} class="wrapper">
+  <div bind:this="{wrapper}" class="wrapper">
     <div class="container">
       <div class="content-container flex-item">
         <div class="press-container">
           {#each images.slice(0, 8) as card, i}
             <PressCard
-              {windowHeight}
-              {windowWidth}
-              img={card.img}
-              link={card.link}
-              index={i}
+              windowHeight="{windowHeight}"
+              windowWidth="{windowWidth}"
+              img="{card.img}"
+              link="{card.link}"
+              index="{i}"
             />
           {/each}
         </div>
         <div class="text-image-wrapper">
           {#each text as img}
             <div class="text-image-container">
-              <img src={img} alt="" />
+              <img src="{img}" alt="" />
             </div>
           {/each}
         </div>
@@ -119,18 +119,29 @@
 </div>
 
 <style lang="scss">
-  .button-container {
-    position: fixed;
-
+  .button-wrapper {
+    position: absolute;
+    right: 0;
+    height: 100%;
     top: 0;
-    width: 6px;
-    height: 80px;
+    box-shadow: 0 0 10px 0px rgb(146, 146, 146);
+
+
+    padding: 30px;
+    bottom: 0;
+    margin: auto;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+  }
+  .button-container {
+    width: 8px;
+    height: 85px;
     right: 20px;
     display: flex;
 
     flex-direction: column;
-    transform: translateY(50vh);
-    z-index: 4;
+
     button {
       cursor: pointer;
       height: 100%;

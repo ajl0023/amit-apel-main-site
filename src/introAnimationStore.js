@@ -93,14 +93,7 @@ const introAnimation = () => {
           )
           .to(".logo-text-container", {
             opacity: 1,
-          })
-          .to(
-            ".video-render",
-            {
-              opacity: 0,
-            },
-            "-=2.3"
-          );
+          });
 
         return s;
       });

@@ -4,22 +4,24 @@ const store = () => {
     selected: null,
     visible: false,
     images: [],
+    type: null,
   };
   const { subscribe, set, update } = writable(state);
+  const copy = Object.assign({}, state);
+
   const methods = {
-    openModal(content, category) {
+    openModal(content, type) {
       update((s) => {
         s.selected = content;
         s.visible = true;
-
+        s.type = type;
         return s;
       });
     },
     closeModal() {
       update((s) => {
-        s.selected = null;
-        s.visible = false;
-        s.images = [];
+    
+        s = { ...copy };
         return s;
       });
     },

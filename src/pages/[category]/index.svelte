@@ -1,7 +1,9 @@
 <!-- routify:options param-is-page=true -->
 <script>
   import { params } from "@roxi/routify";
+  import { onMount } from "svelte";
   import { pageLayoutMaster } from "../../pageLayout";
+  import { galleryModal } from "../_components/GalleryModal/store";
   import MarqueeItem from "./_components/MarqueeItem.svelte";
 
   let categoryDetails =
@@ -18,6 +20,9 @@
       },
     };
   }
+  onMount(() => {
+    galleryModal.closeModal();
+  });
 </script>
 
 <div
@@ -28,7 +33,7 @@
     <div class="menu-wrap">
       {#each pagesArr as menuItem}
         {#if menuItem}
-          <MarqueeItem {menuItem} />
+          <MarqueeItem menuItem="{menuItem}" />
         {/if}
       {/each}
     </div>

@@ -3,7 +3,6 @@ module.exports.handler = async function (event, context, callback) {
   let contents;
   if (category) {
     contents = require(`./thumbs-images/${category}-thumbs.json`);
-    console.log(contents);
   }
 
   return {
@@ -14,6 +13,6 @@ module.exports.handler = async function (event, context, callback) {
       /* Required for cookies, authorization headers with HTTPS */
       "Access-Control-Allow-Credentials": true,
     },
-    body: JSON.stringify(contents),
+    body: JSON.stringify(contents.slice(0, 4)),
   };
 };

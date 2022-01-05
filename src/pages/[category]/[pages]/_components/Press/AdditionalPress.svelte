@@ -49,7 +49,7 @@
       max-width: 1200px;
       width: 100%;
       padding: 15px;
-      overflow-y: scroll;
+      overflow-y: auto;
       display: flex;
       position: relative;
       border-radius: 12px;

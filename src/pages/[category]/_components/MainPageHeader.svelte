@@ -5,15 +5,18 @@
 
   marqueeHandlerStore;
 
+  let currentPage;
   const hideNav = new Set(["maliview", "aviator"]);
-  const currentPage = $params.pages;
+  $: {
+    currentPage = $marqueeHandlerStore.page;
+  }
 </script>
 
 <h5
-  class:inactive={hideNav.has($marqueeHandlerStore.page)}
-  class:press={$marqueeHandlerStore.page === "press"}
-  class:sm={$marqueeHandlerStore.page === "meet the team"}
-  class:map={$marqueeHandlerStore.page === "map"}
+  class:inactive="{hideNav.has($marqueeHandlerStore.page)}"
+  class:press="{$marqueeHandlerStore.page === 'press'}"
+  class:sm="{$marqueeHandlerStore.page === 'meet the team'}"
+  class:map="{$marqueeHandlerStore.page === 'map'}"
   class="main-text-header"
 >
   {pageLayoutMaster["pages"]["byTitle"][currentPage].title}

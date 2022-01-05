@@ -40,3 +40,9 @@ body {
   left: 20px;
   cursor: pointer;
 }
+.carousel {
+  height: 100%;
+  .slides {
+    height: 100%;
+  }
+}

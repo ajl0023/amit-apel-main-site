@@ -1,5 +1,6 @@
 <script>
-  import { params } from "@roxi/routify";
+  import { goto, params } from "@roxi/routify";
+  import { tick } from "svelte";
   import { lazy } from "../../../../../helpers/lazy";
   import { galleryModal } from "../../../../_components/GalleryModal/store";
   import { marqueeHandlerStore } from "../../../_stores/marqueeHandlerStore";
@@ -11,7 +12,29 @@
 
 <div
   on:click="{() => {
-    galleryModal.openModal(img, $marqueeHandlerStore.page);
+    const masonryGalleryPages = ['private-homes', 'multi-units'];
+
+    if (masonryGalleryPages.includes($params.pages)) {
+      galleryModal.openModal(img, 'spec');
+    } else {
+      galleryModal.openModal(img, 'basic');
+    }
+    const url = img.label.replace(/\s/g, '');
+
+    fetch(
+      `${
+        window.location.origin === 'http://jsdom.ssr' || !import.meta.env.PROD
+          ? 'http://localhost:9999'
+          : window.location.origin
+      }/.netlify/functions/get-full-images/?category=${
+        $params.pages
+      }&property=${$galleryModal.selected.key}`
+    )
+      .then((res) => res.json())
+      .then(async (data) => {
+        $galleryModal.images = data;
+        await tick();
+      });
   }}"
   class:image-container-margin="{modal || $params.category === 'design'}"
   class="item-container {$params.category}"
@@ -32,7 +55,7 @@
         <img
           width="{img.width}"
           height="{img.height}"
-          use:lazy
+          use:lazy="{img.url}"
           class="image lazy"
           data-src="{img.url}"
           alt=""

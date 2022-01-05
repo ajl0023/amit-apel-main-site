@@ -40,8 +40,8 @@
   </div>
   <div class="container">
     <div class="flex-item main-text-container">
-      <h5 class="main-text fade">Connecting People</h5>
-      <h5 class="main-text fade">to the Art of Living</h5>
+      <h5 class="main-text fade">"Connecting People</h5>
+      <h5 class="main-text fade">to the Art of Living"</h5>
     </div>
     <div class="flex-item logo-container">
       <Barcode />

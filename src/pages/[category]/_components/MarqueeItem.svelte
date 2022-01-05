@@ -21,31 +21,32 @@
 </script>
 
 <div
-  on:click={async (e) => {
-    $goto("./" + menuItem.urlFormatted);
+  on:click="{async (e) => {
+   
+    $goto('./' + menuItem.urlFormatted);
 
-    // marqueeHandlerStore.setPage(menuItem.urlFormatted);
-  }}
-  bind:this={menuItemOuterEle}
+    marqueeHandlerStore.setPage(menuItem.urlFormatted);
+  }}"
+  bind:this="{menuItemOuterEle}"
   class="menu__item"
 >
   <div
-    on:mouseenter={(e) => {
+    on:mouseenter="{(e) => {
       store.mouseEnter(e);
-    }}
-    on:mouseleave={(e) => {
+    }}"
+    on:mouseleave="{(e) => {
       store.mouseLeave(e);
-    }}
+    }}"
     class="menu__item-link"
   >
     {menuItem.title}
   </div>
-  <div bind:this={marquee} class="marquee">
-    <div bind:this={marqueeInnerEle} class="marquee__inner-wrap">
+  <div bind:this="{marquee}" class="marquee">
+    <div bind:this="{marqueeInnerEle}" class="marquee__inner-wrap">
       <div class="marquee__inner" aria-hidden="true">
         {#each Array(8).fill(menuItem.title) as label}
           <span>{label}</span>
-          <div class="marquee__img" />
+          <div class="marquee__img"></div>
         {/each}
       </div>
     </div>

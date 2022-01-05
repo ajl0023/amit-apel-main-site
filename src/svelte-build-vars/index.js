@@ -14,7 +14,6 @@ export default function preprocessFetch() {
           if (node.id.name === "buildTime") {
             start = node.body.start;
             end = node.body.end;
-            console.log(node.body.body[0].declarations);
           }
         },
       });

@@ -1,11 +1,8 @@
-<!-- routify:options param-is-page=true -->
 <script>
   import { params } from "@roxi/routify";
-  import { onMount } from "svelte";
-  import GalleryModal from "../../_components/GalleryModal/GalleryModal.svelte";
-  import { galleryModal } from "../../_components/GalleryModal/store";
   import MainPageHeader from "../_components/MainPageHeader.svelte";
   import { marqueeHandlerStore } from "../_stores/marqueeHandlerStore";
+
   function customTransition() {
     return {
       duration: 1500,
@@ -15,6 +12,7 @@
     };
   }
   let Component;
+
   const imports = {
     "private-homes": async () => {
       return import("./_components/MasonryGallery/MasonryGallery.svelte");
@@ -62,27 +60,22 @@
   const loadComponent = async (title) => {
     if (title) {
       marqueeHandlerStore.setPage(title);
+
       Component = (await imports[title]()).default;
     }
   };
-  onMount(() => {
-    loadComponent($params.pages);
-  });
+  $: ({ pages } = $params);
+
+  $: pages, loadComponent(pages);
 </script>
 
-{#if $galleryModal.visible}
-  <GalleryModal />
-{/if}
 <div
   transition:customTransition|local
-  on:introend={() => {
-    $marqueeHandlerStore.shouldLoadImages = true;
-  }}
   class="page-content-container page-content-container-anim"
 >
-  <MainPageHeader />
+  <MainPageHeader pages="{pages}" />
   <div class="page-container">
-    <svelte:component this={Component} />
+    <svelte:component this="{Component}" />
   </div>
 </div>
 

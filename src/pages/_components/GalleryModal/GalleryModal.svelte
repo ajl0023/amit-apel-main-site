@@ -1,34 +1,14 @@
 <script>
   import Carousel from "@beyonk/svelte-carousel";
   import { params } from "@roxi/routify";
-  import { onMount, tick } from "svelte";
-  import { galleryModal } from "./store";
+  import { tick } from "svelte";
   import LeftArrow from "./assets/chevron_left_black_24dp.svelte";
   import RightArrow from "./assets/chevron_right_black_24dp.svelte";
+  import { galleryModal } from "./store";
 
-  let images = [];
+  $: ({ images } = $galleryModal);
+
   let carousel;
-
-  fetch(
-    true
-      ? `${
-          window.location.origin === "http://jsdom.ssr"
-            ? "http://localhost:9999"
-            : window.location.origin
-        }/.netlify/functions/get-full-images/?category=${
-          $params.pages
-        }&property=${$galleryModal.selected.key}`
-      : `${
-          window.location.origin === "http://jsdom.ssr"
-            ? "http://localhost:9999"
-            : window.location.origin
-        }/.netlify/functions/images/?category=${$params.pages}`
-  )
-    .then((res) => res.json())
-    .then(async (data) => {
-      images = data;
-      await tick();
-    });
 
   const handleCarouselLeft = () => {
     carousel.left();
@@ -36,127 +16,106 @@
   const handleCarouselRight = () => {
     carousel.right();
   };
+  //temporary images until all images are organized
+  const randomInd = () => {
+    return Math.floor(Math.random() * (images.length - 1 - 0) + 0);
+  };
 </script>
-
-<!-- <div
-  on:click={() => {
-    galleryModal.closeModal();
-  }}
-  class="modal-container"
->
-  <div class="content-container">
-    <MasonryGallery modal={true} />
-  </div>
-</div> -->
 
 <div class="container">
   <div
-    on:click={() => {
+    on:click="{() => {
       galleryModal.closeModal();
-    }}
+    }}"
     class="close-x close-main"
-  />
+  ></div>
   <h3 class="main-header">
     {$galleryModal.selected.label}
   </h3>
   <div class="content-container">
     <div class="main-image-container">
-      <img src={$galleryModal.selected.url} alt="" />
+      <img src="{$galleryModal.selected.url}" alt="" />
     </div>
     {#if images.length > 0}
       <div class="flex-image-gallery-container">
         <div class="image-container">
-          <img src={images[2].url} alt="" />
+          <img src="{images[randomInd()].url}" alt="" />
         </div>
         <div class="image-container">
-          <img src={images[5].url} alt="" />
+          <img src="{images[randomInd()].url}" alt="" />
         </div>
         <div class="image-container">
-          <img src={images[7].url} alt="" />
+          <img src="{images[randomInd()].url}" alt="" />
         </div>
       </div>
     {/if}
-    <div class="description-container">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias vero
-        dolore odit nostrum ab fuga autem at maxime repellat natus nesciunt
-        beatae, et quae tempore modi tenetur pariatur cum illo. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit. Molestias vero dolore odit
-        nostrum ab fuga autem at maxime repellat natus nesciunt beatae, et quae
-        tempore modi tenetur pariatur cum illo. Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Molestias vero dolore odit nostrum ab fuga
-        autem at maxime repellat natus nesciunt beatae, et quae tempore modi
-        tenetur pariatur cum illo.
-      </p>
-    </div>
+
     {#if images.length > 0}
       <div class="flex-image-gallery-container">
         <div class="image-container">
-          <img src={images[3].url} alt="" />
+          <img src="{images[randomInd()].url}" alt="" />
         </div>
         <div class="image-container">
-          <img src={images[9].url} alt="" />
+          <img src="{images[randomInd()].url}" alt="" />
         </div>
       </div>
     {/if}
     <div class="carousel-container">
-      <span on:click={handleCarouselLeft} class="control left">
+      <span on:click="{handleCarouselLeft}" class="control left">
         <LeftArrow />
       </span>
       {#if images.length > 0}
-        <Carousel bind:this={carousel} perPage={1}>
-          {#each images.slice(10, 20) as data}
-            <div class="image-container">
-              <img class="carousel-image" src={data.url} alt="" />
-            </div>
-          {/each}
-        </Carousel>
+        <div class="carousel-main-container">
+          <Carousel bind:this="{carousel}" perPage="{1}">
+            {#each images.slice(0, images.length - 1) as data}
+              <div class="image-container">
+                <img class="carousel-image" src="{data.url}" alt="" />
+              </div>
+            {/each}
+          </Carousel>
+        </div>
       {/if}
-      <span on:click={handleCarouselRight} class="control right">
-        <RightArrow /></span
-      >
+      <span on:click="{handleCarouselRight}" class="control right">
+        <RightArrow />
+      </span>
     </div>
   </div>
 </div>
 
 <style lang="scss">
-  .control.left {
-    left: -2vw;
-  }
-  .control.right {
-    right: -2vw;
-  }
-  .control {
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-
-    position: absolute;
-    cursor: pointer;
-    justify-content: center;
-
-    background-color: black;
-
-    svg {
-      fill: white;
-    }
-  }
   .carousel-container {
     max-width: 800px;
     width: 100%;
     margin: 2.5rem auto auto auto;
 
     position: relative;
-    display: flex;
+
     align-items: center;
-    .carousel-image {
+
+    &:before {
+      display: block;
+      content: "";
       width: 100%;
+
+      padding-top: (9 / 16) * 100%;
+    }
+    .carousel-main-container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       height: 100%;
-      object-fit: cover;
-      object-position: center center;
+      .image-container {
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+        .carousel-image {
+          width: 100%;
+          display: block;
+          height: 100%;
+        }
+      }
     }
   }
 
@@ -187,6 +146,8 @@
     width: 100%;
     margin: auto;
 
+    overflow-y: auto;
+
     .main-image-container {
       position: relative;
       width: 100%;
@@ -206,18 +167,14 @@
         right: 0;
       }
     }
-    .description-container {
-      margin-top: 2.5rem;
-      padding: 0.5rem;
-    }
   }
   .container {
     padding: 30px;
     background-image: url("https://res.cloudinary.com/dt4xntymn/image/upload/v1637997281/mainSite/Background_Photo_ojnwmx.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: fixed;
-    height: 100vh;
+    position: absolute;
+
     width: 100vw;
     z-index: 5;
     top: 0;
@@ -226,5 +183,32 @@
     right: 0;
     overflow-y: auto;
     font-family: "Fira Sans Condensed", sans-serif;
+  }
+  .control.right {
+    right: -2vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .control.left {
+    left: -2vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .control {
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    cursor: pointer;
+    justify-content: center;
+
+    background-color: black;
   }
 </style>

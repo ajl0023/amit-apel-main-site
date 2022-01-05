@@ -1,12 +1,26 @@
 <!-- routify:options param-is-page=true -->
 <script>
-  import { params, ready } from "@roxi/routify";
+  import { goto, params, ready } from "@roxi/routify";
   import { onMount } from "svelte";
   import { transition } from "../../crossfade";
+  import BasicModal from "../_components/BasicModal/BasicModal.svelte";
+  import GalleryModal from "../_components/GalleryModal/GalleryModal.svelte";
+  import { galleryModal } from "../_components/GalleryModal/store";
 
   import Navbar from "./_components/Navbar/Navbar.svelte";
   import { marqueeHandlerStore } from "./_stores/marqueeHandlerStore";
-
+  onMount(() => {
+    window.addEventListener("keydown", (e) => {
+      {
+        if (e.key === "z") {
+          $goto("./private-homes");
+        }
+        if (e.key === "x") {
+          $goto("./multi-units");
+        }
+      }
+    });
+  });
   const { receive, send } = $transition;
   onMount(() => {
     marqueeHandlerStore.setCategory($params.category);
@@ -14,20 +28,34 @@
 </script>
 
 <div
-  in:receive|local={{ key: $marqueeHandlerStore.category }}
-  out:send|local={{ key: $marqueeHandlerStore.category }}
+  in:receive|local="{{ key: $marqueeHandlerStore.category }}"
+  out:send|local="{{ key: $marqueeHandlerStore.category }}"
   class="wrapper"
 >
   <Navbar />
-  <div class="main-anim-wrapper">
+  {#if $galleryModal.visible}
+    <div class="modal-wrapper">
+      {#if $galleryModal.type === "spec"}
+        <GalleryModal />
+      {:else}
+        <BasicModal />
+      {/if}
+    </div>
+  {/if}
+  <div class="main-anim-wrapper" class:inactive="{$galleryModal.visible}">
     <slot />
-    <div class="page-transition-black" />
+    <div class="page-transition-black"></div>
   </div>
 </div>
 
 <style lang="scss">
+  .modal-wrapper {
+    position: relative;
+    height: 100%;
+  }
+
   .wrapper {
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 3;
     background-image: url("https://res.cloudinary.com/dt4xntymn/image/upload/v1637997281/mainSite/Background_Photo_ojnwmx.jpg");
@@ -45,7 +73,9 @@
     position: relative;
     height: 100%;
   }
-
+  .inactive {
+    display: none;
+  }
   .page-transition-black {
     background-color: black;
     width: 100vw;
