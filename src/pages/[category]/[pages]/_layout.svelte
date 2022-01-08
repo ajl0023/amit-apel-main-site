@@ -97,7 +97,7 @@
   .page-content-container {
     width: 100%;
     z-index: 3;
-    height: 100vh;
+    height: 100%;
 
     display: flex;
     flex-direction: column;

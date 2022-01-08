@@ -1949,8 +1949,8 @@
     };
   });
 
-  // dist/assets/_layout.751c044c.js
-  var require_layout_751c044c = __commonJS((exports) => {
+  // dist/assets/_layout.6a2f7c33.js
+  var require_layout_6a2f7c33 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => U3
@@ -1990,7 +1990,7 @@
         return {};
       }
       return u3 && (e = new u3(h())), {c() {
-        a3 = vt("div"), B(t.$$.fragment), i3 = Gt(), o16 = vt("div"), e && B(e.$$.fragment), ct(o16, "class", "page-wrapper svelte-gux584"), ct(a3, "class", "page-content-container page-content-container-anim svelte-gux584");
+        a3 = vt("div"), B(t.$$.fragment), i3 = Gt(), o16 = vt("div"), e && B(e.$$.fragment), ct(o16, "class", "page-wrapper svelte-1bfxyul"), ct(a3, "class", "page-content-container page-content-container-anim svelte-1bfxyul");
       }, m(_, f3) {
         A(_, a3, f3), F(t, a3, null), ns(a3, i3), ns(a3, o16), e && F(e, o16, null), c3 = true;
       }, p(_, [f3]) {
@@ -2260,8 +2260,8 @@
     };
   });
 
-  // dist/assets/_layout.f33d5f98.js
-  var require_layout_f33d5f98 = __commonJS((exports) => {
+  // dist/assets/_layout.932faf26.js
+  var require_layout_932faf26 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => ut2
@@ -2905,7 +2905,7 @@
       let e, s2, i3, r2, o16, a3, h = n3[1].visible && Pe3(n3);
       const u3 = n3[5].default, c3 = Qn(u3, n3, n3[4], null);
       return {c() {
-        e = vt("div"), h && h.c(), s2 = Gt(), i3 = vt("div"), c3 && c3.c(), ct(i3, "class", "main-anim-wrapper svelte-xvmpi1"), kr(i3, "inactive", n3[1].visible), ct(e, "class", "wrapper svelte-xvmpi1");
+        e = vt("div"), h && h.c(), s2 = Gt(), i3 = vt("div"), c3 && c3.c(), ct(i3, "class", "main-anim-wrapper svelte-1ieis26"), kr(i3, "inactive", n3[1].visible), ct(e, "class", "wrapper svelte-1ieis26");
       }, m(t, l) {
         A(t, e, l), h && h.m(e, null), ns(e, s2), ns(e, i3), c3 && c3.m(i3, null), a3 = true;
       }, p(t, [l]) {
@@ -5249,7 +5249,7 @@
   };
   V && uo(Ut, window.lazyLoadOptions);
 
-  // dist/assets/index.4b22c44e.js
+  // dist/assets/index.150b62ce.js
   var R4 = function() {
     const t = document.createElement("link").relList;
     return t && t.supports && t.supports("modulepreload") ? "modulepreload" : "preload";
@@ -7085,8 +7085,8 @@
   var X3 = x({});
   var z2 = x({duration: 4e3});
 
-  // dist/assets/index.4b22c44e.js
-  var b3 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => o15(() => Promise.resolve().then(() => require_fallback_4fe3eae8()), ["assets/_fallback.4fe3eae8.js", "assets/vendor.152b18c6.js"]).then((e) => e.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, path: "/:category/:pages/index", id: "__category__pages_index", component: () => o15(() => Promise.resolve().then(() => require_index_9b4e15a7()), ["assets/index.9b4e15a7.js", "assets/vendor.152b18c6.js"]).then((e) => e.default)}], isLayout: true, path: "/:category/:pages", id: "__category__pages__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_751c044c()), ["assets/_layout.751c044c.js", "assets/vendor.152b18c6.js", "assets/marqueeHandlerStore.47cc0480.js"]).then((e) => e.default)}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/index", id: "__category_index", component: () => o15(() => Promise.resolve().then(() => require_index_2b2e96c7()), ["assets/index.2b2e96c7.js", "assets/vendor.152b18c6.js", "assets/marqueeHandlerStore.47cc0480.js", "assets/store.113de28b.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]).then((e) => e.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category", id: "__category__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_f33d5f98()), ["assets/_layout.f33d5f98.js", "assets/vendor.152b18c6.js", "assets/crossfade.a4770837.js", "assets/store.113de28b.js", "assets/marqueeHandlerStore.47cc0480.js"]).then((e) => e.default)}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => o15(() => Promise.resolve().then(() => require_index_659a65dd()), ["assets/index.659a65dd.js", "assets/vendor.152b18c6.js"]).then((e) => e.default)}], isLayout: true, path: "/", id: "__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_23fd1a06()), ["assets/_layout.23fd1a06.js", "assets/vendor.152b18c6.js", "assets/index.e6e77149.js", "assets/crossfade.a4770837.js", "assets/marqueeHandlerStore.47cc0480.js"]).then((e) => e.default)};
+  // dist/assets/index.150b62ce.js
+  var b3 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => o15(() => Promise.resolve().then(() => require_fallback_4fe3eae8()), ["assets/_fallback.4fe3eae8.js", "assets/vendor.152b18c6.js"]).then((e) => e.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, path: "/:category/:pages/index", id: "__category__pages_index", component: () => o15(() => Promise.resolve().then(() => require_index_9b4e15a7()), ["assets/index.9b4e15a7.js", "assets/vendor.152b18c6.js"]).then((e) => e.default)}], isLayout: true, path: "/:category/:pages", id: "__category__pages__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_6a2f7c33()), ["assets/_layout.6a2f7c33.js", "assets/vendor.152b18c6.js", "assets/marqueeHandlerStore.47cc0480.js"]).then((e) => e.default)}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category/index", id: "__category_index", component: () => o15(() => Promise.resolve().then(() => require_index_2b2e96c7()), ["assets/index.2b2e96c7.js", "assets/vendor.152b18c6.js", "assets/marqueeHandlerStore.47cc0480.js", "assets/store.113de28b.js", "assets/index.e6e77149.js", "assets/utils.f73a3604.js"]).then((e) => e.default)}], isLayout: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: false, prerender: true}, path: "/:category", id: "__category__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_932faf26()), ["assets/_layout.932faf26.js", "assets/vendor.152b18c6.js", "assets/crossfade.a4770837.js", "assets/store.113de28b.js", "assets/marqueeHandlerStore.47cc0480.js"]).then((e) => e.default)}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => o15(() => Promise.resolve().then(() => require_index_659a65dd()), ["assets/index.659a65dd.js", "assets/vendor.152b18c6.js"]).then((e) => e.default)}], isLayout: true, path: "/", id: "__layout", component: () => o15(() => Promise.resolve().then(() => require_layout_23fd1a06()), ["assets/_layout.23fd1a06.js", "assets/vendor.152b18c6.js", "assets/index.e6e77149.js", "assets/crossfade.a4770837.js", "assets/marqueeHandlerStore.47cc0480.js"]).then((e) => e.default)};
   var {tree: k2, routes: A2} = Nr(b3);
   function D3(e) {
     let t, n3;

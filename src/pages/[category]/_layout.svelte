@@ -57,7 +57,7 @@
     z-index: 3;
     background-image: url("https://res.cloudinary.com/dt4xntymn/image/upload/v1637997281/mainSite/Background_Photo_ojnwmx.jpg");
     width: 100vw;
-    height: 100vh;
+
     background-repeat: no-repeat;
     background-size: cover;
   }
