@@ -21,7 +21,7 @@
   out:send|local="{{ key: $marqueeHandlerStore.category }}"
   class="wrapper"
 >
-  <Navbar />
+  <!-- <Navbar /> -->
   {#if $galleryModal.visible}
     <div class="modal-wrapper">
       {#if $galleryModal.type === "spec"}

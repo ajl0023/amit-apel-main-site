@@ -20,14 +20,27 @@
       />
     </div>
     <div class="icon-container">
-      <LeftArrow />{#if $params.pages}
-        <ListIcon />
-      {/if}
+      <LeftArrow />
     </div>
+  </div>
+  <div class="menu-icon-container">
+    <ListIcon />
   </div>
 </div>
 
 <style lang="scss">
+  .menu-icon-container {
+    position: absolute;
+    left: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 600px) {
+      right: 30px;
+      left: auto;
+    }
+  }
   .icon-container {
     position: absolute;
     left: 30px;

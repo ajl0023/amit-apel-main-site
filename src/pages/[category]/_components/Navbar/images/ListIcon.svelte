@@ -20,7 +20,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height="24px"
-    class="close-main"
+    class="menu-icon"
     viewBox="0 0 24 24"
     width="24px"
     fill="white"
@@ -61,11 +61,12 @@
     top: -5px;
     left: 5px;
   }
-  .close-main {
+  .menu-icon {
     display: block;
     cursor: pointer;
     height: 30px;
     width: 30px;
+   
   }
   .drop-down-container {
     height: auto;
