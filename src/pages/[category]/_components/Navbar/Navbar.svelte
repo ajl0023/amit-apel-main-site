@@ -15,7 +15,7 @@
       class="logo-container"
     >
       <img
-        src="{'https://res.cloudinary.com/dt4xntymn/image/upload/v1638227177/mainSite/home/logo_yd4luk.png'}"
+        src="{'https://res.cloudinary.com/dt4xntymn/image/upload/v1641600476/mainSite/home/LOGO_hzvhrk.png'}"
         alt=""
       />
     </div>
@@ -40,7 +40,7 @@
     width: 100%;
     background-color: rgb(111, 63, 138);
 
-    padding: 10px;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
@@ -57,6 +57,7 @@
       img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
       }
     }
     .nav-top {

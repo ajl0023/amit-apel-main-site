@@ -1,7 +1,13 @@
 const categories = {
   developments: ["maliview", "aviator"],
   design: ["furniture", "sculptures"],
-  architecture: ["private-homes", "multi-units", "concept"],
+  architecture: [
+    "private-homes",
+    "multi-family",
+    "hospitality",
+    "mixed-use",
+    "commercial",
+  ],
   "apel-design": [
     "meet-amit-apel",
     "meet-the-team",

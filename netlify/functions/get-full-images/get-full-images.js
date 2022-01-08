@@ -1,10 +1,26 @@
 module.exports.handler = async function (event, context, callback) {
   const property = event.queryStringParameters.property;
   const category = event.queryStringParameters.category;
-  console.log(category);
+
   let contents = require(`./full-images/${category}-full.json`);
-  const propertyImages = contents[property];
-  let data = propertyImages ? propertyImages.images : [];
+
+  let data;
+  const masterCategories = [
+    "commercial",
+    "private-homes",
+    "mixed-use",
+    "hospitality",
+  ];
+  if (category === "private-homes") {
+    let privateHomesCategory = event.queryStringParameters.subCategory;
+
+    data = contents[privateHomesCategory].properties[property].images;
+  } else if (masterCategories.includes(category)) {
+    data = contents[category].properties[property].images;
+  } else {
+    const propertyImages = contents[property];
+    data = propertyImages ? propertyImages.images : [];
+  }
   return {
     statusCode: 200,
     headers: {

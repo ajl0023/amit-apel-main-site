@@ -89,8 +89,20 @@ export const pageLayoutMaster = {
             labels: [Array(8).fill("private-homes")],
           },
           {
-            key: "multi-units",
-            labels: [Array(8).fill("multi-units")],
+            key: "commercial",
+            labels: [Array(8).fill("commercial")],
+          },
+          {
+            key: "hospitality",
+            labels: [Array(8).fill("hospitality")],
+          },
+          {
+            key: "mixed-use",
+            labels: [Array(8).fill("mixed use")],
+          },
+          {
+            key: "multi-family",
+            labels: [Array(8).fill("multi family")],
           },
         ],
       },
@@ -142,6 +154,32 @@ export const pageLayoutMaster = {
       "private-homes": {
         title: "private homes",
         urlFormatted: "private-homes",
+        categories: [
+          {
+            name: "Contemporary Houses",
+            urlFormatted: "contemporary-houses",
+          },
+          {
+            name: "Multi Family",
+            urlFormatted: "multi-family",
+          },
+          {
+            name: "Spanish Revival Homes",
+            urlFormatted: "spanish-revival-homes",
+          },
+          {
+            name: "Traditional Homes",
+            urlFormatted: "traditional-homes",
+          },
+        ],
+      },
+      hospitality: {
+        title: "hospitality",
+        urlFormatted: "hospitality",
+      },
+      "mixed-use": {
+        title: "mixed use",
+        urlFormatted: "mixed-use",
       },
       "meet-amit-apel": {
         title: "meet amit apel",
@@ -153,6 +191,14 @@ export const pageLayoutMaster = {
         urlFormatted: "what-we-do",
         component: "WhatWeDo/WhatWeDo",
       },
+      commercial: {
+        title: "commercial",
+        urlFormatted: "commercial",
+      },
+      "multi-family": {
+        title: "multi family",
+        urlFormatted: "multi-family",
+      },
       "malibu-rebuild": {
         title: "malibu rebuild",
         urlFormatted: "malibu-rebuild",
@@ -162,12 +208,6 @@ export const pageLayoutMaster = {
         title: "contact us",
         urlFormatted: "contact-us",
         component: "Contact/Contact",
-      },
-
-      "multi-units": {
-        title: "multi units",
-        urlFormatted: "multi-units",
-        component: "ArchiGallery/ArchiGallery",
       },
 
       concept: {

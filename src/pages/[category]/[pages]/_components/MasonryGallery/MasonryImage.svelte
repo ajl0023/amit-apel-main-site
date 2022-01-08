@@ -26,8 +26,8 @@
         window.location.origin === 'http://jsdom.ssr' || !import.meta.env.PROD
           ? 'http://localhost:9999'
           : window.location.origin
-      }/.netlify/functions/get-full-images/?category=${
-        $params.pages
+      }/.netlify/functions/get-full-images/?category=${$params.pages}${
+        $params.pages === 'private-homes' ? `&subCategory=${img.category}` : ''
       }&property=${$galleryModal.selected.key}`
     )
       .then((res) => res.json())

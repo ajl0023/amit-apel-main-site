@@ -25,7 +25,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    height: 100vh;
+
     width: 100vw;
     z-index: 5;
     top: 0;
@@ -34,20 +34,23 @@
     right: 0;
     overflow-y: auto;
 
-    display: flex;
     justify-content: center;
   }
   .gallery-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    height: 100%;
-
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
     .image-container {
       margin-bottom: 1.5rem;
+      width: 100%;
+
       &:last-child {
         margin-bottom: 0px;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
       }
     }
   }

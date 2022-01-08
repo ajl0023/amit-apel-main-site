@@ -17,7 +17,16 @@
     "private-homes": async () => {
       return import("./_components/MasonryGallery/MasonryGallery.svelte");
     },
-    "multi-units": async () => {
+    "multi-family": async () => {
+      return import("./_components/MasonryGallery/MasonryGallery.svelte");
+    },
+    "mixed-use": async () => {
+      return import("./_components/MasonryGallery/MasonryGallery.svelte");
+    },
+    hospitality: async () => {
+      return import("./_components/MasonryGallery/MasonryGallery.svelte");
+    },
+    commercial: async () => {
       return import("./_components/MasonryGallery/MasonryGallery.svelte");
     },
     concept: async () => {
