@@ -12,15 +12,17 @@
   }
 </script>
 
-<h5
-  class:inactive="{hideNav.has($marqueeHandlerStore.page)}"
-  class:press="{$marqueeHandlerStore.page === 'press'}"
-  class:sm="{$marqueeHandlerStore.page === 'meet the team'}"
-  class:map="{$marqueeHandlerStore.page === 'map'}"
-  class="main-text-header"
->
-  {pageLayoutMaster["pages"]["byTitle"][currentPage].title}
-</h5>
+<div class="header-container">
+  <h5
+    class:inactive="{hideNav.has($marqueeHandlerStore.page)}"
+    class:press="{$marqueeHandlerStore.page === 'press'}"
+    class:sm="{$marqueeHandlerStore.page === 'meet the team'}"
+    class:map="{$marqueeHandlerStore.page === 'map'}"
+    class="main-text-header"
+  >
+    {pageLayoutMaster["pages"]["byTitle"][currentPage].title}
+  </h5>
+</div>
 
 <style lang="scss">
   .press {
@@ -28,6 +30,10 @@
   }
   .map {
     display: none;
+  }
+  .header-container {
+    height: fit-content;
+
   }
   .main-text-header {
     font-size: 6em;
@@ -39,9 +45,7 @@
     font-family: "Zen Kaku Gothic Antique", sans-serif;
     text-align: center;
     background-color: transparent;
-    top: 5vh;
-    right: 0;
-    left: 0;
+
     z-index: 10;
 
     padding: 20px;

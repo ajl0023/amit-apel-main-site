@@ -83,32 +83,31 @@
   class="page-content-container page-content-container-anim"
 >
   <MainPageHeader pages="{pages}" />
-  <div class="page-container">
+
+  <div class="page-wrapper">
     <svelte:component this="{Component}" />
   </div>
 </div>
 
 <style lang="scss">
+  .page-wrapper {
+    height: 100%;
+    overflow: hidden;
+  }
   .page-content-container {
     width: 100%;
     z-index: 3;
-    height: 100%;
-    top: 0;
+    height: 100vh;
+
     display: flex;
-    position: absolute;
     flex-direction: column;
-    align-items: center;
+    position: absolute;
+
     @media screen and (max-width: 900px) {
       font-size: 0.8rem;
     }
     @media screen and (max-width: 500px) {
       font-size: 0.6rem;
     }
-  }
-
-  .page-container {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
   }
 </style>

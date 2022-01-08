@@ -6,7 +6,6 @@
   import { marqueeHandlerStore } from "../../../_stores/marqueeHandlerStore";
   import MasonryImage from "./MasonryImage.svelte";
   export let modal;
-
   let container;
   let images = [];
   let selected;
@@ -21,18 +20,14 @@
     }
   }
   onMount(() => {});
-
   let masonry;
   let colcade;
   async function fetchImages() {
     const urlParams = new URLSearchParams(window.location.search);
     const category = urlParams.get("sub_category");
-
     if (page) {
       selected = category;
-
       images = [];
-
       fetch(
         `${window.location.origin}/.netlify/functions/images/?category=${page}${
           category ? `&sub_category=${category}` : ""
@@ -54,12 +49,11 @@
     }
   }
   $ready();
-
   $: page, sub_category, fetchImages();
 </script>
 
 <div class="wrapper">
-  {#if page === "private-homes"}
+  <!-- {#if page === "private-homes"}
     <div class="category-container">
       <ul class="category-list">
         {#each privateHomesCategories as category}
@@ -79,7 +73,7 @@
         {/each}
       </ul>
     </div>
-  {/if}
+  {/if} -->
   <div bind:this="{container}" class="container masonry-container">
     {#if images.length > 0}
       <div class="grid-col grid-col--1"></div>
@@ -96,37 +90,27 @@
           />
         </div>
       {/each}
-    {:else}
-      <div class="na-masonry-container">
-        {#each images as img}
-          <div class="na-image-container">
-            <MasonryImage
-              modal="{modal}"
-              masonry="{masonry}"
-              img="{img}"
-              grid="{container}"
-            />
-          </div>
-        {/each}
-      </div>
     {/if}
   </div>
 </div>
 
 <style lang="scss">
+  .wrapper {
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  
+  }
   .category-container {
     font-family: "Fira Sans Condensed", sans-serif;
-
     display: block;
     width: 100%;
     margin-bottom: 2rem;
-
     .category-list {
       display: flex;
       width: fit-content;
       margin: auto;
       justify-content: space-between;
-
       .category-item {
         list-style: none;
         padding: 0 15px;
@@ -134,7 +118,6 @@
         font-weight: 600;
         letter-spacing: 2px;
         text-align: center;
-
         .category-header {
           .category-link {
             color: black;
@@ -144,26 +127,17 @@
             color: #68208e;
           }
         }
-
         &:last-child {
           margin-right: 0px;
         }
       }
     }
   }
-  .wrapper {
-    padding: 20px;
-  }
-  .na-masonry-container {
-    display: flex;
-    max-width: 900px;
-    margin: 0 auto;
-    width: 100%;
-    flex-direction: column;
-  }
+
   .container {
     height: 100%;
     width: 100%;
+    overflow: auto;
     display: flex;
     justify-content: center;
   }
