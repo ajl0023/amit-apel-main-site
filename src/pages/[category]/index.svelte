@@ -25,40 +25,25 @@
   });
 </script>
 
-<div
-  transition:customTransition|local
-  class="marquee-animation-container page-wrapper"
->
-  <div class="container flex-item">
-    <div class="menu-wrap">
-      {#each pagesArr as menuItem}
-        {#if menuItem}
-          <MarqueeItem menuItem="{menuItem}" />
-        {/if}
-      {/each}
-    </div>
+<div transition:customTransition|local class="marquee-animation-container">
+  <div class="menu-wrap">
+    {#each pagesArr as menuItem}
+      {#if menuItem}
+        <MarqueeItem menuItem="{menuItem}" />
+      {/if}
+    {/each}
   </div>
 </div>
 
 <style lang="scss">
-  .page-wrapper {
+  .marquee-animation-container {
     width: 100%;
-
-    position: relative;
-  }
-
-  .container {
-    height: 100%;
-
-    position: relative;
-
     display: flex;
     align-items: center;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
   .menu-wrap {
     width: 100%;
-    height: 100%;
+
   }
 </style>

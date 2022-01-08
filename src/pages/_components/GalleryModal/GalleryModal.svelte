@@ -29,9 +29,9 @@
     }}"
     class="close-x close-main"
   ></div>
-  <h3 class="main-header">
+  <!-- <h3 class="main-header">
     {$galleryModal.selected.label}
-  </h3>
+  </h3> -->
   <div class="content-container">
     <div class="main-image-container">
       <img src="{$galleryModal.selected.url}" alt="" />
@@ -80,17 +80,58 @@
       </span>
     </div>
   </div>
-  <!-- Assume this is where your nav menu is -->
-  <footer class="safe-bottom">
-    <!-- More stuff... -->
-  </footer>
 </div>
 
 <style lang="scss">
+  .container {
+    // background-image: url("https://res.cloudinary.com/dt4xntymn/image/upload/v1637997281/mainSite/Background_Photo_ojnwmx.jpg");
+
+    z-index: 5;
+    width: 100vw;
+    height: 100%;
+
+    padding: 30px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+
+    overflow-y: hidden;
+    font-family: "Fira Sans Condensed", sans-serif;
+    .content-container {
+      max-width: 1000px;
+      width: 100%;
+      margin: auto;
+
+      overflow-y: auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .main-image-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 62%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+          position: absolute;
+          display: block;
+          top: 0;
+          bottom: 0;
+          left: 0;
+
+          right: 0;
+        }
+      }
+    }
+  }
   .carousel-container {
     max-width: 800px;
     width: 100%;
-    margin: 2.5rem auto auto auto;
 
     position: relative;
 
@@ -125,10 +166,11 @@
 
   .flex-image-gallery-container {
     display: flex;
-    overflow: hidden;
+
     margin-top: 2.5rem;
     width: 100%;
     .image-container {
+  
       margin-right: 10px;
       &:last-child {
         margin-right: 0px;
@@ -145,49 +187,7 @@
     margin-bottom: 1rem;
     font-size: 2em;
   }
-  .content-container {
-    max-width: 1000px;
-    width: 100%;
-    margin: auto;
 
-    overflow-y: auto;
-    overflow-x: hidden;
-    .main-image-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 62%;
-      overflow: hidden;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-        position: absolute;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-
-        right: 0;
-      }
-    }
-  }
-  .container {
-    padding: 30px;
-    background-image: url("https://res.cloudinary.com/dt4xntymn/image/upload/v1637997281/mainSite/Background_Photo_ojnwmx.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-
-    width: 100vw;
-    z-index: 5;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow-y: auto;
-    font-family: "Fira Sans Condensed", sans-serif;
-  }
   .control.right {
     right: -40px;
     top: 0;
