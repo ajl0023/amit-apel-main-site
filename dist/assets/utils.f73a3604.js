@@ -1,1 +1,0 @@
-const a=(t,o,s,n)=>{const c=i(t,o,s/2,0),e=i(t,o,s/2,n);return Math.min(c,e)===c?"top":"bottom"},i=(t,o,s,n)=>{const c=t-s,e=o-n;return c*c+e*e},d=(t,o,s,n)=>Math.sqrt(Math.pow(o-t,2)+Math.pow(n-s,2));export{a as c,d};

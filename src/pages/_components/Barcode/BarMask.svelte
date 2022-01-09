@@ -14,13 +14,14 @@
 
 {#if $introAnimationStore.shouldReturn === false && $page.meta.shouldAnimate}
   <div
-    in:receive={{ key: `bar-${barInfo.index}` }}
-    out:send={{ key: `bar-${barInfo.index}` }}
+    in:receive="{{ key: `bar-${barInfo.index}` }}"
+    out:send="{{ key: `bar-${barInfo.index}` }}"
     class="aspect-ratio-container  container-{barInfo.index} bar-mask"
   >
-    <div class="aspect-ratio" />
+    <div class="aspect-ratio"></div>
     <div class="container">
-      <video muted bind:this={video} class="cover-video" src={barInfo.video} />
+      <video muted bind:this="{video}" class="cover-video" src="{barInfo.video}"
+      ></video>
     </div>
   </div>
 {/if}

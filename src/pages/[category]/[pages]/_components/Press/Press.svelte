@@ -125,14 +125,16 @@
     height: 100%;
     top: 0;
     box-shadow: 0 0 10px 0px rgb(146, 146, 146);
-
-
+    pointer-events: none;
     padding: 30px;
     bottom: 0;
     margin: auto;
     z-index: 4;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 820px) {
+      font-size: 10vw;
+    }
   }
   .button-container {
     width: 8px;
@@ -143,6 +145,7 @@
     flex-direction: column;
 
     button {
+      pointer-events: all;
       cursor: pointer;
       height: 100%;
       display: block;

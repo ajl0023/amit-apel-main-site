@@ -27,13 +27,14 @@
 <style lang="scss">
   .press {
     position: absolute;
+    left: 0;
+    right: 0;
   }
   .map {
     display: none;
   }
   .header-container {
     height: fit-content;
-
   }
   .main-text-header {
     font-size: 6em;

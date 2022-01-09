@@ -8,71 +8,68 @@
   });
 </script>
 
-<div class="page-container">
-  <div class="container">
-    <div class="content-container">
-      <div
-        on:mouseenter={() => {
-          shouldGlitch = true;
-          setTimeout(() => {
-            shouldGlitch = false;
-          }, 400);
-        }}
-        on:mouseleave={() => {
+<div class="container">
+  <div class="content-container">
+    <div
+      on:mouseenter="{() => {
+        shouldGlitch = true;
+        setTimeout(() => {
           shouldGlitch = false;
-        }}
-        class="glitch-image-wrapper"
+        }, 400);
+      }}"
+      on:mouseleave="{() => {
+        shouldGlitch = false;
+      }}"
+      class="glitch-image-wrapper"
+    >
+      <div class="main-image-container flex-item">
+        <div class="image-main">
+          <img
+            class="image"
+            src="https://res.cloudinary.com/dt4xntymn/image/upload/v1637785016/mainSite/meet%20amit%20apel/amitapel4_bf4uwx.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="flex-item content-image-container glitch-image-container {shouldGlitch
+          ? 'glitch-container'
+          : ''}"
       >
-        <div class="main-image-container flex-item">
-          <div class="image-main">
+        {#each Array(5).fill("") as img}
+          <div class="glitch-image">
             <img
               class="image"
               src="https://res.cloudinary.com/dt4xntymn/image/upload/v1637785016/mainSite/meet%20amit%20apel/amitapel4_bf4uwx.jpg"
+              img="{img}"
               alt=""
             />
           </div>
-        </div>
-        <div
-          class="flex-item content-image-container glitch-image-container {shouldGlitch
-            ? 'glitch-container'
-            : ''}"
-        >
-          {#each Array(5).fill("") as img}
-            <div class="glitch-image">
-              <img
-                class="image"
-                src="https://res.cloudinary.com/dt4xntymn/image/upload/v1637785016/mainSite/meet%20amit%20apel/amitapel4_bf4uwx.jpg"
-                {img}
-                alt=""
-              />
-            </div>
-          {/each}
-        </div>
+        {/each}
       </div>
-      <div class="flex-item main-text-content">
-        <p>
-          As a gifted fifth-generation exterior and interior designer, Amit Apel
-          arrived on the sunny shores of Southern California in 1999 after
-          having been raised in Africa, Israel and throughout Europe. Upon his
-          arrival, Amit purchased a modest Honda Magnum motorcycle to travel
-          across the USA for three months. After his adventurous, cross-country
-          tour and with little means, he opened a humble, 100 sq. ft. art studio
-          within a locksmith shop on the beaches of Malibu, California and
-          instantly became a local, buzz-worthy artist. Amit’s acrylic and oil
-          paintings that were showcased in this very small shop quickly
-          catapulted into high demand by local, celebrity clients who still
-          treasure his paintings and collect his growing body of art design
-          works ranging from paintings, sculptures, jewelry, apparel and home
-          and outdoor décor and furnishings. With his savvy entrepreneurial
-          determination inspired by his passionate drive to design and produce
-          as a way of life, Amit founded Amit Apel Design, Inc.® in 2000. This
-          boutique, custom design firm now based in Malibu, California has a
-          well-established, stellar reputation that has been built over the
-          years on a vast array of award-winning commercial and residential and
-          interior designs that now span across Europe, Asia, South America as
-          well as across the US.
-        </p>
-      </div>
+    </div>
+    <div class="flex-item main-text-content">
+      <p>
+        As a gifted fifth-generation exterior and interior designer, Amit Apel
+        arrived on the sunny shores of Southern California in 1999 after having
+        been raised in Africa, Israel and throughout Europe. Upon his arrival,
+        Amit purchased a modest Honda Magnum motorcycle to travel across the USA
+        for three months. After his adventurous, cross-country tour and with
+        little means, he opened a humble, 100 sq. ft. art studio within a
+        locksmith shop on the beaches of Malibu, California and instantly became
+        a local, buzz-worthy artist. Amit’s acrylic and oil paintings that were
+        showcased in this very small shop quickly catapulted into high demand by
+        local, celebrity clients who still treasure his paintings and collect
+        his growing body of art design works ranging from paintings, sculptures,
+        jewelry, apparel and home and outdoor décor and furnishings. With his
+        savvy entrepreneurial determination inspired by his passionate drive to
+        design and produce as a way of life, Amit founded Amit Apel Design,
+        Inc.® in 2000. This boutique, custom design firm now based in Malibu,
+        California has a well-established, stellar reputation that has been
+        built over the years on a vast array of award-winning commercial and
+        residential and interior designs that now span across Europe, Asia,
+        South America as well as across the US.
+      </p>
     </div>
   </div>
 </div>
@@ -86,6 +83,7 @@
     overflow-y: auto;
     color: #68208e;
     padding: 1rem;
+    height: 100%;
   }
 
   .content-container {

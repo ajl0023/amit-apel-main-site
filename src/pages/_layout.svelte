@@ -3,7 +3,6 @@
   import { onMount } from "svelte";
   import { introAnimationStore } from "../introAnimationStore";
   import Barcode from "./_components/Barcode/Barcode.svelte";
-
   onMount(() => {
     introAnimationStore.init();
 
@@ -13,11 +12,11 @@
 </script>
 
 <svelte:window
-  on:resize={() => {
+  on:resize="{() => {
     if (window.innerWidth <= 650) {
       introAnimationStore.endAnim();
     }
-  }}
+  }}"
 />
 <slot />
 <div class="home-wrapper">
@@ -32,7 +31,7 @@
     {#if !$introAnimationStore.shouldRemoveStroke}
       <video class="video-brush" autoplay autobuffer muted playsinline>
         <source
-          src={"https://res.cloudinary.com/dt4xntymn/video/upload/v1636870696/mainSite/Brush_Stroke_1_orzxdf.mp4"}
+          src="{'https://res.cloudinary.com/dt4xntymn/video/upload/v1636870696/mainSite/Brush_Stroke_1_orzxdf.mp4'}"
           type="video/mp4"
         />
       </video>

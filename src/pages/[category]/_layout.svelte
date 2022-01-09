@@ -1,4 +1,4 @@
-<!-- routify:options param-is-page=true -->
+<!-- routify:options preload=true -->
 <script>
   import { goto, params, ready } from "@roxi/routify";
   import { onMount } from "svelte";
@@ -15,6 +15,8 @@
     marqueeHandlerStore.setCategory($params.category);
   });
 </script>
+
+<!-- routify:options param-is-page=true -->
 
 <div
   in:receive|local="{{ key: $marqueeHandlerStore.category }}"

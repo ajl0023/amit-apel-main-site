@@ -18,94 +18,111 @@
   });
 </script>
 
-<div class="content-container">
-  <div class="misc-info-wrapper">
-    <div class="info-container">
-      <h5>Hours</h5>
-      <p>Monday-Friday 9am-5pm</p>
-    </div>
+<div class="container">
+  <div class="content-container">
+    <div class="misc-info-margin-container">
+      <div class="misc-info-wrapper">
+        <div class="info-wrapper">
+          <div class="info-container">
+            <h5>Hours</h5>
+            <p>Monday-Friday 9am-5pm</p>
+          </div>
+        </div>
 
-    <div class="info-container">
-      <h5>Address</h5>
-      <p>33202 1/4 mulholland hwy</p>
-      <p>malibu, ca 90265</p>
-      <p>apeldesign@apeldesign.com</p>
+        <div class="info-wrapper">
+          <div class="info-container">
+            <h5>Address</h5>
+            <p>33202 1/4 mulholland hwy</p>
+            <p>malibu, ca 90265</p>
+            <p>apeldesign@apeldesign.com</p>
+          </div>
+        </div>
+      </div>
     </div>
+    <form
+      bind:this="{form}"
+      name="emailForm"
+      data-netlify="true"
+      class="form-container flex-item"
+      netlify
+    >
+      <input type="hidden" name="form-name" value="emailForm" />
+
+      <div class="contact-field">
+        <label for="" class="contact-label">Email</label>
+        <input class="contact-input" name="email" />
+      </div>
+
+      <div class="contact-field">
+        <div class="contact-control">
+          <label for="" class="contact-label">Name</label>
+
+          <input
+            id="name-input"
+            class="contact-input"
+            type="text"
+            name="name"
+          />
+        </div>
+      </div>
+
+      <div class="contact-field">
+        <div class="contact-control">
+          <label for="" class="contact-label">Country</label>
+
+          <input
+            id="country-input"
+            class="contact-input"
+            type="text"
+            name="country"
+          />
+        </div>
+      </div>
+      <div class="contact-field">
+        <div class="contact-control">
+          <label for="" class="contact-label">Phone</label>
+
+          <input
+            id="phone-input"
+            class="contact-input"
+            type="phone"
+            name="phone"
+          />
+        </div>
+      </div>
+      <div class="contact-field">
+        <div class="contact-control">
+          <label for="" class="contact-label">Message</label>
+          <textarea
+            id="message-input"
+            class="contact-textarea contact-input"
+            type="text"
+            name="message"></textarea>
+        </div>
+      </div>
+      <div class="contact-field">
+        <div class="contact-control"></div>
+      </div>
+
+      <div class="contact-field">
+        <div class="contact-control">
+          <input
+            on:click="{handleSubmit}"
+            type="submit"
+            class="contact-button contact-input contact-is-link contact-is-fullwidth"
+          />
+        </div>
+      </div>
+    </form>
   </div>
-  <form
-    bind:this={form}
-    name="emailForm"
-    data-netlify="true"
-    class="form-container flex-item"
-    netlify
-  >
-    <input type="hidden" name="form-name" value="emailForm" />
-
-    <div class="contact-field">
-      <label for="" class="contact-label">Email</label>
-      <input class="contact-input" name="email" />
-    </div>
-
-    <div class="contact-field">
-      <div class="contact-control">
-        <label for="" class="contact-label">Name</label>
-
-        <input id="name-input" class="contact-input" type="text" name="name" />
-      </div>
-    </div>
-
-    <div class="contact-field">
-      <div class="contact-control">
-        <label for="" class="contact-label">Country</label>
-
-        <input
-          id="country-input"
-          class="contact-input"
-          type="text"
-          name="country"
-        />
-      </div>
-    </div>
-    <div class="contact-field">
-      <div class="contact-control">
-        <label for="" class="contact-label">Phone</label>
-
-        <input
-          id="phone-input"
-          class="contact-input"
-          type="phone"
-          name="phone"
-        />
-      </div>
-    </div>
-    <div class="contact-field">
-      <div class="contact-control">
-        <label for="" class="contact-label">Message</label>
-        <textarea
-          id="message-input"
-          class="contact-textarea contact-input"
-          type="text"
-          name="message"
-        />
-      </div>
-    </div>
-    <div class="contact-field">
-      <div class="contact-control" />
-    </div>
-
-    <div class="contact-field">
-      <div class="contact-control">
-        <input
-          on:click={handleSubmit}
-          type="submit"
-          class="contact-button contact-input contact-is-link contact-is-fullwidth"
-        />
-      </div>
-    </div>
-  </form>
 </div>
 
 <style lang="scss">
+  @use "sass:math";
+  .container {
+    height: 100%;
+    overflow: auto;
+  }
   .content-container {
     display: flex;
     padding: 1rem;
@@ -113,7 +130,7 @@
     justify-content: center;
     max-width: 800px;
     width: 100%;
-
+    height: fit-content;
     margin: auto;
 
     input[type="submit"] {
@@ -128,39 +145,50 @@
     }
   }
 
-  .misc-info-wrapper {
-    display: flex;
+  .misc-info-margin-container {
     margin-right: 1rem;
-    font-family: "Roboto Mono", monospace;
-    flex-direction: column;
-    width: 100%;
-
-    .info-container {
-      text-align: center;
-      height: 100%;
-      width: 100%;
-      justify-content: center;
+    .misc-info-wrapper {
       display: flex;
-      align-items: center;
-      background-color: white;
-      box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px,
-        rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
-      padding: 48px;
+      height: 100%;
+      font-family: "Roboto Mono", monospace;
       flex-direction: column;
-      text-transform: uppercase;
-      border-radius: 4px;
+      width: 100%;
 
-      h5 {
-        color: #68208e;
-        font-size: 1.2em;
+      .info-wrapper {
+        height: 100%;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
       }
-      p {
-        font-size: 1em;
+      .info-container {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px,
+          rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+        padding: 48px;
+        flex-direction: column;
+        text-transform: uppercase;
+        border-radius: 4px;
+
+        h5 {
+          color: #68208e;
+          font-size: 1.2em;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+      @media screen and (max-width: 610px) {
+        max-width: 100%;
       }
     }
     @media screen and (max-width: 610px) {
       margin-right: 0rem;
-      max-width: 100%;
     }
   }
 
@@ -191,28 +219,32 @@
     }
   }
 
-  .contact-input {
-    width: 100%;
-    font-size: 16px;
-    line-height: 28px;
-    padding: 8px 16px;
-    width: 100%;
-    min-height: 44px;
-    border: unset;
-    border-radius: 4px;
+  .contact-field {
+    margin-bottom: 1rem;
+    .contact-input {
+      width: 100%;
+      font-size: 16px;
+      line-height: 28px;
+      padding: 8px 16px;
+      width: 100%;
+      min-height: 44px;
+      border: unset;
+      border-radius: 4px;
 
-    outline-color: rgb(84 105 212 / 0.5);
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-      rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-      rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-      rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-  }
-  label {
-    font-size: 14px;
+      outline-color: rgb(84 105 212 / 0.5);
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    }
+    label {
+      font-size: 14px;
 
-    display: block;
-    font-family: "Roboto Mono", monospace;
-    font-weight: 400;
+      display: block;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
   }
 </style>
