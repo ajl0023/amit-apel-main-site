@@ -1,7 +1,7 @@
 <script>
   import { goto, params } from "@roxi/routify";
+  import { pageLayoutMaster } from "../../../../pageLayout";
 
-  import { pageLayoutMaster } from "../../../../../pageLayout";
   let drop = false;
 
   let categoryDetails =
@@ -11,13 +11,11 @@
   });
 </script>
 
-<div
-  on:click="{() => {
-    drop = !drop;
-  }}"
-  class="container"
->
+<div class="container">
   <svg
+    on:click="{() => {
+      drop = !drop;
+    }}"
     xmlns="http://www.w3.org/2000/svg"
     height="24px"
     class="menu-icon"
@@ -29,13 +27,27 @@
     ></path></svg
   >
   {#if drop}
-    <div class="drop-down-container">
-      <div class="arrow-up"></div>
+    <div
+      class="nav-backdrop-container"
+      on:click="{() => {
+        drop = false;
+      }}"
+    ></div>
+
+    <div class="side-menu-container">
       <ul class="nav-alt-list">
+        <div
+          on:click="{() => {
+            drop = false;
+          }}"
+          class="close-x close-main"
+        ></div>
         {#each pagesArr as page}
           <li
             on:click="{() => {
               $goto(`./${page.urlFormatted}`);
+
+              drop = false;
             }}"
             class="nav-list-item"
           >
@@ -50,6 +62,23 @@
 </div>
 
 <style lang="scss">
+  .close-x {
+    position: relative;
+    left: auto;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .nav-backdrop-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 6;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
   .arrow-up {
     width: 0;
     height: 0;
@@ -66,33 +95,37 @@
     cursor: pointer;
     height: 30px;
     width: 30px;
-   
   }
-  .drop-down-container {
+  .side-menu-container {
     height: auto;
+
     background-color: white;
 
-    border-radius: 9px;
     z-index: 15;
     font-family: "Fira Sans Condensed", sans-serif;
     text-transform: uppercase;
-    position: absolute;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    @media screen and (max-width: 600px) {
+      right: 0;
+      
+      left: auto;
+    }
     .nav-alt-list {
       overflow: hidden;
     }
     .nav-list-item {
       display: block;
+      padding: 20px 5rem 20px 20px;
       cursor: pointer;
-      padding: 20px;
+
       border-bottom: 1px solid rgb(161, 161, 161);
       white-space: nowrap;
       &:hover {
         background-color: rgb(111, 63, 138);
         color: white;
-      }
-      &:last-child {
-        margin-bottom: 0px;
-        border: none;
       }
     }
   }

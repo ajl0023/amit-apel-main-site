@@ -3,7 +3,7 @@
   import { pageLayoutMaster } from "../../../../pageLayout";
   import { marqueeHandlerStore } from "../../_stores/marqueeHandlerStore";
   import LeftArrow from "./LeftArrow.svelte";
-  import ListIcon from "./images/ListIcon.svelte";
+  import ListIcon from "./ListIcon.svelte";
 </script>
 
 <div class="top-nav-container">

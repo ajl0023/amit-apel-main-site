@@ -16,6 +16,11 @@ module.exports = {
         changeOrigin: true,
         secure: false,
       },
+      "^/.netlify/functions/get-full-images/.*": {
+        target: "http://localhost:9999",
+        changeOrigin: true,
+        secure: false,
+      },
     },
   },
 

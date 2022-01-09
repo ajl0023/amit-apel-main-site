@@ -21,14 +21,18 @@
   out:send|local="{{ key: $marqueeHandlerStore.category }}"
   class="wrapper"
 >
-  <!-- <Navbar /> -->
+  <Navbar />
+
   {#if $galleryModal.visible}
-    {#if $galleryModal.type === "spec"}
-      <GalleryModal />
-    {:else}
-      <BasicModal />
-    {/if}
+    <div class="modal-wrapper">
+      {#if $galleryModal.type === "spec"}
+        <GalleryModal />
+      {:else}
+        <BasicModal />
+      {/if}
+    </div>
   {/if}
+
   <div class="main-anim-wrapper" class:inactive="{$galleryModal.visible}">
     <slot />
   </div>
@@ -57,7 +61,8 @@
     z-index: 3;
     background-image: url("https://res.cloudinary.com/dt4xntymn/image/upload/v1637997281/mainSite/Background_Photo_ojnwmx.jpg");
     width: 100vw;
-
+    display: flex;
+    flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
   }

@@ -53,10 +53,10 @@
     width: 50vw;
     justify-content: center;
     padding: 5vw;
-    height: 100%;
+  
     @media screen and (max-width: 955px) {
       width: 100%;
-      height: auto;
+
       padding: 2vw;
     }
     @media screen and (max-width: 420px) {
@@ -118,7 +118,7 @@
   .container {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     @media screen and (max-width: 955px) {
       flex-direction: column;
@@ -126,7 +126,7 @@
       padding: 10px;
       overflow-x: hidden;
       overflow-y: auto;
-      height: auto;
+
       justify-content: space-around;
     }
   }

@@ -1,5 +1,5 @@
 <script>
-  import { params, ready, url } from "@roxi/routify";
+  import { goto, params, ready, url } from "@roxi/routify";
   import Colcade from "colcade";
   import { onDestroy, onMount, tick } from "svelte";
   import { pageLayoutMaster } from "../../../../../pageLayout";
@@ -19,7 +19,7 @@
       ];
     }
   }
-  onMount(() => {});
+
   let masonry;
   let colcade;
   async function fetchImages() {
@@ -36,6 +36,7 @@
         .then((res) => res.json())
         .then(async (data) => {
           images = data;
+
           await tick();
           if (!colcade) {
             colcade = new Colcade(container, {
@@ -53,27 +54,30 @@
 </script>
 
 <div class="wrapper">
-  <!-- {#if page === "private-homes"}
+  {#if page === "private-homes"}
     <div class="category-container">
       <ul class="category-list">
-        {#each privateHomesCategories as category}
+        {#each privateHomesCategories as category, i}
+          {#if i !== 0}
+            <div class="list-divider"></div>
+          {/if}
           <li class="category-item">
-            <h4 class="category-header">
-              <a
-                class:selected="{selected === category.urlFormatted}"
-                class="category-link"
-                href="{$url('./', {
+            <h5
+              class:selected="{selected === category.urlFormatted}"
+              class="category-link"
+              on:click="{() => {
+                $goto('./', {
                   ['sub_category']: category.urlFormatted,
-                })}"
-              >
-                {category.name}
-              </a>
-            </h4>
+                });
+              }}"
+            >
+              {category.name}
+            </h5>
           </li>
         {/each}
       </ul>
     </div>
-  {/if} -->
+  {/if}
   <div bind:this="{container}" class="container masonry-container">
     {#if images.length > 0}
       <div class="grid-col grid-col--1"></div>
@@ -96,37 +100,55 @@
 
 <style lang="scss">
   .wrapper {
-    padding: 20px;
     height: 100%;
     width: 100%;
-  
+    display: flex;
+    flex-direction: column;
   }
+
   .category-container {
     font-family: "Fira Sans Condensed", sans-serif;
-    display: block;
+
     width: 100%;
+    margin-top: 1rem;
     margin-bottom: 2rem;
+
+    .list-divider {
+      min-width: 2px;
+      height: 20px;
+      display: flex;
+      background-color: rgb(34, 34, 34);
+    }
     .category-list {
       display: flex;
-      width: fit-content;
+      align-items: center;
       margin: auto;
-      justify-content: space-between;
+      width: fit-content;
+      @media screen and (max-width: 850px) {
+        overflow-x: auto;
+        max-width: 600px;
+        width: 100%;
+        margin-left: auto;
+      }
       .category-item {
         list-style: none;
         padding: 0 15px;
-        font-size: 1em;
-        font-weight: 600;
+        font-size: 2em;
+
         letter-spacing: 2px;
         text-align: center;
-        .category-header {
-          .category-link {
-            color: black;
-            text-decoration: none;
-          }
-          .selected {
-            color: #68208e;
-          }
+
+        .category-link {
+          font-weight: 400;
+          white-space: nowrap;
+          color: black;
+          cursor: pointer;
+          text-decoration: none;
         }
+        .selected {
+          color: #68208e;
+        }
+
         &:last-child {
           margin-right: 0px;
         }
@@ -139,6 +161,7 @@
     width: 100%;
     overflow: auto;
     display: flex;
+    margin-top: 1rem;
     justify-content: center;
   }
   .grid-col {

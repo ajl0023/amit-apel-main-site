@@ -2,6 +2,7 @@
   import Carousel from "@beyonk/svelte-carousel";
   import { params } from "@roxi/routify";
   import { tick } from "svelte";
+  import BasicModal from "../BasicModal/BasicModal.svelte";
   import LeftArrow from "./assets/chevron_left_black_24dp.svelte";
   import RightArrow from "./assets/chevron_right_black_24dp.svelte";
   import { galleryModal } from "./store";
@@ -9,7 +10,7 @@
   $: ({ images } = $galleryModal);
 
   let carousel;
-
+  let loading = true;
   const handleCarouselLeft = () => {
     carousel.left();
   };
@@ -20,91 +21,115 @@
   const randomInd = () => {
     return Math.floor(Math.random() * (images.length - 1 - 0) + 0);
   };
+
+  $: {
+    if (images) {
+      loading = false;
+      images = images.filter((image) => {
+        return image.tags[1] !== "true";
+      });
+    }
+  }
 </script>
 
-<div class="container">
-  <div
-    on:click="{() => {
-      galleryModal.closeModal();
-    }}"
-    class="close-x close-main"
-  ></div>
-  <!-- <h3 class="main-header">
-    {$galleryModal.selected.label}
-  </h3> -->
-  <div class="content-container">
-    <div class="main-image-container">
-      <img src="{$galleryModal.selected.url}" alt="" />
-    </div>
-    {#if images.length > 0}
-      <div class="flex-image-gallery-container">
-        <div class="image-container">
-          <img src="{images[randomInd()].url}" alt="" />
+{#if images.length < 7 && !loading}
+  <BasicModal />
+{:else}
+  <div class="container">
+    <div class="content-wrapper">
+      <div
+        on:click="{() => {
+          galleryModal.closeModal();
+        }}"
+        class="close-x close-main"
+      ></div>
+      <h3 class="main-header">
+        {$galleryModal.selected.label}
+      </h3>
+      <div class="content-container">
+        <div class="main-image-container">
+          <img src="{$galleryModal.selected.url}" alt="" />
         </div>
-        <div class="image-container">
-          <img src="{images[randomInd()].url}" alt="" />
-        </div>
-        <div class="image-container">
-          <img src="{images[randomInd()].url}" alt="" />
-        </div>
-      </div>
-    {/if}
+        {#if images.length > 0}
+          <div class="flex-image-gallery-container col-3">
+            <div class="image-container">
+              <img src="{images[0].url}" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="{images[1].url}" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="{images[2].url}" alt="" />
+            </div>
+          </div>
+        {/if}
 
-    {#if images.length > 0}
-      <div class="flex-image-gallery-container">
-        <div class="image-container">
-          <img src="{images[randomInd()].url}" alt="" />
-        </div>
-        <div class="image-container">
-          <img src="{images[randomInd()].url}" alt="" />
+        {#if images.length > 0}
+          <div class="flex-image-gallery-container col-2">
+            <div class="image-container">
+              <img src="{images[3].url}" alt="" />
+            </div>
+            <div class="image-container">
+              <img src="{images[4].url}" alt="" />
+            </div>
+          </div>
+        {/if}
+        <div class="carousel-container">
+          <span on:click="{handleCarouselLeft}" class="control left">
+            <LeftArrow />
+          </span>
+          {#if images.length > 0}
+            <div class="carousel-main-container">
+              <Carousel bind:this="{carousel}" perPage="{1}">
+                {#each images.slice(5, images.length - 1) as data}
+                  <div class="image-container">
+                    <img class="carousel-image" src="{data.url}" alt="" />
+                  </div>
+                {/each}
+              </Carousel>
+            </div>
+          {/if}
+          <span on:click="{handleCarouselRight}" class="control right">
+            <RightArrow />
+          </span>
         </div>
       </div>
-    {/if}
-    <div class="carousel-container">
-      <span on:click="{handleCarouselLeft}" class="control left">
-        <LeftArrow />
-      </span>
-      {#if images.length > 0}
-        <div class="carousel-main-container">
-          <Carousel bind:this="{carousel}" perPage="{1}">
-            {#each images.slice(0, images.length - 1) as data}
-              <div class="image-container">
-                <img class="carousel-image" src="{data.url}" alt="" />
-              </div>
-            {/each}
-          </Carousel>
-        </div>
-      {/if}
-      <span on:click="{handleCarouselRight}" class="control right">
-        <RightArrow />
-      </span>
     </div>
   </div>
-</div>
+{/if}
 
 <style lang="scss">
+  .content-wrapper {
+    z-index: 2;
+    position: relative;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+  }
   .container {
     // background-image: url("https://res.cloudinary.com/dt4xntymn/image/upload/v1637997281/mainSite/Background_Photo_ojnwmx.jpg");
 
     z-index: 5;
     width: 100vw;
-    height: 100%;
-
-    padding: 30px;
 
     background-repeat: no-repeat;
     background-size: cover;
-    position: fixed;
-
-    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
     font-family: "Fira Sans Condensed", sans-serif;
+
     .content-container {
       max-width: 1000px;
       width: 100%;
       margin: auto;
 
+      position: relative;
       overflow-y: auto;
-      height: 100%;
+
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -134,7 +159,7 @@
     width: 100%;
 
     position: relative;
-
+    margin-top: 1.5rem;
     align-items: center;
 
     &:before {
@@ -164,16 +189,26 @@
     }
   }
 
+  .col-3 {
+    .image-container {
+      flex: 33%;
+    }
+  }
+  .col-2 {
+    .image-container {
+      flex: 50%;
+    }
+  }
   .flex-image-gallery-container {
     display: flex;
-
-    margin-top: 2.5rem;
+    justify-content: center;
+    margin-top: 1rem;
     width: 100%;
+
     .image-container {
-  
-      margin-right: 10px;
-      &:last-child {
-        margin-right: 0px;
+      justify-content: center;
+      &:not(:last-child) {
+        margin-right: 10px;
       }
       img {
         object-fit: cover;

@@ -156,7 +156,7 @@ export const pageLayoutMaster = {
         urlFormatted: "private-homes",
         categories: [
           {
-            name: "Contemporary Houses",
+            name: "Contemporary",
             urlFormatted: "contemporary-houses",
           },
           {
@@ -164,11 +164,11 @@ export const pageLayoutMaster = {
             urlFormatted: "multi-family",
           },
           {
-            name: "Spanish Revival Homes",
+            name: "Spanish Revival",
             urlFormatted: "spanish-revival-homes",
           },
           {
-            name: "Traditional Homes",
+            name: "Traditional",
             urlFormatted: "traditional-homes",
           },
         ],

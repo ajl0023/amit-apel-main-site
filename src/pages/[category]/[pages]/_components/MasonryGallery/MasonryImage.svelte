@@ -23,7 +23,9 @@
 
     fetch(
       `${
-        window.location.origin === 'http://jsdom.ssr' || !import.meta.env.PROD
+        window.location.origin === 'http://jsdom.ssr' ||
+        (!import.meta.env.PROD &&
+          window.location.origin !== 'http://192.168.0.249:5000')
           ? 'http://localhost:9999'
           : window.location.origin
       }/.netlify/functions/get-full-images/?category=${$params.pages}${
@@ -78,6 +80,11 @@
     font-family: "Fira Sans Condensed", sans-serif;
     color: #68208e;
     padding: 4px;
+    .label {
+      @media screen and (max-width: 800px) {
+        font-size: 2em;
+      }
+    }
   }
   .aspect-ratio-box {
     overflow: hidden;
