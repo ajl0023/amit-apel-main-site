@@ -32,21 +32,29 @@
   }
 </script>
 
-{#if images.length < 7 && !loading}
-  <BasicModal />
-{:else}
-  <div class="container">
-    <div class="content-wrapper">
-      <div
-        on:click="{() => {
-          galleryModal.closeModal();
-        }}"
-        class="close-x close-main"
-      ></div>
-      <h3 class="main-header">
-        {$galleryModal.selected.label}
-      </h3>
-      <div class="content-container">
+<div class="container"></div>
+
+<div class="container">
+  <div class="content-wrapper">
+    <div
+      on:click="{() => {
+        galleryModal.closeModal();
+      }}"
+      class="close-x close-main"
+    ></div>
+    <h3 class="main-header">
+      {$galleryModal.selected.label}
+    </h3>
+    <div class="content-container">
+      {#if images.length < 3}
+        <div class="gallery-container">
+          {#each images as img}
+            <div class="image-container">
+              <img src="{img.url}" alt="" />
+            </div>
+          {/each}
+        </div>
+      {:else}
         <div class="main-image-container">
           <img src="{$galleryModal.selected.url}" alt="" />
         </div>
@@ -64,7 +72,7 @@
           </div>
         {/if}
 
-        {#if images.length > 0}
+        {#if images.length > 4}
           <div class="flex-image-gallery-container col-2">
             <div class="image-container">
               <img src="{images[3].url}" alt="" />
@@ -81,7 +89,7 @@
           {#if images.length > 0}
             <div class="carousel-main-container">
               <Carousel bind:this="{carousel}" perPage="{1}">
-                {#each images.slice(5, images.length - 1) as data}
+                {#each images as data}
                   <div class="image-container">
                     <img class="carousel-image" src="{data.url}" alt="" />
                   </div>
@@ -93,17 +101,30 @@
             <RightArrow />
           </span>
         </div>
-      </div>
+      {/if}
     </div>
   </div>
-{/if}
+</div>
 
 <style lang="scss">
+  .gallery-container {
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    .image-container {
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
   .content-wrapper {
     z-index: 2;
     position: relative;
 
-    background-color: rgba(0, 0, 0, 0.3);
     padding: 30px;
   }
   .container {
@@ -111,9 +132,7 @@
 
     z-index: 5;
     width: 100vw;
-
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -207,6 +226,20 @@
 
     .image-container {
       justify-content: center;
+      position: relative;
+      &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 63%;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
       &:not(:last-child) {
         margin-right: 10px;
       }
