@@ -23,12 +23,10 @@
   <div class="video-bg">
     {#if window.location.origin !== "http://jsdom.ssr"}
       <video
-        on:canplay="{(e) => {
-          setTimeout(() => {}, 1500);
-        }}"
         class="video-render"
         loop
         muted
+        autoplay
         preload="auto"
         playsinline
       >
