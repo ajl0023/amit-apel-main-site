@@ -25,7 +25,7 @@
       on:canplay="{(e) => {
         setTimeout(() => {
           e.target.play();
-        }, 500);
+        }, 1500);
       }}"
       class="video-render"
       loop
