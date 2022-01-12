@@ -21,7 +21,16 @@
 <slot />
 <div class="home-wrapper">
   <div class="video-bg">
-    <video class="video-render" autoplay loop autobuffer muted playsinline>
+    <video
+      on:canplay="{(e) => {
+        e.target.play();
+      }}"
+      class="video-render"
+      loop
+      autobuffer
+      muted
+      playsinline
+    >
       <source
         src="https://res.cloudinary.com/dt4xntymn/video/upload/v1636857895/mainSite/Render_viqdcp.mp4"
         type="video/mp4"

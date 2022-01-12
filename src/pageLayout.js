@@ -226,10 +226,10 @@ export const pageLayoutMaster = {
   },
 };
 
-export const pageLayoutMasterArr = [];
-for (const key in pageLayoutMaster.categories.byTitle) {
-  if (Object.hasOwnProperty.call(pageLayoutMaster.categories.byTitle, key)) {
-    const element = pageLayoutMaster.categories.byTitle[key];
-    pageLayoutMasterArr.push(element.urlFormatted);
-  }
-}
+export const pageLayoutMasterArr = [
+  "architecture",
+  "apel-design",
+  "design",
+  "developments",
+];
+const pages = ["architecture", "apel-design", "design", "developments"];
