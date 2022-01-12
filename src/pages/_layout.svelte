@@ -30,6 +30,7 @@
       class="video-render"
       loop
       muted
+      preload="auto"
       playsinline
     >
       <source
