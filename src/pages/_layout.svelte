@@ -21,23 +21,22 @@
 <slot />
 <div class="home-wrapper">
   <div class="video-bg">
-    <video
-      on:canplay="{(e) => {
-        if (window.location.origin !== 'http://jsdom.ssr') {
+    {#if window.location.origin !== "http://jsdom.ssr"}
+      <video
+        on:canplay="{(e) => {
           setTimeout(() => {}, 1500);
-        }
-      }}"
-      class="video-render"
-      loop
-      muted
-      preload="auto"
-      playsinline
-    >
-      <source
-        src="https://res.cloudinary.com/dt4xntymn/video/upload/v1636857895/mainSite/Render_viqdcp.mp4"
-        type="video/mp4"
-      />
-    </video>
+        }}"
+        class="video-render"
+        loop
+        muted
+        preload="auto"
+        playsinline
+      >
+        <source
+          src="https://res.cloudinary.com/dt4xntymn/video/upload/v1636857895/mainSite/Render_viqdcp.mp4"
+          type="video/mp4"
+        />
+      </video>{/if}
 
     {#if !$introAnimationStore.shouldRemoveStroke}
       <video class="video-brush" autoplay autobuffer muted playsinline>
