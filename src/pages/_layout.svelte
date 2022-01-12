@@ -23,9 +23,9 @@
   <div class="video-bg">
     <video
       on:canplay="{(e) => {
-        setTimeout(() => {
-          e.target.play();
-        }, 1500);
+        if (window.location.origin !== 'http://jsdom.ssr') {
+          setTimeout(() => {}, 1500);
+        }
       }}"
       class="video-render"
       loop
