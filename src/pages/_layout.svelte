@@ -23,7 +23,9 @@
   <div class="video-bg">
     <video
       on:canplay="{(e) => {
-        e.target.play();
+        setTimeout(() => {
+          e.target.play();
+        }, 500);
       }}"
       class="video-render"
       loop
