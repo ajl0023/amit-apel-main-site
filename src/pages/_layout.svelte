@@ -29,7 +29,6 @@
       }}"
       class="video-render"
       loop
-      autobuffer
       muted
       playsinline
     >
