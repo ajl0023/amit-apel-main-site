@@ -34,9 +34,10 @@
           src="https://res.cloudinary.com/dt4xntymn/video/upload/v1636857895/mainSite/Render_viqdcp.mp4"
           type="video/mp4"
         />
-      </video>{/if}
+      </video>
+    {/if}
 
-    {#if !$introAnimationStore.shouldRemoveStroke}
+    {#if !$introAnimationStore.shouldRemoveStroke && window.location.origin !== "http://jsdom.ssr"}
       <video class="video-brush" autoplay autobuffer muted playsinline>
         <source
           src="{'https://res.cloudinary.com/dt4xntymn/video/upload/v1636870696/mainSite/Brush_Stroke_1_orzxdf.mp4'}"
