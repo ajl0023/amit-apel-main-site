@@ -51,7 +51,13 @@
       display: flex;
       color: black;
       align-items: center;
+
       cursor: pointer;
+
+      h4 {
+        font-weight: 500;
+      }
+
       &:hover {
         background-color: rgb(111, 63, 138);
         color: white;

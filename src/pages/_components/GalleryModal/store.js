@@ -20,7 +20,6 @@ const store = () => {
     },
     closeModal() {
       update((s) => {
-    
         s = { ...copy };
         return s;
       });

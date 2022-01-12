@@ -53,7 +53,7 @@
     width: 50vw;
     justify-content: center;
     padding: 5vw;
-  
+
     @media screen and (max-width: 955px) {
       width: 100%;
 
@@ -64,23 +64,24 @@
     }
   }
   .main-header {
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 2em;
+    font-weight: 500;
   }
   .header-container {
     margin-bottom: 1.5rem;
 
     .property-header {
       color: #5d1089;
-      font-weight: 800;
-      font-family: "Fira Sans Condensed", sans-serif;
+      font-weight: 700;
+      font-family: "Montserrat", sans-serif;
     }
   }
   .redirect-button {
     text-transform: uppercase;
-    font-family: "Fira Sans Condensed", sans-serif;
-    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     background: #5d1089;
     border: none;
     color: white;
@@ -106,8 +107,8 @@
   .text-content-container {
     text-align: left;
     .description {
-      font-family: "Fira Sans Condensed", sans-serif;
-      font-size: 1.5em;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.3em;
       @media screen and (max-width: 955px) {
         width: 100%;
         font-size: 1.1em;

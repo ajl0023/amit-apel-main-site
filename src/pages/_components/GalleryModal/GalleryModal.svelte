@@ -1,14 +1,14 @@
 <script>
   import Carousel from "@beyonk/svelte-carousel";
   import { params } from "@roxi/routify";
-  import { tick } from "svelte";
+  import { onMount, tick } from "svelte";
   import BasicModal from "../BasicModal/BasicModal.svelte";
   import LeftArrow from "./assets/chevron_left_black_24dp.svelte";
   import RightArrow from "./assets/chevron_right_black_24dp.svelte";
   import { galleryModal } from "./store";
 
   $: ({ images } = $galleryModal);
-
+  let container;
   let carousel;
   let loading = true;
   const handleCarouselLeft = () => {
@@ -16,10 +16,6 @@
   };
   const handleCarouselRight = () => {
     carousel.right();
-  };
-  //temporary images until all images are organized
-  const randomInd = () => {
-    return Math.floor(Math.random() * (images.length - 1 - 0) + 0);
   };
 
   $: {
@@ -30,81 +26,90 @@
       });
     }
   }
+  let height;
+  const setContainerHeight = () => {
+    const navbar = document.querySelector(".top-nav-container");
+    height = window.innerHeight - navbar.getBoundingClientRect().height;
+  };
+  onMount(() => {
+    setContainerHeight();
+  });
 </script>
 
-<div class="container"></div>
-
-<div class="container">
-  <div class="content-wrapper">
-    <div
-      on:click="{() => {
-        galleryModal.closeModal();
-      }}"
-      class="close-x close-main"
-    ></div>
-    <h3 class="main-header">
-      {$galleryModal.selected.label}
-    </h3>
-    <div class="content-container">
-      {#if images.length < 3}
-        <div class="gallery-container">
-          {#each images as img}
-            <div class="image-container">
-              <img src="{img.url}" alt="" />
-            </div>
-          {/each}
-        </div>
-      {:else}
-        <div class="main-image-container">
-          <img src="{$galleryModal.selected.url}" alt="" />
-        </div>
-        {#if images.length > 0}
-          <div class="flex-image-gallery-container col-3">
-            <div class="image-container">
-              <img src="{images[0].url}" alt="" />
-            </div>
-            <div class="image-container">
-              <img src="{images[1].url}" alt="" />
-            </div>
-            <div class="image-container">
-              <img src="{images[2].url}" alt="" />
-            </div>
+<svelte:window on:resize="{setContainerHeight}" />
+{#if $galleryModal.selected}
+  <div style="height: {height}px;" bind:this="{container}" class="container">
+    <div class="content-wrapper">
+      <div
+        on:click="{() => {
+          galleryModal.closeModal();
+        }}"
+        class="close-x close-main"
+      ></div>
+      <h3 class="main-header">
+        {$galleryModal.selected.label}
+      </h3>
+      <div class="content-container">
+        {#if images.length < 3}
+          <div class="gallery-container">
+            {#each images as img}
+              <div class="image-container">
+                <img src="{img.url}" alt="" />
+              </div>
+            {/each}
           </div>
-        {/if}
-
-        {#if images.length > 4}
-          <div class="flex-image-gallery-container col-2">
-            <div class="image-container">
-              <img src="{images[3].url}" alt="" />
-            </div>
-            <div class="image-container">
-              <img src="{images[4].url}" alt="" />
-            </div>
+        {:else}
+          <div class="main-image-container">
+            <img src="{$galleryModal.selected.url}" alt="" />
           </div>
-        {/if}
-        <div class="carousel-container">
-          <span on:click="{handleCarouselLeft}" class="control left">
-            <LeftArrow />
-          </span>
           {#if images.length > 0}
-            <div class="carousel-main-container">
-              <Carousel bind:this="{carousel}" perPage="{1}">
-                {#each images as data}
-                  <div class="image-container">
-                    <img class="carousel-image" src="{data.url}" alt="" />
-                  </div>
-                {/each}
-              </Carousel>
+            <div class="flex-image-gallery-container col-3">
+              <div class="image-container">
+                <img src="{images[0].url}" alt="" />
+              </div>
+              <div class="image-container">
+                <img src="{images[1].url}" alt="" />
+              </div>
+              <div class="image-container">
+                <img src="{images[2].url}" alt="" />
+              </div>
             </div>
           {/if}
-          <span on:click="{handleCarouselRight}" class="control right">
-            <RightArrow />
-          </span>
-        </div>
-      {/if}
+
+          {#if images.length > 4}
+            <div class="flex-image-gallery-container col-2">
+              <div class="image-container">
+                <img src="{images[3].url}" alt="" />
+              </div>
+              <div class="image-container">
+                <img src="{images[4].url}" alt="" />
+              </div>
+            </div>
+          {/if}
+          <div class="carousel-container">
+            <span on:click="{handleCarouselLeft}" class="control left">
+              <LeftArrow />
+            </span>
+            {#if images.length > 0}
+              <div class="carousel-main-container">
+                <Carousel bind:this="{carousel}" perPage="{1}">
+                  {#each images as data}
+                    <div class="image-container">
+                      <img class="carousel-image" src="{data.url}" alt="" />
+                    </div>
+                  {/each}
+                </Carousel>
+              </div>
+            {/if}
+            <span on:click="{handleCarouselRight}" class="control right">
+              <RightArrow />
+            </span>
+          </div>
+        {/if}
+      </div>
     </div>
   </div>
-</div>
+{/if}
 
 <style lang="scss">
   .gallery-container {
@@ -139,8 +144,7 @@
     right: 0;
     left: 0;
     overflow-y: auto;
-    font-family: "Fira Sans Condensed", sans-serif;
-
+    font-family: 'Montserrat', sans-serif;
     .content-container {
       max-width: 1000px;
       width: 100%;

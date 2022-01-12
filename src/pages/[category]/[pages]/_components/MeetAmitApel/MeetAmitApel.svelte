@@ -93,7 +93,7 @@
     align-items: center;
   }
   .main-text-content {
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 1.5em;
     max-width: 1200px;

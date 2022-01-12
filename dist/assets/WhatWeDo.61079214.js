@@ -1,4 +1,4 @@
-import{S as s,i as r,s as c,e as d,a as l,c as p,n as a,g as h,h as v,a5 as m,D as u}from"./vendor.ee7374a1.js";function y(i){let e;return{c(){e=d("div"),e.innerHTML=`<div class="content-container svelte-hh65om"><div class="video-container svelte-hh65om"><video class="video svelte-hh65om" autoplay="" muted="" loop="" id="myVideo"><source src="https://res.cloudinary.com/dt4xntymn/video/upload/v1638865194/mainSite/what%20we%20do/dance_eslil9.mp4" type="video/mp4"/></video></div> 
+import{S as s,i as r,s as c,e as d,a as l,c as p,n as a,g as v,h as u,a6 as h,D as m}from"./vendor.9d10a2da.js";function y(n){let e;return{c(){e=d("div"),e.innerHTML=`<div class="content-container svelte-1p3ixev"><div class="video-container svelte-1p3ixev"><video class="video svelte-1p3ixev" autoplay="" muted="" loop="" id="myVideo"><source src="https://res.cloudinary.com/dt4xntymn/video/upload/v1638865194/mainSite/what%20we%20do/dance_eslil9.mp4" type="video/mp4"/></video></div> 
     <div class="text-container"><p>We are an award-winning, multi-disciplinary design and development
         studio focused on bespoke architectural creations. Specializing in new
         development, private residences, specialty concepts, and hospitality
@@ -11,4 +11,4 @@ import{S as s,i as r,s as c,e as d,a as l,c as p,n as a,g as h,h as v,a5 as m,D 
         the boundaries of traditional architecture to create detailed spaces
         that are both functional and perennial. At the very core of every
         concept is one central experience: connecting people to the art of
-        living.</p></div></div>`,l(e,"class","container svelte-hh65om")},m(t,n){p(t,e,n)},p:a,i:a,o:a,d(t){t&&h(e)}}}function f(i,e,t){let n;return v(i,m,o=>t(0,n=o)),u(()=>{n()}),[]}class w extends s{constructor(e){super();r(this,e,f,y,c,{})}}export{w as default};
+        living.</p></div></div>`,l(e,"class","container svelte-1p3ixev")},m(t,i){p(t,e,i)},p:a,i:a,o:a,d(t){t&&v(e)}}}function f(n,e,t){let i;return u(n,h,o=>t(0,i=o)),m(()=>{i()}),[]}class w extends s{constructor(e){super();r(this,e,f,y,c,{})}}export{w as default};

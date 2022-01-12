@@ -1,26 +1,39 @@
 <script>
+  import { onMount } from "svelte";
+
   import { galleryModal } from "../GalleryModal/store";
+  let container;
+  let height;
+  const setContainerHeight = () => {
+    const navbar = document.querySelector(".top-nav-container");
+    height = window.innerHeight - navbar.getBoundingClientRect().height;
+  };
+  onMount(() => {
+    setContainerHeight();
+  });
 </script>
 
-<div class="container">
-  <div
-    on:click="{() => {
-      galleryModal.closeModal();
-    }}"
-    class="close-x close-main"
-  ></div>
-  <div class="gallery-container">
-    {#each $galleryModal.images as img}
-      <div class="image-container">
-        <img src="{img.url}" alt="" />
-      </div>
-    {/each}
+<svelte:window on:resize="{setContainerHeight}" />
+<div style="height: {height}px;" class="container">
+  <div class="inner-container">
+    <div
+      on:click="{() => {
+        galleryModal.closeModal();
+      }}"
+      class="close-x close-main"
+    ></div>
+    <div class="gallery-container">
+      {#each $galleryModal.images as img}
+        <div class="image-container">
+          <img src="{img.url}" alt="" />
+        </div>
+      {/each}
+    </div>
   </div>
 </div>
 
 <style lang="scss">
   .container {
-    padding: 30px;
     background-image: url("https://res.cloudinary.com/dt4xntymn/image/upload/v1637997281/mainSite/Background_Photo_ojnwmx.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,8 +49,12 @@
 
     justify-content: center;
   }
+  .inner-container {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
   .gallery-container {
-    max-width: 1200px;
+    max-width: 800px;
     width: 100%;
     margin: auto;
     .image-container {

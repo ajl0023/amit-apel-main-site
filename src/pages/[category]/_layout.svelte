@@ -1,5 +1,7 @@
 <!-- routify:options preload=true -->
 <script>
+  import { fade } from "svelte/transition";
+
   import { goto, params, ready } from "@roxi/routify";
   import { onMount } from "svelte";
   import { transition } from "../../crossfade";
@@ -9,7 +11,7 @@
 
   import Navbar from "./_components/Navbar/Navbar.svelte";
   import { marqueeHandlerStore } from "./_stores/marqueeHandlerStore";
-
+  let modalWrapper;
   const { receive, send } = $transition;
   onMount(() => {
     marqueeHandlerStore.setCategory($params.category);
@@ -26,7 +28,7 @@
   <Navbar />
 
   {#if $galleryModal.visible}
-    <div class="modal-wrapper">
+    <div bind:this="{modalWrapper}" transition:fade class="modal-wrapper">
       {#if $galleryModal.type === "spec"}
         <GalleryModal />
       {:else}
@@ -43,7 +45,6 @@
 <style lang="scss">
   .modal-wrapper {
     position: relative;
-    height: 100%;
   }
   .main-anim-wrapper {
     display: flex;

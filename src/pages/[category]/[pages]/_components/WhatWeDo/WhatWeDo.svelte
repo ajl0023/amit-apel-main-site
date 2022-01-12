@@ -42,7 +42,7 @@
     font-size: 1.4em;
     color: #68208e;
     text-align: center;
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     .video-container {
       margin: 1rem 0rem;

@@ -44,7 +44,11 @@
         {#each pageLayoutMasterArr as category, i}
           <li
             on:click="{(e) => {
-              categorySelected = categorySelected ? null : category;
+              if (category === categorySelected) {
+                categorySelected = null;
+              } else {
+                categorySelected = category;
+              }
             }}"
             class="nav-list-item"
           >
@@ -104,6 +108,7 @@
     position: fixed;
     left: 0;
     top: 0;
+
     right: 0;
     z-index: 6;
     bottom: 0;
@@ -132,7 +137,9 @@
     background-color: white;
 
     z-index: 15;
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    max-width: 400px;
+    width: 100%;
     text-transform: uppercase;
     position: fixed;
     left: 0;
@@ -156,6 +163,9 @@
       &:hover {
         background-color: rgb(111, 63, 138);
         color: white;
+      }
+      .nav-sub-item {
+        font-weight: 500;
       }
     }
   }

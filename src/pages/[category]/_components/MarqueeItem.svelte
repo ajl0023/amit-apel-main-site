@@ -82,7 +82,7 @@
     background-color: transparent;
     text-decoration: none;
     width: 100%;
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     border-top: 2px solid black;
     &:last-child {
@@ -137,7 +137,7 @@
     white-space: nowrap;
     font-size: 4vw;
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 500;
     padding: 1vh 1vw 0;
     text-transform: uppercase;
     @media screen and (max-width: 820px) {

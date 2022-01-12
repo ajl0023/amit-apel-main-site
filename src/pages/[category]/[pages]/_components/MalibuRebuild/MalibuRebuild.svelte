@@ -56,11 +56,11 @@
     padding: 1rem;
   }
   h3 {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 2em;
     text-align: center;
 
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 1.3rem;
   }
   .text-container {
@@ -68,13 +68,13 @@
     font-size: 2em;
     display: flex;
     flex-direction: column;
-    font-family: "Fira Sans Condensed", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     max-width: 900px;
 
     p {
       font-size: 0.8em;
-      font-weight: 700;
+      font-weight: 500;
       &:last-child {
         font-size: 0.6em;
       }

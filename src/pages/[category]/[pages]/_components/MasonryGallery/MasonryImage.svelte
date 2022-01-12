@@ -11,33 +11,6 @@
 </script>
 
 <div
-  on:click="{() => {
-    const masonryGalleryPages = ['private-homes', 'multi-units'];
-
-    if (masonryGalleryPages.includes($params.pages)) {
-      galleryModal.openModal(img, 'spec');
-    } else {
-      galleryModal.openModal(img, 'basic');
-    }
-    const url = img.label.replace(/\s/g, '');
-
-    fetch(
-      `${
-        window.location.origin === 'http://jsdom.ssr' ||
-        (!import.meta.env.PROD &&
-          window.location.origin !== 'http://192.168.0.249:5000')
-          ? 'http://localhost:9999'
-          : window.location.origin
-      }/.netlify/functions/get-full-images/?category=${$params.pages}${
-        $params.pages === 'private-homes' ? `&subCategory=${img.category}` : ''
-      }&property=${$galleryModal.selected.key}`
-    )
-      .then((res) => res.json())
-      .then(async (data) => {
-        $galleryModal.images = data;
-        await tick();
-      });
-  }}"
   class:image-container-margin="{modal || $params.category === 'design'}"
   class="item-container {$params.category}"
 >
@@ -46,7 +19,38 @@
       style="padding-bottom: {(img.height / img.width) * 100}%;"
       class="aspect-ratio-box"
     >
-      <div class="image-container">
+      <div
+        on:click="{() => {
+          const masonryGalleryPages = ['private-homes', 'multi-units'];
+
+          if (masonryGalleryPages.includes($params.pages)) {
+            galleryModal.openModal(img, 'spec');
+          } else {
+            galleryModal.openModal(img, 'basic');
+          }
+          const url = img.label.replace(/\s/g, '');
+
+          fetch(
+            `${
+              window.location.origin === 'http://jsdom.ssr' ||
+              (!import.meta.env.PROD &&
+                window.location.origin !== 'http://192.168.0.249:5000')
+                ? 'http://localhost:9999'
+                : window.location.origin
+            }/.netlify/functions/get-full-images/?category=${$params.pages}${
+              $params.pages === 'private-homes'
+                ? `&subCategory=${img.category}`
+                : ''
+            }&property=${$galleryModal.selected.key}`
+          )
+            .then((res) => res.json())
+            .then(async (data) => {
+              $galleryModal.images = data;
+              await tick();
+            });
+        }}"
+        class="image-container"
+      >
         <div class="hover-container">
           <div class="label-container">
             <h5 class="label">
@@ -77,11 +81,13 @@
     margin-bottom: 15px;
   }
   .label-container {
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: "Montserrat", sans-serif;
+
     color: #68208e;
     padding: 4px;
     text-transform: uppercase;
     .label {
+      font-weight: 500;
       @media screen and (max-width: 800px) {
         font-size: 2em;
       }

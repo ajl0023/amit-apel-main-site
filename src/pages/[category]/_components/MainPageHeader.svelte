@@ -37,13 +37,14 @@
     height: fit-content;
   }
   .main-text-header {
-    font-size: 6em;
+    font-size: 4.5em;
     line-height: 0.8em;
-    font-weight: 900;
+    font-weight: 500;
     letter-spacing: 3px;
 
     white-space: nowrap;
-    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-family: "Montserrat", sans-serif;
+
     text-align: center;
     background-color: transparent;
 
