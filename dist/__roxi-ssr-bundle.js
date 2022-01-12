@@ -13,8 +13,8 @@
       __defProp(target, name, {get: all[name], enumerable: true});
   };
 
-  // dist/assets/MasonryGallery.d7fb5e32.js
-  var require_MasonryGallery_d7fb5e32 = __commonJS((exports) => {
+  // dist/assets/MasonryGallery.7eca5878.js
+  var require_MasonryGallery_7eca5878 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Ee3
@@ -480,8 +480,8 @@
     };
   });
 
-  // dist/assets/MeetTheTeam.93ad69c2.js
-  var require_MeetTheTeam_93ad69c2 = __commonJS((exports) => {
+  // dist/assets/MeetTheTeam.f639a590.js
+  var require_MeetTheTeam_f639a590 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => qe3
@@ -1848,18 +1848,18 @@
     };
   });
 
-  // dist/assets/Developments.d8d321f6.js
-  var require_Developments_d8d321f6 = __commonJS((exports) => {
+  // dist/assets/Developments.964f02e4.js
+  var require_Developments_964f02e4 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Z2
     });
     function z(i) {
-      let n15, e, t, a, p, v, d, u, _ = i[0].page + "", j2, M2, g, b, x, y = i[1].data.description + "", w, A2, m, E, k, c, D2, C, G;
+      let n15, e, t, a, d, v, p, u, _ = i[0].page + "", j2, M2, g, b, x, y = i[1].data.description + "", w, A2, m, E, k, c, D2, C, G;
       return {c() {
-        n15 = mt("div"), e = me(), t = mt("div"), a = mt("div"), p = mt("div"), v = mt("h5"), d = ai("Project, "), u = mt("span"), j2 = ai(_), M2 = me(), g = mt("div"), b = mt("div"), x = mt("p"), w = ai(y), A2 = me(), m = mt("button"), m.textContent = "visit site", E = me(), k = mt("div"), c = mt("img"), Z(n15, "class", "page-container"), Z(u, "class", "property-header svelte-1x765oa"), Z(v, "class", "main-header svelte-1x765oa"), Z(p, "class", "header-container svelte-1x765oa"), Z(x, "class", "description svelte-1x765oa"), Z(b, "class", "text-content-container svelte-1x765oa"), Z(g, "class", "text-wrapper svelte-1x765oa"), Z(m, "class", "redirect-button svelte-1x765oa"), Z(a, "class", "left-page svelte-1x765oa"), Z(c, "class", "main-image svelte-1x765oa"), ei(c.src, D2 = i[1].data.img) || Z(c, "src", D2), Z(c, "alt", ""), Z(k, "class", "main-image-container svelte-1x765oa"), Z(t, "class", "container svelte-1x765oa");
+        n15 = mt("div"), e = me(), t = mt("div"), a = mt("div"), d = mt("div"), v = mt("h5"), p = ai("Project, "), u = mt("span"), j2 = ai(_), M2 = me(), g = mt("div"), b = mt("div"), x = mt("p"), w = ai(y), A2 = me(), m = mt("button"), m.textContent = "visit site", E = me(), k = mt("div"), c = mt("img"), Z(n15, "class", "page-container"), Z(u, "class", "property-header svelte-1x765oa"), Z(v, "class", "main-header svelte-1x765oa"), Z(d, "class", "header-container svelte-1x765oa"), Z(x, "class", "description svelte-1x765oa"), Z(b, "class", "text-content-container svelte-1x765oa"), Z(g, "class", "text-wrapper svelte-1x765oa"), Z(m, "class", "redirect-button svelte-1x765oa"), Z(a, "class", "left-page svelte-1x765oa"), Z(c, "class", "main-image svelte-1x765oa"), ei(c.src, D2 = i[1].data.img) || Z(c, "src", D2), Z(c, "alt", ""), Z(k, "class", "main-image-container svelte-1x765oa"), Z(t, "class", "container svelte-1x765oa");
       }, m(r, f) {
-        j(r, n15, f), j(r, e, f), j(r, t, f), _n(t, a), _n(a, p), _n(p, v), _n(v, d), _n(v, u), _n(u, j2), _n(a, M2), _n(a, g), _n(g, b), _n(b, x), _n(x, w), _n(a, A2), _n(a, m), _n(t, E), _n(t, k), _n(k, c), C || (G = Kn(m, "click", i[2]), C = true);
+        j(r, n15, f), j(r, e, f), j(r, t, f), _n(t, a), _n(a, d), _n(d, v), _n(v, p), _n(v, u), _n(u, j2), _n(a, M2), _n(a, g), _n(g, b), _n(b, x), _n(x, w), _n(a, A2), _n(a, m), _n(t, E), _n(t, k), _n(k, c), C || (G = Kn(m, "click", i[2]), C = true);
       }, p(r, f) {
         f & 1 && _ !== (_ = r[0].page + "") && Mc(j2, _), f & 2 && y !== (y = r[1].data.description + "") && Mc(w, y), f & 2 && !ei(c.src, D2 = r[1].data.img) && Z(c, "src", D2);
       }, d(r) {
@@ -1880,16 +1880,16 @@
     }
     function W2(i, n15, e) {
       let t, a;
-      pe(i, Hc, (d) => e(3, t = d)), pe(i, se2, (d) => e(0, a = d));
-      let p;
-      function v(d) {
-        d.preventDefault(), window.open(p.data.link);
+      pe(i, Hc, (p) => e(3, t = p)), pe(i, se2, (p) => e(0, a = p));
+      let d;
+      function v(p) {
+        p.preventDefault(), window.open(d.data.link);
       }
       return na(() => {
         t();
       }), i.$$.update = () => {
-        i.$$.dirty & 1 && e(1, p = Q2.pages.byTitle[a.page]);
-      }, [a, p, v];
+        i.$$.dirty & 1 && e(1, d = Q2.pages.byTitle[a.page]);
+      }, [a, d, v];
     }
     var Z2 = class extends He {
       constructor(n15) {
@@ -1999,8 +1999,8 @@
     };
   });
 
-  // dist/assets/_layout.923592c9.js
-  var require_layout_923592c9 = __commonJS((exports) => {
+  // dist/assets/_layout.871d9e47.js
+  var require_layout_871d9e47 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => ct3
@@ -6400,7 +6400,7 @@
     }
   };
 
-  // dist/assets/index.497b316c.js
+  // dist/assets/index.08edfb58.js
   var Xe2 = Object.defineProperty;
   var _e2 = Object.getOwnPropertySymbols;
   var Je2 = Object.prototype.hasOwnProperty;
@@ -6442,7 +6442,7 @@
     }
   };
   var Q2 = {categories: {byTitle: {developments: {urlFormatted: "developments", title: "developments", index: 3, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227066/mainSite/homeVideoAnimation/SD_Bar_1_vbyidn.mp4", pages: [{key: "maliview", labels: [Array(8).fill("maliview")]}, {key: "aviator", labels: [Array(8).fill("aviator")]}, {key: "map", labels: [Array(8).fill("map")]}]}, "apel-design": {urlFormatted: "apel-design", title: "apel design", index: 0, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227066/mainSite/homeVideoAnimation/SD_Bar_4_uvy6cy.mp4", pages: [{key: "meet-amit-apel", labels: Array(8).fill("meet amit apel")}, {key: "meet-the-team", labels: Array(8).fill("meet the team")}, {key: "what-we-do", labels: Array(8).fill("what we do")}, {key: "malibu-rebuild", labels: Array(8).fill("malibu rebuild")}, {key: "press", labels: Array(8).fill("press")}, {key: "contact-us", labels: Array(8).fill("contact us")}]}, design: {urlFormatted: "design", title: "design", index: 2, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227061/mainSite/homeVideoAnimation/SD_Bar_3_btxkep.mp4", pages: [{key: "furniture", labels: [Array(8).fill("furniture")]}, {key: "concept", labels: [Array(8).fill("concept")]}, {key: "sculptures", labels: [Array(8).fill("sculptures")]}]}, architecture: {urlFormatted: "architecture", title: "architecture", index: 1, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227068/mainSite/homeVideoAnimation/SD_Bar_2_rwcg50.mp4", pages: [{key: "private-homes", labels: [Array(8).fill("private-homes")]}, {key: "multi-family", labels: [Array(8).fill("multi family")]}, {key: "mixed-use", labels: [Array(8).fill("mixed use")]}, {key: "hospitality", labels: [Array(8).fill("hospitality")]}, {key: "commercial", labels: [Array(8).fill("commercial")]}]}}}, pages: {byTitle: {maliview: {component: "Developments", title: "maliview", urlFormatted: "maliview", data: {img: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637713367/mainSite/Developments/33340_MULHOLLAND_HWY_IMG_5_nswjvh.jpg", description: "The villa will have open space plan with high ceilings with a touch of nature coming indoors. The home includes 4 perfectly placed bedrooms with views to admire the scenery as well as 4.5 bathrooms. All of the interior will be featuring custom interior design by Amit Apel Design, Inc. From an infinity pool you will be enjoying the ocean in the horizon, the view of Santa Monica Mountains, and overwhelming sunrises, and sunsets.", link: "https://maliviewestates.com/", title: "Maliview"}}, aviator: {title: "aviator", component: "Developments/Developments", urlFormatted: "aviator", data: {img: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637713367/mainSite/Developments/CAYMAN_AVIATOR_20210722_1_i39rsx.jpg", description: "Conceptually, Apel Design wanted to create the notion that the architecture of building continues beyond. In a sense, the forms flow throughout and never stop. The architecture forms emerge from the ground, extends to the horizon and divides into two beautiful irregular volumetric elements as if the architecture was slicing the space, emphasizing the gorgeous views of the Malibu mountains and the Pacific Ocean. The bird-like building program also incorporates the ideas of flow and continuation; the first level proposes an open floor plan with a glass facade that opens up the space to a beautiful deck and a second floor for bedrooms that are elevated from the ground to again emphasize this notion of flow and lightness.", link: "https://malibuaviator.com/", title: "Aviator"}}, "meet-the-team": {title: "meet the team", urlFormatted: "meet-the-team", component: "MeetTheTeam/MeetTheTeam"}, furniture: {title: "furniture", urlFormatted: "furniture", component: "Masonry/Masonry"}, sculptures: {title: "sculptures", urlFormatted: "sculptures", component: "Masonry/Masonry"}, "private-homes": {title: "private homes", urlFormatted: "private-homes", categories: [{name: "Contemporary", urlFormatted: "contemporary-houses"}, {name: "Spanish Revival", urlFormatted: "spanish-revival-homes"}, {name: "Traditional", urlFormatted: "traditional-homes"}]}, hospitality: {title: "hospitality", urlFormatted: "hospitality"}, "mixed-use": {title: "mixed use", urlFormatted: "mixed-use"}, "meet-amit-apel": {title: "meet amit apel", urlFormatted: "meet-amit-apel", component: "MeetAmitApel/MeetAmitApel"}, "what-we-do": {title: "what we do", urlFormatted: "what-we-do", component: "WhatWeDo/WhatWeDo"}, commercial: {title: "commercial", urlFormatted: "commercial"}, "multi-family": {title: "multi family", urlFormatted: "multi-family"}, "malibu-rebuild": {title: "malibu rebuild", urlFormatted: "malibu-rebuild", component: "MalibuRebuild/MalibuRebuild"}, "contact-us": {title: "contact us", urlFormatted: "contact-us", component: "Contact/Contact"}, concept: {title: "concept", urlFormatted: "concept", component: "ArchiGallery/ArchiGallery"}, press: {title: "press", urlFormatted: "press", component: "Press/Press"}, map: {title: "project map", urlFormatted: "map", component: "Map/Map"}}}};
-  var ke2 = ["architecture", "apel-design", "design", "developments"];
+  var ke2 = ["apel-design", "architecture", "design", "developments"];
   var mt2 = () => {
     const i = {page: null, component: null, category: true}, {subscribe: e, set: t, update: l} = Lt(i);
     return te2({subscribe: e, set: t, update: l}, {setCategory(r) {
@@ -6519,7 +6519,7 @@
     let l, n15;
     pe(i, Uc, (d) => t(2, n15 = d));
     let r;
-    const a = {"private-homes": async () => P(() => Promise.resolve().then(() => require_MasonryGallery_d7fb5e32()), ["assets/MasonryGallery.d7fb5e32.js", "assets/vendor.530942b5.js"]), "multi-family": async () => P(() => Promise.resolve().then(() => require_MasonryGallery_d7fb5e32()), ["assets/MasonryGallery.d7fb5e32.js", "assets/vendor.530942b5.js"]), "mixed-use": async () => P(() => Promise.resolve().then(() => require_MasonryGallery_d7fb5e32()), ["assets/MasonryGallery.d7fb5e32.js", "assets/vendor.530942b5.js"]), hospitality: async () => P(() => Promise.resolve().then(() => require_MasonryGallery_d7fb5e32()), ["assets/MasonryGallery.d7fb5e32.js", "assets/vendor.530942b5.js"]), commercial: async () => P(() => Promise.resolve().then(() => require_MasonryGallery_d7fb5e32()), ["assets/MasonryGallery.d7fb5e32.js", "assets/vendor.530942b5.js"]), concept: async () => P(() => Promise.resolve().then(() => require_MasonryGallery_d7fb5e32()), ["assets/MasonryGallery.d7fb5e32.js", "assets/vendor.530942b5.js"]), sculptures: async () => P(() => Promise.resolve().then(() => require_MasonryGallery_d7fb5e32()), ["assets/MasonryGallery.d7fb5e32.js", "assets/vendor.530942b5.js"]), "meet-amit-apel": async () => P(() => Promise.resolve().then(() => require_MeetAmitApel_516b98b3()), ["assets/MeetAmitApel.516b98b3.js", "assets/vendor.530942b5.js"]), "meet-the-team": async () => P(() => Promise.resolve().then(() => require_MeetTheTeam_93ad69c2()), ["assets/MeetTheTeam.93ad69c2.js", "assets/vendor.530942b5.js"]), press: async () => P(() => Promise.resolve().then(() => require_Press_e88c895a()), ["assets/Press.e88c895a.js", "assets/vendor.530942b5.js"]), "contact-us": async () => P(() => Promise.resolve().then(() => require_Contact_708e5a2a()), ["assets/Contact.708e5a2a.js", "assets/vendor.530942b5.js"]), furniture: async () => P(() => Promise.resolve().then(() => require_MasonryGallery_d7fb5e32()), ["assets/MasonryGallery.d7fb5e32.js", "assets/vendor.530942b5.js"]), "malibu-rebuild": async () => P(() => Promise.resolve().then(() => require_MalibuRebuild_ceef4cf0()), ["assets/MalibuRebuild.ceef4cf0.js", "assets/vendor.530942b5.js"]), "what-we-do": async () => P(() => Promise.resolve().then(() => require_WhatWeDo_745c6637()), ["assets/WhatWeDo.745c6637.js", "assets/vendor.530942b5.js"]), aviator: async () => P(() => Promise.resolve().then(() => require_Developments_d8d321f6()), ["assets/Developments.d8d321f6.js", "assets/vendor.530942b5.js"]), maliview: async () => P(() => Promise.resolve().then(() => require_Developments_d8d321f6()), ["assets/Developments.d8d321f6.js", "assets/vendor.530942b5.js"]), map: async () => P(() => Promise.resolve().then(() => require_Map_3a0bc40c()), ["assets/Map.3a0bc40c.js", "assets/vendor.530942b5.js"])}, c = async (d) => {
+    const a = {"private-homes": async () => P(() => Promise.resolve().then(() => require_MasonryGallery_7eca5878()), ["assets/MasonryGallery.7eca5878.js", "assets/vendor.530942b5.js"]), "multi-family": async () => P(() => Promise.resolve().then(() => require_MasonryGallery_7eca5878()), ["assets/MasonryGallery.7eca5878.js", "assets/vendor.530942b5.js"]), "mixed-use": async () => P(() => Promise.resolve().then(() => require_MasonryGallery_7eca5878()), ["assets/MasonryGallery.7eca5878.js", "assets/vendor.530942b5.js"]), hospitality: async () => P(() => Promise.resolve().then(() => require_MasonryGallery_7eca5878()), ["assets/MasonryGallery.7eca5878.js", "assets/vendor.530942b5.js"]), commercial: async () => P(() => Promise.resolve().then(() => require_MasonryGallery_7eca5878()), ["assets/MasonryGallery.7eca5878.js", "assets/vendor.530942b5.js"]), concept: async () => P(() => Promise.resolve().then(() => require_MasonryGallery_7eca5878()), ["assets/MasonryGallery.7eca5878.js", "assets/vendor.530942b5.js"]), sculptures: async () => P(() => Promise.resolve().then(() => require_MasonryGallery_7eca5878()), ["assets/MasonryGallery.7eca5878.js", "assets/vendor.530942b5.js"]), "meet-amit-apel": async () => P(() => Promise.resolve().then(() => require_MeetAmitApel_516b98b3()), ["assets/MeetAmitApel.516b98b3.js", "assets/vendor.530942b5.js"]), "meet-the-team": async () => P(() => Promise.resolve().then(() => require_MeetTheTeam_f639a590()), ["assets/MeetTheTeam.f639a590.js", "assets/vendor.530942b5.js"]), press: async () => P(() => Promise.resolve().then(() => require_Press_e88c895a()), ["assets/Press.e88c895a.js", "assets/vendor.530942b5.js"]), "contact-us": async () => P(() => Promise.resolve().then(() => require_Contact_708e5a2a()), ["assets/Contact.708e5a2a.js", "assets/vendor.530942b5.js"]), furniture: async () => P(() => Promise.resolve().then(() => require_MasonryGallery_7eca5878()), ["assets/MasonryGallery.7eca5878.js", "assets/vendor.530942b5.js"]), "malibu-rebuild": async () => P(() => Promise.resolve().then(() => require_MalibuRebuild_ceef4cf0()), ["assets/MalibuRebuild.ceef4cf0.js", "assets/vendor.530942b5.js"]), "what-we-do": async () => P(() => Promise.resolve().then(() => require_WhatWeDo_745c6637()), ["assets/WhatWeDo.745c6637.js", "assets/vendor.530942b5.js"]), aviator: async () => P(() => Promise.resolve().then(() => require_Developments_964f02e4()), ["assets/Developments.964f02e4.js", "assets/vendor.530942b5.js"]), maliview: async () => P(() => Promise.resolve().then(() => require_Developments_964f02e4()), ["assets/Developments.964f02e4.js", "assets/vendor.530942b5.js"]), map: async () => P(() => Promise.resolve().then(() => require_Map_3a0bc40c()), ["assets/Map.3a0bc40c.js", "assets/vendor.530942b5.js"])}, c = async (d) => {
       d && (se2.setPage(d), se2.setCategory(n15.category), await _i(), t(1, r = (await a[d]()).default));
     };
     return i.$$.update = () => {
@@ -7440,7 +7440,7 @@
       Be(this, e, sl2, rl2, de, {});
     }
   };
-  var ul2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => P(() => Promise.resolve().then(() => require_fallback_ecbb0116()), ["assets/_fallback.ecbb0116.js", "assets/vendor.530942b5.js"]).then((i) => i.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages/index", id: "__category__pages_index", component: () => ft2}], isLayout: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => yt2}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: true, prerender: true}, path: "/:category/index", id: "__category_index", component: () => zt2}], isLayout: true, ownMeta: {preload: true, "param-is-page": true}, meta: {preload: true, "param-is-page": true, recursive: true, prerender: true}, path: "/:category", id: "__category__layout", component: () => ol2}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => P(() => Promise.resolve().then(() => require_index_2cafd3c2()), ["assets/index.2cafd3c2.js", "assets/vendor.530942b5.js"]).then((i) => i.default)}], isLayout: true, path: "/", id: "__layout", component: () => P(() => Promise.resolve().then(() => require_layout_923592c9()), ["assets/_layout.923592c9.js", "assets/vendor.530942b5.js"]).then((i) => i.default)};
+  var ul2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => P(() => Promise.resolve().then(() => require_fallback_ecbb0116()), ["assets/_fallback.ecbb0116.js", "assets/vendor.530942b5.js"]).then((i) => i.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages/index", id: "__category__pages_index", component: () => ft2}], isLayout: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => yt2}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: true, prerender: true}, path: "/:category/index", id: "__category_index", component: () => zt2}], isLayout: true, ownMeta: {preload: true, "param-is-page": true}, meta: {preload: true, "param-is-page": true, recursive: true, prerender: true}, path: "/:category", id: "__category__layout", component: () => ol2}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => P(() => Promise.resolve().then(() => require_index_2cafd3c2()), ["assets/index.2cafd3c2.js", "assets/vendor.530942b5.js"]).then((i) => i.default)}], isLayout: true, path: "/", id: "__layout", component: () => P(() => Promise.resolve().then(() => require_layout_871d9e47()), ["assets/_layout.871d9e47.js", "assets/vendor.530942b5.js"]).then((i) => i.default)};
   var {tree: vl2, routes: cl2} = qc(ul2);
   function dl2(i) {
     let e, t;

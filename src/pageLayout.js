@@ -227,9 +227,8 @@ export const pageLayoutMaster = {
 };
 
 export const pageLayoutMasterArr = [
-  "architecture",
   "apel-design",
+  "architecture",
   "design",
   "developments",
 ];
-const pages = ["architecture", "apel-design", "design", "developments"];
