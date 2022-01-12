@@ -3,13 +3,14 @@
   import Colcade from "colcade";
   import { onDestroy, onMount, tick } from "svelte";
   import { pageLayoutMaster } from "../../../../../pageLayout";
+  import { galleryModal } from "../../../../_components/GalleryModal/store";
   import { marqueeHandlerStore } from "../../../_stores/marqueeHandlerStore";
   import MasonryImage from "./MasonryImage.svelte";
   export let modal;
   let container;
   let images = [];
   let selected;
-  $: ({ page } = $marqueeHandlerStore);
+  $: ({ page, category } = $marqueeHandlerStore);
   $: ({ sub_category } = $params);
   let privateHomesCategories = [];
   $: {
@@ -23,14 +24,16 @@
   let masonry;
   let colcade;
   async function fetchImages() {
+ 
     const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get("sub_category");
-    if (page) {
-      selected = category;
+    const subCategory = urlParams.get("sub_category");
+
+    if (category === "architecture") {
+      selected = subCategory;
       images = [];
       fetch(
         `${window.location.origin}/.netlify/functions/images/?category=${page}${
-          category ? `&sub_category=${category}` : ""
+          subCategory ? `&sub_category=${subCategory}` : ""
         }`
       )
         .then((res) => res.json())
@@ -112,7 +115,9 @@
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 2rem;
-
+    @media screen and (max-width: 850px) {
+      margin-bottom: 1rem;
+    }
     .list-divider {
       min-width: 2px;
       height: 20px;

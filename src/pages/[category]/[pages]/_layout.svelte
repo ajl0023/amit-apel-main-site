@@ -1,5 +1,6 @@
 <script>
   import { params } from "@roxi/routify";
+  import { tick } from "svelte";
   import MainPageHeader from "../_components/MainPageHeader.svelte";
   import { marqueeHandlerStore } from "../_stores/marqueeHandlerStore";
 
@@ -69,6 +70,8 @@
   const loadComponent = async (title) => {
     if (title) {
       marqueeHandlerStore.setPage(title);
+      marqueeHandlerStore.setCategory($params.category);
+      await tick();
 
       Component = (await imports[title]()).default;
     }

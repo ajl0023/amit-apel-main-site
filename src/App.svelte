@@ -11,7 +11,7 @@
   });
 </script>
 
-<Router {routes} />
+<Router routes="{routes}" />
 
 <style>
 </style>

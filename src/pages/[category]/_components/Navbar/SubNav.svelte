@@ -1,8 +1,10 @@
 <script>
   import { goto } from "@roxi/routify";
-  import { createEventDispatcher } from "svelte";
+  import { createEventDispatcher, tick } from "svelte";
 
   import { pageLayoutMaster } from "../../../../pageLayout";
+  import { galleryModal } from "../../../_components/GalleryModal/store";
+  import { marqueeHandlerStore } from "../../_stores/marqueeHandlerStore";
 
   export let pages;
   export let categorySelected;
@@ -14,8 +16,12 @@
   <div class="container sub-nav">
     {#each pages as page}
       <div
-        on:click="{() => {
+        on:click="{async () => {
+          galleryModal.closeModal();
+          await tick();
+
           $goto(`/:category/:page`, { category: category, page: page.key });
+
           dispatch('closeNav');
         }}"
         class="list-item-container"

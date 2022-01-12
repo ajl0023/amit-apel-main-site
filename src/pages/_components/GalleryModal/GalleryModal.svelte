@@ -2,6 +2,7 @@
   import Carousel from "@beyonk/svelte-carousel";
   import { params } from "@roxi/routify";
   import { onMount, tick } from "svelte";
+  import { lazy } from "../../../helpers/lazy";
   import BasicModal from "../BasicModal/BasicModal.svelte";
   import LeftArrow from "./assets/chevron_left_black_24dp.svelte";
   import RightArrow from "./assets/chevron_right_black_24dp.svelte";
@@ -54,24 +55,59 @@
           <div class="gallery-container">
             {#each images as img}
               <div class="image-container">
-                <img src="{img.url}" alt="" />
+                <img
+                  class="lazy"
+                  width="{img.width}"
+                  height="{img.height}"
+                  use:lazy="{img.url}"
+                  alt=""
+                  data-src="{img.url}"
+                />
               </div>
             {/each}
           </div>
         {:else}
           <div class="main-image-container">
-            <img src="{$galleryModal.selected.url}" alt="" />
+            <img
+              width="{$galleryModal.selected.width}"
+              height="{$galleryModal.selected.height}"
+              use:lazy="{$galleryModal.selected.url}"
+              alt=""
+              class="lazy"
+              data-src="{$galleryModal.selected.url}"
+            />
           </div>
           {#if images.length > 0}
             <div class="flex-image-gallery-container col-3">
               <div class="image-container">
-                <img src="{images[0].url}" alt="" />
+                <img
+                  class="lazy"
+                  width="{images[0].width}"
+                  height="{images[0].height}"
+                  use:lazy="{images[0].url}"
+                  alt=""
+                  data-src="{images[0].url}"
+                />
               </div>
               <div class="image-container">
-                <img src="{images[1].url}" alt="" />
+                <img
+                  width="{images[1].width}"
+                  height="{images[1].height}"
+                  use:lazy="{images[1].url}"
+                  alt=""
+                  class="lazy"
+                  data-src="{images[1].url}"
+                />
               </div>
               <div class="image-container">
-                <img src="{images[2].url}" alt="" />
+                <img
+                  width="{images[2].width}"
+                  height="{images[2].height}"
+                  use:lazy="{images[2].url}"
+                  alt=""
+                  class="lazy"
+                  data-src="{images[2].url}"
+                />
               </div>
             </div>
           {/if}
@@ -79,10 +115,24 @@
           {#if images.length > 4}
             <div class="flex-image-gallery-container col-2">
               <div class="image-container">
-                <img src="{images[3].url}" alt="" />
+                <img
+                  class="lazy"
+                  width="{images[3].width}"
+                  height="{images[3].height}"
+                  use:lazy="{images[3].url}"
+                  alt=""
+                  data-src="{images[3].url}"
+                />
               </div>
               <div class="image-container">
-                <img src="{images[4].url}" alt="" />
+                <img
+                  class="lazy"
+                  width="{images[4].width}"
+                  height="{images[4].height}"
+                  use:lazy="{images[4].url}"
+                  alt=""
+                  data-src="{images[4].url}"
+                />
               </div>
             </div>
           {/if}
@@ -95,7 +145,14 @@
                 <Carousel bind:this="{carousel}" perPage="{1}">
                   {#each images as data}
                     <div class="image-container">
-                      <img class="carousel-image" src="{data.url}" alt="" />
+                      <img
+                        width="{data.width}"
+                        height="{data.height}"
+                        use:lazy="{data.url}"
+                        data-src="{data.url}"
+                        alt=""
+                        class="carousel-image lazy"
+                      />
                     </div>
                   {/each}
                 </Carousel>
@@ -144,7 +201,7 @@
     right: 0;
     left: 0;
     overflow-y: auto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     .content-container {
       max-width: 1000px;
       width: 100%;

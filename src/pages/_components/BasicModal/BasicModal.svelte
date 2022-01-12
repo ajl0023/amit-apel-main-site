@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { lazy } from "../../../helpers/lazy";
 
   import { galleryModal } from "../GalleryModal/store";
   let container;
@@ -25,7 +26,14 @@
     <div class="gallery-container">
       {#each $galleryModal.images as img}
         <div class="image-container">
-          <img src="{img.url}" alt="" />
+          <img
+            width="{img.width}"
+            height="{img.height}"
+            use:lazy="{img.url}"
+            data-src="{img.url}"
+            alt=""
+            class="carousel-image lazy"
+          />
         </div>
       {/each}
     </div>
