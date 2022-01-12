@@ -19,7 +19,7 @@ module.exports.handler = async function (event, context, callback) {
       contents = images[subCategory].thumbs;
     } else {
       let images = require(`./category-images-full/${category}-master.json`);
-      console.log(category);
+
       contents = images[category].thumbs;
     }
   }

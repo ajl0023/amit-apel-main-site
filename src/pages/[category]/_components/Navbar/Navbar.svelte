@@ -1,7 +1,5 @@
 <script>
-  import { goto, params } from "@roxi/routify";
-  import { pageLayoutMaster } from "../../../../pageLayout";
-  import { marqueeHandlerStore } from "../../_stores/marqueeHandlerStore";
+  import { goto } from "@roxi/routify";
   import LeftArrow from "./LeftArrow.svelte";
   import ListIcon from "./ListIcon.svelte";
 </script>

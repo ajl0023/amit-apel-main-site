@@ -80,6 +80,7 @@
     font-family: "Fira Sans Condensed", sans-serif;
     color: #68208e;
     padding: 4px;
+    text-transform: uppercase;
     .label {
       @media screen and (max-width: 800px) {
         font-size: 2em;

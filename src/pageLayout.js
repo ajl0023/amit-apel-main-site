@@ -89,20 +89,20 @@ export const pageLayoutMaster = {
             labels: [Array(8).fill("private-homes")],
           },
           {
-            key: "commercial",
-            labels: [Array(8).fill("commercial")],
-          },
-          {
-            key: "hospitality",
-            labels: [Array(8).fill("hospitality")],
+            key: "multi-family",
+            labels: [Array(8).fill("multi family")],
           },
           {
             key: "mixed-use",
             labels: [Array(8).fill("mixed use")],
           },
           {
-            key: "multi-family",
-            labels: [Array(8).fill("multi family")],
+            key: "hospitality",
+            labels: [Array(8).fill("hospitality")],
+          },
+          {
+            key: "commercial",
+            labels: [Array(8).fill("commercial")],
           },
         ],
       },
@@ -159,10 +159,7 @@ export const pageLayoutMaster = {
             name: "Contemporary",
             urlFormatted: "contemporary-houses",
           },
-          {
-            name: "Multi Family",
-            urlFormatted: "multi-family",
-          },
+
           {
             name: "Spanish Revival",
             urlFormatted: "spanish-revival-homes",
@@ -228,3 +225,11 @@ export const pageLayoutMaster = {
     },
   },
 };
+
+export const pageLayoutMasterArr = [];
+for (const key in pageLayoutMaster.categories.byTitle) {
+  if (Object.hasOwnProperty.call(pageLayoutMaster.categories.byTitle, key)) {
+    const element = pageLayoutMaster.categories.byTitle[key];
+    pageLayoutMasterArr.push(element.urlFormatted);
+  }
+}

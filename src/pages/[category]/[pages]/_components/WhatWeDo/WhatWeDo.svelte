@@ -55,6 +55,7 @@
     overflow-y: auto;
     height: 100%;
     padding: 1rem;
- 
+    display: flex;
+    justify-content: center;
   }
 </style>

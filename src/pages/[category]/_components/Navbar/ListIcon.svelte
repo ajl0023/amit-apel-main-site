@@ -1,14 +1,13 @@
 <script>
-  import { goto, params } from "@roxi/routify";
-  import { pageLayoutMaster } from "../../../../pageLayout";
+  import {
+    pageLayoutMaster,
+    pageLayoutMasterArr,
+  } from "../../../../pageLayout";
+  import ChevronRightBlack_24dp from "../../../_components/GalleryModal/assets/chevron_right_black_24dp.svelte";
+  import SubNav from "./SubNav.svelte";
 
   let drop = false;
-
-  let categoryDetails =
-    pageLayoutMaster["categories"]["byTitle"][$params.category];
-  const pagesArr = categoryDetails.pages.map((page) => {
-    return pageLayoutMaster["pages"]["byTitle"][page.key];
-  });
+  let categorySelected = null;
 </script>
 
 <div class="container">
@@ -42,19 +41,32 @@
           }}"
           class="close-x close-main"
         ></div>
-        {#each pagesArr as page}
+        {#each pageLayoutMasterArr as category, i}
           <li
-            on:click="{() => {
-              $goto(`./${page.urlFormatted}`);
-
-              drop = false;
+            on:click="{(e) => {
+              categorySelected = categorySelected ? null : category;
             }}"
             class="nav-list-item"
           >
-            <h4 class="nav-sub-item">
-              {page.title}
-            </h4>
+            <div class="content-container">
+              <h4 class="nav-sub-item">
+                {pageLayoutMaster.categories.byTitle[category].title}
+              </h4>
+              <div class="arrow">
+                <ChevronRightBlack_24dp fill="black" />
+              </div>
+            </div>
           </li>
+          <SubNav
+            on:closeNav="{() => {
+              categorySelected = null;
+              drop = false;
+            }}"
+            pages="{pageLayoutMaster.categories['byTitle'][category].pages}"
+            index="{i}"
+            category="{category}"
+            categorySelected="{categorySelected}"
+          />
         {/each}
       </ul>
     </div>
@@ -62,11 +74,29 @@
 </div>
 
 <style lang="scss">
+  .content-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    @media screen and (max-width: 600px) {
+      margin-left: 10px;
+    }
+    .arrow {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+
   .close-x {
     position: relative;
     left: auto;
     margin-left: 1rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .nav-backdrop-container {
     height: 100%;
@@ -110,19 +140,19 @@
     height: 100%;
     @media screen and (max-width: 600px) {
       right: 0;
-      
+
       left: auto;
     }
-    .nav-alt-list {
-      overflow: hidden;
-    }
+
     .nav-list-item {
       display: block;
+      position: relative;
       padding: 20px 5rem 20px 20px;
       cursor: pointer;
 
       border-bottom: 1px solid rgb(161, 161, 161);
       white-space: nowrap;
+
       &:hover {
         background-color: rgb(111, 63, 138);
         color: white;
