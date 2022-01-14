@@ -13,8 +13,8 @@
       __defProp(target, name, {get: all[name], enumerable: true});
   };
 
-  // dist/assets/MasonryGallery.d591b318.js
-  var require_MasonryGallery_d591b318 = __commonJS((exports) => {
+  // dist/assets/MasonryGallery.bde5a2a3.js
+  var require_MasonryGallery_bde5a2a3 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Ee3
@@ -378,7 +378,7 @@
       return s.$$set = (p) => {
         "modal" in p && i(0, f = p.modal);
       }, s.$$.update = () => {
-        s.$$.dirty & 2048 && i(1, {page: t, category: r} = h, t, (i(7, r), i(11, h))), s.$$.dirty & 1024 && i(9, {sub_category: n15} = o, n15), s.$$.dirty & 2 && t === "private-homes" && i(5, c = [...R.pages.byTitle["private-homes"].categories]), s.$$.dirty & 514 && E();
+        s.$$.dirty & 2048 && i(1, {page: t, category: r} = h, t, (i(7, r), i(11, h))), s.$$.dirty & 1024 && i(9, {sub_category: n15} = o, n15), s.$$.dirty & 2 && t === "private-homes" && i(5, c = [...j2.pages.byTitle["private-homes"].categories]), s.$$.dirty & 514 && E();
       }, [f, t, m, e, l, c, d, r, v, n15, o, h, k, b];
     }
     var Ee3 = class extends He {
@@ -480,8 +480,8 @@
     };
   });
 
-  // dist/assets/MeetTheTeam.eaeead33.js
-  var require_MeetTheTeam_eaeead33 = __commonJS((exports) => {
+  // dist/assets/MeetTheTeam.82007f8c.js
+  var require_MeetTheTeam_82007f8c = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => He3
@@ -760,12 +760,12 @@
     }, threshold(i) {
       return C.toVector(i, 0);
     }};
-    var R2 = w(w({}, vt3), {}, {axis(i, t, {axis: e}) {
+    var R = w(w({}, vt3), {}, {axis(i, t, {axis: e}) {
       if (this.lockDirection = e === "lock", !this.lockDirection)
         return e;
     }, bounds(i = {}) {
       if (typeof i == "function")
-        return (a) => R2.bounds(i(a));
+        return (a) => R.bounds(i(a));
       if ("current" in i)
         return () => i.current;
       if (typeof HTMLElement == "function" && i instanceof HTMLElement)
@@ -789,7 +789,7 @@
         const t = this.state;
         if (t._bounds instanceof HTMLElement) {
           const e = t._bounds.getBoundingClientRect(), n15 = t.currentTarget.getBoundingClientRect(), r = {left: e.left - n15.left + t.offset[0], right: e.right - n15.right + t.offset[0], top: e.top - n15.top + t.offset[1], bottom: e.bottom - n15.bottom + t.offset[1]};
-          t._bounds = R2.bounds(r);
+          t._bounds = R.bounds(r);
         }
       }
       cancel() {
@@ -923,7 +923,7 @@
     var ye2 = 0.5;
     var ve3 = 50;
     var be2 = 250;
-    var ke2 = w(w({}, R2), {}, {pointerLock(i, t, {pointer: {lock: e = false, touch: n15 = false} = {}}) {
+    var ke2 = w(w({}, R), {}, {pointerLock(i, t, {pointer: {lock: e = false, touch: n15 = false} = {}}) {
       return this.useTouch = E.touch && n15, E.pointerLock && e;
     }, device(i, t) {
       return this.useTouch ? "touch" : this.pointerLock ? "mouse" : E.pointer ? "pointer" : E.touch ? "touch" : "mouse";
@@ -971,8 +971,8 @@
     }, threshold(i, t, e) {
       return this.lockDirection = e.axis === "lock", C.toVector(i, this.lockDirection ? [0.1, 3] : 0);
     }});
-    w(w({}, R2), {}, {mouseOnly: (i = true) => i});
-    w(w({}, R2), {}, {mouseOnly: (i = true) => i});
+    w(w({}, R), {}, {mouseOnly: (i = true) => i});
+    w(w({}, R), {}, {mouseOnly: (i = true) => i});
     var wt3 = new Map();
     var $2 = new Map();
     function we2(i) {
@@ -1391,13 +1391,13 @@
     var K2 = Object.getOwnPropertySymbols;
     var ye2 = Object.prototype.hasOwnProperty;
     var he3 = Object.prototype.propertyIsEnumerable;
-    var R2 = (e, t, o) => t in e ? _e2(e, t, {enumerable: true, configurable: true, writable: true, value: o}) : e[t] = o;
+    var R = (e, t, o) => t in e ? _e2(e, t, {enumerable: true, configurable: true, writable: true, value: o}) : e[t] = o;
     var U2 = (e, t) => {
       for (var o in t || (t = {}))
-        ye2.call(t, o) && R2(e, o, t[o]);
+        ye2.call(t, o) && R(e, o, t[o]);
       if (K2)
         for (var o of K2(t))
-          he3.call(t, o) && R2(e, o, t[o]);
+          he3.call(t, o) && R(e, o, t[o]);
       return e;
     };
     function se2(e) {
@@ -1444,7 +1444,7 @@
         if (e == null)
           return o.set(e = r), Promise.resolve();
         a = r;
-        let l = s, d = false, {delay: h = 0, duration: b = 400, easing: j2 = an, interpolate: w = Y2} = ln(ln({}, t), n15);
+        let l = s, d = false, {delay: h = 0, duration: b = 400, easing: j3 = an, interpolate: w = Y2} = ln(ln({}, t), n15);
         if (b === 0)
           return l && (l.abort(), l = null), o.set(e = a), Promise.resolve();
         const x = Yn() + h;
@@ -1454,7 +1454,7 @@
             return true;
           d || (f = w(e, r), typeof b == "function" && (b = b(e, r)), d = true), l && (l.abort(), l = null);
           const u = L - x;
-          return u > b ? (o.set(e = r), false) : (o.set(e = f(j2(u / b))), true);
+          return u > b ? (o.set(e = r), false) : (o.set(e = f(j3(u / b))), true);
         }), s.promise;
       }
       return {set: i, update: (r, n15) => i(r(a, e), n15), subscribe: o.subscribe};
@@ -1560,7 +1560,7 @@
           l = u, o(2, l);
         });
       }
-      const j2 = () => {
+      const j3 = () => {
         d.set(0);
       }, w = () => {
         d.set(1);
@@ -1575,7 +1575,7 @@
         "img" in u && o(0, r = u.img), "link" in u && o(1, n15 = u.link);
       }, e.$$.update = () => {
         e.$$.dirty & 128 && h.getMousePos(s.x, s.y);
-      }, [r, n15, l, a, i, d, h, s, b, j2, w, x, f, L];
+      }, [r, n15, l, a, i, d, h, s, b, j3, w, x, f, L];
     }
     var Me2 = class extends He {
       constructor(t) {
@@ -1619,7 +1619,7 @@
       }};
     }
     function He3(e) {
-      let t, o, s, a, i, r, n15, l, d, h, b, j2, w, x, f, L, u, N, V2, T = e[5].slice(0, 8), y = [];
+      let t, o, s, a, i, r, n15, l, d, h, b, j3, w, x, f, L, u, N, V2, T = e[5].slice(0, 8), y = [];
       for (let p = 0; p < T.length; p += 1)
         y[p] = ce2(pe2(e, T, p));
       const ue2 = (p) => B(y[p], 1, 1, () => {
@@ -1632,7 +1632,7 @@
         t = mt("div"), o = mt("div"), s = mt("div"), a = mt("button"), i = me(), r = mt("button"), n15 = me(), l = mt("div"), d = mt("div"), h = mt("div"), b = mt("div");
         for (let p = 0; p < y.length; p += 1)
           y[p].c();
-        j2 = me(), w = mt("div");
+        j3 = me(), w = mt("div");
         for (let p = 0; p < v.length; p += 1)
           v[p].c();
         x = me(), f = mt("div"), Zt(L.$$.fragment), Z(a, "class", "svelte-1g03b5a"), Z(r, "class", "svelte-1g03b5a"), Z(s, "class", "button-container svelte-1g03b5a"), Z(o, "class", "button-wrapper svelte-1g03b5a"), Z(b, "class", "press-container svelte-1g03b5a"), Z(w, "class", "text-image-wrapper svelte-1g03b5a"), Z(h, "class", "content-container flex-item svelte-1g03b5a"), Z(d, "class", "container svelte-1g03b5a"), Z(f, "class", "additional-press-wrapper svelte-1g03b5a"), Z(l, "class", "wrapper svelte-1g03b5a"), Z(t, "class", "hidden-wrapper svelte-1g03b5a");
@@ -1640,7 +1640,7 @@
         j(p, t, S), _n(t, o), _n(o, s), _n(s, a), _n(s, i), _n(s, r), _n(t, n15), _n(t, l), _n(l, d), _n(d, h), _n(h, b);
         for (let g = 0; g < y.length; g += 1)
           y[g].m(b, null);
-        _n(h, j2), _n(h, w);
+        _n(h, j3), _n(h, w);
         for (let g = 0; g < v.length; g += 1)
           v[g].m(w, null);
         _n(l, x), _n(l, f), Mt(L, f, null), e[9](f), e[10](l), u = true, N || (V2 = [Kn(a, "click", e[7]), Kn(r, "click", e[8])], N = true);
@@ -1695,7 +1695,7 @@
       let h = ["https://res.cloudinary.com/dt4xntymn/image/upload/v1633988338/mainSite/press/text/Press_3_PNG_jnmqzk.png", "https://res.cloudinary.com/dt4xntymn/image/upload/v1633988338/mainSite/press/text/Press_2_PNG_dtejy7.png", "https://res.cloudinary.com/dt4xntymn/image/upload/v1633988338/mainSite/press/text/Press_4_PNG_zqtwne.png", "https://res.cloudinary.com/dt4xntymn/image/upload/v1633988338/mainSite/press/text/Press_5_PNG_ysj7nx.png", "https://res.cloudinary.com/dt4xntymn/image/upload/v1633988338/mainSite/press/text/Press_PNG_se76b5.png"];
       const b = () => {
         l.reverse();
-      }, j2 = () => {
+      }, j3 = () => {
         l.play();
       };
       function w(f) {
@@ -1708,7 +1708,7 @@
           n15 = f, o(3, n15);
         });
       }
-      return [a, i, r, n15, l, d, h, b, j2, w, x];
+      return [a, i, r, n15, l, d, h, b, j3, w, x];
     }
     var Ee3 = class extends He {
       constructor(t) {
@@ -1865,20 +1865,20 @@
     };
   });
 
-  // dist/assets/Developments.ec09cf38.js
-  var require_Developments_ec09cf38 = __commonJS((exports) => {
+  // dist/assets/Developments.38b9ad13.js
+  var require_Developments_38b9ad13 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Z2
     });
     function T(i) {
-      let n15, e, t, a, d, v, p, u, _ = i[0].page + "", j2, M2, g, x, b, y = i[1].data.description + "", w, A2, m, E, k, c, D3, C, G;
+      let n15, e, t, a, d, v, p, u, _ = i[0].page + "", j3, M2, g, x, b, y = i[1].data.description + "", w, A2, m, E, k, c, D3, C, G;
       return {c() {
-        n15 = mt("div"), e = me(), t = mt("div"), a = mt("div"), d = mt("div"), v = mt("h5"), p = ai("Project, "), u = mt("span"), j2 = ai(_), M2 = me(), g = mt("div"), x = mt("div"), b = mt("p"), w = ai(y), A2 = me(), m = mt("button"), m.textContent = "visit site", E = me(), k = mt("div"), c = mt("img"), Z(n15, "class", "page-container"), Z(u, "class", "property-header svelte-1x765oa"), Z(v, "class", "main-header svelte-1x765oa"), Z(d, "class", "header-container svelte-1x765oa"), Z(b, "class", "description svelte-1x765oa"), Z(x, "class", "text-content-container svelte-1x765oa"), Z(g, "class", "text-wrapper svelte-1x765oa"), Z(m, "class", "redirect-button svelte-1x765oa"), Z(a, "class", "left-page svelte-1x765oa"), Z(c, "class", "main-image svelte-1x765oa"), ei(c.src, D3 = i[1].data.img) || Z(c, "src", D3), Z(c, "alt", ""), Z(k, "class", "main-image-container svelte-1x765oa"), Z(t, "class", "container svelte-1x765oa");
+        n15 = mt("div"), e = me(), t = mt("div"), a = mt("div"), d = mt("div"), v = mt("h5"), p = ai("Project, "), u = mt("span"), j3 = ai(_), M2 = me(), g = mt("div"), x = mt("div"), b = mt("p"), w = ai(y), A2 = me(), m = mt("button"), m.textContent = "visit site", E = me(), k = mt("div"), c = mt("img"), Z(n15, "class", "page-container"), Z(u, "class", "property-header svelte-1x765oa"), Z(v, "class", "main-header svelte-1x765oa"), Z(d, "class", "header-container svelte-1x765oa"), Z(b, "class", "description svelte-1x765oa"), Z(x, "class", "text-content-container svelte-1x765oa"), Z(g, "class", "text-wrapper svelte-1x765oa"), Z(m, "class", "redirect-button svelte-1x765oa"), Z(a, "class", "left-page svelte-1x765oa"), Z(c, "class", "main-image svelte-1x765oa"), ei(c.src, D3 = i[1].data.img) || Z(c, "src", D3), Z(c, "alt", ""), Z(k, "class", "main-image-container svelte-1x765oa"), Z(t, "class", "container svelte-1x765oa");
       }, m(r, f) {
-        j(r, n15, f), j(r, e, f), j(r, t, f), _n(t, a), _n(a, d), _n(d, v), _n(v, p), _n(v, u), _n(u, j2), _n(a, M2), _n(a, g), _n(g, x), _n(x, b), _n(b, w), _n(a, A2), _n(a, m), _n(t, E), _n(t, k), _n(k, c), C || (G = Kn(m, "click", i[2]), C = true);
+        j(r, n15, f), j(r, e, f), j(r, t, f), _n(t, a), _n(a, d), _n(d, v), _n(v, p), _n(v, u), _n(u, j3), _n(a, M2), _n(a, g), _n(g, x), _n(x, b), _n(b, w), _n(a, A2), _n(a, m), _n(t, E), _n(t, k), _n(k, c), C || (G = Kn(m, "click", i[2]), C = true);
       }, p(r, f) {
-        f & 1 && _ !== (_ = r[0].page + "") && Mc(j2, _), f & 2 && y !== (y = r[1].data.description + "") && Mc(w, y), f & 2 && !ei(c.src, D3 = r[1].data.img) && Z(c, "src", D3);
+        f & 1 && _ !== (_ = r[0].page + "") && Mc(j3, _), f & 2 && y !== (y = r[1].data.description + "") && Mc(w, y), f & 2 && !ei(c.src, D3 = r[1].data.img) && Z(c, "src", D3);
       }, d(r) {
         r && U(n15), r && U(e), r && U(t), C = false, G();
       }};
@@ -1905,7 +1905,7 @@
       return na(() => {
         t();
       }), i.$$.update = () => {
-        i.$$.dirty & 1 && e(1, d = R.pages.byTitle[a.page]);
+        i.$$.dirty & 1 && e(1, d = j2.pages.byTitle[a.page]);
       }, [a, d, v];
     }
     var Z2 = class extends He {
@@ -2043,7 +2043,7 @@
   var require_fallback_c41a116c = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => j2
+      default: () => j3
     });
     function y(o) {
       let e, a, l, t, p, n15, f, c;
@@ -2063,7 +2063,7 @@
       let l;
       return pe(o, Ma, (t) => a(0, l = t)), [l];
     }
-    var j2 = class extends He {
+    var j3 = class extends He {
       constructor(e) {
         super();
         Be(this, e, C, y, de, {});
@@ -2085,8 +2085,8 @@
     };
   });
 
-  // dist/assets/_layout.970cdb97.js
-  var require_layout_970cdb97 = __commonJS((exports) => {
+  // dist/assets/_layout.ce8d9165.js
+  var require_layout_ce8d9165 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => ct2
@@ -2163,7 +2163,7 @@
     }
     function Ne3(l, e, n15) {
       let t;
-      pe(l, jt2, (o) => n15(4, t = o));
+      pe(l, Rt2, (o) => n15(4, t = o));
       let {hide: i} = e, {key: r} = e;
       const {receive: s, send: m} = t;
       return l.$$set = (o) => {
@@ -2218,7 +2218,7 @@
     function Ue3(l, e, n15) {
       let t, i, r, s, m;
       pe(l, Bc, (v) => n15(6, i = v)), pe(l, kl2, (v) => n15(10, r = v)), pe(l, N, (v) => n15(1, s = v)), pe(l, Vc, (v) => n15(2, m = v));
-      const o = R.categories.byTitle[e.title], {receive: y, send: p} = r, d = async (v) => {
+      const o = j2.categories.byTitle[e.title], {receive: y, send: p} = r, d = async (v) => {
         yc.to(v.target, {opacity: 0});
       }, c = async (v) => {
         yc.to(v.target, {opacity: 1});
@@ -2275,9 +2275,9 @@
       }, m(S, M2) {
         j(S, e, M2), _n(e, n15), _n(e, t), f[i].m(e, null), _n(e, s), _n(e, m), _n(e, o), _n(e, y), d = true;
       }, p(S, [M2]) {
-        let R2 = i;
-        i = v(S), i === R2 ? f[i].p(S, M2) : (Kt(), B(f[R2], 1, 1, () => {
-          f[R2] = null;
+        let R = i;
+        i = v(S), i === R ? f[i].p(S, M2) : (Kt(), B(f[R], 1, 1, () => {
+          f[R] = null;
         }), Qt(), r = f[i], r ? r.p(S, M2) : (r = f[i] = c[i](S), r.c()), M(r, 1), r.m(e, s)), (!d || M2 & 2 && p !== (p = S[1]["data-val"])) && Z(e, "data-val", p);
       }, i(S) {
         d || (M(r), d = true);
@@ -2339,7 +2339,7 @@
       let t, i, r;
       pe(l, N, (d) => n15(1, t = d)), pe(l, kl2, (d) => n15(7, i = d)), pe(l, zc, (d) => n15(2, r = d));
       let s;
-      const {receive: m, send: o} = i, y = R.categories.byTitle[e.title];
+      const {receive: m, send: o} = i, y = j2.categories.byTitle[e.title];
       na(() => {
         Go(N, t.videos = [...t.videos, s], t);
       });
@@ -2419,7 +2419,7 @@
       }};
     }
     function et3(l) {
-      let e, n15, t, i, r, s, m, o, y, p, d, c, f, v, S, M2, R2, C, B2;
+      let e, n15, t, i, r, s, m, o, y, p, d, c, f, v, S, M2, R, C, B2;
       i = new te2({});
       let $2 = l[1], k = [];
       for (let a = 0; a < $2.length; a += 1)
@@ -2441,7 +2441,7 @@
         s = me(), Zt(m.$$.fragment), o = me();
         for (let a = 0; a < A2.length; a += 1)
           A2[a].c();
-        y = me(), Zt(p.$$.fragment), d = me(), Zt(c.$$.fragment), f = me(), Zt(v.$$.fragment), S = me(), Zt(M2.$$.fragment), R2 = me(), Zt(C.$$.fragment), Z(t, "class", "barcode"), Z(n15, "class", "logo-container svelte-1v1tff6"), Z(e, "class", "container svelte-1v1tff6");
+        y = me(), Zt(p.$$.fragment), d = me(), Zt(c.$$.fragment), f = me(), Zt(v.$$.fragment), S = me(), Zt(M2.$$.fragment), R = me(), Zt(C.$$.fragment), Z(t, "class", "barcode"), Z(n15, "class", "logo-container svelte-1v1tff6"), Z(e, "class", "container svelte-1v1tff6");
       }, m(a, g) {
         j(a, e, g), _n(e, n15), _n(n15, t), Mt(i, t, null), _n(t, r);
         for (let u = 0; u < k.length; u += 1)
@@ -2449,7 +2449,7 @@
         _n(t, s), Mt(m, t, null), _n(t, o);
         for (let u = 0; u < A2.length; u += 1)
           A2[u].m(t, null);
-        _n(t, y), Mt(p, t, null), j(a, d, g), Mt(c, a, g), j(a, f, g), Mt(v, a, g), j(a, S, g), Mt(M2, a, g), j(a, R2, g), Mt(C, a, g), B2 = true;
+        _n(t, y), Mt(p, t, null), j(a, d, g), Mt(c, a, g), j(a, f, g), Mt(v, a, g), j(a, S, g), Mt(M2, a, g), j(a, R, g), Mt(C, a, g), B2 = true;
       }, p(a, [g]) {
         if (g & 3) {
           $2 = a[1];
@@ -2492,7 +2492,7 @@
           B(A2[g]);
         B(p.$$.fragment, a), B(c.$$.fragment, a), B(v.$$.fragment, a), B(M2.$$.fragment, a), B(C.$$.fragment, a), B2 = false;
       }, d(a) {
-        a && U(e), Rt(i), Zo(k, a), Rt(m), Zo(A2, a), Rt(p), a && U(d), Rt(c, a), a && U(f), Rt(v, a), a && U(S), Rt(M2, a), a && U(R2), Rt(C, a);
+        a && U(e), Rt(i), Zo(k, a), Rt(m), Zo(A2, a), Rt(p), a && U(d), Rt(c, a), a && U(f), Rt(v, a), a && U(S), Rt(M2, a), a && U(R), Rt(C, a);
       }};
     }
     function tt3(l, e, n15) {
@@ -2531,21 +2531,21 @@
     }
     function rt2(l) {
       let e, n15, t, i, r, s, m, o, y, p, d, c, f, v, S;
-      const M2 = l[2].default, R2 = cn(M2, l, l[1], null);
+      const M2 = l[2].default, R = cn(M2, l, l[1], null);
       let C = window.location.origin !== "http://jsdom.ssr" && it2(), B2 = !l[0].shouldRemoveStroke && window.location.origin !== "http://jsdom.ssr" && ye2();
       return p = new nt2({}), {c() {
-        R2 && R2.c(), e = me(), n15 = mt("div"), t = mt("div"), C && C.c(), i = me(), B2 && B2.c(), r = me(), s = mt("div"), m = mt("div"), m.innerHTML = `<h5 class="main-text fade svelte-q9csbt">&quot;Connecting People</h5> 
+        R && R.c(), e = me(), n15 = mt("div"), t = mt("div"), C && C.c(), i = me(), B2 && B2.c(), r = me(), s = mt("div"), m = mt("div"), m.innerHTML = `<h5 class="main-text fade svelte-q9csbt">&quot;Connecting People</h5> 
       <h5 class="main-text fade svelte-q9csbt">to the Art of Living&quot;</h5>`, o = me(), y = mt("div"), Zt(p.$$.fragment), d = me(), c = mt("div"), c.innerHTML = '<img class="logo-text svelte-q9csbt" alt="" src="https://res.cloudinary.com/dt4xntymn/image/upload/v1638227177/mainSite/home/logo_Text_jxudf8.png"/>', Z(t, "class", "video-bg svelte-q9csbt"), Z(m, "class", "flex-item main-text-container svelte-q9csbt"), Z(y, "class", "flex-item logo-container svelte-q9csbt"), Z(c, "class", "flex-item logo-text-container fade svelte-q9csbt"), Z(s, "class", "container svelte-q9csbt"), Z(n15, "class", "home-wrapper svelte-q9csbt");
       }, m($2, k) {
-        R2 && R2.m($2, k), j($2, e, k), j($2, n15, k), _n(n15, t), C && C.m(t, null), _n(t, i), B2 && B2.m(t, null), _n(n15, r), _n(n15, s), _n(s, m), _n(s, o), _n(s, y), Mt(p, y, null), _n(s, d), _n(s, c), f = true, v || (S = Kn(lt3, "resize", l[3]), v = true);
+        R && R.m($2, k), j($2, e, k), j($2, n15, k), _n(n15, t), C && C.m(t, null), _n(t, i), B2 && B2.m(t, null), _n(n15, r), _n(n15, s), _n(s, m), _n(s, o), _n(s, y), Mt(p, y, null), _n(s, d), _n(s, c), f = true, v || (S = Kn(lt3, "resize", l[3]), v = true);
       }, p($2, [k]) {
-        R2 && R2.p && (!f || k & 2) && hn(R2, M2, $2, $2[1], f ? fn(M2, $2[1], k, null) : dn($2[1]), null), !$2[0].shouldRemoveStroke && window.location.origin !== "http://jsdom.ssr" ? B2 || (B2 = ye2(), B2.c(), B2.m(t, null)) : B2 && (B2.d(1), B2 = null);
+        R && R.p && (!f || k & 2) && hn(R, M2, $2, $2[1], f ? fn(M2, $2[1], k, null) : dn($2[1]), null), !$2[0].shouldRemoveStroke && window.location.origin !== "http://jsdom.ssr" ? B2 || (B2 = ye2(), B2.c(), B2.m(t, null)) : B2 && (B2.d(1), B2 = null);
       }, i($2) {
-        f || (M(R2, $2), M(p.$$.fragment, $2), f = true);
+        f || (M(R, $2), M(p.$$.fragment, $2), f = true);
       }, o($2) {
-        B(R2, $2), B(p.$$.fragment, $2), f = false;
+        B(R, $2), B(p.$$.fragment, $2), f = false;
       }, d($2) {
-        R2 && R2.d($2), $2 && U(e), $2 && U(n15), C && C.d(), B2 && B2.d(), Rt(p), v = false, S();
+        R && R.d($2), $2 && U(e), $2 && U(n15), C && C.d(), B2 && B2.d(), Rt(p), v = false, S();
       }};
     }
     function st2(l, e, n15) {
@@ -5379,7 +5379,7 @@
   };
   var Bt;
   var Vu = function n11(t, e) {
-    var r = t.vars, i = r.ease, s = r.startAt, o = r.immediateRender, a = r.lazy, l = r.onUpdate, c = r.onUpdateParams, u = r.callbackScope, f = r.runBackwards, h = r.yoyoEase, d = r.keyframes, p = r.autoRevert, _ = t._dur, g = t._startAt, m = t._targets, x = t.parent, w = x && x.data === "nested" ? x.parent._targets : m, T = t._overwrite === "auto" && !br, v = t.timeline, y, k, b, P, E, C, F, N, R2, z, L, G, S;
+    var r = t.vars, i = r.ease, s = r.startAt, o = r.immediateRender, a = r.lazy, l = r.onUpdate, c = r.onUpdateParams, u = r.callbackScope, f = r.runBackwards, h = r.yoyoEase, d = r.keyframes, p = r.autoRevert, _ = t._dur, g = t._startAt, m = t._targets, x = t.parent, w = x && x.data === "nested" ? x.parent._targets : m, T = t._overwrite === "auto" && !br, v = t.timeline, y, k, b, P, E, C, F, N, R, z, L, G, S;
     if (v && (!d || !i) && (i = "none"), t._ease = se(i, we.ease), t._yEase = h ? ro(se(h === true ? i : h, we.ease)) : 0, h && t._yoyo && !t._repeat && (h = t._yEase, t._yEase = t._ease, t._ease = h), t._from = !v && !!r.runBackwards, !v || d && !r.stagger) {
       if (N = m[0] ? re(m[0]).harness : 0, G = N && r[N.prop], y = zn(r, Er), g && At(g.render(-1, true)), s)
         if (At(t._startAt = q.set(m, ft({data: "isStart", overwrite: false, parent: x, immediateRender: true, lazy: J(a), startAt: null, delay: 0, onUpdate: l, onUpdateParams: c, callbackScope: u, stagger: 0}, s))), e < 0 && !o && !p && t._startAt.render(-1, true), o) {
@@ -5398,11 +5398,11 @@
           return;
       }
       for (t._pt = 0, a = _ && J(a) || a && !_, k = 0; k < m.length; k++) {
-        if (E = m[k], F = E._gsap || Dr(m)[k]._gsap, t._ptLookup[k] = z = {}, Or[F.id] && Ft.length && Nn(), L = w === m ? k : w.indexOf(E), N && (R2 = new N()).init(E, G || y, t, L, w) !== false && (t._pt = P = new rt(t._pt, E, R2.name, 0, 1, R2.render, R2, 0, R2.priority), R2._props.forEach(function(gt2) {
+        if (E = m[k], F = E._gsap || Dr(m)[k]._gsap, t._ptLookup[k] = z = {}, Or[F.id] && Ft.length && Nn(), L = w === m ? k : w.indexOf(E), N && (R = new N()).init(E, G || y, t, L, w) !== false && (t._pt = P = new rt(t._pt, E, R.name, 0, 1, R.render, R, 0, R.priority), R._props.forEach(function(gt2) {
           z[gt2] = P;
-        }), R2.priority && (C = 1)), !N || G)
+        }), R.priority && (C = 1)), !N || G)
           for (b in y)
-            ot[b] && (R2 = ao(b, y, t, L, E, w)) ? R2.priority && (C = 1) : z[b] = P = zr.call(t, E, b, "get", y[b], L, w, 0, r.stringFilter);
+            ot[b] && (R = ao(b, y, t, L, E, w)) ? R.priority && (C = 1) : z[b] = P = zr.call(t, E, b, "get", y[b], L, w, 0, r.stringFilter);
         t._op && t._op[k] && t.kill(E, t._op[k]), T && t._pt && (Bt = t, I.killTweensOf(E, z, t.globalTime(e)), S = !t.parent, Bt = 0), t._pt && a && (Or[F.id] = 1);
       }
       C && _o(t), t._onInit && t._onInit(t);
@@ -5454,7 +5454,7 @@
           T.duration() ? c = u = 0 : a.timeline = 0;
         } else if (p) {
           Ge(ft(T.vars.defaults, {ease: "none"})), T._ease = se(p.ease || i.ease || "none");
-          var F = 0, N, R2, z;
+          var F = 0, N, R, z;
           if ($(p))
             p.forEach(function(L) {
               return T.to(w, L, ">");
@@ -5467,7 +5467,7 @@
               for (N = y[b].sort(function(L, G) {
                 return L.t - G.t;
               }), F = 0, v = 0; v < N.length; v++)
-                R2 = N[v], z = {ease: R2.e, duration: (R2.t - (v ? N[v - 1].t : 0)) / 100 * c}, z[b] = R2.v, T.to(w, z, F), F += z.duration;
+                R = N[v], z = {ease: R.e, duration: (R.t - (v ? N[v - 1].t : 0)) / 100 * c}, z[b] = R.v, T.to(w, z, F), F += z.duration;
             T.duration() < c && T.to({}, {duration: c - T.duration()});
           }
         }
@@ -5938,8 +5938,8 @@
     var r = t._gsap || new oo(t);
     if ("x" in r && !e && !r.uncache)
       return r;
-    var i = t.style, s = r.scaleX < 0, o = "px", a = "deg", l = Dt(t, Xt) || "0", c, u, f, h, d, p, _, g, m, x, w, T, v, y, k, b, P, E, C, F, N, R2, z, L, G, S, gt2, Me2, Wt2, Kr, Pt2, Yt2;
-    return c = u = f = p = _ = g = m = x = w = 0, h = d = 1, r.svg = !!(t.getCTM && So(t)), y = Yr(t, r.svg), r.svg && (L = (!r.uncache || l === "0px 0px") && !e && t.getAttribute("data-svg-origin"), Gr(t, L || l, !!L || r.originIsAbsolute, r.smooth !== false, y)), T = r.xOrigin || 0, v = r.yOrigin || 0, y !== rn && (E = y[0], C = y[1], F = y[2], N = y[3], c = R2 = y[4], u = z = y[5], y.length === 6 ? (h = Math.sqrt(E * E + C * C), d = Math.sqrt(N * N + F * F), p = E || C ? Ae(C, E) * le : 0, m = F || N ? Ae(F, N) * le + p : 0, m && (d *= Math.abs(Math.cos(m * Ce))), r.svg && (c -= T - (T * E + v * F), u -= v - (T * C + v * N))) : (Yt2 = y[6], Kr = y[7], gt2 = y[8], Me2 = y[9], Wt2 = y[10], Pt2 = y[11], c = y[12], u = y[13], f = y[14], k = Ae(Yt2, Wt2), _ = k * le, k && (b = Math.cos(-k), P = Math.sin(-k), L = R2 * b + gt2 * P, G = z * b + Me2 * P, S = Yt2 * b + Wt2 * P, gt2 = R2 * -P + gt2 * b, Me2 = z * -P + Me2 * b, Wt2 = Yt2 * -P + Wt2 * b, Pt2 = Kr * -P + Pt2 * b, R2 = L, z = G, Yt2 = S), k = Ae(-F, Wt2), g = k * le, k && (b = Math.cos(-k), P = Math.sin(-k), L = E * b - gt2 * P, G = C * b - Me2 * P, S = F * b - Wt2 * P, Pt2 = N * P + Pt2 * b, E = L, C = G, F = S), k = Ae(C, E), p = k * le, k && (b = Math.cos(k), P = Math.sin(k), L = E * b + C * P, G = R2 * b + z * P, C = C * b - E * P, z = z * b - R2 * P, E = L, R2 = G), _ && Math.abs(_) + Math.abs(p) > 359.9 && (_ = p = 0, g = 180 - g), h = H(Math.sqrt(E * E + C * C + F * F)), d = H(Math.sqrt(z * z + Yt2 * Yt2)), k = Ae(R2, z), m = Math.abs(k) > 2e-4 ? k * le : 0, w = Pt2 ? 1 / (Pt2 < 0 ? -Pt2 : Pt2) : 0), r.svg && (L = t.getAttribute("transform"), r.forceCSS = t.setAttribute("transform", "") || !Ao(Dt(t, Y)), L && t.setAttribute("transform", L))), Math.abs(m) > 90 && Math.abs(m) < 270 && (s ? (h *= -1, m += p <= 0 ? 180 : -180, p += p <= 0 ? 180 : -180) : (d *= -1, m += m <= 0 ? 180 : -180)), r.x = c - ((r.xPercent = c && (r.xPercent || (Math.round(t.offsetWidth / 2) === Math.round(-c) ? -50 : 0))) ? t.offsetWidth * r.xPercent / 100 : 0) + o, r.y = u - ((r.yPercent = u && (r.yPercent || (Math.round(t.offsetHeight / 2) === Math.round(-u) ? -50 : 0))) ? t.offsetHeight * r.yPercent / 100 : 0) + o, r.z = f + o, r.scaleX = H(h), r.scaleY = H(d), r.rotation = H(p) + a, r.rotationX = H(_) + a, r.rotationY = H(g) + a, r.skewX = m + a, r.skewY = x + a, r.transformPerspective = w + o, (r.zOrigin = parseFloat(l.split(" ")[2]) || 0) && (i[Xt] = jn(l)), r.xOffset = r.yOffset = 0, r.force3D = it.force3D, r.renderTransform = r.svg ? pc : xo ? Mo : _c, r.uncache = 0, r;
+    var i = t.style, s = r.scaleX < 0, o = "px", a = "deg", l = Dt(t, Xt) || "0", c, u, f, h, d, p, _, g, m, x, w, T, v, y, k, b, P, E, C, F, N, R, z, L, G, S, gt2, Me2, Wt2, Kr, Pt2, Yt2;
+    return c = u = f = p = _ = g = m = x = w = 0, h = d = 1, r.svg = !!(t.getCTM && So(t)), y = Yr(t, r.svg), r.svg && (L = (!r.uncache || l === "0px 0px") && !e && t.getAttribute("data-svg-origin"), Gr(t, L || l, !!L || r.originIsAbsolute, r.smooth !== false, y)), T = r.xOrigin || 0, v = r.yOrigin || 0, y !== rn && (E = y[0], C = y[1], F = y[2], N = y[3], c = R = y[4], u = z = y[5], y.length === 6 ? (h = Math.sqrt(E * E + C * C), d = Math.sqrt(N * N + F * F), p = E || C ? Ae(C, E) * le : 0, m = F || N ? Ae(F, N) * le + p : 0, m && (d *= Math.abs(Math.cos(m * Ce))), r.svg && (c -= T - (T * E + v * F), u -= v - (T * C + v * N))) : (Yt2 = y[6], Kr = y[7], gt2 = y[8], Me2 = y[9], Wt2 = y[10], Pt2 = y[11], c = y[12], u = y[13], f = y[14], k = Ae(Yt2, Wt2), _ = k * le, k && (b = Math.cos(-k), P = Math.sin(-k), L = R * b + gt2 * P, G = z * b + Me2 * P, S = Yt2 * b + Wt2 * P, gt2 = R * -P + gt2 * b, Me2 = z * -P + Me2 * b, Wt2 = Yt2 * -P + Wt2 * b, Pt2 = Kr * -P + Pt2 * b, R = L, z = G, Yt2 = S), k = Ae(-F, Wt2), g = k * le, k && (b = Math.cos(-k), P = Math.sin(-k), L = E * b - gt2 * P, G = C * b - Me2 * P, S = F * b - Wt2 * P, Pt2 = N * P + Pt2 * b, E = L, C = G, F = S), k = Ae(C, E), p = k * le, k && (b = Math.cos(k), P = Math.sin(k), L = E * b + C * P, G = R * b + z * P, C = C * b - E * P, z = z * b - R * P, E = L, R = G), _ && Math.abs(_) + Math.abs(p) > 359.9 && (_ = p = 0, g = 180 - g), h = H(Math.sqrt(E * E + C * C + F * F)), d = H(Math.sqrt(z * z + Yt2 * Yt2)), k = Ae(R, z), m = Math.abs(k) > 2e-4 ? k * le : 0, w = Pt2 ? 1 / (Pt2 < 0 ? -Pt2 : Pt2) : 0), r.svg && (L = t.getAttribute("transform"), r.forceCSS = t.setAttribute("transform", "") || !Ao(Dt(t, Y)), L && t.setAttribute("transform", L))), Math.abs(m) > 90 && Math.abs(m) < 270 && (s ? (h *= -1, m += p <= 0 ? 180 : -180, p += p <= 0 ? 180 : -180) : (d *= -1, m += m <= 0 ? 180 : -180)), r.x = c - ((r.xPercent = c && (r.xPercent || (Math.round(t.offsetWidth / 2) === Math.round(-c) ? -50 : 0))) ? t.offsetWidth * r.xPercent / 100 : 0) + o, r.y = u - ((r.yPercent = u && (r.yPercent || (Math.round(t.offsetHeight / 2) === Math.round(-u) ? -50 : 0))) ? t.offsetHeight * r.yPercent / 100 : 0) + o, r.z = f + o, r.scaleX = H(h), r.scaleY = H(d), r.rotation = H(p) + a, r.rotationX = H(_) + a, r.rotationY = H(g) + a, r.skewX = m + a, r.skewY = x + a, r.transformPerspective = w + o, (r.zOrigin = parseFloat(l.split(" ")[2]) || 0) && (i[Xt] = jn(l)), r.xOffset = r.yOffset = 0, r.force3D = it.force3D, r.renderTransform = r.svg ? pc : xo ? Mo : _c, r.uncache = 0, r;
   };
   var jn = function(t) {
     return (t = t.split(" "))[0] + " " + t[1];
@@ -6443,7 +6443,7 @@
     function N() {
       clearInterval(k);
     }
-    function R2() {
+    function R() {
       u && (k = setInterval(C, u));
     }
     function z(S) {
@@ -6459,7 +6459,7 @@
       "perPage" in S && e(10, l = S.perPage), "loop" in S && e(11, c = S.loop), "autoplay" in S && e(12, u = S.autoplay), "duration" in S && e(13, f = S.duration), "easing" in S && e(14, h = S.easing), "startIndex" in S && e(15, d = S.startIndex), "draggable" in S && e(16, p = S.draggable), "multipleDrag" in S && e(17, _ = S.multipleDrag), "dots" in S && e(0, g = S.dots), "controls" in S && e(1, m = S.controls), "threshold" in S && e(18, x = S.threshold), "rtl" in S && e(19, w = S.rtl), "$$scope" in S && e(23, a = S.$$scope);
     }, n15.$$.update = () => {
       n15.$$.dirty[0] & 4194304 && (r = y ? y.innerElements : []), n15.$$.dirty[0] & 4195328 && e(6, i = y ? y.perPage : l), n15.$$.dirty[0] & 4194368 && e(9, s = y ? Math.ceil(y.innerElements.length / i) : []);
-    }, [g, m, P, E, C, F, i, T, v, s, l, c, u, f, h, d, p, _, x, w, N, R2, y, a, o, L, G];
+    }, [g, m, P, E, C, F, i, T, v, s, l, c, u, f, h, d, p, _, x, w, N, R, y, a, o, L, G];
   }
   var Yc = class extends He {
     constructor(t) {
@@ -6486,7 +6486,7 @@
     }
   };
 
-  // dist/assets/index.6356127c.js
+  // dist/assets/index.86d5a89a.js
   var et2 = Object.defineProperty;
   var he2 = Object.getOwnPropertySymbols;
   var tt2 = Object.prototype.hasOwnProperty;
@@ -6511,11 +6511,11 @@
       if (l = `${ht2}${l}`, l in $e2)
         return;
       $e2[l] = true;
-      const r = l.endsWith(".css"), n15 = r ? '[rel="stylesheet"]' : "";
-      if (document.querySelector(`link[href="${l}"]${n15}`))
+      const n15 = l.endsWith(".css"), r = n15 ? '[rel="stylesheet"]' : "";
+      if (document.querySelector(`link[href="${l}"]${r}`))
         return;
       const a = document.createElement("link");
-      if (a.rel = r ? "stylesheet" : pt2, r || (a.as = "script", a.crossOrigin = ""), a.href = l, document.head.appendChild(a), r)
+      if (a.rel = n15 ? "stylesheet" : pt2, n15 || (a.as = "script", a.crossOrigin = ""), a.href = l, document.head.appendChild(a), n15)
         return new Promise((d, u) => {
           a.addEventListener("load", d), a.addEventListener("error", u);
         });
@@ -6527,49 +6527,49 @@
       Be(this, t, null, null, de, {});
     }
   };
-  var R = {categories: {byTitle: {developments: {urlFormatted: "developments", title: "developments", index: 3, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227066/mainSite/homeVideoAnimation/SD_Bar_1_vbyidn.mp4", pages: [{key: "maliview", labels: [Array(8).fill("maliview")]}, {key: "aviator", labels: [Array(8).fill("aviator")]}, {key: "map", labels: [Array(8).fill("map")]}]}, "apel-design": {urlFormatted: "apel-design", title: "apel design", index: 0, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227066/mainSite/homeVideoAnimation/SD_Bar_4_uvy6cy.mp4", pages: [{key: "meet-amit-apel", labels: Array(8).fill("meet amit apel")}, {key: "meet-the-team", labels: Array(8).fill("meet the team")}, {key: "what-we-do", labels: Array(8).fill("what we do")}, {key: "malibu-rebuild", labels: Array(8).fill("malibu rebuild")}, {key: "press", labels: Array(8).fill("press")}, {key: "contact-us", labels: Array(8).fill("contact us")}]}, design: {urlFormatted: "design", title: "design", index: 2, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227061/mainSite/homeVideoAnimation/SD_Bar_3_btxkep.mp4", pages: [{key: "furniture", labels: [Array(8).fill("furniture")]}, {key: "concept", labels: [Array(8).fill("concept")]}, {key: "sculptures", labels: [Array(8).fill("sculptures")]}]}, architecture: {urlFormatted: "architecture", title: "architecture", index: 1, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227068/mainSite/homeVideoAnimation/SD_Bar_2_rwcg50.mp4", pages: [{key: "private-homes", labels: [Array(8).fill("private-homes")]}, {key: "multi-family", labels: [Array(8).fill("multi family")]}, {key: "mixed-use", labels: [Array(8).fill("mixed use")]}, {key: "hospitality", labels: [Array(8).fill("hospitality")]}, {key: "commercial", labels: [Array(8).fill("commercial")]}, {key: "video-renders", labels: [Array(8).fill("video renders")]}]}}}, pages: {byTitle: {maliview: {component: "Developments", title: "maliview", urlFormatted: "maliview", data: {img: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637713367/mainSite/Developments/33340_MULHOLLAND_HWY_IMG_5_nswjvh.jpg", description: "The villa will have open space plan with high ceilings with a touch of nature coming indoors. The home includes 4 perfectly placed bedrooms with views to admire the scenery as well as 4.5 bathrooms. All of the interior will be featuring custom interior design by Amit Apel Design, Inc. From an infinity pool you will be enjoying the ocean in the horizon, the view of Santa Monica Mountains, and overwhelming sunrises, and sunsets.", link: "https://maliviewestates.com/", title: "Maliview"}}, aviator: {title: "aviator", component: "Developments/Developments", urlFormatted: "aviator", data: {img: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637713367/mainSite/Developments/CAYMAN_AVIATOR_20210722_1_i39rsx.jpg", description: "Conceptually, Apel Design wanted to create the notion that the architecture of building continues beyond. In a sense, the forms flow throughout and never stop. The architecture forms emerge from the ground, extends to the horizon and divides into two beautiful irregular volumetric elements as if the architecture was slicing the space, emphasizing the gorgeous views of the Malibu mountains and the Pacific Ocean. The bird-like building program also incorporates the ideas of flow and continuation; the first level proposes an open floor plan with a glass facade that opens up the space to a beautiful deck and a second floor for bedrooms that are elevated from the ground to again emphasize this notion of flow and lightness.", link: "https://malibuaviator.com/", title: "Aviator"}}, "video-renders": {title: "video renders", urlFormatted: "video-renders", component: "Masonry/Masonry"}, "meet-the-team": {title: "meet the team", urlFormatted: "meet-the-team", component: "MeetTheTeam/MeetTheTeam"}, furniture: {title: "furniture", urlFormatted: "furniture", component: "Masonry/Masonry"}, sculptures: {title: "sculptures", urlFormatted: "sculptures", component: "Masonry/Masonry"}, "private-homes": {title: "private homes", urlFormatted: "private-homes", categories: [{name: "All", urlFormatted: "/"}, {name: "Contemporary", urlFormatted: "contemporary-houses"}, {name: "Spanish Revival", urlFormatted: "spanish-revival-homes"}, {name: "Traditional", urlFormatted: "traditional-homes"}]}, hospitality: {title: "hospitality", urlFormatted: "hospitality"}, "mixed-use": {title: "mixed use", urlFormatted: "mixed-use", videos: {"50581f59-1d7f-4238-a3dd-834464a40049": {video: "https://youtu.be/embed/wxRpmJaPfrQ"}, "68db54c2-18ae-4a3d-8994-6cef7672e615": {video: "https://youtu.be/embed/6htaSST25hc"}}}, "meet-amit-apel": {title: "meet amit apel", urlFormatted: "meet-amit-apel", component: "MeetAmitApel/MeetAmitApel"}, "what-we-do": {title: "what we do", urlFormatted: "what-we-do", component: "WhatWeDo/WhatWeDo"}, commercial: {title: "commercial", urlFormatted: "commercial"}, "multi-family": {title: "multi family", urlFormatted: "multi-family", videos: {"10e44ccf-241f-47b8-8c56-72e76c3cdd3f": {video: "https://www.youtube.com/embed/4U8GFaPPN8A"}, "4710d858-d363-4852-b69a-f7616026b19c": {video: "https://www.youtube.com/embed/uMxkF8007rg"}, "755e01e5-d01a-488b-9c53-e92f21309121": {video: "https://www.youtube.com/embed/NNpfFAAdq5c"}, "6082d254-5e18-4cde-a07a-0dd9e245b4c4": {video: "https://www.youtube.com/embed/sn8uMO5kvHQ"}, "b38327e6-2eee-42b7-a14f-81959dfa6e70": {video: "https://www.youtube.com/embed/fZ12k_0CuK0"}, "5d9199aa-aa3a-493c-b1c6-31591f8cc194": {video: "https://www.youtube.com/embed/Gibdo4VVRbg"}, "1a267c8b-3a0c-4426-8fb9-3eb662201129": {video: "https://www.youtube.com/embed/a-OIhZv8ZII"}}}, "malibu-rebuild": {title: "malibu rebuild", urlFormatted: "malibu-rebuild", component: "MalibuRebuild/MalibuRebuild"}, "contact-us": {title: "contact us", urlFormatted: "contact-us", component: "Contact/Contact"}, concept: {title: "concept", urlFormatted: "concept", component: "ArchiGallery/ArchiGallery"}, press: {title: "press", urlFormatted: "press", component: "Press/Press"}, map: {title: "project map", urlFormatted: "map", component: "Map/Map"}}}};
+  var j2 = {categories: {byTitle: {developments: {urlFormatted: "developments", title: "developments", index: 3, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227066/mainSite/homeVideoAnimation/SD_Bar_1_vbyidn.mp4", pages: [{key: "maliview", labels: [Array(8).fill("maliview")]}, {key: "aviator", labels: [Array(8).fill("aviator")]}, {key: "map", labels: [Array(8).fill("map")]}]}, "apel-design": {urlFormatted: "apel-design", title: "apel design", index: 0, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227066/mainSite/homeVideoAnimation/SD_Bar_4_uvy6cy.mp4", pages: [{key: "meet-amit-apel", labels: Array(8).fill("meet amit apel")}, {key: "meet-the-team", labels: Array(8).fill("meet the team")}, {key: "what-we-do", labels: Array(8).fill("what we do")}, {key: "malibu-rebuild", labels: Array(8).fill("malibu rebuild")}, {key: "press", labels: Array(8).fill("press")}, {key: "contact-us", labels: Array(8).fill("contact us")}]}, design: {urlFormatted: "design", title: "design", index: 2, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227061/mainSite/homeVideoAnimation/SD_Bar_3_btxkep.mp4", pages: [{key: "furniture", labels: [Array(8).fill("furniture")]}, {key: "concept", labels: [Array(8).fill("concept")]}, {key: "sculptures", labels: [Array(8).fill("sculptures")]}]}, architecture: {urlFormatted: "architecture", title: "architecture", index: 1, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227068/mainSite/homeVideoAnimation/SD_Bar_2_rwcg50.mp4", pages: [{key: "private-homes", labels: [Array(8).fill("private-homes")]}, {key: "multi-family", labels: [Array(8).fill("multi family")]}, {key: "mixed-use", labels: [Array(8).fill("mixed use")]}, {key: "hospitality", labels: [Array(8).fill("hospitality")]}, {key: "commercial", labels: [Array(8).fill("commercial")]}, {key: "video-renders", labels: [Array(8).fill("video renders")]}]}}}, pages: {byTitle: {maliview: {component: "Developments", title: "maliview", urlFormatted: "maliview", data: {img: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637713367/mainSite/Developments/33340_MULHOLLAND_HWY_IMG_5_nswjvh.jpg", description: "The villa will have open space plan with high ceilings with a touch of nature coming indoors. The home includes 4 perfectly placed bedrooms with views to admire the scenery as well as 4.5 bathrooms. All of the interior will be featuring custom interior design by Amit Apel Design, Inc. From an infinity pool you will be enjoying the ocean in the horizon, the view of Santa Monica Mountains, and overwhelming sunrises, and sunsets.", link: "https://maliviewestates.com/", title: "Maliview"}}, aviator: {title: "aviator", component: "Developments/Developments", urlFormatted: "aviator", data: {img: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637713367/mainSite/Developments/CAYMAN_AVIATOR_20210722_1_i39rsx.jpg", description: "Conceptually, Apel Design wanted to create the notion that the architecture of building continues beyond. In a sense, the forms flow throughout and never stop. The architecture forms emerge from the ground, extends to the horizon and divides into two beautiful irregular volumetric elements as if the architecture was slicing the space, emphasizing the gorgeous views of the Malibu mountains and the Pacific Ocean. The bird-like building program also incorporates the ideas of flow and continuation; the first level proposes an open floor plan with a glass facade that opens up the space to a beautiful deck and a second floor for bedrooms that are elevated from the ground to again emphasize this notion of flow and lightness.", link: "https://malibuaviator.com/", title: "Aviator"}}, "video-renders": {title: "video renders", urlFormatted: "video-renders", component: "Masonry/Masonry"}, "meet-the-team": {title: "meet the team", urlFormatted: "meet-the-team", component: "MeetTheTeam/MeetTheTeam"}, furniture: {title: "furniture", urlFormatted: "furniture", component: "Masonry/Masonry"}, sculptures: {title: "sculptures", urlFormatted: "sculptures", component: "Masonry/Masonry"}, "private-homes": {title: "private homes", urlFormatted: "private-homes", categories: [{name: "All", urlFormatted: "/"}, {name: "Contemporary", urlFormatted: "contemporary-houses"}, {name: "Spanish Revival", urlFormatted: "spanish-revival-homes"}, {name: "Traditional", urlFormatted: "traditional-homes"}]}, hospitality: {title: "hospitality", urlFormatted: "hospitality"}, "mixed-use": {title: "mixed use", urlFormatted: "mixed-use", videos: {"50581f59-1d7f-4238-a3dd-834464a40049": {video: "https://youtu.be/embed/wxRpmJaPfrQ"}, "68db54c2-18ae-4a3d-8994-6cef7672e615": {video: "https://youtu.be/embed/6htaSST25hc"}}}, "meet-amit-apel": {title: "meet amit apel", urlFormatted: "meet-amit-apel", component: "MeetAmitApel/MeetAmitApel"}, "what-we-do": {title: "what we do", urlFormatted: "what-we-do", component: "WhatWeDo/WhatWeDo"}, commercial: {title: "commercial", urlFormatted: "commercial"}, "multi-family": {title: "multi family", urlFormatted: "multi-family", videos: {"10e44ccf-241f-47b8-8c56-72e76c3cdd3f": {video: "https://www.youtube.com/embed/4U8GFaPPN8A"}, "4710d858-d363-4852-b69a-f7616026b19c": {video: "https://www.youtube.com/embed/uMxkF8007rg"}, "755e01e5-d01a-488b-9c53-e92f21309121": {video: "https://www.youtube.com/embed/NNpfFAAdq5c"}, "6082d254-5e18-4cde-a07a-0dd9e245b4c4": {video: "https://www.youtube.com/embed/sn8uMO5kvHQ"}, "b38327e6-2eee-42b7-a14f-81959dfa6e70": {video: "https://www.youtube.com/embed/fZ12k_0CuK0"}, "5d9199aa-aa3a-493c-b1c6-31591f8cc194": {video: "https://www.youtube.com/embed/Gibdo4VVRbg"}, "1a267c8b-3a0c-4426-8fb9-3eb662201129": {video: "https://www.youtube.com/embed/a-OIhZv8ZII"}}}, "malibu-rebuild": {title: "malibu rebuild", urlFormatted: "malibu-rebuild", component: "MalibuRebuild/MalibuRebuild"}, "contact-us": {title: "contact us", urlFormatted: "contact-us", component: "Contact/Contact"}, concept: {title: "concept", urlFormatted: "concept", component: "ArchiGallery/ArchiGallery"}, press: {title: "press", urlFormatted: "press", component: "Press/Press"}, map: {title: "project map", urlFormatted: "map", component: "Map/Map"}}}};
   var ze2 = ["apel-design", "architecture", "design", "developments"];
   (function() {
     const t = [];
-    for (const e in R.pages.byTitle)
-      if (Object.hasOwnProperty.call(R.pages.byTitle, e) && R.pages.byTitle[e].videos) {
-        for (const l in R.pages.byTitle[e].videos)
-          if (Object.hasOwnProperty.call(R.pages.byTitle[e].videos, l)) {
-            const r = R.pages.byTitle[e].videos[l];
-            r.key = l, t.push(r);
+    for (const e in j2.pages.byTitle)
+      if (Object.hasOwnProperty.call(j2.pages.byTitle, e) && j2.pages.byTitle[e].videos) {
+        for (const l in j2.pages.byTitle[e].videos)
+          if (Object.hasOwnProperty.call(j2.pages.byTitle[e].videos, l)) {
+            const n15 = j2.pages.byTitle[e].videos[l];
+            n15.key = l, t.push(n15);
           }
       }
     return t;
   })();
   var gt = () => {
     const i = {page: null, component: null, category: true}, {subscribe: t, set: e, update: l} = Lt(i);
-    return ie2({subscribe: t, set: e, update: l}, {setCategory(n15) {
-      l((a) => (a.category = n15, a));
-    }, setPage(n15) {
-      l((a) => (a.page = n15, a));
+    return ie2({subscribe: t, set: e, update: l}, {setCategory(r) {
+      l((a) => (a.category = r, a));
+    }, setPage(r) {
+      l((a) => (a.page = r, a));
     }});
   };
   var ee2 = gt();
   function yt2(i) {
-    let t, e, l = R.pages.byTitle[i[1]].title + "", r;
+    let t, e, l = j2.pages.byTitle[i[1]].title + "", n15;
     return {c() {
-      t = mt("div"), e = mt("h5"), r = ai(l), Z(e, "class", "main-text-header svelte-1m8o895"), Rc(e, "inactive", i[2].has(i[0].page)), Rc(e, "press", i[0].page === "press"), Rc(e, "sm", i[0].page === "meet the team"), Rc(e, "map", i[0].page === "map"), Z(t, "class", "header-container svelte-1m8o895");
-    }, m(n15, a) {
-      j(n15, t, a), _n(t, e), _n(e, r);
-    }, p(n15, [a]) {
-      a & 2 && l !== (l = R.pages.byTitle[n15[1]].title + "") && Mc(r, l), a & 5 && Rc(e, "inactive", n15[2].has(n15[0].page)), a & 1 && Rc(e, "press", n15[0].page === "press"), a & 1 && Rc(e, "sm", n15[0].page === "meet the team"), a & 1 && Rc(e, "map", n15[0].page === "map");
-    }, i: Q, o: Q, d(n15) {
-      n15 && U(t);
+      t = mt("div"), e = mt("h5"), n15 = ai(l), Z(e, "class", "main-text-header svelte-1m8o895"), Rc(e, "inactive", i[2].has(i[0].page)), Rc(e, "press", i[0].page === "press"), Rc(e, "sm", i[0].page === "meet the team"), Rc(e, "map", i[0].page === "map"), Z(t, "class", "header-container svelte-1m8o895");
+    }, m(r, a) {
+      j(r, t, a), _n(t, e), _n(e, n15);
+    }, p(r, [a]) {
+      a & 2 && l !== (l = j2.pages.byTitle[r[1]].title + "") && Mc(n15, l), a & 5 && Rc(e, "inactive", r[2].has(r[0].page)), a & 1 && Rc(e, "press", r[0].page === "press"), a & 1 && Rc(e, "sm", r[0].page === "meet the team"), a & 1 && Rc(e, "map", r[0].page === "map");
+    }, i: Q, o: Q, d(r) {
+      r && U(t);
     }};
   }
   function bt2(i, t, e) {
     let l;
     pe(i, ee2, (a) => e(0, l = a));
-    let r;
-    const n15 = new Set(["maliview", "aviator"]);
+    let n15;
+    const r = new Set(["maliview", "aviator"]);
     return i.$$.update = () => {
-      i.$$.dirty & 1 && e(1, r = l.page);
-    }, [l, r, n15];
+      i.$$.dirty & 1 && e(1, n15 = l.page);
+    }, [l, n15, r];
   }
   var wt2 = class extends He {
     constructor(t) {
@@ -6578,51 +6578,51 @@
     }
   };
   function kt2(i) {
-    let t, e, l, r, n15, a, d;
+    let t, e, l, n15, r, a, d;
     e = new wt2({props: {pages: i[0]}});
     var u = i[1];
     function c(o) {
       return {};
     }
-    return u && (n15 = new u(c())), {c() {
-      t = mt("div"), Zt(e.$$.fragment), l = me(), r = mt("div"), n15 && Zt(n15.$$.fragment), Z(r, "class", "page-wrapper svelte-1bfxyul"), Z(t, "class", "page-content-container page-content-container-anim svelte-1bfxyul");
-    }, m(o, f) {
-      j(o, t, f), Mt(e, t, null), _n(t, l), _n(t, r), n15 && Mt(n15, r, null), d = true;
-    }, p(o, [f]) {
+    return u && (r = new u(c())), {c() {
+      t = mt("div"), Zt(e.$$.fragment), l = me(), n15 = mt("div"), r && Zt(r.$$.fragment), Z(n15, "class", "page-wrapper svelte-1bfxyul"), Z(t, "class", "page-content-container page-content-container-anim svelte-1bfxyul");
+    }, m(o, m) {
+      j(o, t, m), Mt(e, t, null), _n(t, l), _n(t, n15), r && Mt(r, n15, null), d = true;
+    }, p(o, [m]) {
       const _ = {};
-      if (f & 1 && (_.pages = o[0]), e.$set(_), u !== (u = o[1])) {
-        if (n15) {
+      if (m & 1 && (_.pages = o[0]), e.$set(_), u !== (u = o[1])) {
+        if (r) {
           Kt();
-          const m = n15;
-          B(m.$$.fragment, 1, 0, () => {
-            Rt(m, 1);
+          const f = r;
+          B(f.$$.fragment, 1, 0, () => {
+            Rt(f, 1);
           }), Qt();
         }
-        u ? (n15 = new u(c()), Zt(n15.$$.fragment), M(n15.$$.fragment, 1), Mt(n15, r, null)) : n15 = null;
+        u ? (r = new u(c()), Zt(r.$$.fragment), M(r.$$.fragment, 1), Mt(r, n15, null)) : r = null;
       }
     }, i(o) {
-      d || (M(e.$$.fragment, o), n15 && M(n15.$$.fragment, o), o && ye(() => {
+      d || (M(e.$$.fragment, o), r && M(r.$$.fragment, o), o && ye(() => {
         a || (a = Fc(t, Ae2, {}, true)), a.run(1);
       }), d = true);
     }, o(o) {
-      B(e.$$.fragment, o), n15 && B(n15.$$.fragment, o), o && (a || (a = Fc(t, Ae2, {}, false)), a.run(0)), d = false;
+      B(e.$$.fragment, o), r && B(r.$$.fragment, o), o && (a || (a = Fc(t, Ae2, {}, false)), a.run(0)), d = false;
     }, d(o) {
-      o && U(t), Rt(e), n15 && Rt(n15), o && a && a.end();
+      o && U(t), Rt(e), r && Rt(r), o && a && a.end();
     }};
   }
   function Ae2() {
     return {duration: 1500, css: (i, t) => `transform: translateY(${100 * t}vh);`};
   }
   function $t2(i, t, e) {
-    let l, r;
-    pe(i, Uc, (u) => e(2, r = u));
-    let n15;
-    const a = {"private-homes": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_d591b318()), ["assets/MasonryGallery.d591b318.js", "assets/vendor.4eaa3fd3.js"]), "multi-family": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_d591b318()), ["assets/MasonryGallery.d591b318.js", "assets/vendor.4eaa3fd3.js"]), "mixed-use": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_d591b318()), ["assets/MasonryGallery.d591b318.js", "assets/vendor.4eaa3fd3.js"]), hospitality: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_d591b318()), ["assets/MasonryGallery.d591b318.js", "assets/vendor.4eaa3fd3.js"]), commercial: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_d591b318()), ["assets/MasonryGallery.d591b318.js", "assets/vendor.4eaa3fd3.js"]), concept: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_d591b318()), ["assets/MasonryGallery.d591b318.js", "assets/vendor.4eaa3fd3.js"]), sculptures: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_d591b318()), ["assets/MasonryGallery.d591b318.js", "assets/vendor.4eaa3fd3.js"]), "meet-amit-apel": async () => D2(() => Promise.resolve().then(() => require_MeetAmitApel_66467271()), ["assets/MeetAmitApel.66467271.js", "assets/vendor.4eaa3fd3.js"]), "meet-the-team": async () => D2(() => Promise.resolve().then(() => require_MeetTheTeam_eaeead33()), ["assets/MeetTheTeam.eaeead33.js", "assets/vendor.4eaa3fd3.js"]), press: async () => D2(() => Promise.resolve().then(() => require_Press_cd402a22()), ["assets/Press.cd402a22.js", "assets/vendor.4eaa3fd3.js"]), "contact-us": async () => D2(() => Promise.resolve().then(() => require_Contact_a5c44cbd()), ["assets/Contact.a5c44cbd.js", "assets/vendor.4eaa3fd3.js"]), furniture: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_d591b318()), ["assets/MasonryGallery.d591b318.js", "assets/vendor.4eaa3fd3.js"]), "malibu-rebuild": async () => D2(() => Promise.resolve().then(() => require_MalibuRebuild_9930c43f()), ["assets/MalibuRebuild.9930c43f.js", "assets/vendor.4eaa3fd3.js"]), "what-we-do": async () => D2(() => Promise.resolve().then(() => require_WhatWeDo_423cf797()), ["assets/WhatWeDo.423cf797.js", "assets/vendor.4eaa3fd3.js"]), aviator: async () => D2(() => Promise.resolve().then(() => require_Developments_ec09cf38()), ["assets/Developments.ec09cf38.js", "assets/vendor.4eaa3fd3.js"]), maliview: async () => D2(() => Promise.resolve().then(() => require_Developments_ec09cf38()), ["assets/Developments.ec09cf38.js", "assets/vendor.4eaa3fd3.js"]), "video-renders": async () => D2(() => Promise.resolve().then(() => require_VideoRenders_d9eb191e()), ["assets/VideoRenders.d9eb191e.js", "assets/vendor.4eaa3fd3.js"]), map: async () => D2(() => Promise.resolve().then(() => require_Map_fafa4f4f()), ["assets/Map.fafa4f4f.js", "assets/vendor.4eaa3fd3.js"])}, d = async (u) => {
-      u && (ee2.setPage(u), ee2.setCategory(r.category), await _i(), e(1, n15 = (await a[u]()).default));
+    let l, n15;
+    pe(i, Uc, (u) => e(2, n15 = u));
+    let r;
+    const a = {"private-homes": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bde5a2a3()), ["assets/MasonryGallery.bde5a2a3.js", "assets/vendor.4eaa3fd3.js"]), "multi-family": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bde5a2a3()), ["assets/MasonryGallery.bde5a2a3.js", "assets/vendor.4eaa3fd3.js"]), "mixed-use": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bde5a2a3()), ["assets/MasonryGallery.bde5a2a3.js", "assets/vendor.4eaa3fd3.js"]), hospitality: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bde5a2a3()), ["assets/MasonryGallery.bde5a2a3.js", "assets/vendor.4eaa3fd3.js"]), commercial: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bde5a2a3()), ["assets/MasonryGallery.bde5a2a3.js", "assets/vendor.4eaa3fd3.js"]), concept: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bde5a2a3()), ["assets/MasonryGallery.bde5a2a3.js", "assets/vendor.4eaa3fd3.js"]), sculptures: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bde5a2a3()), ["assets/MasonryGallery.bde5a2a3.js", "assets/vendor.4eaa3fd3.js"]), "meet-amit-apel": async () => D2(() => Promise.resolve().then(() => require_MeetAmitApel_66467271()), ["assets/MeetAmitApel.66467271.js", "assets/vendor.4eaa3fd3.js"]), "meet-the-team": async () => D2(() => Promise.resolve().then(() => require_MeetTheTeam_82007f8c()), ["assets/MeetTheTeam.82007f8c.js", "assets/vendor.4eaa3fd3.js"]), press: async () => D2(() => Promise.resolve().then(() => require_Press_cd402a22()), ["assets/Press.cd402a22.js", "assets/vendor.4eaa3fd3.js"]), "contact-us": async () => D2(() => Promise.resolve().then(() => require_Contact_a5c44cbd()), ["assets/Contact.a5c44cbd.js", "assets/vendor.4eaa3fd3.js"]), furniture: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bde5a2a3()), ["assets/MasonryGallery.bde5a2a3.js", "assets/vendor.4eaa3fd3.js"]), "malibu-rebuild": async () => D2(() => Promise.resolve().then(() => require_MalibuRebuild_9930c43f()), ["assets/MalibuRebuild.9930c43f.js", "assets/vendor.4eaa3fd3.js"]), "what-we-do": async () => D2(() => Promise.resolve().then(() => require_WhatWeDo_423cf797()), ["assets/WhatWeDo.423cf797.js", "assets/vendor.4eaa3fd3.js"]), aviator: async () => D2(() => Promise.resolve().then(() => require_Developments_38b9ad13()), ["assets/Developments.38b9ad13.js", "assets/vendor.4eaa3fd3.js"]), maliview: async () => D2(() => Promise.resolve().then(() => require_Developments_38b9ad13()), ["assets/Developments.38b9ad13.js", "assets/vendor.4eaa3fd3.js"]), "video-renders": async () => D2(() => Promise.resolve().then(() => require_VideoRenders_d9eb191e()), ["assets/VideoRenders.d9eb191e.js", "assets/vendor.4eaa3fd3.js"]), map: async () => D2(() => Promise.resolve().then(() => require_Map_fafa4f4f()), ["assets/Map.fafa4f4f.js", "assets/vendor.4eaa3fd3.js"])}, d = async (u) => {
+      u && (ee2.setPage(u), ee2.setCategory(n15.category), await _i(), e(1, r = (await a[u]()).default));
     };
     return i.$$.update = () => {
-      i.$$.dirty & 4 && e(0, {pages: l} = r, l), i.$$.dirty & 1 && d(l);
-    }, [l, n15, r];
+      i.$$.dirty & 4 && e(0, {pages: l} = n15, l), i.$$.dirty & 1 && d(l);
+    }, [l, r, n15];
   }
   var zt2 = class extends He {
     constructor(t) {
@@ -6631,39 +6631,39 @@
     }
   };
   var At2 = () => {
-    const i = {selected: null, visible: false, images: [], type: null}, {subscribe: t, set: e, update: l} = Lt(i), r = Object.assign({}, i);
+    const i = {selected: null, visible: false, images: [], type: null}, {subscribe: t, set: e, update: l} = Lt(i), n15 = Object.assign({}, i);
     return ie2({subscribe: t, set: e, update: l}, {openModal(a, d) {
       l((u) => (u.selected = a, u.visible = true, u.type = d, u));
     }, closeModal() {
-      l((a) => (a = ie2({}, r), a));
+      l((a) => (a = ie2({}, n15), a));
     }});
   };
   var le2 = At2();
   var Mt2 = (i, t, e, l) => {
-    const r = Me(i, t, e / 2, 0), n15 = Me(i, t, e / 2, l);
-    return Math.min(r, n15) === r ? "top" : "bottom";
+    const n15 = Me(i, t, e / 2, 0), r = Me(i, t, e / 2, l);
+    return Math.min(n15, r) === n15 ? "top" : "bottom";
   };
   var Me = (i, t, e, l) => {
-    const r = i - e, n15 = t - l;
-    return r * r + n15 * n15;
+    const n15 = i - e, r = t - l;
+    return n15 * n15 + r * r;
   };
   var wl2 = (i, t, e, l) => Math.sqrt(Math.pow(t - i, 2) + Math.pow(l - e, 2));
   var Lt2 = () => {
     const i = {ele: null, eleA: null, marquee: null, animationDefaults: {duration: 0.6, ease: "expo"}}, {subscribe: t, set: e, update: l} = Lt(i);
-    return ie2({subscribe: t, set: e, update: l}, {init(n15, a, d, u) {
-      l((c) => (c.ele = n15, c.eleA = a, c.marquee = d, c.marqueeInner = u, c));
-    }, mouseEnter(n15) {
+    return ie2({subscribe: t, set: e, update: l}, {init(r, a, d, u) {
+      l((c) => (c.ele = r, c.eleA = a, c.marquee = d, c.marqueeInner = u, c));
+    }, mouseEnter(r) {
       l((a) => {
-        const d = this.findClosestEdge(n15, a.ele);
+        const d = this.findClosestEdge(r, a.ele);
         return yc.timeline({defaults: a.animationDefaults}).set(a.marquee, {y: d === "top" ? "-101%" : "101%"}, 0).to([a.marquee, a.marqueeInner], {y: "0%"}, 0), a;
       });
-    }, mouseLeave(n15) {
+    }, mouseLeave(r) {
       l((a) => {
-        const d = this.findClosestEdge(n15, a.ele);
+        const d = this.findClosestEdge(r, a.ele);
         return yc.timeline({defaults: a.animationDefaults}).to(a.marquee, {y: d === "top" ? "-101%" : "101%"}, 0).to(a.marqueeInner, {y: d === "top" ? "101%" : "-101%"}, 0), a;
       });
-    }, findClosestEdge(n15, a) {
-      const d = n15.pageX - a.offsetLeft, u = n15.pageY - a.offsetTop;
+    }, findClosestEdge(r, a) {
+      const d = r.pageX - a.offsetLeft, u = r.pageY - a.offsetTop;
       return Mt2(d, u, a.clientWidth, a.clientHeight);
     }});
   };
@@ -6672,57 +6672,57 @@
     return l[13] = t[e], l;
   }
   function Te2(i) {
-    let t, e = i[13] + "", l, r, n15;
+    let t, e = i[13] + "", l, n15, r;
     return {c() {
-      t = mt("span"), l = ai(e), r = me(), n15 = mt("div"), Z(t, "class", "svelte-1wo0evg"), Z(n15, "class", "marquee__img svelte-1wo0evg");
+      t = mt("span"), l = ai(e), n15 = me(), r = mt("div"), Z(t, "class", "svelte-1wo0evg"), Z(r, "class", "marquee__img svelte-1wo0evg");
     }, m(a, d) {
-      j(a, t, d), _n(t, l), j(a, r, d), j(a, n15, d);
+      j(a, t, d), _n(t, l), j(a, n15, d), j(a, r, d);
     }, p(a, d) {
       d & 1 && e !== (e = a[13] + "") && Mc(l, e);
     }, d(a) {
-      a && U(t), a && U(r), a && U(n15);
+      a && U(t), a && U(n15), a && U(r);
     }};
   }
   function Tt2(i) {
-    let t, e, l = i[0].title + "", r, n15, a, d, u, c, o, f = Array(8).fill(i[0].title), _ = [];
-    for (let m = 0; m < f.length; m += 1)
-      _[m] = Te2(Le2(i, f, m));
+    let t, e, l = i[0].title + "", n15, r, a, d, u, c, o, m = Array(8).fill(i[0].title), _ = [];
+    for (let f = 0; f < m.length; f += 1)
+      _[f] = Te2(Le2(i, m, f));
     return {c() {
-      t = mt("div"), e = mt("div"), r = ai(l), n15 = me(), a = mt("div"), d = mt("div"), u = mt("div");
-      for (let m = 0; m < _.length; m += 1)
-        _[m].c();
+      t = mt("div"), e = mt("div"), n15 = ai(l), r = me(), a = mt("div"), d = mt("div"), u = mt("div");
+      for (let f = 0; f < _.length; f += 1)
+        _[f].c();
       Z(e, "class", "menu__item-link svelte-1wo0evg"), Z(u, "class", "marquee__inner svelte-1wo0evg"), Z(u, "aria-hidden", "true"), Z(d, "class", "marquee__inner-wrap svelte-1wo0evg"), Z(a, "class", "marquee svelte-1wo0evg"), Z(t, "class", "menu__item svelte-1wo0evg");
-    }, m(m, y) {
-      j(m, t, y), _n(t, e), _n(e, r), _n(t, n15), _n(t, a), _n(a, d), _n(d, u);
+    }, m(f, y) {
+      j(f, t, y), _n(t, e), _n(e, n15), _n(t, r), _n(t, a), _n(a, d), _n(d, u);
       for (let h = 0; h < _.length; h += 1)
         _[h].m(u, null);
       i[8](d), i[9](a), i[11](t), c || (o = [Kn(e, "mouseenter", i[6]), Kn(e, "mouseleave", i[7]), Kn(t, "click", i[10])], c = true);
-    }, p(m, [y]) {
-      if (y & 1 && l !== (l = m[0].title + "") && Mc(r, l), y & 1) {
-        f = Array(8).fill(m[0].title);
+    }, p(f, [y]) {
+      if (y & 1 && l !== (l = f[0].title + "") && Mc(n15, l), y & 1) {
+        m = Array(8).fill(f[0].title);
         let h;
-        for (h = 0; h < f.length; h += 1) {
-          const g = Le2(m, f, h);
+        for (h = 0; h < m.length; h += 1) {
+          const g = Le2(f, m, h);
           _[h] ? _[h].p(g, y) : (_[h] = Te2(g), _[h].c(), _[h].m(u, null));
         }
         for (; h < _.length; h += 1)
           _[h].d(1);
-        _.length = f.length;
+        _.length = m.length;
       }
-    }, i: Q, o: Q, d(m) {
-      m && U(t), Zo(_, m), i[8](null), i[9](null), i[11](null), c = false, kt(o);
+    }, i: Q, o: Q, d(f) {
+      f && U(t), Zo(_, f), i[8](null), i[9](null), i[11](null), c = false, kt(o);
     }};
   }
   function Et2(i, t, e) {
     let l;
     pe(i, Vc, (g) => e(5, l = g));
-    let {menuItem: r} = t, n15, a, d, u, c;
+    let {menuItem: n15} = t, r, a, d, u, c;
     na(() => {
-      e(4, c = Lt2()), c.init(n15, a, u, d);
+      e(4, c = Lt2()), c.init(r, a, u, d);
     });
     const o = (g) => {
       c.mouseEnter(g);
-    }, f = (g) => {
+    }, m = (g) => {
       c.mouseLeave(g);
     };
     function _(g) {
@@ -6730,22 +6730,22 @@
         d = g, e(2, d);
       });
     }
-    function m(g) {
+    function f(g) {
       Jn[g ? "unshift" : "push"](() => {
         u = g, e(3, u);
       });
     }
     const y = async (g) => {
-      l("./" + r.urlFormatted), ee2.setPage(r.urlFormatted);
+      l("./" + n15.urlFormatted), ee2.setPage(n15.urlFormatted);
     };
     function h(g) {
       Jn[g ? "unshift" : "push"](() => {
-        n15 = g, e(1, n15);
+        r = g, e(1, r);
       });
     }
     return i.$$set = (g) => {
-      "menuItem" in g && e(0, r = g.menuItem);
-    }, [r, n15, d, u, c, l, o, f, _, m, y, h];
+      "menuItem" in g && e(0, n15 = g.menuItem);
+    }, [n15, r, d, u, c, l, o, m, _, f, y, h];
   }
   var Dt2 = class extends He {
     constructor(t) {
@@ -6761,8 +6761,8 @@
     let t, e;
     return t = new Dt2({props: {menuItem: i[3]}}), {c() {
       Zt(t.$$.fragment);
-    }, m(l, r) {
-      Mt(t, l, r), e = true;
+    }, m(l, n15) {
+      Mt(t, l, n15), e = true;
     }, p: Q, i(l) {
       e || (M(t.$$.fragment, l), e = true);
     }, o(l) {
@@ -6775,22 +6775,22 @@
     let t, e, l = i[3] && It2(i);
     return {c() {
       l && l.c(), t = Re();
-    }, m(r, n15) {
-      l && l.m(r, n15), j(r, t, n15), e = true;
-    }, p(r, n15) {
-      r[3] && l.p(r, n15);
-    }, i(r) {
+    }, m(n15, r) {
+      l && l.m(n15, r), j(n15, t, r), e = true;
+    }, p(n15, r) {
+      n15[3] && l.p(n15, r);
+    }, i(n15) {
       e || (M(l), e = true);
-    }, o(r) {
+    }, o(n15) {
       B(l), e = false;
-    }, d(r) {
-      l && l.d(r), r && U(t);
+    }, d(n15) {
+      l && l.d(n15), n15 && U(t);
     }};
   }
   function Pt(i) {
-    let t, e, l, r, n15 = i[0], a = [];
-    for (let u = 0; u < n15.length; u += 1)
-      a[u] = De2(Ee2(i, n15, u));
+    let t, e, l, n15, r = i[0], a = [];
+    for (let u = 0; u < r.length; u += 1)
+      a[u] = De2(Ee2(i, r, u));
     const d = (u) => B(a[u], 1, 1, () => {
       a[u] = null;
     });
@@ -6803,32 +6803,32 @@
       j(u, t, c), _n(t, e);
       for (let o = 0; o < a.length; o += 1)
         a[o].m(e, null);
-      r = true;
+      n15 = true;
     }, p(u, [c]) {
       if (c & 1) {
-        n15 = u[0];
+        r = u[0];
         let o;
-        for (o = 0; o < n15.length; o += 1) {
-          const f = Ee2(u, n15, o);
-          a[o] ? (a[o].p(f, c), M(a[o], 1)) : (a[o] = De2(f), a[o].c(), M(a[o], 1), a[o].m(e, null));
+        for (o = 0; o < r.length; o += 1) {
+          const m = Ee2(u, r, o);
+          a[o] ? (a[o].p(m, c), M(a[o], 1)) : (a[o] = De2(m), a[o].c(), M(a[o], 1), a[o].m(e, null));
         }
-        for (Kt(), o = n15.length; o < a.length; o += 1)
+        for (Kt(), o = r.length; o < a.length; o += 1)
           d(o);
         Qt();
       }
     }, i(u) {
-      if (!r) {
-        for (let c = 0; c < n15.length; c += 1)
+      if (!n15) {
+        for (let c = 0; c < r.length; c += 1)
           M(a[c]);
         u && ye(() => {
           l || (l = Fc(t, Ie2, {}, true)), l.run(1);
-        }), r = true;
+        }), n15 = true;
       }
     }, o(u) {
       a = a.filter(Boolean);
       for (let c = 0; c < a.length; c += 1)
         B(a[c]);
-      u && (l || (l = Fc(t, Ie2, {}, false)), l.run(0)), r = false;
+      u && (l || (l = Fc(t, Ie2, {}, false)), l.run(0)), n15 = false;
     }, d(u) {
       u && U(t), Zo(a, u), u && l && l.end();
     }};
@@ -6839,12 +6839,12 @@
   function St2(i, t, e) {
     let l;
     pe(i, Uc, (a) => e(1, l = a));
-    const n15 = R.categories.byTitle[l.category].pages.map((a) => R.pages.byTitle[a.key]);
+    const r = j2.categories.byTitle[l.category].pages.map((a) => j2.pages.byTitle[a.key]);
     return na(() => {
       le2.closeModal();
-    }), [n15];
+    }), [r];
   }
-  var Rt2 = class extends He {
+  var jt2 = class extends He {
     constructor(t) {
       super();
       Be(this, t, St2, Pt, de, {});
@@ -6854,7 +6854,7 @@
     const [t, e] = Wc(ie2({}, i));
     return Lt({send: t, receive: e});
   }
-  var jt2 = Pe2({});
+  var Rt2 = Pe2({});
   var kl2 = Pe2({duration: 4e3});
   function X2(i) {
     const t = document.lazyLoadInstance;
@@ -6868,88 +6868,90 @@
     const l = i.slice();
     return l[7] = t[e], l;
   }
-  function Re2(i) {
-    let t, e, l, r, n15, a, d, u;
+  function je2(i) {
+    let t, e, l, n15, r, a, d, u;
     return {c() {
-      t = mt("div"), e = mt("img"), Z(e, "width", l = i[7].width), Z(e, "height", r = i[7].height), Z(e, "data-src", n15 = i[7].url), Z(e, "alt", ""), Z(e, "class", "carousel-image lazy svelte-1rt0cf1"), Z(t, "class", "image-container svelte-1rt0cf1");
+      t = mt("div"), e = mt("img"), Z(e, "width", l = i[7].width), Z(e, "height", n15 = i[7].height), Z(e, "data-src", r = i[7].url), Z(e, "alt", ""), Z(e, "class", "carousel-image lazy svelte-1kio0yb"), Z(t, "class", "image-container svelte-1kio0yb");
     }, m(c, o) {
       j(c, t, o), _n(t, e), d || (u = $o(a = X2.call(null, e, i[7].url)), d = true);
     }, p(c, o) {
-      i = c, o & 4 && l !== (l = i[7].width) && Z(e, "width", l), o & 4 && r !== (r = i[7].height) && Z(e, "height", r), o & 4 && n15 !== (n15 = i[7].url) && Z(e, "data-src", n15), a && Gt(a.update) && o & 4 && a.update.call(null, i[7].url);
+      i = c, o & 4 && l !== (l = i[7].width) && Z(e, "width", l), o & 4 && n15 !== (n15 = i[7].height) && Z(e, "height", n15), o & 4 && r !== (r = i[7].url) && Z(e, "data-src", r), a && Gt(a.update) && o & 4 && a.update.call(null, i[7].url);
     }, d(c) {
       c && U(t), d = false, u();
     }};
   }
-  function je2(i) {
+  function Re2(i) {
     let t, e, l;
     return {c() {
-      t = mt("div"), e = mt("iframe"), Z(e, "class", "main-video"), Z(e, "title", "render"), Z(e, "id", "ytplayer"), Z(e, "type", "text/html"), Z(e, "width", "100%"), Z(e, "height", "100%"), ei(e.src, l = i[1].video) || Z(e, "src", l), Z(e, "frameborder", "0"), Z(t, "class", "video-container");
-    }, m(r, n15) {
-      j(r, t, n15), _n(t, e);
-    }, p(r, n15) {
-      n15 & 2 && !ei(e.src, l = r[1].video) && Z(e, "src", l);
-    }, d(r) {
-      r && U(t);
+      t = mt("div"), e = mt("iframe"), Z(e, "class", "main-video svelte-1kio0yb"), Z(e, "title", "render"), Z(e, "id", "ytplayer"), Z(e, "type", "text/html"), Z(e, "width", "100%"), Z(e, "height", "100%"), ei(e.src, l = i[1]) || Z(e, "src", l), Z(e, "frameborder", "0"), Z(t, "class", "video-container svelte-1kio0yb");
+    }, m(n15, r) {
+      j(n15, t, r), _n(t, e);
+    }, p(n15, r) {
+      r & 2 && !ei(e.src, l = n15[1]) && Z(e, "src", l);
+    }, d(n15) {
+      n15 && U(t);
     }};
   }
-  function Ft2(i) {
-    let t, e, l, r, n15, a, d, u, c = i[2].images, o = [];
+  function Ct2(i) {
+    let t, e, l, n15, r, a, d, u, c = i[2].images, o = [];
     for (let _ = 0; _ < c.length; _ += 1)
-      o[_] = Re2(Se2(i, c, _));
-    let f = i[1] && je2(i);
+      o[_] = je2(Se2(i, c, _));
+    let m = i[1] && Re2(i);
     return {c() {
-      t = mt("div"), e = mt("div"), l = mt("div"), r = me(), n15 = mt("div");
+      t = mt("div"), e = mt("div"), l = mt("div"), n15 = me(), r = mt("div");
       for (let _ = 0; _ < o.length; _ += 1)
         o[_].c();
-      a = me(), f && f.c(), Z(l, "class", "close-x close-main"), Z(n15, "class", "gallery-container svelte-1rt0cf1"), Z(e, "class", "inner-container svelte-1rt0cf1"), li(t, "height", i[0] + "px"), Z(t, "class", "container svelte-1rt0cf1");
-    }, m(_, m) {
-      j(_, t, m), _n(t, e), _n(e, l), _n(e, r), _n(e, n15);
+      a = me(), m && m.c(), Z(l, "class", "close-x close-main"), Z(r, "class", "gallery-container svelte-1kio0yb"), Z(e, "class", "inner-container svelte-1kio0yb"), li(t, "height", i[0] + "px"), Z(t, "class", "container svelte-1kio0yb");
+    }, m(_, f) {
+      j(_, t, f), _n(t, e), _n(e, l), _n(e, n15), _n(e, r);
       for (let y = 0; y < o.length; y += 1)
-        o[y].m(n15, null);
-      _n(n15, a), f && f.m(n15, null), d || (u = [Kn(Ot2, "resize", i[3]), Kn(l, "click", i[4])], d = true);
-    }, p(_, [m]) {
-      if (m & 4) {
+        o[y].m(r, null);
+      _n(r, a), m && m.m(r, null), d || (u = [Kn(Ot2, "resize", i[3]), Kn(l, "click", i[4])], d = true);
+    }, p(_, [f]) {
+      if (f & 4) {
         c = _[2].images;
         let y;
         for (y = 0; y < c.length; y += 1) {
           const h = Se2(_, c, y);
-          o[y] ? o[y].p(h, m) : (o[y] = Re2(h), o[y].c(), o[y].m(n15, a));
+          o[y] ? o[y].p(h, f) : (o[y] = je2(h), o[y].c(), o[y].m(r, a));
         }
         for (; y < o.length; y += 1)
           o[y].d(1);
         o.length = c.length;
       }
-      _[1] ? f ? f.p(_, m) : (f = je2(_), f.c(), f.m(n15, null)) : f && (f.d(1), f = null), m & 1 && li(t, "height", _[0] + "px");
+      _[1] ? m ? m.p(_, f) : (m = Re2(_), m.c(), m.m(r, null)) : m && (m.d(1), m = null), f & 1 && li(t, "height", _[0] + "px");
     }, i: Q, o: Q, d(_) {
-      _ && U(t), Zo(o, _), f && f.d(), d = false, kt(u);
+      _ && U(t), Zo(o, _), m && m.d(), d = false, kt(u);
     }};
   }
-  function Vt2(i, t, e) {
-    let l, r;
-    pe(i, le2, (c) => e(2, l = c)), pe(i, ee2, (c) => e(5, r = c));
-    let n15, a;
+  function Ft2(i, t, e) {
+    let l, n15;
+    pe(i, le2, (c) => e(2, l = c)), pe(i, ee2, (c) => e(5, n15 = c));
+    let r, a;
     const d = () => {
       const c = document.querySelector(".top-nav-container");
-      e(0, n15 = window.innerHeight - c.getBoundingClientRect().height);
+      e(0, r = window.innerHeight - c.getBoundingClientRect().height);
     };
     return na(() => {
-      e(1, a = R.pages.byTitle[r.page].videos && R.pages.byTitle[r.page].videos[l.selected.key]), d();
-    }), [n15, a, l, d, () => {
+      d(), j2.pages.byTitle[n15.page].videos && j2.pages.byTitle[n15.page].videos[l.selected.key] && fetch(`${window.location.origin === "http://jsdom.ssr" ? "http://localhost:9999" : window.location.origin}/.netlify/functions/get-video-renders?key=${l.selected.key}`).then((o) => o.json()).then(async (o) => {
+        console.log(o), e(1, a = o.video), console.log(a);
+      });
+    }), [r, a, l, d, () => {
       le2.closeModal();
     }];
   }
-  var qt2 = class extends He {
+  var Vt2 = class extends He {
     constructor(t) {
       super();
-      Be(this, t, Vt2, Ft2, de, {});
+      Be(this, t, Ft2, Ct2, de, {});
     }
   };
-  function Ct2(i) {
+  function qt2(i) {
     let t, e;
     return {c() {
       t = Dc("svg"), e = Dc("path"), Z(e, "fill", "white"), Z(e, "d", "M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"), Z(t, "class", "arrow svelte-1sx422e"), li(t, "width", "24px"), li(t, "height", "24px"), Z(t, "viewBox", "0 0 24 24");
-    }, m(l, r) {
-      j(l, t, r), _n(t, e);
+    }, m(l, n15) {
+      j(l, t, n15), _n(t, e);
     }, p: Q, i: Q, o: Q, d(l) {
       l && U(t);
     }};
@@ -6957,25 +6959,25 @@
   var Ht2 = class extends He {
     constructor(t) {
       super();
-      Be(this, t, null, Ct2, de, {});
+      Be(this, t, null, qt2, de, {});
     }
   };
   function Nt2(i) {
     let t, e, l;
     return {c() {
       t = Dc("svg"), e = Dc("path"), Z(e, "fill", l = i[0] ? i[0] : "white"), Z(e, "d", "M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"), Z(t, "class", "arrow svelte-19mzwou"), li(t, "width", "24px"), li(t, "height", "24px"), Z(t, "viewBox", "0 0 24 24");
-    }, m(r, n15) {
-      j(r, t, n15), _n(t, e);
-    }, p(r, [n15]) {
-      n15 & 1 && l !== (l = r[0] ? r[0] : "white") && Z(e, "fill", l);
-    }, i: Q, o: Q, d(r) {
-      r && U(t);
+    }, m(n15, r) {
+      j(n15, t, r), _n(t, e);
+    }, p(n15, [r]) {
+      r & 1 && l !== (l = n15[0] ? n15[0] : "white") && Z(e, "fill", l);
+    }, i: Q, o: Q, d(n15) {
+      n15 && U(t);
     }};
   }
   function Bt2(i, t, e) {
     let {fill: l} = t;
-    return i.$$set = (r) => {
-      "fill" in r && e(0, l = r.fill);
+    return i.$$set = (n15) => {
+      "fill" in n15 && e(0, l = n15.fill);
     }, [l];
   }
   var Oe2 = class extends He {
@@ -6985,110 +6987,110 @@
     }
   };
   var {window: Gt2} = Nc;
-  function Fe2(i, t, e) {
+  function Ce2(i, t, e) {
     const l = i.slice();
     return l[17] = t[e], l;
   }
-  function Ve2(i, t, e) {
+  function Fe2(i, t, e) {
     const l = i.slice();
     return l[14] = t[e], l;
   }
-  function qe2(i) {
-    let t, e, l, r, n15, a = i[1].selected.label + "", d, u, c, o, f, _, m, y;
+  function Ve2(i) {
+    let t, e, l, n15, r, a = i[1].selected.label + "", d, u, c, o, m, _, f, y;
     const h = [Yt, Wt], g = [];
     function $2(A2, O2) {
       return A2[0].length < 3 ? 0 : 1;
     }
-    return o = $2(i), f = g[o] = h[o](i), {c() {
-      t = mt("div"), e = mt("div"), l = mt("div"), r = me(), n15 = mt("h3"), d = ai(a), u = me(), c = mt("div"), f.c(), Z(l, "class", "close-x close-main"), Z(n15, "class", "main-header svelte-1lmzloy"), Z(c, "class", "content-container svelte-1lmzloy"), Z(e, "class", "content-wrapper svelte-1lmzloy"), li(t, "height", i[4] + "px"), Z(t, "class", "container svelte-1lmzloy");
+    return o = $2(i), m = g[o] = h[o](i), {c() {
+      t = mt("div"), e = mt("div"), l = mt("div"), n15 = me(), r = mt("h3"), d = ai(a), u = me(), c = mt("div"), m.c(), Z(l, "class", "close-x close-main"), Z(r, "class", "main-header svelte-1lmzloy"), Z(c, "class", "content-container svelte-1lmzloy"), Z(e, "class", "content-wrapper svelte-1lmzloy"), li(t, "height", i[5] + "px"), Z(t, "class", "container svelte-1lmzloy");
     }, m(A2, O2) {
-      j(A2, t, O2), _n(t, e), _n(e, l), _n(e, r), _n(e, n15), _n(n15, d), _n(e, u), _n(e, c), g[o].m(c, null), i[11](t), _ = true, m || (y = Kn(l, "click", i[9]), m = true);
+      j(A2, t, O2), _n(t, e), _n(e, l), _n(e, n15), _n(e, r), _n(r, d), _n(e, u), _n(e, c), g[o].m(c, null), i[11](t), _ = true, f || (y = Kn(l, "click", i[9]), f = true);
     }, p(A2, O2) {
       (!_ || O2 & 2) && a !== (a = A2[1].selected.label + "") && Mc(d, a);
       let W2 = o;
       o = $2(A2), o === W2 ? g[o].p(A2, O2) : (Kt(), B(g[W2], 1, 1, () => {
         g[W2] = null;
-      }), Qt(), f = g[o], f ? f.p(A2, O2) : (f = g[o] = h[o](A2), f.c()), M(f, 1), f.m(c, null)), (!_ || O2 & 16) && li(t, "height", A2[4] + "px");
+      }), Qt(), m = g[o], m ? m.p(A2, O2) : (m = g[o] = h[o](A2), m.c()), M(m, 1), m.m(c, null)), (!_ || O2 & 32) && li(t, "height", A2[5] + "px");
     }, i(A2) {
-      _ || (M(f), _ = true);
+      _ || (M(m), _ = true);
     }, o(A2) {
-      B(f), _ = false;
+      B(m), _ = false;
     }, d(A2) {
-      A2 && U(t), g[o].d(), i[11](null), m = false, y();
+      A2 && U(t), g[o].d(), i[11](null), f = false, y();
     }};
   }
   function Wt(i) {
-    let t, e, l, r, n15, a, d, u, c, o, f, _, m, y, h, g, $2, A2, O2, W2, I2 = i[0].length > 0 && Ce2(i), S = i[0].length > 4 && He2(i), j2 = i[5] && Ne2(i);
-    m = new Ht2({});
+    let t, e, l, n15, r, a, d, u, c, o, m, _, f, y, h, g, $2, A2, O2, W2, I2 = i[0].length > 0 && qe2(i), S = i[0].length > 4 && He2(i), R = i[4] && Ne2(i);
+    f = new Ht2({});
     let M2 = i[0].length > 0 && Be2(i);
     return $2 = new Oe2({}), {c() {
-      t = mt("div"), e = mt("img"), d = me(), I2 && I2.c(), u = me(), S && S.c(), c = me(), j2 && j2.c(), o = me(), f = mt("div"), _ = mt("span"), Zt(m.$$.fragment), y = me(), M2 && M2.c(), h = me(), g = mt("span"), Zt($2.$$.fragment), Z(e, "width", l = i[1].selected.width), Z(e, "height", r = i[1].selected.height), Z(e, "alt", ""), Z(e, "class", "lazy svelte-1lmzloy"), Z(e, "data-src", n15 = i[1].selected.url), Z(t, "class", "main-image-container svelte-1lmzloy"), Z(_, "class", "control left svelte-1lmzloy"), Z(g, "class", "control right svelte-1lmzloy"), Z(f, "class", "carousel-container svelte-1lmzloy");
+      t = mt("div"), e = mt("img"), d = me(), I2 && I2.c(), u = me(), S && S.c(), c = me(), R && R.c(), o = me(), m = mt("div"), _ = mt("span"), Zt(f.$$.fragment), y = me(), M2 && M2.c(), h = me(), g = mt("span"), Zt($2.$$.fragment), Z(e, "width", l = i[1].selected.width), Z(e, "height", n15 = i[1].selected.height), Z(e, "alt", ""), Z(e, "class", "lazy svelte-1lmzloy"), Z(e, "data-src", r = i[1].selected.url), Z(t, "class", "main-image-container svelte-1lmzloy"), Z(_, "class", "control left svelte-1lmzloy"), Z(g, "class", "control right svelte-1lmzloy"), Z(m, "class", "carousel-container svelte-1lmzloy");
     }, m(b, P) {
-      j(b, t, P), _n(t, e), j(b, d, P), I2 && I2.m(b, P), j(b, u, P), S && S.m(b, P), j(b, c, P), j2 && j2.m(b, P), j(b, o, P), j(b, f, P), _n(f, _), Mt(m, _, null), _n(f, y), M2 && M2.m(f, null), _n(f, h), _n(f, g), Mt($2, g, null), A2 = true, O2 || (W2 = [$o(a = X2.call(null, e, i[1].selected.url)), Kn(_, "click", i[6]), Kn(g, "click", i[7])], O2 = true);
+      j(b, t, P), _n(t, e), j(b, d, P), I2 && I2.m(b, P), j(b, u, P), S && S.m(b, P), j(b, c, P), R && R.m(b, P), j(b, o, P), j(b, m, P), _n(m, _), Mt(f, _, null), _n(m, y), M2 && M2.m(m, null), _n(m, h), _n(m, g), Mt($2, g, null), A2 = true, O2 || (W2 = [$o(a = X2.call(null, e, i[1].selected.url)), Kn(_, "click", i[6]), Kn(g, "click", i[7])], O2 = true);
     }, p(b, P) {
-      (!A2 || P & 2 && l !== (l = b[1].selected.width)) && Z(e, "width", l), (!A2 || P & 2 && r !== (r = b[1].selected.height)) && Z(e, "height", r), (!A2 || P & 2 && n15 !== (n15 = b[1].selected.url)) && Z(e, "data-src", n15), a && Gt(a.update) && P & 2 && a.update.call(null, b[1].selected.url), b[0].length > 0 ? I2 ? I2.p(b, P) : (I2 = Ce2(b), I2.c(), I2.m(u.parentNode, u)) : I2 && (I2.d(1), I2 = null), b[0].length > 4 ? S ? S.p(b, P) : (S = He2(b), S.c(), S.m(c.parentNode, c)) : S && (S.d(1), S = null), b[5] ? j2 ? j2.p(b, P) : (j2 = Ne2(b), j2.c(), j2.m(o.parentNode, o)) : j2 && (j2.d(1), j2 = null), b[0].length > 0 ? M2 ? (M2.p(b, P), P & 1 && M(M2, 1)) : (M2 = Be2(b), M2.c(), M(M2, 1), M2.m(f, h)) : M2 && (Kt(), B(M2, 1, 1, () => {
+      (!A2 || P & 2 && l !== (l = b[1].selected.width)) && Z(e, "width", l), (!A2 || P & 2 && n15 !== (n15 = b[1].selected.height)) && Z(e, "height", n15), (!A2 || P & 2 && r !== (r = b[1].selected.url)) && Z(e, "data-src", r), a && Gt(a.update) && P & 2 && a.update.call(null, b[1].selected.url), b[0].length > 0 ? I2 ? I2.p(b, P) : (I2 = qe2(b), I2.c(), I2.m(u.parentNode, u)) : I2 && (I2.d(1), I2 = null), b[0].length > 4 ? S ? S.p(b, P) : (S = He2(b), S.c(), S.m(c.parentNode, c)) : S && (S.d(1), S = null), b[4] ? R ? R.p(b, P) : (R = Ne2(b), R.c(), R.m(o.parentNode, o)) : R && (R.d(1), R = null), b[0].length > 0 ? M2 ? (M2.p(b, P), P & 1 && M(M2, 1)) : (M2 = Be2(b), M2.c(), M(M2, 1), M2.m(m, h)) : M2 && (Kt(), B(M2, 1, 1, () => {
         M2 = null;
       }), Qt());
     }, i(b) {
-      A2 || (M(m.$$.fragment, b), M(M2), M($2.$$.fragment, b), A2 = true);
+      A2 || (M(f.$$.fragment, b), M(M2), M($2.$$.fragment, b), A2 = true);
     }, o(b) {
-      B(m.$$.fragment, b), B(M2), B($2.$$.fragment, b), A2 = false;
+      B(f.$$.fragment, b), B(M2), B($2.$$.fragment, b), A2 = false;
     }, d(b) {
-      b && U(t), b && U(d), I2 && I2.d(b), b && U(u), S && S.d(b), b && U(c), j2 && j2.d(b), b && U(o), b && U(f), Rt(m), M2 && M2.d(), Rt($2), O2 = false, kt(W2);
+      b && U(t), b && U(d), I2 && I2.d(b), b && U(u), S && S.d(b), b && U(c), R && R.d(b), b && U(o), b && U(m), Rt(f), M2 && M2.d(), Rt($2), O2 = false, kt(W2);
     }};
   }
   function Yt(i) {
-    let t, e, l = i[0], r = [];
+    let t, e, l = i[0], n15 = [];
     for (let a = 0; a < l.length; a += 1)
-      r[a] = We2(Ve2(i, l, a));
-    let n15 = i[5] && Ye2(i);
+      n15[a] = We2(Fe2(i, l, a));
+    let r = i[4] && Ye2(i);
     return {c() {
       t = mt("div");
-      for (let a = 0; a < r.length; a += 1)
-        r[a].c();
-      e = me(), n15 && n15.c(), Z(t, "class", "gallery-container svelte-1lmzloy");
+      for (let a = 0; a < n15.length; a += 1)
+        n15[a].c();
+      e = me(), r && r.c(), Z(t, "class", "gallery-container svelte-1lmzloy");
     }, m(a, d) {
       j(a, t, d);
-      for (let u = 0; u < r.length; u += 1)
-        r[u].m(t, null);
-      _n(t, e), n15 && n15.m(t, null);
+      for (let u = 0; u < n15.length; u += 1)
+        n15[u].m(t, null);
+      _n(t, e), r && r.m(t, null);
     }, p(a, d) {
       if (d & 1) {
         l = a[0];
         let u;
         for (u = 0; u < l.length; u += 1) {
-          const c = Ve2(a, l, u);
-          r[u] ? r[u].p(c, d) : (r[u] = We2(c), r[u].c(), r[u].m(t, e));
+          const c = Fe2(a, l, u);
+          n15[u] ? n15[u].p(c, d) : (n15[u] = We2(c), n15[u].c(), n15[u].m(t, e));
         }
-        for (; u < r.length; u += 1)
-          r[u].d(1);
-        r.length = l.length;
+        for (; u < n15.length; u += 1)
+          n15[u].d(1);
+        n15.length = l.length;
       }
-      a[5] ? n15 ? n15.p(a, d) : (n15 = Ye2(a), n15.c(), n15.m(t, null)) : n15 && (n15.d(1), n15 = null);
+      a[4] ? r ? r.p(a, d) : (r = Ye2(a), r.c(), r.m(t, null)) : r && (r.d(1), r = null);
     }, i: Q, o: Q, d(a) {
-      a && U(t), Zo(r, a), n15 && n15.d();
+      a && U(t), Zo(n15, a), r && r.d();
     }};
   }
-  function Ce2(i) {
-    let t, e, l, r, n15, a, d, u, c, o, f, _, m, y, h, g, $2, A2, O2, W2, I2, S, j2;
+  function qe2(i) {
+    let t, e, l, n15, r, a, d, u, c, o, m, _, f, y, h, g, $2, A2, O2, W2, I2, S, R;
     return {c() {
-      t = mt("div"), e = mt("div"), l = mt("img"), u = me(), c = mt("div"), o = mt("img"), h = me(), g = mt("div"), $2 = mt("img"), Z(l, "class", "lazy svelte-1lmzloy"), Z(l, "width", r = i[0][0].width), Z(l, "height", n15 = i[0][0].height), Z(l, "alt", ""), Z(l, "data-src", a = i[0][0].url), Z(e, "class", "image-container svelte-1lmzloy"), Z(o, "width", f = i[0][1].width), Z(o, "height", _ = i[0][1].height), Z(o, "alt", ""), Z(o, "class", "lazy svelte-1lmzloy"), Z(o, "data-src", m = i[0][1].url), Z(c, "class", "image-container svelte-1lmzloy"), Z($2, "width", A2 = i[0][2].width), Z($2, "height", O2 = i[0][2].height), Z($2, "alt", ""), Z($2, "class", "lazy svelte-1lmzloy"), Z($2, "data-src", W2 = i[0][2].url), Z(g, "class", "image-container svelte-1lmzloy"), Z(t, "class", "flex-image-gallery-container col-3 svelte-1lmzloy");
+      t = mt("div"), e = mt("div"), l = mt("img"), u = me(), c = mt("div"), o = mt("img"), h = me(), g = mt("div"), $2 = mt("img"), Z(l, "class", "lazy svelte-1lmzloy"), Z(l, "width", n15 = i[0][0].width), Z(l, "height", r = i[0][0].height), Z(l, "alt", ""), Z(l, "data-src", a = i[0][0].url), Z(e, "class", "image-container svelte-1lmzloy"), Z(o, "width", m = i[0][1].width), Z(o, "height", _ = i[0][1].height), Z(o, "alt", ""), Z(o, "class", "lazy svelte-1lmzloy"), Z(o, "data-src", f = i[0][1].url), Z(c, "class", "image-container svelte-1lmzloy"), Z($2, "width", A2 = i[0][2].width), Z($2, "height", O2 = i[0][2].height), Z($2, "alt", ""), Z($2, "class", "lazy svelte-1lmzloy"), Z($2, "data-src", W2 = i[0][2].url), Z(g, "class", "image-container svelte-1lmzloy"), Z(t, "class", "flex-image-gallery-container col-3 svelte-1lmzloy");
     }, m(M2, b) {
-      j(M2, t, b), _n(t, e), _n(e, l), _n(t, u), _n(t, c), _n(c, o), _n(t, h), _n(t, g), _n(g, $2), S || (j2 = [$o(d = X2.call(null, l, i[0][0].url)), $o(y = X2.call(null, o, i[0][1].url)), $o(I2 = X2.call(null, $2, i[0][2].url))], S = true);
+      j(M2, t, b), _n(t, e), _n(e, l), _n(t, u), _n(t, c), _n(c, o), _n(t, h), _n(t, g), _n(g, $2), S || (R = [$o(d = X2.call(null, l, i[0][0].url)), $o(y = X2.call(null, o, i[0][1].url)), $o(I2 = X2.call(null, $2, i[0][2].url))], S = true);
     }, p(M2, b) {
-      b & 1 && r !== (r = M2[0][0].width) && Z(l, "width", r), b & 1 && n15 !== (n15 = M2[0][0].height) && Z(l, "height", n15), b & 1 && a !== (a = M2[0][0].url) && Z(l, "data-src", a), d && Gt(d.update) && b & 1 && d.update.call(null, M2[0][0].url), b & 1 && f !== (f = M2[0][1].width) && Z(o, "width", f), b & 1 && _ !== (_ = M2[0][1].height) && Z(o, "height", _), b & 1 && m !== (m = M2[0][1].url) && Z(o, "data-src", m), y && Gt(y.update) && b & 1 && y.update.call(null, M2[0][1].url), b & 1 && A2 !== (A2 = M2[0][2].width) && Z($2, "width", A2), b & 1 && O2 !== (O2 = M2[0][2].height) && Z($2, "height", O2), b & 1 && W2 !== (W2 = M2[0][2].url) && Z($2, "data-src", W2), I2 && Gt(I2.update) && b & 1 && I2.update.call(null, M2[0][2].url);
+      b & 1 && n15 !== (n15 = M2[0][0].width) && Z(l, "width", n15), b & 1 && r !== (r = M2[0][0].height) && Z(l, "height", r), b & 1 && a !== (a = M2[0][0].url) && Z(l, "data-src", a), d && Gt(d.update) && b & 1 && d.update.call(null, M2[0][0].url), b & 1 && m !== (m = M2[0][1].width) && Z(o, "width", m), b & 1 && _ !== (_ = M2[0][1].height) && Z(o, "height", _), b & 1 && f !== (f = M2[0][1].url) && Z(o, "data-src", f), y && Gt(y.update) && b & 1 && y.update.call(null, M2[0][1].url), b & 1 && A2 !== (A2 = M2[0][2].width) && Z($2, "width", A2), b & 1 && O2 !== (O2 = M2[0][2].height) && Z($2, "height", O2), b & 1 && W2 !== (W2 = M2[0][2].url) && Z($2, "data-src", W2), I2 && Gt(I2.update) && b & 1 && I2.update.call(null, M2[0][2].url);
     }, d(M2) {
-      M2 && U(t), S = false, kt(j2);
+      M2 && U(t), S = false, kt(R);
     }};
   }
   function He2(i) {
-    let t, e, l, r, n15, a, d, u, c, o, f, _, m, y, h, g;
+    let t, e, l, n15, r, a, d, u, c, o, m, _, f, y, h, g;
     return {c() {
-      t = mt("div"), e = mt("div"), l = mt("img"), u = me(), c = mt("div"), o = mt("img"), Z(l, "class", "lazy svelte-1lmzloy"), Z(l, "width", r = i[0][3].width), Z(l, "height", n15 = i[0][3].height), Z(l, "alt", ""), Z(l, "data-src", a = i[0][3].url), Z(e, "class", "image-container svelte-1lmzloy"), Z(o, "class", "lazy svelte-1lmzloy"), Z(o, "width", f = i[0][4].width), Z(o, "height", _ = i[0][4].height), Z(o, "alt", ""), Z(o, "data-src", m = i[0][4].url), Z(c, "class", "image-container svelte-1lmzloy"), Z(t, "class", "flex-image-gallery-container col-2 svelte-1lmzloy");
+      t = mt("div"), e = mt("div"), l = mt("img"), u = me(), c = mt("div"), o = mt("img"), Z(l, "class", "lazy svelte-1lmzloy"), Z(l, "width", n15 = i[0][3].width), Z(l, "height", r = i[0][3].height), Z(l, "alt", ""), Z(l, "data-src", a = i[0][3].url), Z(e, "class", "image-container svelte-1lmzloy"), Z(o, "class", "lazy svelte-1lmzloy"), Z(o, "width", m = i[0][4].width), Z(o, "height", _ = i[0][4].height), Z(o, "alt", ""), Z(o, "data-src", f = i[0][4].url), Z(c, "class", "image-container svelte-1lmzloy"), Z(t, "class", "flex-image-gallery-container col-2 svelte-1lmzloy");
     }, m($2, A2) {
       j($2, t, A2), _n(t, e), _n(e, l), _n(t, u), _n(t, c), _n(c, o), h || (g = [$o(d = X2.call(null, l, i[0][3].url)), $o(y = X2.call(null, o, i[0][4].url))], h = true);
     }, p($2, A2) {
-      A2 & 1 && r !== (r = $2[0][3].width) && Z(l, "width", r), A2 & 1 && n15 !== (n15 = $2[0][3].height) && Z(l, "height", n15), A2 & 1 && a !== (a = $2[0][3].url) && Z(l, "data-src", a), d && Gt(d.update) && A2 & 1 && d.update.call(null, $2[0][3].url), A2 & 1 && f !== (f = $2[0][4].width) && Z(o, "width", f), A2 & 1 && _ !== (_ = $2[0][4].height) && Z(o, "height", _), A2 & 1 && m !== (m = $2[0][4].url) && Z(o, "data-src", m), y && Gt(y.update) && A2 & 1 && y.update.call(null, $2[0][4].url);
+      A2 & 1 && n15 !== (n15 = $2[0][3].width) && Z(l, "width", n15), A2 & 1 && r !== (r = $2[0][3].height) && Z(l, "height", r), A2 & 1 && a !== (a = $2[0][3].url) && Z(l, "data-src", a), d && Gt(d.update) && A2 & 1 && d.update.call(null, $2[0][3].url), A2 & 1 && m !== (m = $2[0][4].width) && Z(o, "width", m), A2 & 1 && _ !== (_ = $2[0][4].height) && Z(o, "height", _), A2 & 1 && f !== (f = $2[0][4].url) && Z(o, "data-src", f), y && Gt(y.update) && A2 & 1 && y.update.call(null, $2[0][4].url);
     }, d($2) {
       $2 && U(t), h = false, kt(g);
     }};
@@ -7096,80 +7098,80 @@
   function Ne2(i) {
     let t, e, l;
     return {c() {
-      t = mt("div"), e = mt("iframe"), Z(e, "class", "main-video svelte-1lmzloy"), Z(e, "title", "render"), Z(e, "id", "ytplayer"), Z(e, "type", "text/html"), Z(e, "width", "100%"), Z(e, "height", "100%"), ei(e.src, l = i[5].video) || Z(e, "src", l), Z(e, "frameborder", "0"), Z(t, "class", "video-container svelte-1lmzloy");
-    }, m(r, n15) {
-      j(r, t, n15), _n(t, e);
-    }, p(r, n15) {
-      n15 & 32 && !ei(e.src, l = r[5].video) && Z(e, "src", l);
-    }, d(r) {
-      r && U(t);
+      t = mt("div"), e = mt("iframe"), Z(e, "class", "main-video svelte-1lmzloy"), Z(e, "title", "render"), Z(e, "id", "ytplayer"), Z(e, "type", "text/html"), Z(e, "width", "100%"), Z(e, "height", "100%"), ei(e.src, l = i[4]) || Z(e, "src", l), Z(e, "frameborder", "0"), Z(t, "class", "video-container svelte-1lmzloy");
+    }, m(n15, r) {
+      j(n15, t, r), _n(t, e);
+    }, p(n15, r) {
+      r & 16 && !ei(e.src, l = n15[4]) && Z(e, "src", l);
+    }, d(n15) {
+      n15 && U(t);
     }};
   }
   function Be2(i) {
-    let t, e, l, r = {perPage: 1, $$slots: {default: [Zt2]}, $$scope: {ctx: i}};
-    return e = new Yc({props: r}), i[10](e), {c() {
+    let t, e, l, n15 = {perPage: 1, $$slots: {default: [Zt2]}, $$scope: {ctx: i}};
+    return e = new Yc({props: n15}), i[10](e), {c() {
       t = mt("div"), Zt(e.$$.fragment), Z(t, "class", "carousel-main-container svelte-1lmzloy");
-    }, m(n15, a) {
-      j(n15, t, a), Mt(e, t, null), l = true;
-    }, p(n15, a) {
+    }, m(r, a) {
+      j(r, t, a), Mt(e, t, null), l = true;
+    }, p(r, a) {
       const d = {};
-      a & 1048577 && (d.$$scope = {dirty: a, ctx: n15}), e.$set(d);
-    }, i(n15) {
-      l || (M(e.$$.fragment, n15), l = true);
-    }, o(n15) {
-      B(e.$$.fragment, n15), l = false;
-    }, d(n15) {
-      n15 && U(t), i[10](null), Rt(e);
+      a & 1048577 && (d.$$scope = {dirty: a, ctx: r}), e.$set(d);
+    }, i(r) {
+      l || (M(e.$$.fragment, r), l = true);
+    }, o(r) {
+      B(e.$$.fragment, r), l = false;
+    }, d(r) {
+      r && U(t), i[10](null), Rt(e);
     }};
   }
   function Ge2(i) {
-    let t, e, l, r, n15, a, d, u, c;
+    let t, e, l, n15, r, a, d, u, c;
     return {c() {
-      t = mt("div"), e = mt("img"), d = me(), Z(e, "width", l = i[17].width), Z(e, "height", r = i[17].height), Z(e, "data-src", n15 = i[17].url), Z(e, "alt", ""), Z(e, "class", "carousel-image lazy svelte-1lmzloy"), Z(t, "class", "image-container svelte-1lmzloy");
-    }, m(o, f) {
-      j(o, t, f), _n(t, e), _n(t, d), u || (c = $o(a = X2.call(null, e, i[17].url)), u = true);
-    }, p(o, f) {
-      i = o, f & 1 && l !== (l = i[17].width) && Z(e, "width", l), f & 1 && r !== (r = i[17].height) && Z(e, "height", r), f & 1 && n15 !== (n15 = i[17].url) && Z(e, "data-src", n15), a && Gt(a.update) && f & 1 && a.update.call(null, i[17].url);
+      t = mt("div"), e = mt("img"), d = me(), Z(e, "width", l = i[17].width), Z(e, "height", n15 = i[17].height), Z(e, "data-src", r = i[17].url), Z(e, "alt", ""), Z(e, "class", "carousel-image lazy svelte-1lmzloy"), Z(t, "class", "image-container svelte-1lmzloy");
+    }, m(o, m) {
+      j(o, t, m), _n(t, e), _n(t, d), u || (c = $o(a = X2.call(null, e, i[17].url)), u = true);
+    }, p(o, m) {
+      i = o, m & 1 && l !== (l = i[17].width) && Z(e, "width", l), m & 1 && n15 !== (n15 = i[17].height) && Z(e, "height", n15), m & 1 && r !== (r = i[17].url) && Z(e, "data-src", r), a && Gt(a.update) && m & 1 && a.update.call(null, i[17].url);
     }, d(o) {
       o && U(t), u = false, c();
     }};
   }
   function Zt2(i) {
     let t, e = i[0], l = [];
-    for (let r = 0; r < e.length; r += 1)
-      l[r] = Ge2(Fe2(i, e, r));
+    for (let n15 = 0; n15 < e.length; n15 += 1)
+      l[n15] = Ge2(Ce2(i, e, n15));
     return {c() {
-      for (let r = 0; r < l.length; r += 1)
-        l[r].c();
+      for (let n15 = 0; n15 < l.length; n15 += 1)
+        l[n15].c();
       t = Re();
-    }, m(r, n15) {
+    }, m(n15, r) {
       for (let a = 0; a < l.length; a += 1)
-        l[a].m(r, n15);
-      j(r, t, n15);
-    }, p(r, n15) {
-      if (n15 & 1) {
-        e = r[0];
+        l[a].m(n15, r);
+      j(n15, t, r);
+    }, p(n15, r) {
+      if (r & 1) {
+        e = n15[0];
         let a;
         for (a = 0; a < e.length; a += 1) {
-          const d = Fe2(r, e, a);
-          l[a] ? l[a].p(d, n15) : (l[a] = Ge2(d), l[a].c(), l[a].m(t.parentNode, t));
+          const d = Ce2(n15, e, a);
+          l[a] ? l[a].p(d, r) : (l[a] = Ge2(d), l[a].c(), l[a].m(t.parentNode, t));
         }
         for (; a < l.length; a += 1)
           l[a].d(1);
         l.length = e.length;
       }
-    }, d(r) {
-      Zo(l, r), r && U(t);
+    }, d(n15) {
+      Zo(l, n15), n15 && U(t);
     }};
   }
   function We2(i) {
-    let t, e, l, r, n15, a, d, u;
+    let t, e, l, n15, r, a, d, u;
     return {c() {
-      t = mt("div"), e = mt("img"), Z(e, "class", "lazy svelte-1lmzloy"), Z(e, "width", l = i[14].width), Z(e, "height", r = i[14].height), Z(e, "alt", ""), Z(e, "data-src", n15 = i[14].url), Z(t, "class", "image-container svelte-1lmzloy");
+      t = mt("div"), e = mt("img"), Z(e, "class", "lazy svelte-1lmzloy"), Z(e, "width", l = i[14].width), Z(e, "height", n15 = i[14].height), Z(e, "alt", ""), Z(e, "data-src", r = i[14].url), Z(t, "class", "image-container svelte-1lmzloy");
     }, m(c, o) {
       j(c, t, o), _n(t, e), d || (u = $o(a = X2.call(null, e, i[14].url)), d = true);
     }, p(c, o) {
-      i = c, o & 1 && l !== (l = i[14].width) && Z(e, "width", l), o & 1 && r !== (r = i[14].height) && Z(e, "height", r), o & 1 && n15 !== (n15 = i[14].url) && Z(e, "data-src", n15), a && Gt(a.update) && o & 1 && a.update.call(null, i[14].url);
+      i = c, o & 1 && l !== (l = i[14].width) && Z(e, "width", l), o & 1 && n15 !== (n15 = i[14].height) && Z(e, "height", n15), o & 1 && r !== (r = i[14].url) && Z(e, "data-src", r), a && Gt(a.update) && o & 1 && a.update.call(null, i[14].url);
     }, d(c) {
       c && U(t), d = false, u();
     }};
@@ -7177,54 +7179,53 @@
   function Ye2(i) {
     let t, e, l;
     return {c() {
-      t = mt("div"), e = mt("iframe"), Z(e, "class", "main-video svelte-1lmzloy"), Z(e, "title", "render"), Z(e, "id", "ytplayer"), Z(e, "type", "text/html"), Z(e, "width", "100%"), Z(e, "height", "100%"), ei(e.src, l = i[5]) || Z(e, "src", l), Z(e, "frameborder", "0"), Z(t, "class", "video-container svelte-1lmzloy");
-    }, m(r, n15) {
-      j(r, t, n15), _n(t, e);
-    }, p(r, n15) {
-      n15 & 32 && !ei(e.src, l = r[5]) && Z(e, "src", l);
-    }, d(r) {
-      r && U(t);
+      t = mt("div"), e = mt("iframe"), Z(e, "class", "main-video svelte-1lmzloy"), Z(e, "title", "render"), Z(e, "id", "ytplayer"), Z(e, "type", "text/html"), Z(e, "width", "100%"), Z(e, "height", "100%"), ei(e.src, l = i[4]) || Z(e, "src", l), Z(e, "frameborder", "0"), Z(t, "class", "video-container svelte-1lmzloy");
+    }, m(n15, r) {
+      j(n15, t, r), _n(t, e);
+    }, p(n15, r) {
+      r & 16 && !ei(e.src, l = n15[4]) && Z(e, "src", l);
+    }, d(n15) {
+      n15 && U(t);
     }};
   }
   function Ut2(i) {
-    let t, e, l, r, n15 = i[1].selected && qe2(i);
+    let t, e, l, n15, r = i[1].selected && Ve2(i);
     return {c() {
-      n15 && n15.c(), t = Re();
+      r && r.c(), t = Re();
     }, m(a, d) {
-      n15 && n15.m(a, d), j(a, t, d), e = true, l || (r = Kn(Gt2, "resize", i[8]), l = true);
+      r && r.m(a, d), j(a, t, d), e = true, l || (n15 = Kn(Gt2, "resize", i[8]), l = true);
     }, p(a, [d]) {
-      a[1].selected ? n15 ? (n15.p(a, d), d & 2 && M(n15, 1)) : (n15 = qe2(a), n15.c(), M(n15, 1), n15.m(t.parentNode, t)) : n15 && (Kt(), B(n15, 1, 1, () => {
-        n15 = null;
+      a[1].selected ? r ? (r.p(a, d), d & 2 && M(r, 1)) : (r = Ve2(a), r.c(), M(r, 1), r.m(t.parentNode, t)) : r && (Kt(), B(r, 1, 1, () => {
+        r = null;
       }), Qt());
     }, i(a) {
-      e || (M(n15), e = true);
+      e || (M(r), e = true);
     }, o(a) {
-      B(n15), e = false;
+      B(r), e = false;
     }, d(a) {
-      n15 && n15.d(a), a && U(t), l = false, r();
+      r && r.d(a), a && U(t), l = false, n15();
     }};
   }
   function Qt2(i, t, e) {
-    let l, r, n15;
-    pe(i, le2, (g) => e(1, r = g)), pe(i, ee2, (g) => e(13, n15 = g));
-    let a, d;
-    const u = () => {
+    let l, n15, r;
+    pe(i, le2, (g) => e(1, n15 = g)), pe(i, ee2, (g) => e(13, r = g));
+    let a, d, u;
+    const c = () => {
       d.left();
-    }, c = () => {
+    }, o = () => {
       d.right();
     };
-    let o;
-    const f = () => {
+    let m;
+    const _ = () => {
       const g = document.querySelector(".top-nav-container");
-      e(4, o = window.innerHeight - g.getBoundingClientRect().height);
+      e(5, m = window.innerHeight - g.getBoundingClientRect().height);
     };
-    let _;
     na(() => {
-      f(), R.pages.byTitle[n15.page].videos && R.pages.byTitle[n15.page].videos[r.selected.key] && fetch(`${window.location.origin === "http://jsdom.ssr" ? "http://localhost:9999" : window.location.origin}/.netlify/functions/get-video-renders?key=${r.selected.key}`).then(($2) => $2.json()).then(async ($2) => {
-        e(5, _ = $2.video);
+      _(), j2.pages.byTitle[r.page].videos && j2.pages.byTitle[r.page].videos[n15.selected.key] && fetch(`${window.location.origin === "http://jsdom.ssr" ? "http://localhost:9999" : window.location.origin}/.netlify/functions/get-video-renders?key=${n15.selected.key}`).then(($2) => $2.json()).then(async ($2) => {
+        e(4, u = $2.video);
       });
     });
-    const m = () => {
+    const f = () => {
       le2.closeModal();
     };
     function y(g) {
@@ -7238,8 +7239,8 @@
       });
     }
     return i.$$.update = () => {
-      i.$$.dirty & 2 && e(0, {images: l} = r, l), i.$$.dirty & 1 && l && l.length > 1 && e(0, l = l.filter((g) => g.tags[1] !== "true"));
-    }, [l, r, a, d, o, _, u, c, f, m, y, h];
+      i.$$.dirty & 2 && e(0, {images: l} = n15, l), i.$$.dirty & 1 && l && l.length > 1 && e(0, l = l.filter((g) => g.tags[1] !== "true"));
+    }, [l, n15, a, d, u, m, c, o, _, f, y, h];
   }
   var Jt2 = class extends He {
     constructor(t) {
@@ -7248,22 +7249,22 @@
     }
   };
   function Kt2(i) {
-    let t, e, l, r, n15;
+    let t, e, l, n15, r;
     return {c() {
       t = Dc("svg"), e = Dc("path"), l = Dc("path"), Z(e, "d", "M0 0h24v24H0V0z"), Z(e, "fill", "none"), Z(l, "d", "M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"), Z(t, "class", "close-main svelte-1xb6bno"), Z(t, "xmlns", "http://www.w3.org/2000/svg"), Z(t, "height", "24px"), Z(t, "viewBox", "0 0 24 24"), Z(t, "width", "24px"), Z(t, "fill", "white");
     }, m(a, d) {
-      j(a, t, d), _n(t, e), _n(t, l), r || (n15 = Kn(t, "click", i[0]), r = true);
+      j(a, t, d), _n(t, e), _n(t, l), n15 || (r = Kn(t, "click", i[0]), n15 = true);
     }, p: Q, i: Q, o: Q, d(a) {
-      a && U(t), r = false, n15();
+      a && U(t), n15 = false, r();
     }};
   }
   function Xt2(i, t, e) {
-    let l, r;
-    pe(i, Vc, (a) => e(1, l = a)), pe(i, Uc, (a) => e(2, r = a));
-    function n15() {
-      r.pages ? l("./") : l("/");
+    let l, n15;
+    pe(i, Vc, (a) => e(1, l = a)), pe(i, Uc, (a) => e(2, n15 = a));
+    function r() {
+      n15.pages ? l("./") : l("/");
     }
-    return [n15];
+    return [r];
   }
   var xt2 = class extends He {
     constructor(t) {
@@ -7277,44 +7278,44 @@
   }
   function Ue2(i) {
     let t, e = i[0], l = [];
-    for (let r = 0; r < e.length; r += 1)
-      l[r] = Qe2(Ze2(i, e, r));
+    for (let n15 = 0; n15 < e.length; n15 += 1)
+      l[n15] = Qe2(Ze2(i, e, n15));
     return {c() {
       t = mt("div");
-      for (let r = 0; r < l.length; r += 1)
-        l[r].c();
+      for (let n15 = 0; n15 < l.length; n15 += 1)
+        l[n15].c();
       Z(t, "class", "container sub-nav svelte-z0p4gh");
-    }, m(r, n15) {
-      j(r, t, n15);
+    }, m(n15, r) {
+      j(n15, t, r);
       for (let a = 0; a < l.length; a += 1)
         l[a].m(t, null);
-    }, p(r, n15) {
-      if (n15 & 29) {
-        e = r[0];
+    }, p(n15, r) {
+      if (r & 29) {
+        e = n15[0];
         let a;
         for (a = 0; a < e.length; a += 1) {
-          const d = Ze2(r, e, a);
-          l[a] ? l[a].p(d, n15) : (l[a] = Qe2(d), l[a].c(), l[a].m(t, null));
+          const d = Ze2(n15, e, a);
+          l[a] ? l[a].p(d, r) : (l[a] = Qe2(d), l[a].c(), l[a].m(t, null));
         }
         for (; a < l.length; a += 1)
           l[a].d(1);
         l.length = e.length;
       }
-    }, d(r) {
-      r && U(t), Zo(l, r);
+    }, d(n15) {
+      n15 && U(t), Zo(l, n15);
     }};
   }
   function Qe2(i) {
-    let t, e, l, r = R.pages.byTitle[i[6].key].title + "", n15, a, d, u;
+    let t, e, l, n15 = j2.pages.byTitle[i[6].key].title + "", r, a, d, u;
     function c() {
       return i[5](i[6]);
     }
     return {c() {
-      t = mt("div"), e = mt("div"), l = mt("h4"), n15 = ai(r), a = me(), Z(l, "class", "svelte-z0p4gh"), Z(e, "class", "inner-container svelte-z0p4gh"), Z(t, "class", "list-item-container svelte-z0p4gh");
-    }, m(o, f) {
-      j(o, t, f), _n(t, e), _n(e, l), _n(l, n15), _n(t, a), d || (u = Kn(t, "click", c), d = true);
-    }, p(o, f) {
-      i = o, f & 1 && r !== (r = R.pages.byTitle[i[6].key].title + "") && Mc(n15, r);
+      t = mt("div"), e = mt("div"), l = mt("h4"), r = ai(n15), a = me(), Z(l, "class", "svelte-z0p4gh"), Z(e, "class", "inner-container svelte-z0p4gh"), Z(t, "class", "list-item-container svelte-z0p4gh");
+    }, m(o, m) {
+      j(o, t, m), _n(t, e), _n(e, l), _n(l, r), _n(t, a), d || (u = Kn(t, "click", c), d = true);
+    }, p(o, m) {
+      i = o, m & 1 && n15 !== (n15 = j2.pages.byTitle[i[6].key].title + "") && Mc(r, n15);
     }, d(o) {
       o && U(t), d = false, u();
     }};
@@ -7323,10 +7324,10 @@
     let t, e = i[1] === i[2] && Ue2(i);
     return {c() {
       e && e.c(), t = Re();
-    }, m(l, r) {
-      e && e.m(l, r), j(l, t, r);
-    }, p(l, [r]) {
-      l[1] === l[2] ? e ? e.p(l, r) : (e = Ue2(l), e.c(), e.m(t.parentNode, t)) : e && (e.d(1), e = null);
+    }, m(l, n15) {
+      e && e.m(l, n15), j(l, t, n15);
+    }, p(l, [n15]) {
+      l[1] === l[2] ? e ? e.p(l, n15) : (e = Ue2(l), e.c(), e.m(t.parentNode, t)) : e && (e.d(1), e = null);
     }, i: Q, o: Q, d(l) {
       e && e.d(l), l && U(t);
     }};
@@ -7334,13 +7335,13 @@
   function tl2(i, t, e) {
     let l;
     pe(i, Vc, (c) => e(3, l = c));
-    let {pages: r} = t, {categorySelected: n15} = t, {category: a} = t;
+    let {pages: n15} = t, {categorySelected: r} = t, {category: a} = t;
     const d = ia(), u = async (c) => {
       le2.closeModal(), await _i(), l("/:category/:page", {category: a, page: c.key}), d("closeNav");
     };
     return i.$$set = (c) => {
-      "pages" in c && e(0, r = c.pages), "categorySelected" in c && e(1, n15 = c.categorySelected), "category" in c && e(2, a = c.category);
-    }, [r, n15, a, l, d, u];
+      "pages" in c && e(0, n15 = c.pages), "categorySelected" in c && e(1, r = c.categorySelected), "category" in c && e(2, a = c.category);
+    }, [n15, r, a, l, d, u];
   }
   var ll2 = class extends He {
     constructor(t) {
@@ -7353,79 +7354,79 @@
     return l[7] = t[e], l[9] = e, l;
   }
   function Ke2(i) {
-    let t, e, l, r, n15, a, d, u, c, o = ze2, f = [];
-    for (let m = 0; m < o.length; m += 1)
-      f[m] = Xe2(Je2(i, o, m));
-    const _ = (m) => B(f[m], 1, 1, () => {
-      f[m] = null;
+    let t, e, l, n15, r, a, d, u, c, o = ze2, m = [];
+    for (let f = 0; f < o.length; f += 1)
+      m[f] = Xe2(Je2(i, o, f));
+    const _ = (f) => B(m[f], 1, 1, () => {
+      m[f] = null;
     });
     return {c() {
-      t = mt("div"), e = me(), l = mt("div"), r = mt("ul"), n15 = mt("div"), a = me();
-      for (let m = 0; m < f.length; m += 1)
-        f[m].c();
-      Z(t, "class", "nav-backdrop-container svelte-aas45h"), Z(n15, "class", "close-x close-main svelte-aas45h"), Z(r, "class", "nav-alt-list"), Z(l, "class", "side-menu-container svelte-aas45h");
-    }, m(m, y) {
-      j(m, t, y), j(m, e, y), j(m, l, y), _n(l, r), _n(r, n15), _n(r, a);
-      for (let h = 0; h < f.length; h += 1)
-        f[h].m(r, null);
-      d = true, u || (c = [Kn(t, "click", i[3]), Kn(n15, "click", i[4])], u = true);
-    }, p(m, y) {
+      t = mt("div"), e = me(), l = mt("div"), n15 = mt("ul"), r = mt("div"), a = me();
+      for (let f = 0; f < m.length; f += 1)
+        m[f].c();
+      Z(t, "class", "nav-backdrop-container svelte-aas45h"), Z(r, "class", "close-x close-main svelte-aas45h"), Z(n15, "class", "nav-alt-list"), Z(l, "class", "side-menu-container svelte-aas45h");
+    }, m(f, y) {
+      j(f, t, y), j(f, e, y), j(f, l, y), _n(l, n15), _n(n15, r), _n(n15, a);
+      for (let h = 0; h < m.length; h += 1)
+        m[h].m(n15, null);
+      d = true, u || (c = [Kn(t, "click", i[3]), Kn(r, "click", i[4])], u = true);
+    }, p(f, y) {
       if (y & 3) {
         o = ze2;
         let h;
         for (h = 0; h < o.length; h += 1) {
-          const g = Je2(m, o, h);
-          f[h] ? (f[h].p(g, y), M(f[h], 1)) : (f[h] = Xe2(g), f[h].c(), M(f[h], 1), f[h].m(r, null));
+          const g = Je2(f, o, h);
+          m[h] ? (m[h].p(g, y), M(m[h], 1)) : (m[h] = Xe2(g), m[h].c(), M(m[h], 1), m[h].m(n15, null));
         }
-        for (Kt(), h = o.length; h < f.length; h += 1)
+        for (Kt(), h = o.length; h < m.length; h += 1)
           _(h);
         Qt();
       }
-    }, i(m) {
+    }, i(f) {
       if (!d) {
         for (let y = 0; y < o.length; y += 1)
-          M(f[y]);
+          M(m[y]);
         d = true;
       }
-    }, o(m) {
-      f = f.filter(Boolean);
-      for (let y = 0; y < f.length; y += 1)
-        B(f[y]);
+    }, o(f) {
+      m = m.filter(Boolean);
+      for (let y = 0; y < m.length; y += 1)
+        B(m[y]);
       d = false;
-    }, d(m) {
-      m && U(t), m && U(e), m && U(l), Zo(f, m), u = false, kt(c);
+    }, d(f) {
+      f && U(t), f && U(e), f && U(l), Zo(m, f), u = false, kt(c);
     }};
   }
   function Xe2(i) {
-    let t, e, l, r = R.categories.byTitle[i[7]].title + "", n15, a, d, u, c, o, f, _, m;
+    let t, e, l, n15 = j2.categories.byTitle[i[7]].title + "", r, a, d, u, c, o, m, _, f;
     u = new Oe2({props: {fill: "black"}});
     function y(...h) {
       return i[5](i[7], ...h);
     }
-    return o = new ll2({props: {pages: R.categories.byTitle[i[7]].pages, index: i[9], category: i[7], categorySelected: i[1]}}), o.$on("closeNav", i[6]), {c() {
-      t = mt("li"), e = mt("div"), l = mt("h4"), n15 = ai(r), a = me(), d = mt("div"), Zt(u.$$.fragment), c = me(), Zt(o.$$.fragment), Z(l, "class", "nav-sub-item svelte-aas45h"), Z(d, "class", "arrow svelte-aas45h"), Z(e, "class", "content-container svelte-aas45h"), Z(t, "class", "nav-list-item svelte-aas45h");
+    return o = new ll2({props: {pages: j2.categories.byTitle[i[7]].pages, index: i[9], category: i[7], categorySelected: i[1]}}), o.$on("closeNav", i[6]), {c() {
+      t = mt("li"), e = mt("div"), l = mt("h4"), r = ai(n15), a = me(), d = mt("div"), Zt(u.$$.fragment), c = me(), Zt(o.$$.fragment), Z(l, "class", "nav-sub-item svelte-aas45h"), Z(d, "class", "arrow svelte-aas45h"), Z(e, "class", "content-container svelte-aas45h"), Z(t, "class", "nav-list-item svelte-aas45h");
     }, m(h, g) {
-      j(h, t, g), _n(t, e), _n(e, l), _n(l, n15), _n(e, a), _n(e, d), Mt(u, d, null), j(h, c, g), Mt(o, h, g), f = true, _ || (m = Kn(t, "click", y), _ = true);
+      j(h, t, g), _n(t, e), _n(e, l), _n(l, r), _n(e, a), _n(e, d), Mt(u, d, null), j(h, c, g), Mt(o, h, g), m = true, _ || (f = Kn(t, "click", y), _ = true);
     }, p(h, g) {
       i = h;
       const $2 = {};
       g & 2 && ($2.categorySelected = i[1]), o.$set($2);
     }, i(h) {
-      f || (M(u.$$.fragment, h), M(o.$$.fragment, h), f = true);
+      m || (M(u.$$.fragment, h), M(o.$$.fragment, h), m = true);
     }, o(h) {
-      B(u.$$.fragment, h), B(o.$$.fragment, h), f = false;
+      B(u.$$.fragment, h), B(o.$$.fragment, h), m = false;
     }, d(h) {
-      h && U(t), Rt(u), h && U(c), Rt(o, h), _ = false, m();
+      h && U(t), Rt(u), h && U(c), Rt(o, h), _ = false, f();
     }};
   }
   function il2(i) {
-    let t, e, l, r, n15, a, d, u, c = i[0] && Ke2(i);
+    let t, e, l, n15, r, a, d, u, c = i[0] && Ke2(i);
     return {c() {
-      t = mt("div"), e = Dc("svg"), l = Dc("path"), r = Dc("path"), n15 = me(), c && c.c(), Z(l, "d", "M0 0h24v24H0z"), Z(l, "fill", "none"), Z(r, "d", "M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"), Z(e, "xmlns", "http://www.w3.org/2000/svg"), Z(e, "height", "24px"), Z(e, "class", "menu-icon svelte-aas45h"), Z(e, "viewBox", "0 0 24 24"), Z(e, "width", "24px"), Z(e, "fill", "white"), Z(t, "class", "container");
-    }, m(o, f) {
-      j(o, t, f), _n(t, e), _n(e, l), _n(e, r), _n(t, n15), c && c.m(t, null), a = true, d || (u = Kn(e, "click", i[2]), d = true);
-    }, p(o, [f]) {
-      o[0] ? c ? (c.p(o, f), f & 1 && M(c, 1)) : (c = Ke2(o), c.c(), M(c, 1), c.m(t, null)) : c && (Kt(), B(c, 1, 1, () => {
+      t = mt("div"), e = Dc("svg"), l = Dc("path"), n15 = Dc("path"), r = me(), c && c.c(), Z(l, "d", "M0 0h24v24H0z"), Z(l, "fill", "none"), Z(n15, "d", "M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"), Z(e, "xmlns", "http://www.w3.org/2000/svg"), Z(e, "height", "24px"), Z(e, "class", "menu-icon svelte-aas45h"), Z(e, "viewBox", "0 0 24 24"), Z(e, "width", "24px"), Z(e, "fill", "white"), Z(t, "class", "container");
+    }, m(o, m) {
+      j(o, t, m), _n(t, e), _n(e, l), _n(e, n15), _n(t, r), c && c.m(t, null), a = true, d || (u = Kn(e, "click", i[2]), d = true);
+    }, p(o, [m]) {
+      o[0] ? c ? (c.p(o, m), m & 1 && M(c, 1)) : (c = Ke2(o), c.c(), M(c, 1), c.m(t, null)) : c && (Kt(), B(c, 1, 1, () => {
         c = null;
       }), Qt());
     }, i(o) {
@@ -7437,53 +7438,53 @@
     }};
   }
   function al2(i, t, e) {
-    let l = false, r = null;
-    return [l, r, () => {
+    let l = false, n15 = null;
+    return [l, n15, () => {
       e(0, l = !l);
     }, () => {
       e(0, l = false);
     }, () => {
       e(0, l = false);
-    }, (o, f) => {
-      o === r ? e(1, r = null) : e(1, r = o);
+    }, (o, m) => {
+      o === n15 ? e(1, n15 = null) : e(1, n15 = o);
     }, () => {
-      e(1, r = null), e(0, l = false);
+      e(1, n15 = null), e(0, l = false);
     }];
   }
-  var rl2 = class extends He {
+  var nl2 = class extends He {
     constructor(t) {
       super();
       Be(this, t, al2, il2, de, {});
     }
   };
-  function nl2(i) {
-    let t, e, l, r, n15, a, d, u, c, o, f, _;
-    return a = new xt2({}), c = new rl2({}), {c() {
-      t = mt("div"), e = mt("div"), l = mt("div"), l.innerHTML = '<img src="https://res.cloudinary.com/dt4xntymn/image/upload/v1641600476/mainSite/home/LOGO_hzvhrk.png" alt="" class="svelte-17dvp4y"/>', r = me(), n15 = mt("div"), Zt(a.$$.fragment), d = me(), u = mt("div"), Zt(c.$$.fragment), Z(l, "class", "logo-container svelte-17dvp4y"), Z(n15, "class", "icon-container svelte-17dvp4y"), Z(e, "class", "nav-top svelte-17dvp4y"), Z(u, "class", "menu-icon-container svelte-17dvp4y"), Z(t, "class", "top-nav-container svelte-17dvp4y");
-    }, m(m, y) {
-      j(m, t, y), _n(t, e), _n(e, l), _n(e, r), _n(e, n15), Mt(a, n15, null), _n(t, d), _n(t, u), Mt(c, u, null), o = true, f || (_ = Kn(l, "click", i[1]), f = true);
-    }, p: Q, i(m) {
-      o || (M(a.$$.fragment, m), M(c.$$.fragment, m), o = true);
-    }, o(m) {
-      B(a.$$.fragment, m), B(c.$$.fragment, m), o = false;
-    }, d(m) {
-      m && U(t), Rt(a), Rt(c), f = false, _();
+  function rl2(i) {
+    let t, e, l, n15, r, a, d, u, c, o, m, _;
+    return a = new xt2({}), c = new nl2({}), {c() {
+      t = mt("div"), e = mt("div"), l = mt("div"), l.innerHTML = '<img src="https://res.cloudinary.com/dt4xntymn/image/upload/v1641600476/mainSite/home/LOGO_hzvhrk.png" alt="" class="svelte-17dvp4y"/>', n15 = me(), r = mt("div"), Zt(a.$$.fragment), d = me(), u = mt("div"), Zt(c.$$.fragment), Z(l, "class", "logo-container svelte-17dvp4y"), Z(r, "class", "icon-container svelte-17dvp4y"), Z(e, "class", "nav-top svelte-17dvp4y"), Z(u, "class", "menu-icon-container svelte-17dvp4y"), Z(t, "class", "top-nav-container svelte-17dvp4y");
+    }, m(f, y) {
+      j(f, t, y), _n(t, e), _n(e, l), _n(e, n15), _n(e, r), Mt(a, r, null), _n(t, d), _n(t, u), Mt(c, u, null), o = true, m || (_ = Kn(l, "click", i[1]), m = true);
+    }, p: Q, i(f) {
+      o || (M(a.$$.fragment, f), M(c.$$.fragment, f), o = true);
+    }, o(f) {
+      B(a.$$.fragment, f), B(c.$$.fragment, f), o = false;
+    }, d(f) {
+      f && U(t), Rt(a), Rt(c), m = false, _();
     }};
   }
   function sl2(i, t, e) {
     let l;
-    return pe(i, Vc, (n15) => e(0, l = n15)), [l, (n15) => {
+    return pe(i, Vc, (r) => e(0, l = r)), [l, (r) => {
       l("/");
     }];
   }
   var ol2 = class extends He {
     constructor(t) {
       super();
-      Be(this, t, sl2, nl2, de, {});
+      Be(this, t, sl2, rl2, de, {});
     }
   };
   function xe2(i) {
-    let t, e, l, r, n15;
+    let t, e, l, n15, r;
     const a = [ul2, cl2], d = [];
     function u(c, o) {
       return c[2].type === "spec" ? 0 : 1;
@@ -7491,28 +7492,28 @@
     return e = u(i), l = d[e] = a[e](i), {c() {
       t = mt("div"), l.c(), Z(t, "class", "modal-wrapper svelte-vx2a9k");
     }, m(c, o) {
-      j(c, t, o), d[e].m(t, null), i[7](t), n15 = true;
+      j(c, t, o), d[e].m(t, null), i[7](t), r = true;
     }, p(c, o) {
-      let f = e;
-      e = u(c), e !== f && (Kt(), B(d[f], 1, 1, () => {
-        d[f] = null;
+      let m = e;
+      e = u(c), e !== m && (Kt(), B(d[m], 1, 1, () => {
+        d[m] = null;
       }), Qt(), l = d[e], l || (l = d[e] = a[e](c), l.c()), M(l, 1), l.m(t, null));
     }, i(c) {
-      n15 || (M(l), ye(() => {
-        r || (r = Fc(t, jc, {}, true)), r.run(1);
-      }), n15 = true);
+      r || (M(l), ye(() => {
+        n15 || (n15 = Fc(t, jc, {}, true)), n15.run(1);
+      }), r = true);
     }, o(c) {
-      B(l), r || (r = Fc(t, jc, {}, false)), r.run(0), n15 = false;
+      B(l), n15 || (n15 = Fc(t, jc, {}, false)), n15.run(0), r = false;
     }, d(c) {
-      c && U(t), d[e].d(), i[7](null), c && r && r.end();
+      c && U(t), d[e].d(), i[7](null), c && n15 && n15.end();
     }};
   }
   function cl2(i) {
     let t, e;
-    return t = new qt2({}), {c() {
+    return t = new Vt2({}), {c() {
       Zt(t.$$.fragment);
-    }, m(l, r) {
-      Mt(t, l, r), e = true;
+    }, m(l, n15) {
+      Mt(t, l, n15), e = true;
     }, i(l) {
       e || (M(t.$$.fragment, l), e = true);
     }, o(l) {
@@ -7525,8 +7526,8 @@
     let t, e;
     return t = new Jt2({}), {c() {
       Zt(t.$$.fragment);
-    }, m(l, r) {
-      Mt(t, l, r), e = true;
+    }, m(l, n15) {
+      Mt(t, l, n15), e = true;
     }, i(l) {
       e || (M(t.$$.fragment, l), e = true);
     }, o(l) {
@@ -7536,59 +7537,59 @@
     }};
   }
   function dl2(i) {
-    let t, e, l, r, n15, a, d, u;
+    let t, e, l, n15, r, a, d, u;
     e = new ol2({});
     let c = i[2].visible && xe2(i);
-    const o = i[6].default, f = cn(o, i, i[5], null);
+    const o = i[6].default, m = cn(o, i, i[5], null);
     return {c() {
-      t = mt("div"), Zt(e.$$.fragment), l = me(), c && c.c(), r = me(), n15 = mt("div"), f && f.c(), Z(n15, "class", "main-anim-wrapper svelte-vx2a9k"), Rc(n15, "inactive", i[2].visible), Z(t, "class", "wrapper svelte-vx2a9k");
-    }, m(_, m) {
-      j(_, t, m), Mt(e, t, null), _n(t, l), c && c.m(t, null), _n(t, r), _n(t, n15), f && f.m(n15, null), u = true;
-    }, p(_, [m]) {
-      i = _, i[2].visible ? c ? (c.p(i, m), m & 4 && M(c, 1)) : (c = xe2(i), c.c(), M(c, 1), c.m(t, r)) : c && (Kt(), B(c, 1, 1, () => {
+      t = mt("div"), Zt(e.$$.fragment), l = me(), c && c.c(), n15 = me(), r = mt("div"), m && m.c(), Z(r, "class", "main-anim-wrapper svelte-vx2a9k"), Rc(r, "inactive", i[2].visible), Z(t, "class", "wrapper svelte-vx2a9k");
+    }, m(_, f) {
+      j(_, t, f), Mt(e, t, null), _n(t, l), c && c.m(t, null), _n(t, n15), _n(t, r), m && m.m(r, null), u = true;
+    }, p(_, [f]) {
+      i = _, i[2].visible ? c ? (c.p(i, f), f & 4 && M(c, 1)) : (c = xe2(i), c.c(), M(c, 1), c.m(t, n15)) : c && (Kt(), B(c, 1, 1, () => {
         c = null;
-      }), Qt()), f && f.p && (!u || m & 32) && hn(f, o, i, i[5], u ? fn(o, i[5], m, null) : dn(i[5]), null), m & 4 && Rc(n15, "inactive", i[2].visible);
+      }), Qt()), m && m.p && (!u || f & 32) && hn(m, o, i, i[5], u ? fn(o, i[5], f, null) : dn(i[5]), null), f & 4 && Rc(r, "inactive", i[2].visible);
     }, i(_) {
-      u || (M(e.$$.fragment, _), M(c), M(f, _), _ && ye(() => {
+      u || (M(e.$$.fragment, _), M(c), M(m, _), _ && ye(() => {
         d && d.end(1), a = Lc(t, i[3], {key: i[1].category}), a.start();
       }), u = true);
     }, o(_) {
-      B(e.$$.fragment, _), B(c), B(f, _), a && a.invalidate(), _ && (d = Ic(t, i[4], {key: i[1].category})), u = false;
+      B(e.$$.fragment, _), B(c), B(m, _), a && a.invalidate(), _ && (d = Ic(t, i[4], {key: i[1].category})), u = false;
     }, d(_) {
-      _ && U(t), Rt(e), c && c.d(), f && f.d(_), _ && d && d.end();
+      _ && U(t), Rt(e), c && c.d(), m && m.d(_), _ && d && d.end();
     }};
   }
-  function fl2(i, t, e) {
-    let l, r, n15, a;
-    pe(i, Uc, (m) => e(8, l = m)), pe(i, jt2, (m) => e(9, r = m)), pe(i, ee2, (m) => e(1, n15 = m)), pe(i, le2, (m) => e(2, a = m));
+  function ml2(i, t, e) {
+    let l, n15, r, a;
+    pe(i, Uc, (f) => e(8, l = f)), pe(i, Rt2, (f) => e(9, n15 = f)), pe(i, ee2, (f) => e(1, r = f)), pe(i, le2, (f) => e(2, a = f));
     let {$$slots: d = {}, $$scope: u} = t, c;
-    const {receive: o, send: f} = r;
+    const {receive: o, send: m} = n15;
     na(() => {
       ee2.setCategory(l.category);
     });
-    function _(m) {
-      Jn[m ? "unshift" : "push"](() => {
-        c = m, e(0, c);
+    function _(f) {
+      Jn[f ? "unshift" : "push"](() => {
+        c = f, e(0, c);
       });
     }
-    return i.$$set = (m) => {
-      "$$scope" in m && e(5, u = m.$$scope);
-    }, [c, n15, a, o, f, u, d, _];
+    return i.$$set = (f) => {
+      "$$scope" in f && e(5, u = f.$$scope);
+    }, [c, r, a, o, m, u, d, _];
   }
-  var ml2 = class extends He {
+  var fl2 = class extends He {
     constructor(t) {
       super();
-      Be(this, t, fl2, dl2, de, {});
+      Be(this, t, ml2, dl2, de, {});
     }
   };
-  var _l2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => D2(() => Promise.resolve().then(() => require_fallback_c41a116c()), ["assets/_fallback.c41a116c.js", "assets/vendor.4eaa3fd3.js"]).then((i) => i.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages/index", id: "__category__pages_index", component: () => vt2}], isLayout: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => zt2}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: true, prerender: true}, path: "/:category/index", id: "__category_index", component: () => Rt2}], isLayout: true, ownMeta: {preload: true, "param-is-page": true}, meta: {preload: true, "param-is-page": true, recursive: true, prerender: true}, path: "/:category", id: "__category__layout", component: () => ml2}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => D2(() => Promise.resolve().then(() => require_index_247a3319()), ["assets/index.247a3319.js", "assets/vendor.4eaa3fd3.js"]).then((i) => i.default)}], isLayout: true, path: "/", id: "__layout", component: () => D2(() => Promise.resolve().then(() => require_layout_970cdb97()), ["assets/_layout.970cdb97.js", "assets/vendor.4eaa3fd3.js"]).then((i) => i.default)};
+  var _l2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => D2(() => Promise.resolve().then(() => require_fallback_c41a116c()), ["assets/_fallback.c41a116c.js", "assets/vendor.4eaa3fd3.js"]).then((i) => i.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages/index", id: "__category__pages_index", component: () => vt2}], isLayout: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => zt2}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: true, prerender: true}, path: "/:category/index", id: "__category_index", component: () => jt2}], isLayout: true, ownMeta: {preload: true, "param-is-page": true}, meta: {preload: true, "param-is-page": true, recursive: true, prerender: true}, path: "/:category", id: "__category__layout", component: () => fl2}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => D2(() => Promise.resolve().then(() => require_index_247a3319()), ["assets/index.247a3319.js", "assets/vendor.4eaa3fd3.js"]).then((i) => i.default)}], isLayout: true, path: "/", id: "__layout", component: () => D2(() => Promise.resolve().then(() => require_layout_ce8d9165()), ["assets/_layout.ce8d9165.js", "assets/vendor.4eaa3fd3.js"]).then((i) => i.default)};
   var {tree: $l2, routes: pl2} = qc(_l2);
   function hl2(i) {
     let t, e;
     return t = new Xc({props: {routes: pl2}}), {c() {
       Zt(t.$$.fragment);
-    }, m(l, r) {
-      Mt(t, l, r), e = true;
+    }, m(l, n15) {
+      Mt(t, l, n15), e = true;
     }, p: Q, i(l) {
       e || (M(t.$$.fragment, l), e = true);
     }, o(l) {

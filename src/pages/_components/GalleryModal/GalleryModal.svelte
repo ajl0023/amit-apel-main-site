@@ -13,6 +13,7 @@
   $: ({ images } = $galleryModal);
   let container;
   let carousel;
+  let video;
   let loading = true;
   const handleCarouselLeft = () => {
     carousel.left();
@@ -36,7 +37,7 @@
     const navbar = document.querySelector(".top-nav-container");
     height = window.innerHeight - navbar.getBoundingClientRect().height;
   };
-  let video;
+
   onMount(() => {
     setContainerHeight();
 
@@ -186,7 +187,7 @@
                 type="text/html"
                 width="100%"
                 height="100%"
-                src="{video.video}"
+                src="{video}"
                 frameborder="0"></iframe>
             </div>
           {/if}
