@@ -6,7 +6,7 @@
   import { onDestroy, onMount } from "svelte";
   import AdditionalPress from "./AdditionalPress.svelte";
   import PressCard from "./PressCard.svelte";
-
+  let addPressWrapper;
   let windowHeight = 0,
     windowWidth = 0;
 
@@ -16,8 +16,12 @@
     scrollTl = gsap.timeline({
       paused: true,
     });
+    gsap.set(addPressWrapper, {
+      top: wrapper.clientHeight + 500,
+    });
+
     scrollTl.to(wrapper, {
-      y: "-180vh",
+      y: -wrapper.clientHeight - 500,
       duration: 2,
     });
     scrollTl.to(
@@ -37,7 +41,11 @@
       opacity: 1,
     });
   });
-
+  function handleResize() {
+    gsap.set(addPressWrapper, {
+      top: wrapper.clientHeight + 500,
+    });
+  }
   const images = [
     {
       img: "https://res.cloudinary.com/dt4xntymn/image/upload/v1633380454/mainSite/press/Press_3_jrf0mt.jpg",
@@ -114,11 +122,26 @@
         </div>
       </div>
     </div>
-    <AdditionalPress />
+    <div bind:this="{addPressWrapper}" class="additional-press-wrapper">
+      <AdditionalPress />
+    </div>
   </div>
 </div>
+<svelte:window onresize="{handleResize}" />
 
 <style lang="scss">
+  .additional-press-wrapper {
+    width: 100%;
+
+    display: flex;
+    position: absolute;
+
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
   .button-wrapper {
     position: absolute;
     right: 0;

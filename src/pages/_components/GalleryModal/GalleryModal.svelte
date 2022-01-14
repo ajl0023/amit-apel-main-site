@@ -40,11 +40,28 @@
   onMount(() => {
     setContainerHeight();
 
-    video =
+    let videoCheck =
       pageLayoutMaster["pages"]["byTitle"][$marqueeHandlerStore.page].videos &&
       pageLayoutMaster["pages"]["byTitle"][$marqueeHandlerStore.page].videos[
         $galleryModal.selected.key
       ];
+    if (videoCheck) {
+      fetch(
+        `${
+          window.location.origin === "http://jsdom.ssr" ||
+          (!import.meta.env.PROD &&
+            window.location.origin !== "http://192.168.0.249:5000")
+            ? "http://localhost:9999"
+            : window.location.origin
+        }/.netlify/functions/get-video-renders?key=${
+          $galleryModal.selected.key
+        }`
+      )
+        .then((res) => res.json())
+        .then(async (data) => {
+          video = data.video;
+        });
+    }
   });
 </script>
 
@@ -85,7 +102,7 @@
                   type="text/html"
                   width="100%"
                   height="100%"
-                  src="{video.video}"
+                  src="{video}"
                   frameborder="0"></iframe>
               </div>
             {/if}

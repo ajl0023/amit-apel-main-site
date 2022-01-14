@@ -14,7 +14,7 @@
           class="aspect-ratio-container"
         >
           <div class="image-container">
-            <img src={logo.url} class="image" alt="" />
+            <img src="{logo.url}" class="image" alt="" />
           </div>
         </div>
       </div>
@@ -34,16 +34,9 @@
     }
   }
   .wrapper {
-    width: 100vw;
     height: 100%;
     display: flex;
-    position: absolute;
-
     flex-direction: column;
-    transform: translateY(90vh);
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
     .container {
       height: 100%;
       max-width: 1200px;

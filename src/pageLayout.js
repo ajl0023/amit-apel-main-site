@@ -280,7 +280,6 @@ export const pageLayoutMasterArr = [
 export const videos = (function allVideos() {
   const arr = [];
   for (const key in pageLayoutMaster.pages.byTitle) {
-    console.log(key);
     if (Object.hasOwnProperty.call(pageLayoutMaster.pages.byTitle, key)) {
       if (pageLayoutMaster.pages.byTitle[key].videos) {
         for (const property in pageLayoutMaster.pages.byTitle[key].videos) {

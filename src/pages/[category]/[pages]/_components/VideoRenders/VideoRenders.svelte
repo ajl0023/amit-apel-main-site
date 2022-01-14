@@ -20,7 +20,6 @@
         videos = Array.from(data, (val) => {
           return val;
         });
-        console.log(videos);
       });
   });
 </script>
@@ -60,7 +59,7 @@
     font-weight: 500;
     font-size: 2em;
     margin-bottom: 1rem;
-    
+
     &:after {
       width: 100%;
       display: block;
