@@ -13,8 +13,8 @@
       __defProp(target, name, {get: all[name], enumerable: true});
   };
 
-  // dist/assets/MasonryGallery.2129d79b.js
-  var require_MasonryGallery_2129d79b = __commonJS((exports) => {
+  // dist/assets/MasonryGallery.01969712.js
+  var require_MasonryGallery_01969712 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Ee3
@@ -480,8 +480,8 @@
     };
   });
 
-  // dist/assets/MeetTheTeam.f58fdb07.js
-  var require_MeetTheTeam_f58fdb07 = __commonJS((exports) => {
+  // dist/assets/MeetTheTeam.fcd4329f.js
+  var require_MeetTheTeam_fcd4329f = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => He3
@@ -1860,8 +1860,8 @@
     };
   });
 
-  // dist/assets/Developments.cbccbc03.js
-  var require_Developments_cbccbc03 = __commonJS((exports) => {
+  // dist/assets/Developments.9af5233d.js
+  var require_Developments_9af5233d = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Z2
@@ -2080,8 +2080,8 @@
     };
   });
 
-  // dist/assets/_layout.d5343d12.js
-  var require_layout_d5343d12 = __commonJS((exports) => {
+  // dist/assets/_layout.8bdeeeba.js
+  var require_layout_8bdeeeba = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => ct2
@@ -6481,7 +6481,7 @@
     }
   };
 
-  // dist/assets/index.4a00114e.js
+  // dist/assets/index.0e891f9a.js
   var et2 = Object.defineProperty;
   var he2 = Object.getOwnPropertySymbols;
   var tt2 = Object.prototype.hasOwnProperty;
@@ -6522,7 +6522,7 @@
       Be(this, t, null, null, de, {});
     }
   };
-  var R = {categories: {byTitle: {developments: {urlFormatted: "developments", title: "developments", index: 3, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227066/mainSite/homeVideoAnimation/SD_Bar_1_vbyidn.mp4", pages: [{key: "maliview", labels: [Array(8).fill("maliview")]}, {key: "aviator", labels: [Array(8).fill("aviator")]}, {key: "map", labels: [Array(8).fill("map")]}]}, "apel-design": {urlFormatted: "apel-design", title: "apel design", index: 0, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227066/mainSite/homeVideoAnimation/SD_Bar_4_uvy6cy.mp4", pages: [{key: "meet-amit-apel", labels: Array(8).fill("meet amit apel")}, {key: "meet-the-team", labels: Array(8).fill("meet the team")}, {key: "what-we-do", labels: Array(8).fill("what we do")}, {key: "malibu-rebuild", labels: Array(8).fill("malibu rebuild")}, {key: "press", labels: Array(8).fill("press")}, {key: "contact-us", labels: Array(8).fill("contact us")}]}, design: {urlFormatted: "design", title: "design", index: 2, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227061/mainSite/homeVideoAnimation/SD_Bar_3_btxkep.mp4", pages: [{key: "furniture", labels: [Array(8).fill("furniture")]}, {key: "concept", labels: [Array(8).fill("concept")]}, {key: "sculptures", labels: [Array(8).fill("sculptures")]}]}, architecture: {urlFormatted: "architecture", title: "architecture", index: 1, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227068/mainSite/homeVideoAnimation/SD_Bar_2_rwcg50.mp4", pages: [{key: "private-homes", labels: [Array(8).fill("private-homes")]}, {key: "multi-family", labels: [Array(8).fill("multi family")]}, {key: "mixed-use", labels: [Array(8).fill("mixed use")]}, {key: "hospitality", labels: [Array(8).fill("hospitality")]}, {key: "commercial", labels: [Array(8).fill("commercial")]}, {key: "video-renders", labels: [Array(8).fill("video renders")]}]}}}, pages: {byTitle: {maliview: {component: "Developments", title: "maliview", urlFormatted: "maliview", data: {img: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637713367/mainSite/Developments/33340_MULHOLLAND_HWY_IMG_5_nswjvh.jpg", description: "The villa will have open space plan with high ceilings with a touch of nature coming indoors. The home includes 4 perfectly placed bedrooms with views to admire the scenery as well as 4.5 bathrooms. All of the interior will be featuring custom interior design by Amit Apel Design, Inc. From an infinity pool you will be enjoying the ocean in the horizon, the view of Santa Monica Mountains, and overwhelming sunrises, and sunsets.", link: "https://maliviewestates.com/", title: "Maliview"}}, aviator: {title: "aviator", component: "Developments/Developments", urlFormatted: "aviator", data: {img: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637713367/mainSite/Developments/CAYMAN_AVIATOR_20210722_1_i39rsx.jpg", description: "Conceptually, Apel Design wanted to create the notion that the architecture of building continues beyond. In a sense, the forms flow throughout and never stop. The architecture forms emerge from the ground, extends to the horizon and divides into two beautiful irregular volumetric elements as if the architecture was slicing the space, emphasizing the gorgeous views of the Malibu mountains and the Pacific Ocean. The bird-like building program also incorporates the ideas of flow and continuation; the first level proposes an open floor plan with a glass facade that opens up the space to a beautiful deck and a second floor for bedrooms that are elevated from the ground to again emphasize this notion of flow and lightness.", link: "https://malibuaviator.com/", title: "Aviator"}}, "video-renders": {title: "video renders", urlFormatted: "video-renders", component: "Masonry/Masonry"}, "meet-the-team": {title: "meet the team", urlFormatted: "meet-the-team", component: "MeetTheTeam/MeetTheTeam"}, furniture: {title: "furniture", urlFormatted: "furniture", component: "Masonry/Masonry"}, sculptures: {title: "sculptures", urlFormatted: "sculptures", component: "Masonry/Masonry"}, "private-homes": {title: "private homes", urlFormatted: "private-homes", categories: [{name: "Contemporary", urlFormatted: "contemporary-houses"}, {name: "Spanish Revival", urlFormatted: "spanish-revival-homes"}, {name: "Traditional", urlFormatted: "traditional-homes"}, {name: "All", urlFormatted: "/"}]}, hospitality: {title: "hospitality", urlFormatted: "hospitality"}, "mixed-use": {title: "mixed use", urlFormatted: "mixed-use", videos: {"50581f59-1d7f-4238-a3dd-834464a40049": {video: "https://youtu.be/embed/wxRpmJaPfrQ"}, "68db54c2-18ae-4a3d-8994-6cef7672e615": {video: "https://youtu.be/embed/6htaSST25hc"}}}, "meet-amit-apel": {title: "meet amit apel", urlFormatted: "meet-amit-apel", component: "MeetAmitApel/MeetAmitApel"}, "what-we-do": {title: "what we do", urlFormatted: "what-we-do", component: "WhatWeDo/WhatWeDo"}, commercial: {title: "commercial", urlFormatted: "commercial"}, "multi-family": {title: "multi family", urlFormatted: "multi-family", videos: {"10e44ccf-241f-47b8-8c56-72e76c3cdd3f": {video: "https://www.youtube.com/embed/4U8GFaPPN8A"}, "4710d858-d363-4852-b69a-f7616026b19c": {video: "https://www.youtube.com/embed/uMxkF8007rg"}, "755e01e5-d01a-488b-9c53-e92f21309121": {video: "https://www.youtube.com/embed/NNpfFAAdq5c"}, "6082d254-5e18-4cde-a07a-0dd9e245b4c4": {video: "https://www.youtube.com/embed/sn8uMO5kvHQ"}, "b38327e6-2eee-42b7-a14f-81959dfa6e70": {video: "https://www.youtube.com/embed/fZ12k_0CuK0"}, "5d9199aa-aa3a-493c-b1c6-31591f8cc194": {video: "https://www.youtube.com/embed/Gibdo4VVRbg"}, "1a267c8b-3a0c-4426-8fb9-3eb662201129": {video: "https://www.youtube.com/embed/a-OIhZv8ZII"}}}, "malibu-rebuild": {title: "malibu rebuild", urlFormatted: "malibu-rebuild", component: "MalibuRebuild/MalibuRebuild"}, "contact-us": {title: "contact us", urlFormatted: "contact-us", component: "Contact/Contact"}, concept: {title: "concept", urlFormatted: "concept", component: "ArchiGallery/ArchiGallery"}, press: {title: "press", urlFormatted: "press", component: "Press/Press"}, map: {title: "project map", urlFormatted: "map", component: "Map/Map"}}}};
+  var R = {categories: {byTitle: {developments: {urlFormatted: "developments", title: "developments", index: 3, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227066/mainSite/homeVideoAnimation/SD_Bar_1_vbyidn.mp4", pages: [{key: "maliview", labels: [Array(8).fill("maliview")]}, {key: "aviator", labels: [Array(8).fill("aviator")]}, {key: "map", labels: [Array(8).fill("map")]}]}, "apel-design": {urlFormatted: "apel-design", title: "apel design", index: 0, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227066/mainSite/homeVideoAnimation/SD_Bar_4_uvy6cy.mp4", pages: [{key: "meet-amit-apel", labels: Array(8).fill("meet amit apel")}, {key: "meet-the-team", labels: Array(8).fill("meet the team")}, {key: "what-we-do", labels: Array(8).fill("what we do")}, {key: "malibu-rebuild", labels: Array(8).fill("malibu rebuild")}, {key: "press", labels: Array(8).fill("press")}, {key: "contact-us", labels: Array(8).fill("contact us")}]}, design: {urlFormatted: "design", title: "design", index: 2, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227061/mainSite/homeVideoAnimation/SD_Bar_3_btxkep.mp4", pages: [{key: "furniture", labels: [Array(8).fill("furniture")]}, {key: "concept", labels: [Array(8).fill("concept")]}, {key: "sculptures", labels: [Array(8).fill("sculptures")]}]}, architecture: {urlFormatted: "architecture", title: "architecture", index: 1, video: "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227068/mainSite/homeVideoAnimation/SD_Bar_2_rwcg50.mp4", pages: [{key: "private-homes", labels: [Array(8).fill("private-homes")]}, {key: "multi-family", labels: [Array(8).fill("multi family")]}, {key: "mixed-use", labels: [Array(8).fill("mixed use")]}, {key: "hospitality", labels: [Array(8).fill("hospitality")]}, {key: "commercial", labels: [Array(8).fill("commercial")]}, {key: "video-renders", labels: [Array(8).fill("video renders")]}]}}}, pages: {byTitle: {maliview: {component: "Developments", title: "maliview", urlFormatted: "maliview", data: {img: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637713367/mainSite/Developments/33340_MULHOLLAND_HWY_IMG_5_nswjvh.jpg", description: "The villa will have open space plan with high ceilings with a touch of nature coming indoors. The home includes 4 perfectly placed bedrooms with views to admire the scenery as well as 4.5 bathrooms. All of the interior will be featuring custom interior design by Amit Apel Design, Inc. From an infinity pool you will be enjoying the ocean in the horizon, the view of Santa Monica Mountains, and overwhelming sunrises, and sunsets.", link: "https://maliviewestates.com/", title: "Maliview"}}, aviator: {title: "aviator", component: "Developments/Developments", urlFormatted: "aviator", data: {img: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637713367/mainSite/Developments/CAYMAN_AVIATOR_20210722_1_i39rsx.jpg", description: "Conceptually, Apel Design wanted to create the notion that the architecture of building continues beyond. In a sense, the forms flow throughout and never stop. The architecture forms emerge from the ground, extends to the horizon and divides into two beautiful irregular volumetric elements as if the architecture was slicing the space, emphasizing the gorgeous views of the Malibu mountains and the Pacific Ocean. The bird-like building program also incorporates the ideas of flow and continuation; the first level proposes an open floor plan with a glass facade that opens up the space to a beautiful deck and a second floor for bedrooms that are elevated from the ground to again emphasize this notion of flow and lightness.", link: "https://malibuaviator.com/", title: "Aviator"}}, "video-renders": {title: "video renders", urlFormatted: "video-renders", component: "Masonry/Masonry"}, "meet-the-team": {title: "meet the team", urlFormatted: "meet-the-team", component: "MeetTheTeam/MeetTheTeam"}, furniture: {title: "furniture", urlFormatted: "furniture", component: "Masonry/Masonry"}, sculptures: {title: "sculptures", urlFormatted: "sculptures", component: "Masonry/Masonry"}, "private-homes": {title: "private homes", urlFormatted: "private-homes", categories: [{name: "All", urlFormatted: "/"}, {name: "Contemporary", urlFormatted: "contemporary-houses"}, {name: "Spanish Revival", urlFormatted: "spanish-revival-homes"}, {name: "Traditional", urlFormatted: "traditional-homes"}]}, hospitality: {title: "hospitality", urlFormatted: "hospitality"}, "mixed-use": {title: "mixed use", urlFormatted: "mixed-use", videos: {"50581f59-1d7f-4238-a3dd-834464a40049": {video: "https://youtu.be/embed/wxRpmJaPfrQ"}, "68db54c2-18ae-4a3d-8994-6cef7672e615": {video: "https://youtu.be/embed/6htaSST25hc"}}}, "meet-amit-apel": {title: "meet amit apel", urlFormatted: "meet-amit-apel", component: "MeetAmitApel/MeetAmitApel"}, "what-we-do": {title: "what we do", urlFormatted: "what-we-do", component: "WhatWeDo/WhatWeDo"}, commercial: {title: "commercial", urlFormatted: "commercial"}, "multi-family": {title: "multi family", urlFormatted: "multi-family", videos: {"10e44ccf-241f-47b8-8c56-72e76c3cdd3f": {video: "https://www.youtube.com/embed/4U8GFaPPN8A"}, "4710d858-d363-4852-b69a-f7616026b19c": {video: "https://www.youtube.com/embed/uMxkF8007rg"}, "755e01e5-d01a-488b-9c53-e92f21309121": {video: "https://www.youtube.com/embed/NNpfFAAdq5c"}, "6082d254-5e18-4cde-a07a-0dd9e245b4c4": {video: "https://www.youtube.com/embed/sn8uMO5kvHQ"}, "b38327e6-2eee-42b7-a14f-81959dfa6e70": {video: "https://www.youtube.com/embed/fZ12k_0CuK0"}, "5d9199aa-aa3a-493c-b1c6-31591f8cc194": {video: "https://www.youtube.com/embed/Gibdo4VVRbg"}, "1a267c8b-3a0c-4426-8fb9-3eb662201129": {video: "https://www.youtube.com/embed/a-OIhZv8ZII"}}}, "malibu-rebuild": {title: "malibu rebuild", urlFormatted: "malibu-rebuild", component: "MalibuRebuild/MalibuRebuild"}, "contact-us": {title: "contact us", urlFormatted: "contact-us", component: "Contact/Contact"}, concept: {title: "concept", urlFormatted: "concept", component: "ArchiGallery/ArchiGallery"}, press: {title: "press", urlFormatted: "press", component: "Press/Press"}, map: {title: "project map", urlFormatted: "map", component: "Map/Map"}}}};
   var ze2 = ["apel-design", "architecture", "design", "developments"];
   (function() {
     const t = [];
@@ -6581,16 +6581,16 @@
     }
     return u && (n15 = new u(c())), {c() {
       t = mt("div"), Zt(e.$$.fragment), l = me(), r = mt("div"), n15 && Zt(n15.$$.fragment), Z(r, "class", "page-wrapper svelte-1bfxyul"), Z(t, "class", "page-content-container page-content-container-anim svelte-1bfxyul");
-    }, m(o, m) {
-      j(o, t, m), Mt(e, t, null), _n(t, l), _n(t, r), n15 && Mt(n15, r, null), d = true;
-    }, p(o, [m]) {
+    }, m(o, f) {
+      j(o, t, f), Mt(e, t, null), _n(t, l), _n(t, r), n15 && Mt(n15, r, null), d = true;
+    }, p(o, [f]) {
       const _ = {};
-      if (m & 1 && (_.pages = o[0]), e.$set(_), u !== (u = o[1])) {
+      if (f & 1 && (_.pages = o[0]), e.$set(_), u !== (u = o[1])) {
         if (n15) {
           Kt();
-          const f = n15;
-          B(f.$$.fragment, 1, 0, () => {
-            Rt(f, 1);
+          const m = n15;
+          B(m.$$.fragment, 1, 0, () => {
+            Rt(m, 1);
           }), Qt();
         }
         u ? (n15 = new u(c()), Zt(n15.$$.fragment), M(n15.$$.fragment, 1), Mt(n15, r, null)) : n15 = null;
@@ -6612,7 +6612,7 @@
     let l, r;
     pe(i, Uc, (u) => e(2, r = u));
     let n15;
-    const a = {"private-homes": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_2129d79b()), ["assets/MasonryGallery.2129d79b.js", "assets/vendor.4eaa3fd3.js"]), "multi-family": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_2129d79b()), ["assets/MasonryGallery.2129d79b.js", "assets/vendor.4eaa3fd3.js"]), "mixed-use": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_2129d79b()), ["assets/MasonryGallery.2129d79b.js", "assets/vendor.4eaa3fd3.js"]), hospitality: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_2129d79b()), ["assets/MasonryGallery.2129d79b.js", "assets/vendor.4eaa3fd3.js"]), commercial: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_2129d79b()), ["assets/MasonryGallery.2129d79b.js", "assets/vendor.4eaa3fd3.js"]), concept: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_2129d79b()), ["assets/MasonryGallery.2129d79b.js", "assets/vendor.4eaa3fd3.js"]), sculptures: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_2129d79b()), ["assets/MasonryGallery.2129d79b.js", "assets/vendor.4eaa3fd3.js"]), "meet-amit-apel": async () => D2(() => Promise.resolve().then(() => require_MeetAmitApel_66467271()), ["assets/MeetAmitApel.66467271.js", "assets/vendor.4eaa3fd3.js"]), "meet-the-team": async () => D2(() => Promise.resolve().then(() => require_MeetTheTeam_f58fdb07()), ["assets/MeetTheTeam.f58fdb07.js", "assets/vendor.4eaa3fd3.js"]), press: async () => D2(() => Promise.resolve().then(() => require_Press_51379621()), ["assets/Press.51379621.js", "assets/vendor.4eaa3fd3.js"]), "contact-us": async () => D2(() => Promise.resolve().then(() => require_Contact_a5c44cbd()), ["assets/Contact.a5c44cbd.js", "assets/vendor.4eaa3fd3.js"]), furniture: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_2129d79b()), ["assets/MasonryGallery.2129d79b.js", "assets/vendor.4eaa3fd3.js"]), "malibu-rebuild": async () => D2(() => Promise.resolve().then(() => require_MalibuRebuild_9930c43f()), ["assets/MalibuRebuild.9930c43f.js", "assets/vendor.4eaa3fd3.js"]), "what-we-do": async () => D2(() => Promise.resolve().then(() => require_WhatWeDo_423cf797()), ["assets/WhatWeDo.423cf797.js", "assets/vendor.4eaa3fd3.js"]), aviator: async () => D2(() => Promise.resolve().then(() => require_Developments_cbccbc03()), ["assets/Developments.cbccbc03.js", "assets/vendor.4eaa3fd3.js"]), maliview: async () => D2(() => Promise.resolve().then(() => require_Developments_cbccbc03()), ["assets/Developments.cbccbc03.js", "assets/vendor.4eaa3fd3.js"]), "video-renders": async () => D2(() => Promise.resolve().then(() => require_VideoRenders_a2404dac()), ["assets/VideoRenders.a2404dac.js", "assets/vendor.4eaa3fd3.js"]), map: async () => D2(() => Promise.resolve().then(() => require_Map_fafa4f4f()), ["assets/Map.fafa4f4f.js", "assets/vendor.4eaa3fd3.js"])}, d = async (u) => {
+    const a = {"private-homes": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_01969712()), ["assets/MasonryGallery.01969712.js", "assets/vendor.4eaa3fd3.js"]), "multi-family": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_01969712()), ["assets/MasonryGallery.01969712.js", "assets/vendor.4eaa3fd3.js"]), "mixed-use": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_01969712()), ["assets/MasonryGallery.01969712.js", "assets/vendor.4eaa3fd3.js"]), hospitality: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_01969712()), ["assets/MasonryGallery.01969712.js", "assets/vendor.4eaa3fd3.js"]), commercial: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_01969712()), ["assets/MasonryGallery.01969712.js", "assets/vendor.4eaa3fd3.js"]), concept: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_01969712()), ["assets/MasonryGallery.01969712.js", "assets/vendor.4eaa3fd3.js"]), sculptures: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_01969712()), ["assets/MasonryGallery.01969712.js", "assets/vendor.4eaa3fd3.js"]), "meet-amit-apel": async () => D2(() => Promise.resolve().then(() => require_MeetAmitApel_66467271()), ["assets/MeetAmitApel.66467271.js", "assets/vendor.4eaa3fd3.js"]), "meet-the-team": async () => D2(() => Promise.resolve().then(() => require_MeetTheTeam_fcd4329f()), ["assets/MeetTheTeam.fcd4329f.js", "assets/vendor.4eaa3fd3.js"]), press: async () => D2(() => Promise.resolve().then(() => require_Press_51379621()), ["assets/Press.51379621.js", "assets/vendor.4eaa3fd3.js"]), "contact-us": async () => D2(() => Promise.resolve().then(() => require_Contact_a5c44cbd()), ["assets/Contact.a5c44cbd.js", "assets/vendor.4eaa3fd3.js"]), furniture: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_01969712()), ["assets/MasonryGallery.01969712.js", "assets/vendor.4eaa3fd3.js"]), "malibu-rebuild": async () => D2(() => Promise.resolve().then(() => require_MalibuRebuild_9930c43f()), ["assets/MalibuRebuild.9930c43f.js", "assets/vendor.4eaa3fd3.js"]), "what-we-do": async () => D2(() => Promise.resolve().then(() => require_WhatWeDo_423cf797()), ["assets/WhatWeDo.423cf797.js", "assets/vendor.4eaa3fd3.js"]), aviator: async () => D2(() => Promise.resolve().then(() => require_Developments_9af5233d()), ["assets/Developments.9af5233d.js", "assets/vendor.4eaa3fd3.js"]), maliview: async () => D2(() => Promise.resolve().then(() => require_Developments_9af5233d()), ["assets/Developments.9af5233d.js", "assets/vendor.4eaa3fd3.js"]), "video-renders": async () => D2(() => Promise.resolve().then(() => require_VideoRenders_a2404dac()), ["assets/VideoRenders.a2404dac.js", "assets/vendor.4eaa3fd3.js"]), map: async () => D2(() => Promise.resolve().then(() => require_Map_fafa4f4f()), ["assets/Map.fafa4f4f.js", "assets/vendor.4eaa3fd3.js"])}, d = async (u) => {
       u && (ee2.setPage(u), ee2.setCategory(r.category), await _i(), e(1, n15 = (await a[u]()).default));
     };
     return i.$$.update = () => {
@@ -6679,33 +6679,33 @@
     }};
   }
   function Tt2(i) {
-    let t, e, l = i[0].title + "", r, n15, a, d, u, c, o, m = Array(8).fill(i[0].title), _ = [];
-    for (let f = 0; f < m.length; f += 1)
-      _[f] = Te2(Le2(i, m, f));
+    let t, e, l = i[0].title + "", r, n15, a, d, u, c, o, f = Array(8).fill(i[0].title), _ = [];
+    for (let m = 0; m < f.length; m += 1)
+      _[m] = Te2(Le2(i, f, m));
     return {c() {
       t = mt("div"), e = mt("div"), r = ai(l), n15 = me(), a = mt("div"), d = mt("div"), u = mt("div");
-      for (let f = 0; f < _.length; f += 1)
-        _[f].c();
+      for (let m = 0; m < _.length; m += 1)
+        _[m].c();
       Z(e, "class", "menu__item-link svelte-1wo0evg"), Z(u, "class", "marquee__inner svelte-1wo0evg"), Z(u, "aria-hidden", "true"), Z(d, "class", "marquee__inner-wrap svelte-1wo0evg"), Z(a, "class", "marquee svelte-1wo0evg"), Z(t, "class", "menu__item svelte-1wo0evg");
-    }, m(f, y) {
-      j(f, t, y), _n(t, e), _n(e, r), _n(t, n15), _n(t, a), _n(a, d), _n(d, u);
+    }, m(m, y) {
+      j(m, t, y), _n(t, e), _n(e, r), _n(t, n15), _n(t, a), _n(a, d), _n(d, u);
       for (let h = 0; h < _.length; h += 1)
         _[h].m(u, null);
       i[8](d), i[9](a), i[11](t), c || (o = [Kn(e, "mouseenter", i[6]), Kn(e, "mouseleave", i[7]), Kn(t, "click", i[10])], c = true);
-    }, p(f, [y]) {
-      if (y & 1 && l !== (l = f[0].title + "") && Mc(r, l), y & 1) {
-        m = Array(8).fill(f[0].title);
+    }, p(m, [y]) {
+      if (y & 1 && l !== (l = m[0].title + "") && Mc(r, l), y & 1) {
+        f = Array(8).fill(m[0].title);
         let h;
-        for (h = 0; h < m.length; h += 1) {
-          const g = Le2(f, m, h);
+        for (h = 0; h < f.length; h += 1) {
+          const g = Le2(m, f, h);
           _[h] ? _[h].p(g, y) : (_[h] = Te2(g), _[h].c(), _[h].m(u, null));
         }
         for (; h < _.length; h += 1)
           _[h].d(1);
-        _.length = m.length;
+        _.length = f.length;
       }
-    }, i: Q, o: Q, d(f) {
-      f && U(t), Zo(_, f), i[8](null), i[9](null), i[11](null), c = false, kt(o);
+    }, i: Q, o: Q, d(m) {
+      m && U(t), Zo(_, m), i[8](null), i[9](null), i[11](null), c = false, kt(o);
     }};
   }
   function Et2(i, t, e) {
@@ -6717,7 +6717,7 @@
     });
     const o = (g) => {
       c.mouseEnter(g);
-    }, m = (g) => {
+    }, f = (g) => {
       c.mouseLeave(g);
     };
     function _(g) {
@@ -6725,7 +6725,7 @@
         d = g, e(2, d);
       });
     }
-    function f(g) {
+    function m(g) {
       Jn[g ? "unshift" : "push"](() => {
         u = g, e(3, u);
       });
@@ -6740,7 +6740,7 @@
     }
     return i.$$set = (g) => {
       "menuItem" in g && e(0, r = g.menuItem);
-    }, [r, n15, d, u, c, l, o, m, _, f, y, h];
+    }, [r, n15, d, u, c, l, o, f, _, m, y, h];
   }
   var Dt2 = class extends He {
     constructor(t) {
@@ -6804,8 +6804,8 @@
         n15 = u[0];
         let o;
         for (o = 0; o < n15.length; o += 1) {
-          const m = Ee2(u, n15, o);
-          a[o] ? (a[o].p(m, c), M(a[o], 1)) : (a[o] = De2(m), a[o].c(), M(a[o], 1), a[o].m(e, null));
+          const f = Ee2(u, n15, o);
+          a[o] ? (a[o].p(f, c), M(a[o], 1)) : (a[o] = De2(f), a[o].c(), M(a[o], 1), a[o].m(e, null));
         }
         for (Kt(), o = n15.length; o < a.length; o += 1)
           d(o);
@@ -6891,32 +6891,32 @@
     let t, e, l, r, n15, a, d, u, c = i[2].images, o = [];
     for (let _ = 0; _ < c.length; _ += 1)
       o[_] = Re2(Se2(i, c, _));
-    let m = i[1] && Oe2(i);
+    let f = i[1] && Oe2(i);
     return {c() {
       t = mt("div"), e = mt("div"), l = mt("div"), r = me(), n15 = mt("div");
       for (let _ = 0; _ < o.length; _ += 1)
         o[_].c();
-      a = me(), m && m.c(), Z(l, "class", "close-x close-main"), Z(n15, "class", "gallery-container svelte-1rt0cf1"), Z(e, "class", "inner-container svelte-1rt0cf1"), li(t, "height", i[0] + "px"), Z(t, "class", "container svelte-1rt0cf1");
-    }, m(_, f) {
-      j(_, t, f), _n(t, e), _n(e, l), _n(e, r), _n(e, n15);
+      a = me(), f && f.c(), Z(l, "class", "close-x close-main"), Z(n15, "class", "gallery-container svelte-1rt0cf1"), Z(e, "class", "inner-container svelte-1rt0cf1"), li(t, "height", i[0] + "px"), Z(t, "class", "container svelte-1rt0cf1");
+    }, m(_, m) {
+      j(_, t, m), _n(t, e), _n(e, l), _n(e, r), _n(e, n15);
       for (let y = 0; y < o.length; y += 1)
         o[y].m(n15, null);
-      _n(n15, a), m && m.m(n15, null), d || (u = [Kn(jt2, "resize", i[3]), Kn(l, "click", i[4])], d = true);
-    }, p(_, [f]) {
-      if (f & 4) {
+      _n(n15, a), f && f.m(n15, null), d || (u = [Kn(jt2, "resize", i[3]), Kn(l, "click", i[4])], d = true);
+    }, p(_, [m]) {
+      if (m & 4) {
         c = _[2].images;
         let y;
         for (y = 0; y < c.length; y += 1) {
           const h = Se2(_, c, y);
-          o[y] ? o[y].p(h, f) : (o[y] = Re2(h), o[y].c(), o[y].m(n15, a));
+          o[y] ? o[y].p(h, m) : (o[y] = Re2(h), o[y].c(), o[y].m(n15, a));
         }
         for (; y < o.length; y += 1)
           o[y].d(1);
         o.length = c.length;
       }
-      _[1] ? m ? m.p(_, f) : (m = Oe2(_), m.c(), m.m(n15, null)) : m && (m.d(1), m = null), f & 1 && li(t, "height", _[0] + "px");
+      _[1] ? f ? f.p(_, m) : (f = Oe2(_), f.c(), f.m(n15, null)) : f && (f.d(1), f = null), m & 1 && li(t, "height", _[0] + "px");
     }, i: Q, o: Q, d(_) {
-      _ && U(t), Zo(o, _), m && m.d(), d = false, kt(u);
+      _ && U(t), Zo(o, _), f && f.d(), d = false, kt(u);
     }};
   }
   function Vt2(i, t, e) {
@@ -6989,47 +6989,47 @@
     return l[14] = t[e], l;
   }
   function qe2(i) {
-    let t, e, l, r, n15, a = i[1].selected.label + "", d, u, c, o, m, _, f, y;
+    let t, e, l, r, n15, a = i[1].selected.label + "", d, u, c, o, f, _, m, y;
     const h = [Yt, Wt], g = [];
     function A2(z, j2) {
       return z[0].length < 3 ? 0 : 1;
     }
-    return o = A2(i), m = g[o] = h[o](i), {c() {
-      t = mt("div"), e = mt("div"), l = mt("div"), r = me(), n15 = mt("h3"), d = ai(a), u = me(), c = mt("div"), m.c(), Z(l, "class", "close-x close-main"), Z(n15, "class", "main-header svelte-1lmzloy"), Z(c, "class", "content-container svelte-1lmzloy"), Z(e, "class", "content-wrapper svelte-1lmzloy"), li(t, "height", i[4] + "px"), Z(t, "class", "container svelte-1lmzloy");
+    return o = A2(i), f = g[o] = h[o](i), {c() {
+      t = mt("div"), e = mt("div"), l = mt("div"), r = me(), n15 = mt("h3"), d = ai(a), u = me(), c = mt("div"), f.c(), Z(l, "class", "close-x close-main"), Z(n15, "class", "main-header svelte-1lmzloy"), Z(c, "class", "content-container svelte-1lmzloy"), Z(e, "class", "content-wrapper svelte-1lmzloy"), li(t, "height", i[4] + "px"), Z(t, "class", "container svelte-1lmzloy");
     }, m(z, j2) {
-      j(z, t, j2), _n(t, e), _n(e, l), _n(e, r), _n(e, n15), _n(n15, d), _n(e, u), _n(e, c), g[o].m(c, null), i[11](t), _ = true, f || (y = Kn(l, "click", i[9]), f = true);
+      j(z, t, j2), _n(t, e), _n(e, l), _n(e, r), _n(e, n15), _n(n15, d), _n(e, u), _n(e, c), g[o].m(c, null), i[11](t), _ = true, m || (y = Kn(l, "click", i[9]), m = true);
     }, p(z, j2) {
       (!_ || j2 & 2) && a !== (a = z[1].selected.label + "") && Mc(d, a);
       let W2 = o;
       o = A2(z), o === W2 ? g[o].p(z, j2) : (Kt(), B(g[W2], 1, 1, () => {
         g[W2] = null;
-      }), Qt(), m = g[o], m ? m.p(z, j2) : (m = g[o] = h[o](z), m.c()), M(m, 1), m.m(c, null)), (!_ || j2 & 16) && li(t, "height", z[4] + "px");
+      }), Qt(), f = g[o], f ? f.p(z, j2) : (f = g[o] = h[o](z), f.c()), M(f, 1), f.m(c, null)), (!_ || j2 & 16) && li(t, "height", z[4] + "px");
     }, i(z) {
-      _ || (M(m), _ = true);
+      _ || (M(f), _ = true);
     }, o(z) {
-      B(m), _ = false;
+      B(f), _ = false;
     }, d(z) {
-      z && U(t), g[o].d(), i[11](null), f = false, y();
+      z && U(t), g[o].d(), i[11](null), m = false, y();
     }};
   }
   function Wt(i) {
-    let t, e, l, r, n15, a, d, u, c, o, m, _, f, y, h, g, A2, z, j2, W2, I2 = i[0].length > 0 && Ce2(i), S = i[0].length > 4 && He2(i), O2 = i[5] && Ne2(i);
-    f = new Ht2({});
+    let t, e, l, r, n15, a, d, u, c, o, f, _, m, y, h, g, A2, z, j2, W2, I2 = i[0].length > 0 && Ce2(i), S = i[0].length > 4 && He2(i), O2 = i[5] && Ne2(i);
+    m = new Ht2({});
     let M2 = i[0].length > 0 && Be2(i);
     return A2 = new je2({}), {c() {
-      t = mt("div"), e = mt("img"), d = me(), I2 && I2.c(), u = me(), S && S.c(), c = me(), O2 && O2.c(), o = me(), m = mt("div"), _ = mt("span"), Zt(f.$$.fragment), y = me(), M2 && M2.c(), h = me(), g = mt("span"), Zt(A2.$$.fragment), Z(e, "width", l = i[1].selected.width), Z(e, "height", r = i[1].selected.height), Z(e, "alt", ""), Z(e, "class", "lazy svelte-1lmzloy"), Z(e, "data-src", n15 = i[1].selected.url), Z(t, "class", "main-image-container svelte-1lmzloy"), Z(_, "class", "control left svelte-1lmzloy"), Z(g, "class", "control right svelte-1lmzloy"), Z(m, "class", "carousel-container svelte-1lmzloy");
+      t = mt("div"), e = mt("img"), d = me(), I2 && I2.c(), u = me(), S && S.c(), c = me(), O2 && O2.c(), o = me(), f = mt("div"), _ = mt("span"), Zt(m.$$.fragment), y = me(), M2 && M2.c(), h = me(), g = mt("span"), Zt(A2.$$.fragment), Z(e, "width", l = i[1].selected.width), Z(e, "height", r = i[1].selected.height), Z(e, "alt", ""), Z(e, "class", "lazy svelte-1lmzloy"), Z(e, "data-src", n15 = i[1].selected.url), Z(t, "class", "main-image-container svelte-1lmzloy"), Z(_, "class", "control left svelte-1lmzloy"), Z(g, "class", "control right svelte-1lmzloy"), Z(f, "class", "carousel-container svelte-1lmzloy");
     }, m(b, P) {
-      j(b, t, P), _n(t, e), j(b, d, P), I2 && I2.m(b, P), j(b, u, P), S && S.m(b, P), j(b, c, P), O2 && O2.m(b, P), j(b, o, P), j(b, m, P), _n(m, _), Mt(f, _, null), _n(m, y), M2 && M2.m(m, null), _n(m, h), _n(m, g), Mt(A2, g, null), z = true, j2 || (W2 = [$o(a = X2.call(null, e, i[1].selected.url)), Kn(_, "click", i[6]), Kn(g, "click", i[7])], j2 = true);
+      j(b, t, P), _n(t, e), j(b, d, P), I2 && I2.m(b, P), j(b, u, P), S && S.m(b, P), j(b, c, P), O2 && O2.m(b, P), j(b, o, P), j(b, f, P), _n(f, _), Mt(m, _, null), _n(f, y), M2 && M2.m(f, null), _n(f, h), _n(f, g), Mt(A2, g, null), z = true, j2 || (W2 = [$o(a = X2.call(null, e, i[1].selected.url)), Kn(_, "click", i[6]), Kn(g, "click", i[7])], j2 = true);
     }, p(b, P) {
-      (!z || P & 2 && l !== (l = b[1].selected.width)) && Z(e, "width", l), (!z || P & 2 && r !== (r = b[1].selected.height)) && Z(e, "height", r), (!z || P & 2 && n15 !== (n15 = b[1].selected.url)) && Z(e, "data-src", n15), a && Gt(a.update) && P & 2 && a.update.call(null, b[1].selected.url), b[0].length > 0 ? I2 ? I2.p(b, P) : (I2 = Ce2(b), I2.c(), I2.m(u.parentNode, u)) : I2 && (I2.d(1), I2 = null), b[0].length > 4 ? S ? S.p(b, P) : (S = He2(b), S.c(), S.m(c.parentNode, c)) : S && (S.d(1), S = null), b[5] ? O2 ? O2.p(b, P) : (O2 = Ne2(b), O2.c(), O2.m(o.parentNode, o)) : O2 && (O2.d(1), O2 = null), b[0].length > 0 ? M2 ? (M2.p(b, P), P & 1 && M(M2, 1)) : (M2 = Be2(b), M2.c(), M(M2, 1), M2.m(m, h)) : M2 && (Kt(), B(M2, 1, 1, () => {
+      (!z || P & 2 && l !== (l = b[1].selected.width)) && Z(e, "width", l), (!z || P & 2 && r !== (r = b[1].selected.height)) && Z(e, "height", r), (!z || P & 2 && n15 !== (n15 = b[1].selected.url)) && Z(e, "data-src", n15), a && Gt(a.update) && P & 2 && a.update.call(null, b[1].selected.url), b[0].length > 0 ? I2 ? I2.p(b, P) : (I2 = Ce2(b), I2.c(), I2.m(u.parentNode, u)) : I2 && (I2.d(1), I2 = null), b[0].length > 4 ? S ? S.p(b, P) : (S = He2(b), S.c(), S.m(c.parentNode, c)) : S && (S.d(1), S = null), b[5] ? O2 ? O2.p(b, P) : (O2 = Ne2(b), O2.c(), O2.m(o.parentNode, o)) : O2 && (O2.d(1), O2 = null), b[0].length > 0 ? M2 ? (M2.p(b, P), P & 1 && M(M2, 1)) : (M2 = Be2(b), M2.c(), M(M2, 1), M2.m(f, h)) : M2 && (Kt(), B(M2, 1, 1, () => {
         M2 = null;
       }), Qt());
     }, i(b) {
-      z || (M(f.$$.fragment, b), M(M2), M(A2.$$.fragment, b), z = true);
+      z || (M(m.$$.fragment, b), M(M2), M(A2.$$.fragment, b), z = true);
     }, o(b) {
-      B(f.$$.fragment, b), B(M2), B(A2.$$.fragment, b), z = false;
+      B(m.$$.fragment, b), B(M2), B(A2.$$.fragment, b), z = false;
     }, d(b) {
-      b && U(t), b && U(d), I2 && I2.d(b), b && U(u), S && S.d(b), b && U(c), O2 && O2.d(b), b && U(o), b && U(m), Rt(f), M2 && M2.d(), Rt(A2), j2 = false, kt(W2);
+      b && U(t), b && U(d), I2 && I2.d(b), b && U(u), S && S.d(b), b && U(c), O2 && O2.d(b), b && U(o), b && U(f), Rt(m), M2 && M2.d(), Rt(A2), j2 = false, kt(W2);
     }};
   }
   function Yt(i) {
@@ -7065,25 +7065,25 @@
     }};
   }
   function Ce2(i) {
-    let t, e, l, r, n15, a, d, u, c, o, m, _, f, y, h, g, A2, z, j2, W2, I2, S, O2;
+    let t, e, l, r, n15, a, d, u, c, o, f, _, m, y, h, g, A2, z, j2, W2, I2, S, O2;
     return {c() {
-      t = mt("div"), e = mt("div"), l = mt("img"), u = me(), c = mt("div"), o = mt("img"), h = me(), g = mt("div"), A2 = mt("img"), Z(l, "class", "lazy svelte-1lmzloy"), Z(l, "width", r = i[0][0].width), Z(l, "height", n15 = i[0][0].height), Z(l, "alt", ""), Z(l, "data-src", a = i[0][0].url), Z(e, "class", "image-container svelte-1lmzloy"), Z(o, "width", m = i[0][1].width), Z(o, "height", _ = i[0][1].height), Z(o, "alt", ""), Z(o, "class", "lazy svelte-1lmzloy"), Z(o, "data-src", f = i[0][1].url), Z(c, "class", "image-container svelte-1lmzloy"), Z(A2, "width", z = i[0][2].width), Z(A2, "height", j2 = i[0][2].height), Z(A2, "alt", ""), Z(A2, "class", "lazy svelte-1lmzloy"), Z(A2, "data-src", W2 = i[0][2].url), Z(g, "class", "image-container svelte-1lmzloy"), Z(t, "class", "flex-image-gallery-container col-3 svelte-1lmzloy");
+      t = mt("div"), e = mt("div"), l = mt("img"), u = me(), c = mt("div"), o = mt("img"), h = me(), g = mt("div"), A2 = mt("img"), Z(l, "class", "lazy svelte-1lmzloy"), Z(l, "width", r = i[0][0].width), Z(l, "height", n15 = i[0][0].height), Z(l, "alt", ""), Z(l, "data-src", a = i[0][0].url), Z(e, "class", "image-container svelte-1lmzloy"), Z(o, "width", f = i[0][1].width), Z(o, "height", _ = i[0][1].height), Z(o, "alt", ""), Z(o, "class", "lazy svelte-1lmzloy"), Z(o, "data-src", m = i[0][1].url), Z(c, "class", "image-container svelte-1lmzloy"), Z(A2, "width", z = i[0][2].width), Z(A2, "height", j2 = i[0][2].height), Z(A2, "alt", ""), Z(A2, "class", "lazy svelte-1lmzloy"), Z(A2, "data-src", W2 = i[0][2].url), Z(g, "class", "image-container svelte-1lmzloy"), Z(t, "class", "flex-image-gallery-container col-3 svelte-1lmzloy");
     }, m(M2, b) {
       j(M2, t, b), _n(t, e), _n(e, l), _n(t, u), _n(t, c), _n(c, o), _n(t, h), _n(t, g), _n(g, A2), S || (O2 = [$o(d = X2.call(null, l, i[0][0].url)), $o(y = X2.call(null, o, i[0][1].url)), $o(I2 = X2.call(null, A2, i[0][2].url))], S = true);
     }, p(M2, b) {
-      b & 1 && r !== (r = M2[0][0].width) && Z(l, "width", r), b & 1 && n15 !== (n15 = M2[0][0].height) && Z(l, "height", n15), b & 1 && a !== (a = M2[0][0].url) && Z(l, "data-src", a), d && Gt(d.update) && b & 1 && d.update.call(null, M2[0][0].url), b & 1 && m !== (m = M2[0][1].width) && Z(o, "width", m), b & 1 && _ !== (_ = M2[0][1].height) && Z(o, "height", _), b & 1 && f !== (f = M2[0][1].url) && Z(o, "data-src", f), y && Gt(y.update) && b & 1 && y.update.call(null, M2[0][1].url), b & 1 && z !== (z = M2[0][2].width) && Z(A2, "width", z), b & 1 && j2 !== (j2 = M2[0][2].height) && Z(A2, "height", j2), b & 1 && W2 !== (W2 = M2[0][2].url) && Z(A2, "data-src", W2), I2 && Gt(I2.update) && b & 1 && I2.update.call(null, M2[0][2].url);
+      b & 1 && r !== (r = M2[0][0].width) && Z(l, "width", r), b & 1 && n15 !== (n15 = M2[0][0].height) && Z(l, "height", n15), b & 1 && a !== (a = M2[0][0].url) && Z(l, "data-src", a), d && Gt(d.update) && b & 1 && d.update.call(null, M2[0][0].url), b & 1 && f !== (f = M2[0][1].width) && Z(o, "width", f), b & 1 && _ !== (_ = M2[0][1].height) && Z(o, "height", _), b & 1 && m !== (m = M2[0][1].url) && Z(o, "data-src", m), y && Gt(y.update) && b & 1 && y.update.call(null, M2[0][1].url), b & 1 && z !== (z = M2[0][2].width) && Z(A2, "width", z), b & 1 && j2 !== (j2 = M2[0][2].height) && Z(A2, "height", j2), b & 1 && W2 !== (W2 = M2[0][2].url) && Z(A2, "data-src", W2), I2 && Gt(I2.update) && b & 1 && I2.update.call(null, M2[0][2].url);
     }, d(M2) {
       M2 && U(t), S = false, kt(O2);
     }};
   }
   function He2(i) {
-    let t, e, l, r, n15, a, d, u, c, o, m, _, f, y, h, g;
+    let t, e, l, r, n15, a, d, u, c, o, f, _, m, y, h, g;
     return {c() {
-      t = mt("div"), e = mt("div"), l = mt("img"), u = me(), c = mt("div"), o = mt("img"), Z(l, "class", "lazy svelte-1lmzloy"), Z(l, "width", r = i[0][3].width), Z(l, "height", n15 = i[0][3].height), Z(l, "alt", ""), Z(l, "data-src", a = i[0][3].url), Z(e, "class", "image-container svelte-1lmzloy"), Z(o, "class", "lazy svelte-1lmzloy"), Z(o, "width", m = i[0][4].width), Z(o, "height", _ = i[0][4].height), Z(o, "alt", ""), Z(o, "data-src", f = i[0][4].url), Z(c, "class", "image-container svelte-1lmzloy"), Z(t, "class", "flex-image-gallery-container col-2 svelte-1lmzloy");
+      t = mt("div"), e = mt("div"), l = mt("img"), u = me(), c = mt("div"), o = mt("img"), Z(l, "class", "lazy svelte-1lmzloy"), Z(l, "width", r = i[0][3].width), Z(l, "height", n15 = i[0][3].height), Z(l, "alt", ""), Z(l, "data-src", a = i[0][3].url), Z(e, "class", "image-container svelte-1lmzloy"), Z(o, "class", "lazy svelte-1lmzloy"), Z(o, "width", f = i[0][4].width), Z(o, "height", _ = i[0][4].height), Z(o, "alt", ""), Z(o, "data-src", m = i[0][4].url), Z(c, "class", "image-container svelte-1lmzloy"), Z(t, "class", "flex-image-gallery-container col-2 svelte-1lmzloy");
     }, m(A2, z) {
       j(A2, t, z), _n(t, e), _n(e, l), _n(t, u), _n(t, c), _n(c, o), h || (g = [$o(d = X2.call(null, l, i[0][3].url)), $o(y = X2.call(null, o, i[0][4].url))], h = true);
     }, p(A2, z) {
-      z & 1 && r !== (r = A2[0][3].width) && Z(l, "width", r), z & 1 && n15 !== (n15 = A2[0][3].height) && Z(l, "height", n15), z & 1 && a !== (a = A2[0][3].url) && Z(l, "data-src", a), d && Gt(d.update) && z & 1 && d.update.call(null, A2[0][3].url), z & 1 && m !== (m = A2[0][4].width) && Z(o, "width", m), z & 1 && _ !== (_ = A2[0][4].height) && Z(o, "height", _), z & 1 && f !== (f = A2[0][4].url) && Z(o, "data-src", f), y && Gt(y.update) && z & 1 && y.update.call(null, A2[0][4].url);
+      z & 1 && r !== (r = A2[0][3].width) && Z(l, "width", r), z & 1 && n15 !== (n15 = A2[0][3].height) && Z(l, "height", n15), z & 1 && a !== (a = A2[0][3].url) && Z(l, "data-src", a), d && Gt(d.update) && z & 1 && d.update.call(null, A2[0][3].url), z & 1 && f !== (f = A2[0][4].width) && Z(o, "width", f), z & 1 && _ !== (_ = A2[0][4].height) && Z(o, "height", _), z & 1 && m !== (m = A2[0][4].url) && Z(o, "data-src", m), y && Gt(y.update) && z & 1 && y.update.call(null, A2[0][4].url);
     }, d(A2) {
       A2 && U(t), h = false, kt(g);
     }};
@@ -7121,10 +7121,10 @@
     let t, e, l, r, n15, a, d, u, c;
     return {c() {
       t = mt("div"), e = mt("img"), d = me(), Z(e, "width", l = i[17].width), Z(e, "height", r = i[17].height), Z(e, "data-src", n15 = i[17].url), Z(e, "alt", ""), Z(e, "class", "carousel-image lazy svelte-1lmzloy"), Z(t, "class", "image-container svelte-1lmzloy");
-    }, m(o, m) {
-      j(o, t, m), _n(t, e), _n(t, d), u || (c = $o(a = X2.call(null, e, i[17].url)), u = true);
-    }, p(o, m) {
-      i = o, m & 1 && l !== (l = i[17].width) && Z(e, "width", l), m & 1 && r !== (r = i[17].height) && Z(e, "height", r), m & 1 && n15 !== (n15 = i[17].url) && Z(e, "data-src", n15), a && Gt(a.update) && m & 1 && a.update.call(null, i[17].url);
+    }, m(o, f) {
+      j(o, t, f), _n(t, e), _n(t, d), u || (c = $o(a = X2.call(null, e, i[17].url)), u = true);
+    }, p(o, f) {
+      i = o, f & 1 && l !== (l = i[17].width) && Z(e, "width", l), f & 1 && r !== (r = i[17].height) && Z(e, "height", r), f & 1 && n15 !== (n15 = i[17].url) && Z(e, "data-src", n15), a && Gt(a.update) && f & 1 && a.update.call(null, i[17].url);
     }, d(o) {
       o && U(t), u = false, c();
     }};
@@ -7209,15 +7209,15 @@
       d.right();
     };
     let o;
-    const m = () => {
+    const f = () => {
       const g = document.querySelector(".top-nav-container");
       e(4, o = window.innerHeight - g.getBoundingClientRect().height);
     };
     let _;
     na(() => {
-      m(), e(5, _ = R.pages.byTitle[n15.page].videos && R.pages.byTitle[n15.page].videos[r.selected.key]);
+      f(), e(5, _ = R.pages.byTitle[n15.page].videos && R.pages.byTitle[n15.page].videos[r.selected.key]);
     });
-    const f = () => {
+    const m = () => {
       le2.closeModal();
     };
     function y(g) {
@@ -7232,7 +7232,7 @@
     }
     return i.$$.update = () => {
       i.$$.dirty & 2 && e(0, {images: l} = r, l), i.$$.dirty & 1 && l && l.length > 1 && e(0, l = l.filter((g) => g.tags[1] !== "true"));
-    }, [l, r, a, d, o, _, u, c, m, f, y, h];
+    }, [l, r, a, d, o, _, u, c, f, m, y, h];
   }
   var Jt2 = class extends He {
     constructor(t) {
@@ -7304,10 +7304,10 @@
     }
     return {c() {
       t = mt("div"), e = mt("div"), l = mt("h4"), n15 = ai(r), a = me(), Z(l, "class", "svelte-z0p4gh"), Z(e, "class", "inner-container svelte-z0p4gh"), Z(t, "class", "list-item-container svelte-z0p4gh");
-    }, m(o, m) {
-      j(o, t, m), _n(t, e), _n(e, l), _n(l, n15), _n(t, a), d || (u = Kn(t, "click", c), d = true);
-    }, p(o, m) {
-      i = o, m & 1 && r !== (r = R.pages.byTitle[i[6].key].title + "") && Mc(n15, r);
+    }, m(o, f) {
+      j(o, t, f), _n(t, e), _n(e, l), _n(l, n15), _n(t, a), d || (u = Kn(t, "click", c), d = true);
+    }, p(o, f) {
+      i = o, f & 1 && r !== (r = R.pages.byTitle[i[6].key].title + "") && Mc(n15, r);
     }, d(o) {
       o && U(t), d = false, u();
     }};
@@ -7346,51 +7346,51 @@
     return l[7] = t[e], l[9] = e, l;
   }
   function Ke2(i) {
-    let t, e, l, r, n15, a, d, u, c, o = ze2, m = [];
-    for (let f = 0; f < o.length; f += 1)
-      m[f] = Xe2(Je2(i, o, f));
-    const _ = (f) => B(m[f], 1, 1, () => {
-      m[f] = null;
+    let t, e, l, r, n15, a, d, u, c, o = ze2, f = [];
+    for (let m = 0; m < o.length; m += 1)
+      f[m] = Xe2(Je2(i, o, m));
+    const _ = (m) => B(f[m], 1, 1, () => {
+      f[m] = null;
     });
     return {c() {
       t = mt("div"), e = me(), l = mt("div"), r = mt("ul"), n15 = mt("div"), a = me();
-      for (let f = 0; f < m.length; f += 1)
-        m[f].c();
+      for (let m = 0; m < f.length; m += 1)
+        f[m].c();
       Z(t, "class", "nav-backdrop-container svelte-aas45h"), Z(n15, "class", "close-x close-main svelte-aas45h"), Z(r, "class", "nav-alt-list"), Z(l, "class", "side-menu-container svelte-aas45h");
-    }, m(f, y) {
-      j(f, t, y), j(f, e, y), j(f, l, y), _n(l, r), _n(r, n15), _n(r, a);
-      for (let h = 0; h < m.length; h += 1)
-        m[h].m(r, null);
+    }, m(m, y) {
+      j(m, t, y), j(m, e, y), j(m, l, y), _n(l, r), _n(r, n15), _n(r, a);
+      for (let h = 0; h < f.length; h += 1)
+        f[h].m(r, null);
       d = true, u || (c = [Kn(t, "click", i[3]), Kn(n15, "click", i[4])], u = true);
-    }, p(f, y) {
+    }, p(m, y) {
       if (y & 3) {
         o = ze2;
         let h;
         for (h = 0; h < o.length; h += 1) {
-          const g = Je2(f, o, h);
-          m[h] ? (m[h].p(g, y), M(m[h], 1)) : (m[h] = Xe2(g), m[h].c(), M(m[h], 1), m[h].m(r, null));
+          const g = Je2(m, o, h);
+          f[h] ? (f[h].p(g, y), M(f[h], 1)) : (f[h] = Xe2(g), f[h].c(), M(f[h], 1), f[h].m(r, null));
         }
-        for (Kt(), h = o.length; h < m.length; h += 1)
+        for (Kt(), h = o.length; h < f.length; h += 1)
           _(h);
         Qt();
       }
-    }, i(f) {
+    }, i(m) {
       if (!d) {
         for (let y = 0; y < o.length; y += 1)
-          M(m[y]);
+          M(f[y]);
         d = true;
       }
-    }, o(f) {
-      m = m.filter(Boolean);
-      for (let y = 0; y < m.length; y += 1)
-        B(m[y]);
+    }, o(m) {
+      f = f.filter(Boolean);
+      for (let y = 0; y < f.length; y += 1)
+        B(f[y]);
       d = false;
-    }, d(f) {
-      f && U(t), f && U(e), f && U(l), Zo(m, f), u = false, kt(c);
+    }, d(m) {
+      m && U(t), m && U(e), m && U(l), Zo(f, m), u = false, kt(c);
     }};
   }
   function Xe2(i) {
-    let t, e, l, r = R.categories.byTitle[i[7]].title + "", n15, a, d, u, c, o, m, _, f;
+    let t, e, l, r = R.categories.byTitle[i[7]].title + "", n15, a, d, u, c, o, f, _, m;
     u = new je2({props: {fill: "black"}});
     function y(...h) {
       return i[5](i[7], ...h);
@@ -7398,27 +7398,27 @@
     return o = new ll2({props: {pages: R.categories.byTitle[i[7]].pages, index: i[9], category: i[7], categorySelected: i[1]}}), o.$on("closeNav", i[6]), {c() {
       t = mt("li"), e = mt("div"), l = mt("h4"), n15 = ai(r), a = me(), d = mt("div"), Zt(u.$$.fragment), c = me(), Zt(o.$$.fragment), Z(l, "class", "nav-sub-item svelte-aas45h"), Z(d, "class", "arrow svelte-aas45h"), Z(e, "class", "content-container svelte-aas45h"), Z(t, "class", "nav-list-item svelte-aas45h");
     }, m(h, g) {
-      j(h, t, g), _n(t, e), _n(e, l), _n(l, n15), _n(e, a), _n(e, d), Mt(u, d, null), j(h, c, g), Mt(o, h, g), m = true, _ || (f = Kn(t, "click", y), _ = true);
+      j(h, t, g), _n(t, e), _n(e, l), _n(l, n15), _n(e, a), _n(e, d), Mt(u, d, null), j(h, c, g), Mt(o, h, g), f = true, _ || (m = Kn(t, "click", y), _ = true);
     }, p(h, g) {
       i = h;
       const A2 = {};
       g & 2 && (A2.categorySelected = i[1]), o.$set(A2);
     }, i(h) {
-      m || (M(u.$$.fragment, h), M(o.$$.fragment, h), m = true);
+      f || (M(u.$$.fragment, h), M(o.$$.fragment, h), f = true);
     }, o(h) {
-      B(u.$$.fragment, h), B(o.$$.fragment, h), m = false;
+      B(u.$$.fragment, h), B(o.$$.fragment, h), f = false;
     }, d(h) {
-      h && U(t), Rt(u), h && U(c), Rt(o, h), _ = false, f();
+      h && U(t), Rt(u), h && U(c), Rt(o, h), _ = false, m();
     }};
   }
   function il2(i) {
     let t, e, l, r, n15, a, d, u, c = i[0] && Ke2(i);
     return {c() {
       t = mt("div"), e = Dc("svg"), l = Dc("path"), r = Dc("path"), n15 = me(), c && c.c(), Z(l, "d", "M0 0h24v24H0z"), Z(l, "fill", "none"), Z(r, "d", "M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"), Z(e, "xmlns", "http://www.w3.org/2000/svg"), Z(e, "height", "24px"), Z(e, "class", "menu-icon svelte-aas45h"), Z(e, "viewBox", "0 0 24 24"), Z(e, "width", "24px"), Z(e, "fill", "white"), Z(t, "class", "container");
-    }, m(o, m) {
-      j(o, t, m), _n(t, e), _n(e, l), _n(e, r), _n(t, n15), c && c.m(t, null), a = true, d || (u = Kn(e, "click", i[2]), d = true);
-    }, p(o, [m]) {
-      o[0] ? c ? (c.p(o, m), m & 1 && M(c, 1)) : (c = Ke2(o), c.c(), M(c, 1), c.m(t, null)) : c && (Kt(), B(c, 1, 1, () => {
+    }, m(o, f) {
+      j(o, t, f), _n(t, e), _n(e, l), _n(e, r), _n(t, n15), c && c.m(t, null), a = true, d || (u = Kn(e, "click", i[2]), d = true);
+    }, p(o, [f]) {
+      o[0] ? c ? (c.p(o, f), f & 1 && M(c, 1)) : (c = Ke2(o), c.c(), M(c, 1), c.m(t, null)) : c && (Kt(), B(c, 1, 1, () => {
         c = null;
       }), Qt());
     }, i(o) {
@@ -7437,7 +7437,7 @@
       e(0, l = false);
     }, () => {
       e(0, l = false);
-    }, (o, m) => {
+    }, (o, f) => {
       o === r ? e(1, r = null) : e(1, r = o);
     }, () => {
       e(1, r = null), e(0, l = false);
@@ -7450,17 +7450,17 @@
     }
   };
   function nl2(i) {
-    let t, e, l, r, n15, a, d, u, c, o, m, _;
+    let t, e, l, r, n15, a, d, u, c, o, f, _;
     return a = new xt2({}), c = new rl2({}), {c() {
       t = mt("div"), e = mt("div"), l = mt("div"), l.innerHTML = '<img src="https://res.cloudinary.com/dt4xntymn/image/upload/v1641600476/mainSite/home/LOGO_hzvhrk.png" alt="" class="svelte-17dvp4y"/>', r = me(), n15 = mt("div"), Zt(a.$$.fragment), d = me(), u = mt("div"), Zt(c.$$.fragment), Z(l, "class", "logo-container svelte-17dvp4y"), Z(n15, "class", "icon-container svelte-17dvp4y"), Z(e, "class", "nav-top svelte-17dvp4y"), Z(u, "class", "menu-icon-container svelte-17dvp4y"), Z(t, "class", "top-nav-container svelte-17dvp4y");
-    }, m(f, y) {
-      j(f, t, y), _n(t, e), _n(e, l), _n(e, r), _n(e, n15), Mt(a, n15, null), _n(t, d), _n(t, u), Mt(c, u, null), o = true, m || (_ = Kn(l, "click", i[1]), m = true);
-    }, p: Q, i(f) {
-      o || (M(a.$$.fragment, f), M(c.$$.fragment, f), o = true);
-    }, o(f) {
-      B(a.$$.fragment, f), B(c.$$.fragment, f), o = false;
-    }, d(f) {
-      f && U(t), Rt(a), Rt(c), m = false, _();
+    }, m(m, y) {
+      j(m, t, y), _n(t, e), _n(e, l), _n(e, r), _n(e, n15), Mt(a, n15, null), _n(t, d), _n(t, u), Mt(c, u, null), o = true, f || (_ = Kn(l, "click", i[1]), f = true);
+    }, p: Q, i(m) {
+      o || (M(a.$$.fragment, m), M(c.$$.fragment, m), o = true);
+    }, o(m) {
+      B(a.$$.fragment, m), B(c.$$.fragment, m), o = false;
+    }, d(m) {
+      m && U(t), Rt(a), Rt(c), f = false, _();
     }};
   }
   function sl2(i, t, e) {
@@ -7486,9 +7486,9 @@
     }, m(c, o) {
       j(c, t, o), d[e].m(t, null), i[7](t), n15 = true;
     }, p(c, o) {
-      let m = e;
-      e = u(c), e !== m && (Kt(), B(d[m], 1, 1, () => {
-        d[m] = null;
+      let f = e;
+      e = u(c), e !== f && (Kt(), B(d[f], 1, 1, () => {
+        d[f] = null;
       }), Qt(), l = d[e], l || (l = d[e] = a[e](c), l.c()), M(l, 1), l.m(t, null));
     }, i(c) {
       n15 || (M(l), ye(() => {
@@ -7532,49 +7532,49 @@
     let t, e, l, r, n15, a, d, u;
     e = new ol2({});
     let c = i[2].visible && xe2(i);
-    const o = i[6].default, m = cn(o, i, i[5], null);
+    const o = i[6].default, f = cn(o, i, i[5], null);
     return {c() {
-      t = mt("div"), Zt(e.$$.fragment), l = me(), c && c.c(), r = me(), n15 = mt("div"), m && m.c(), Z(n15, "class", "main-anim-wrapper svelte-vx2a9k"), Rc(n15, "inactive", i[2].visible), Z(t, "class", "wrapper svelte-vx2a9k");
-    }, m(_, f) {
-      j(_, t, f), Mt(e, t, null), _n(t, l), c && c.m(t, null), _n(t, r), _n(t, n15), m && m.m(n15, null), u = true;
-    }, p(_, [f]) {
-      i = _, i[2].visible ? c ? (c.p(i, f), f & 4 && M(c, 1)) : (c = xe2(i), c.c(), M(c, 1), c.m(t, r)) : c && (Kt(), B(c, 1, 1, () => {
+      t = mt("div"), Zt(e.$$.fragment), l = me(), c && c.c(), r = me(), n15 = mt("div"), f && f.c(), Z(n15, "class", "main-anim-wrapper svelte-vx2a9k"), Rc(n15, "inactive", i[2].visible), Z(t, "class", "wrapper svelte-vx2a9k");
+    }, m(_, m) {
+      j(_, t, m), Mt(e, t, null), _n(t, l), c && c.m(t, null), _n(t, r), _n(t, n15), f && f.m(n15, null), u = true;
+    }, p(_, [m]) {
+      i = _, i[2].visible ? c ? (c.p(i, m), m & 4 && M(c, 1)) : (c = xe2(i), c.c(), M(c, 1), c.m(t, r)) : c && (Kt(), B(c, 1, 1, () => {
         c = null;
-      }), Qt()), m && m.p && (!u || f & 32) && hn(m, o, i, i[5], u ? fn(o, i[5], f, null) : dn(i[5]), null), f & 4 && Rc(n15, "inactive", i[2].visible);
+      }), Qt()), f && f.p && (!u || m & 32) && hn(f, o, i, i[5], u ? fn(o, i[5], m, null) : dn(i[5]), null), m & 4 && Rc(n15, "inactive", i[2].visible);
     }, i(_) {
-      u || (M(e.$$.fragment, _), M(c), M(m, _), _ && ye(() => {
+      u || (M(e.$$.fragment, _), M(c), M(f, _), _ && ye(() => {
         d && d.end(1), a = Lc(t, i[3], {key: i[1].category}), a.start();
       }), u = true);
     }, o(_) {
-      B(e.$$.fragment, _), B(c), B(m, _), a && a.invalidate(), _ && (d = Ic(t, i[4], {key: i[1].category})), u = false;
+      B(e.$$.fragment, _), B(c), B(f, _), a && a.invalidate(), _ && (d = Ic(t, i[4], {key: i[1].category})), u = false;
     }, d(_) {
-      _ && U(t), Rt(e), c && c.d(), m && m.d(_), _ && d && d.end();
+      _ && U(t), Rt(e), c && c.d(), f && f.d(_), _ && d && d.end();
     }};
   }
-  function ml2(i, t, e) {
+  function fl2(i, t, e) {
     let l, r, n15, a;
-    pe(i, Uc, (f) => e(8, l = f)), pe(i, Ot2, (f) => e(9, r = f)), pe(i, ee2, (f) => e(1, n15 = f)), pe(i, le2, (f) => e(2, a = f));
+    pe(i, Uc, (m) => e(8, l = m)), pe(i, Ot2, (m) => e(9, r = m)), pe(i, ee2, (m) => e(1, n15 = m)), pe(i, le2, (m) => e(2, a = m));
     let {$$slots: d = {}, $$scope: u} = t, c;
-    const {receive: o, send: m} = r;
+    const {receive: o, send: f} = r;
     na(() => {
       ee2.setCategory(l.category);
     });
-    function _(f) {
-      Jn[f ? "unshift" : "push"](() => {
-        c = f, e(0, c);
+    function _(m) {
+      Jn[m ? "unshift" : "push"](() => {
+        c = m, e(0, c);
       });
     }
-    return i.$$set = (f) => {
-      "$$scope" in f && e(5, u = f.$$scope);
-    }, [c, n15, a, o, m, u, d, _];
+    return i.$$set = (m) => {
+      "$$scope" in m && e(5, u = m.$$scope);
+    }, [c, n15, a, o, f, u, d, _];
   }
-  var fl2 = class extends He {
+  var ml2 = class extends He {
     constructor(t) {
       super();
-      Be(this, t, ml2, dl2, de, {});
+      Be(this, t, fl2, dl2, de, {});
     }
   };
-  var _l2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => D2(() => Promise.resolve().then(() => require_fallback_c41a116c()), ["assets/_fallback.c41a116c.js", "assets/vendor.4eaa3fd3.js"]).then((i) => i.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages/index", id: "__category__pages_index", component: () => vt2}], isLayout: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => zt2}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: true, prerender: true}, path: "/:category/index", id: "__category_index", component: () => Rt2}], isLayout: true, ownMeta: {preload: true, "param-is-page": true}, meta: {preload: true, "param-is-page": true, recursive: true, prerender: true}, path: "/:category", id: "__category__layout", component: () => fl2}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => D2(() => Promise.resolve().then(() => require_index_247a3319()), ["assets/index.247a3319.js", "assets/vendor.4eaa3fd3.js"]).then((i) => i.default)}], isLayout: true, path: "/", id: "__layout", component: () => D2(() => Promise.resolve().then(() => require_layout_d5343d12()), ["assets/_layout.d5343d12.js", "assets/vendor.4eaa3fd3.js"]).then((i) => i.default)};
+  var _l2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => D2(() => Promise.resolve().then(() => require_fallback_c41a116c()), ["assets/_fallback.c41a116c.js", "assets/vendor.4eaa3fd3.js"]).then((i) => i.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages/index", id: "__category__pages_index", component: () => vt2}], isLayout: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => zt2}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: true, prerender: true}, path: "/:category/index", id: "__category_index", component: () => Rt2}], isLayout: true, ownMeta: {preload: true, "param-is-page": true}, meta: {preload: true, "param-is-page": true, recursive: true, prerender: true}, path: "/:category", id: "__category__layout", component: () => ml2}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => D2(() => Promise.resolve().then(() => require_index_247a3319()), ["assets/index.247a3319.js", "assets/vendor.4eaa3fd3.js"]).then((i) => i.default)}], isLayout: true, path: "/", id: "__layout", component: () => D2(() => Promise.resolve().then(() => require_layout_8bdeeeba()), ["assets/_layout.8bdeeeba.js", "assets/vendor.4eaa3fd3.js"]).then((i) => i.default)};
   var {tree: $l2, routes: pl2} = qc(_l2);
   function hl2(i) {
     let t, e;

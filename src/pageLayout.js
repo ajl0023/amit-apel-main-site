@@ -165,6 +165,10 @@ export const pageLayoutMaster = {
         urlFormatted: "private-homes",
         categories: [
           {
+            name: "All",
+            urlFormatted: "/",
+          },
+          {
             name: "Contemporary",
             urlFormatted: "contemporary-houses",
           },
@@ -176,10 +180,6 @@ export const pageLayoutMaster = {
           {
             name: "Traditional",
             urlFormatted: "traditional-homes",
-          },
-          {
-            name: "All",
-            urlFormatted: "/",
           },
         ],
       },
