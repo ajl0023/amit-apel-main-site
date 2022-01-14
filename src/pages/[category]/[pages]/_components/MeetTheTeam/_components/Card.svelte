@@ -146,55 +146,81 @@
 </script>
 
 <svelte:window
-  on:resize={() => {
+  on:resize="{() => {
     if (exited) {
       gsap.set(ele, {
         x: -getCenterPos(),
       });
     }
-  }}
+  }}"
 />
 <!-- svelte-ignore a11y-mouse-events-have-key-events -->
 <div
-  on:mouseover={() => {
-    if (!exited && !shouldReturn) {
+  on:mouseover="{() => {
+    if (
+      !exited &&
+      !shouldReturn &&
+      !window.matchMedia('(pointer: coarse)').matches
+    ) {
       gsap.to(ele, {
         scale: 1.1,
       });
     }
-  }}
-  on:mouseout={() => {
-    gsap.to(ele, {
-      scale: 1,
-    });
-  }}
-  bind:this={ele}
+  }}"
+  on:mouseout="{() => {
+    if (!window.matchMedia('(pointer: coarse)').matches) {
+      gsap.to(ele, {
+        scale: 1,
+      });
+    }
+  }}"
+  bind:this="{ele}"
   draggable="false"
   class="card-container meet-the-team-card"
 >
   <div draggable="false" class="image-container front-container">
     <img
       draggable="false"
-      on:dragstart={(e) => {
+      on:dragstart="{(e) => {
         e.preventDefault();
-      }}
-      src={image["front"]}
+      }}"
+      src="{image['front']}"
       alt=""
     />
   </div>
   <div draggable="false" class="image-container back-container">
+    {#if image.description.email}
+      <div class="description-container">
+        <a href="mailto:{image.description.email}" class="email">
+          {image.description.email}
+        </a>
+      </div>
+    {/if}
     <img
-      on:dragstart={(e) => {
+      on:dragstart="{(e) => {
         e.preventDefault();
-      }}
+      }}"
       draggable="false"
-      src={image["back"]}
+      src="{image['back']}"
       alt=""
     />
   </div>
 </div>
 
 <style lang="scss">
+  .description-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "Montserrat", sans-serif;
+
+    transform: translate(-50%, -50%);
+    a {
+      font-size: 15px;
+      color: #68208e;
+      font-weight: 400;
+    }
+  }
   .card-container {
     display: flex;
     pointer-events: all;
@@ -219,7 +245,7 @@
   }
   .image-container {
     overflow: hidden;
-
+    position: relative;
     border-radius: 10px;
     backface-visibility: hidden;
     box-shadow: 0 12.5px 100px -10px rgb(50 50 73 / 20%),

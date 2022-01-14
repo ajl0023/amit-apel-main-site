@@ -104,6 +104,10 @@ export const pageLayoutMaster = {
             key: "commercial",
             labels: [Array(8).fill("commercial")],
           },
+          {
+            key: "video-renders",
+            labels: [Array(8).fill("video renders")],
+          },
         ],
       },
     },
@@ -134,7 +138,11 @@ export const pageLayoutMaster = {
           title: "Aviator",
         },
       },
-
+      "video-renders": {
+        title: "video renders",
+        urlFormatted: "video-renders",
+        component: "Masonry/Masonry",
+      },
       "meet-the-team": {
         title: "meet the team",
         urlFormatted: "meet-the-team",
@@ -151,6 +159,7 @@ export const pageLayoutMaster = {
         urlFormatted: "sculptures",
         component: "Masonry/Masonry",
       },
+
       "private-homes": {
         title: "private homes",
         urlFormatted: "private-homes",
@@ -168,6 +177,10 @@ export const pageLayoutMaster = {
             name: "Traditional",
             urlFormatted: "traditional-homes",
           },
+          {
+            name: "All",
+            urlFormatted: "/",
+          },
         ],
       },
       hospitality: {
@@ -177,6 +190,14 @@ export const pageLayoutMaster = {
       "mixed-use": {
         title: "mixed use",
         urlFormatted: "mixed-use",
+        videos: {
+          "50581f59-1d7f-4238-a3dd-834464a40049": {
+            video: "https://youtu.be/embed/wxRpmJaPfrQ",
+          },
+          "68db54c2-18ae-4a3d-8994-6cef7672e615": {
+            video: "https://youtu.be/embed/6htaSST25hc",
+          },
+        },
       },
       "meet-amit-apel": {
         title: "meet amit apel",
@@ -195,6 +216,29 @@ export const pageLayoutMaster = {
       "multi-family": {
         title: "multi family",
         urlFormatted: "multi-family",
+        videos: {
+          "10e44ccf-241f-47b8-8c56-72e76c3cdd3f": {
+            video: "https://www.youtube.com/embed/4U8GFaPPN8A",
+          },
+          "4710d858-d363-4852-b69a-f7616026b19c": {
+            video: "https://www.youtube.com/embed/uMxkF8007rg",
+          },
+          "755e01e5-d01a-488b-9c53-e92f21309121": {
+            video: "https://www.youtube.com/embed/NNpfFAAdq5c",
+          },
+          "6082d254-5e18-4cde-a07a-0dd9e245b4c4": {
+            video: "https://www.youtube.com/embed/sn8uMO5kvHQ",
+          },
+          "b38327e6-2eee-42b7-a14f-81959dfa6e70": {
+            video: "https://www.youtube.com/embed/fZ12k_0CuK0",
+          },
+          "5d9199aa-aa3a-493c-b1c6-31591f8cc194": {
+            video: "https://www.youtube.com/embed/Gibdo4VVRbg",
+          },
+          "1a267c8b-3a0c-4426-8fb9-3eb662201129": {
+            video: "https://www.youtube.com/embed/a-OIhZv8ZII",
+          },
+        },
       },
       "malibu-rebuild": {
         title: "malibu rebuild",
@@ -232,3 +276,27 @@ export const pageLayoutMasterArr = [
   "design",
   "developments",
 ];
+
+export const videos = (function allVideos() {
+  const arr = [];
+  for (const key in pageLayoutMaster.pages.byTitle) {
+    console.log(key);
+    if (Object.hasOwnProperty.call(pageLayoutMaster.pages.byTitle, key)) {
+      if (pageLayoutMaster.pages.byTitle[key].videos) {
+        for (const property in pageLayoutMaster.pages.byTitle[key].videos) {
+          if (
+            Object.hasOwnProperty.call(
+              pageLayoutMaster.pages.byTitle[key].videos,
+              property
+            )
+          ) {
+            const video = pageLayoutMaster.pages.byTitle[key].videos[property];
+            video.key = property;
+            arr.push(video);
+          }
+        }
+      }
+    }
+  }
+  return arr;
+})();

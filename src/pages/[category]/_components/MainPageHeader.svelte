@@ -54,7 +54,7 @@
     color: #68208e;
     text-transform: uppercase;
     @media screen and (max-width: 820px) {
-      font-size: 10vw;
+      font-size: 8vw;
     }
   }
   .sm {

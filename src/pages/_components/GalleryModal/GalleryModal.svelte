@@ -3,6 +3,8 @@
   import { params } from "@roxi/routify";
   import { onMount, tick } from "svelte";
   import { lazy } from "../../../helpers/lazy";
+  import { pageLayoutMaster } from "../../../pageLayout";
+  import { marqueeHandlerStore } from "../../[category]/_stores/marqueeHandlerStore";
   import BasicModal from "../BasicModal/BasicModal.svelte";
   import LeftArrow from "./assets/chevron_left_black_24dp.svelte";
   import RightArrow from "./assets/chevron_right_black_24dp.svelte";
@@ -22,9 +24,11 @@
   $: {
     if (images) {
       loading = false;
-      images = images.filter((image) => {
-        return image.tags[1] !== "true";
-      });
+      if (images.length > 1) {
+        images = images.filter((image) => {
+          return image.tags[1] !== "true";
+        });
+      }
     }
   }
   let height;
@@ -32,8 +36,15 @@
     const navbar = document.querySelector(".top-nav-container");
     height = window.innerHeight - navbar.getBoundingClientRect().height;
   };
+  let video;
   onMount(() => {
     setContainerHeight();
+
+    video =
+      pageLayoutMaster["pages"]["byTitle"][$marqueeHandlerStore.page].videos &&
+      pageLayoutMaster["pages"]["byTitle"][$marqueeHandlerStore.page].videos[
+        $galleryModal.selected.key
+      ];
   });
 </script>
 
@@ -65,6 +76,19 @@
                 />
               </div>
             {/each}
+            {#if video}
+              <div class="video-container">
+                <iframe
+                  class="main-video"
+                  title="render"
+                  id="ytplayer"
+                  type="text/html"
+                  width="100%"
+                  height="100%"
+                  src="{video.video}"
+                  frameborder="0"></iframe>
+              </div>
+            {/if}
           </div>
         {:else}
           <div class="main-image-container">
@@ -136,10 +160,25 @@
               </div>
             </div>
           {/if}
+          {#if video}
+            <div class="video-container">
+              <iframe
+                class="main-video"
+                title="render"
+                id="ytplayer"
+                type="text/html"
+                width="100%"
+                height="100%"
+                src="{video.video}"
+                frameborder="0"></iframe>
+            </div>
+          {/if}
+
           <div class="carousel-container">
             <span on:click="{handleCarouselLeft}" class="control left">
               <LeftArrow />
             </span>
+
             {#if images.length > 0}
               <div class="carousel-main-container">
                 <Carousel bind:this="{carousel}" perPage="{1}">
@@ -169,6 +208,25 @@
 {/if}
 
 <style lang="scss">
+  .video-container {
+    width: 100%;
+    position: relative;
+    margin-top: 1rem;
+    .main-video {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+
+      padding-top: (9 / 16) * 100%;
+    }
+  }
   .gallery-container {
     margin: auto;
     max-width: 800px;
@@ -315,6 +373,7 @@
     text-align: center;
     margin-bottom: 1rem;
     font-size: 2em;
+    text-transform: uppercase;
   }
 
   .control.right {

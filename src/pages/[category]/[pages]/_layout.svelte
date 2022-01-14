@@ -63,6 +63,9 @@
     maliview: async () => {
       return import("./_components/Developments/Developments.svelte");
     },
+    "video-renders": async () => {
+      return import("./_components/VideoRenders/VideoRenders.svelte");
+    },
     map: async () => {
       return import("./_components/Map/Map.svelte");
     },

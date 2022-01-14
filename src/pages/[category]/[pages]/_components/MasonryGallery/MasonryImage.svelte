@@ -21,7 +21,7 @@
     >
       <div
         on:click="{() => {
-          const masonryGalleryPages = ['private-homes', 'multi-units'];
+          const masonryGalleryPages = ['private-homes', 'multi-family'];
 
           if (masonryGalleryPages.includes($params.pages)) {
             galleryModal.openModal(img, 'spec');
@@ -45,6 +45,7 @@
           )
             .then((res) => res.json())
             .then(async (data) => {
+        
               $galleryModal.images = data;
               await tick();
             });

@@ -55,10 +55,7 @@
               dropPosition="{dropPosition}"
               shouldReturn="{false}"
               index="{i}"
-              image="{{
-                front: card.front,
-                back: card.back,
-              }}"
+              image="{card}"
               rotate="{rotatedCards.includes(i) ? i * 2 : 0}"
             />
           {/each}

@@ -1,9 +1,8 @@
 <script>
-  import { goto, params, ready, url } from "@roxi/routify";
+  import { goto, params, ready } from "@roxi/routify";
   import Colcade from "colcade";
-  import { onDestroy, onMount, tick } from "svelte";
+  import { tick } from "svelte";
   import { pageLayoutMaster } from "../../../../../pageLayout";
-  import { galleryModal } from "../../../../_components/GalleryModal/store";
   import { marqueeHandlerStore } from "../../../_stores/marqueeHandlerStore";
   import MasonryImage from "./MasonryImage.svelte";
   export let modal;
@@ -24,11 +23,10 @@
   let masonry;
   let colcade;
   async function fetchImages() {
- 
     const urlParams = new URLSearchParams(window.location.search);
     const subCategory = urlParams.get("sub_category");
 
-    if (category === "architecture") {
+    if (category === "architecture" || category === "design") {
       selected = subCategory;
       images = [];
       fetch(
@@ -69,9 +67,14 @@
               class:selected="{selected === category.urlFormatted}"
               class="category-link"
               on:click="{() => {
-                $goto('./', {
-                  ['sub_category']: category.urlFormatted,
-                });
+           
+                if (category.urlFormatted === '/') {
+                  $goto('./');
+                } else {
+                  $goto('./', {
+                    ['sub_category']: category.urlFormatted,
+                  });
+                }
               }}"
             >
               {category.name}
@@ -102,6 +105,7 @@
 </div>
 
 <style lang="scss">
+
   .wrapper {
     height: 100%;
     width: 100%;

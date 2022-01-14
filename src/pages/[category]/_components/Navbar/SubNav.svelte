@@ -10,6 +10,7 @@
   export let categorySelected;
   export let category;
   const dispatch = createEventDispatcher();
+
 </script>
 
 {#if categorySelected === category}

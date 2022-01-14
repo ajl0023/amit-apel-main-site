@@ -1,15 +1,23 @@
 <script>
   import { onMount } from "svelte";
   import { lazy } from "../../../helpers/lazy";
+  import { pageLayoutMaster } from "../../../pageLayout";
+  import { marqueeHandlerStore } from "../../[category]/_stores/marqueeHandlerStore";
 
   import { galleryModal } from "../GalleryModal/store";
   let container;
   let height;
+  let video;
   const setContainerHeight = () => {
     const navbar = document.querySelector(".top-nav-container");
     height = window.innerHeight - navbar.getBoundingClientRect().height;
   };
   onMount(() => {
+    video =
+      pageLayoutMaster["pages"]["byTitle"][$marqueeHandlerStore.page].videos &&
+      pageLayoutMaster["pages"]["byTitle"][$marqueeHandlerStore.page].videos[
+        $galleryModal.selected.key
+      ];
     setContainerHeight();
   });
 </script>
@@ -36,6 +44,19 @@
           />
         </div>
       {/each}
+      {#if video}
+        <div class="video-container">
+          <iframe
+            class="main-video"
+            title="render"
+            id="ytplayer"
+            type="text/html"
+            width="100%"
+            height="100%"
+            src="{video.video}"
+            frameborder="0"></iframe>
+        </div>
+      {/if}
     </div>
   </div>
 </div>

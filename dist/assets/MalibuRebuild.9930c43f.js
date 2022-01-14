@@ -1,4 +1,4 @@
-import{S as n,i,s as r,e as c,a as h,c as d,n as o,g as m,h as p,a6 as u,E as v}from"./vendor.530942b5.js";function b(s){let e;return{c(){e=c("div"),e.innerHTML=`<h3 class="svelte-1oa95lk">Dear Friends and Neighbors,</h3> 
+import{S as n,i,s as r,e as c,a as h,c as d,n as o,g as m,h as p,a6 as u,E as v}from"./vendor.4eaa3fd3.js";function g(s){let e;return{c(){e=c("div"),e.innerHTML=`<h3 class="svelte-1oa95lk">Dear Friends and Neighbors,</h3> 
   <div class="text-container svelte-1oa95lk"><p class="svelte-1oa95lk">If you&#39;re like me and my neighbors that have had your homes damaged or
       completely burnt from the wildfires, I want to extend my hand to you and
       support you as much as I can. While rebuilding my own personal loss, I&#39;ve
@@ -14,4 +14,4 @@ import{S as n,i,s as r,e as c,a as h,c as d,n as o,g as m,h as p,a6 as u,E as v}
       <p class="svelte-1oa95lk">- Email: apeldesign@apeldesign.com</p> 
       <p class="svelte-1oa95lk">- Phone: 310.317.0500</p> 
       <p class="svelte-1oa95lk">Together we will heal and bring these cities back to life to create new
-        memories.</p></div></div>`,h(e,"class","container svelte-1oa95lk")},m(t,a){d(t,e,a)},p:o,i:o,o,d(t){t&&m(e)}}}function g(s,e,t){let a;return p(s,u,l=>t(0,a=l)),v(()=>{a()}),[]}class f extends n{constructor(e){super();i(this,e,g,b,r,{})}}export{f as default};
+        memories.</p></div></div>`,h(e,"class","container svelte-1oa95lk")},m(t,a){d(t,e,a)},p:o,i:o,o,d(t){t&&m(e)}}}function b(s,e,t){let a;return p(s,u,l=>t(0,a=l)),v(()=>{a()}),[]}class f extends n{constructor(e){super();i(this,e,b,g,r,{})}}export{f as default};
