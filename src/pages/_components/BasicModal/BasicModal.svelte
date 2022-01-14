@@ -35,9 +35,7 @@
       )
         .then((res) => res.json())
         .then(async (data) => {
-          console.log(data);
           video = data.video;
-          console.log(video);
         });
     }
   });
