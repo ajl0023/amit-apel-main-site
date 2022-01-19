@@ -103,6 +103,7 @@ const introAnimation = () => {
     endAnim() {
       update((s) => {
         s.isPlaying = false;
+
         s.timeline.progress(1, true);
         s.shouldPointerEvents = true;
         s.shouldPulse = true;
@@ -121,7 +122,6 @@ const introAnimation = () => {
         }
         if (shouldAnimate) {
           s.timeline.play();
-          s.isPlaying = true;
         } else {
           this.endAnim();
         }

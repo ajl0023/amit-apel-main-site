@@ -9,14 +9,17 @@
   const barInfo = pageLayoutMaster["categories"]["byTitle"][$$props.title];
   onMount(() => {
     $introAnimationStore.videos = [...$introAnimationStore.videos, video];
+    
   });
+
 </script>
 
 {#if $introAnimationStore.shouldReturn === false && $page.meta.shouldAnimate}
   <div
     in:receive="{{ key: `bar-${barInfo.index}` }}"
     out:send="{{ key: `bar-${barInfo.index}` }}"
-    class:inactive="{$introAnimationStore.userEnded}"
+    class:inactive="{$introAnimationStore.userEnded ||
+      !$introAnimationStore.isPlaying}"
     class="aspect-ratio-container  container-{barInfo.index} bar-mask"
   >
     <div class="aspect-ratio"></div>

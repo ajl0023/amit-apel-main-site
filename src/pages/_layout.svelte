@@ -8,12 +8,16 @@
     introAnimationStore.init();
 
     let shouldAnimate = window.innerWidth >= 650 && $page.meta.shouldAnimate;
+    if (!shouldAnimate) {
+      introAnimationStore.endAnim();
+      return;
+    }
     introAnimationStore.triggerAnim(shouldAnimate);
   });
 </script>
 
 <svelte:window
-  on:resize="{() => {
+  on:resize="{async () => {
     if (window.innerWidth <= 650) {
       introAnimationStore.endAnim();
     }
@@ -121,6 +125,8 @@
   }
   .main-text-container {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Playball", cursive;
     margin-bottom: 3.1rem;
     .main-text {
@@ -138,10 +144,11 @@
       font-size: 0.5em;
     }
     @media screen and (max-width: 1150px) {
-      font-size: 0.3em;
+      font-size: 0.5em;
+      margin-bottom: 1rem;
     }
     @media screen and (max-width: 900px) {
-      font-size: 0.3em;
+      font-size: 0.4em;
       align-items: center;
       justify-content: center;
       flex-direction: column;
@@ -158,7 +165,7 @@
       }
     }
     @media screen and (max-width: 550px) {
-      font-size: 0.2em;
+      font-size: 0.3em;
     }
   }
   .video-bg,
