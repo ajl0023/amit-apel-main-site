@@ -91,6 +91,9 @@
     color: white;
     opacity: 80%;
     font-size: 2em;
+    @media screen and (max-width: 650px) {
+      display: none;
+    }
   }
   .inactive {
     display: none;
