@@ -191,9 +191,16 @@
   <div draggable="false" class="image-container back-container">
     {#if image.description.email}
       <div class="description-container">
-        <a href="mailto:{image.description.email}" class="email">
-          {image.description.email}
-        </a>
+        <div class="bio-container">
+          {#if image.description.bio}
+            <p class="bio pg">
+              {image.description.bio}
+            </p>
+          {/if}
+          <a href="mailto:{image.description.email}" class="email">
+            {image.description.email}
+          </a>
+        </div>
       </div>
     {/if}
     <img
@@ -210,15 +217,30 @@
 <style lang="scss">
   .description-container {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Montserrat", sans-serif;
 
-    transform: translate(-50%, -50%);
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    padding: 0 30px;
+    top: 20%;
+
+    transform-box: fill-box;
+    .bio-container {
+      display: flex;
+      flex-direction: column;
+    }
     a {
-      font-size: 15px;
-      color: #68208e;
+      color: black;
       font-weight: 400;
+      margin: auto;
+      text-align: center;
+      font-size: 11px;
+      margin-top: 10px;
+    }
+    .bio.pg {
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.3;
+      font-weight: 500;
     }
   }
   .card-container {

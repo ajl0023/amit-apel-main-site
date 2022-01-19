@@ -16,6 +16,7 @@
   <div
     in:receive="{{ key: `bar-${barInfo.index}` }}"
     out:send="{{ key: `bar-${barInfo.index}` }}"
+    class:inactive="{$introAnimationStore.userEnded}"
     class="aspect-ratio-container  container-{barInfo.index} bar-mask"
   >
     <div class="aspect-ratio"></div>
@@ -27,12 +28,15 @@
 {/if}
 
 <style lang="scss">
+  .inactive {
+    display: none;
+  }
   .aspect-ratio {
     padding-top: 225%;
   }
   .aspect-ratio-container {
     width: 15%;
-    z-index: 1123123123123;
+    z-index: 7;
     position: fixed;
     bottom: 50%;
     transform: translateY(50%);

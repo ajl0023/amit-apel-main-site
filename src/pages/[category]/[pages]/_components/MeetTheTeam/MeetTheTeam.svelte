@@ -131,7 +131,6 @@
   .container {
     max-width: 1600px;
     width: 100%;
-    overflow: hidden;
   }
 
   .arrow-image-container {

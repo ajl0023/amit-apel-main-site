@@ -6,11 +6,13 @@ import { testing } from "./isTesting";
 const introAnimation = () => {
   const state = {
     timeline: null,
+    isPlaying: false,
     shouldReturn: false,
     shouldPointerEvents: false,
     shouldPulse: false,
     shouldRemoveStroke: false,
     videos: [],
+    userEnded: false,
   };
   const { subscribe, set, update } = writable(state);
   const methods = {
@@ -100,6 +102,7 @@ const introAnimation = () => {
     },
     endAnim() {
       update((s) => {
+        s.isPlaying = false;
         s.timeline.progress(1, true);
         s.shouldPointerEvents = true;
         s.shouldPulse = true;
@@ -109,13 +112,16 @@ const introAnimation = () => {
     },
     triggerAnim(shouldAnimate) {
       update((s) => {
+        s.isPlaying = true;
         if (testing) {
-          this.endAnim();
+          // this.endAnim();
+          s.timeline.play();
 
           return s;
         }
         if (shouldAnimate) {
           s.timeline.play();
+          s.isPlaying = true;
         } else {
           this.endAnim();
         }

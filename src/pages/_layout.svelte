@@ -1,7 +1,8 @@
 <script>
   import { page } from "@roxi/routify";
-  import { onMount } from "svelte";
+  import { onMount, tick } from "svelte";
   import { introAnimationStore } from "../introAnimationStore";
+  import { shouldAnimate } from "../isTesting";
   import Barcode from "./_components/Barcode/Barcode.svelte";
   onMount(() => {
     introAnimationStore.init();
@@ -19,6 +20,15 @@
   }}"
 />
 <slot />
+<button
+  class="end-anim-button"
+  class:inactive="{$introAnimationStore.isPlaying === false}"
+  on:click="{async () => {
+    $introAnimationStore.userEnded = true;
+    await tick();
+    introAnimationStore.endAnim();
+  }}">Skip</button
+>
 <div class="home-wrapper">
   <div class="video-bg">
     {#if window.location.origin !== "http://jsdom.ssr"}
@@ -66,6 +76,25 @@
 </div>
 
 <style lang="scss">
+  .end-anim-button {
+    position: absolute;
+    top: 20px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    z-index: 5;
+    right: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    background: none;
+    border: none;
+    color: white;
+    opacity: 80%;
+    font-size: 2em;
+  }
+  .inactive {
+    display: none;
+  }
   .home-wrapper {
     width: 100vw;
     overflow: hidden;
