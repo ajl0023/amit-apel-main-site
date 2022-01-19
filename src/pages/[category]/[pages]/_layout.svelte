@@ -90,7 +90,7 @@
 >
   <MainPageHeader pages="{pages}" />
 
-  <div class="page-wrapper">
+  <div class="page-wrapper {$marqueeHandlerStore.page}">
     <svelte:component this="{Component}" />
   </div>
 </div>
@@ -99,6 +99,9 @@
   .page-wrapper {
     height: 100%;
     overflow: hidden;
+  }
+  .page-wrapper.meet-the-team {
+    overflow: visible;
   }
   .page-content-container {
     width: 100%;
