@@ -13,6 +13,7 @@
   $: ({ shouldReturn, cardToExit, shouldAnimate } = $cardStore);
   $: cardZ = $cardStore.currentStack.indexOf(index);
   let ele;
+  let emailEle;
   let rotateY = gsap.timeline({ paused: true });
   let exited = false;
   async function returnCard() {
@@ -145,14 +146,14 @@
 />
 <!-- svelte-ignore a11y-mouse-events-have-key-events -->
 <div
-  on:mouseover="{() => {
+  on:mouseover="{(e) => {
     if (!exited && !shouldReturn) {
       gsap.to(ele, {
         scale: 1.1,
       });
     }
   }}"
-  on:mouseout="{() => {
+  on:mouseleave="{(e) => {
     gsap.to(ele, {
       scale: 1,
     });
@@ -180,7 +181,11 @@
               {image.description.bio}
             </p>
           {/if}
-          <a href="mailto:{image.description.email}" class="email">
+          <a
+            bind:this="{emailEle}"
+            href="mailto:{image.description.email}"
+            class="email"
+          >
             {image.description.email}
           </a>
         </div>
@@ -203,18 +208,20 @@
     font-family: "Montserrat", sans-serif;
     width: 100%;
     padding: 0 30px;
+    pointer-events: none;
     top: 20%;
     transform-box: fill-box;
     .bio-container {
       display: flex;
       flex-direction: column;
     }
-    a {
+    .email {
       color: black;
       font-weight: 400;
       margin: auto;
       text-align: center;
       font-size: 11px;
+      pointer-events: all;
       margin-top: 10px;
     }
     .bio.pg {
@@ -234,7 +241,7 @@
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    will-change: transform;
+
     touch-action: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;

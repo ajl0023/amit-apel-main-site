@@ -13,8 +13,8 @@
       __defProp(target, name, {get: all[name], enumerable: true});
   };
 
-  // dist/assets/MasonryGallery.bf1a200d.js
-  var require_MasonryGallery_bf1a200d = __commonJS((exports) => {
+  // dist/assets/MasonryGallery.f9f32a24.js
+  var require_MasonryGallery_f9f32a24 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Ee3
@@ -480,29 +480,29 @@
     };
   });
 
-  // dist/assets/MeetTheTeam.513e41ee.js
-  var require_MeetTheTeam_513e41ee = __commonJS((exports) => {
+  // dist/assets/MeetTheTeam.c029feb9.js
+  var require_MeetTheTeam_c029feb9 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => Fe3
+      default: () => Je3
     });
-    var Mt3 = Object.defineProperty;
-    var it3 = Object.getOwnPropertySymbols;
-    var Rt3 = Object.prototype.hasOwnProperty;
-    var Bt3 = Object.prototype.propertyIsEnumerable;
-    var nt2 = (i, t, e) => t in i ? Mt3(i, t, {enumerable: true, configurable: true, writable: true, value: e}) : i[t] = e;
-    var K2 = (i, t) => {
+    var Bt3 = Object.defineProperty;
+    var rt3 = Object.getOwnPropertySymbols;
+    var Kt3 = Object.prototype.hasOwnProperty;
+    var Vt3 = Object.prototype.propertyIsEnumerable;
+    var st2 = (i, t, e) => t in i ? Bt3(i, t, {enumerable: true, configurable: true, writable: true, value: e}) : i[t] = e;
+    var z = (i, t) => {
       for (var e in t || (t = {}))
-        Rt3.call(t, e) && nt2(i, e, t[e]);
-      if (it3)
-        for (var e of it3(t))
-          Bt3.call(t, e) && nt2(i, e, t[e]);
+        Kt3.call(t, e) && st2(i, e, t[e]);
+      if (rt3)
+        for (var e of rt3(t))
+          Vt3.call(t, e) && st2(i, e, t[e]);
       return i;
     };
-    function Xt3(i, t, e) {
+    function Zt3(i, t, e) {
       return Math.max(t, Math.min(i, e));
     }
-    var C = {toVector(i, t) {
+    var O2 = {toVector(i, t) {
       return i === void 0 && (i = t), Array.isArray(i) ? i : [i, i];
     }, add(i, t) {
       return [i[0] + t[0], i[1] + t[1]];
@@ -513,20 +513,20 @@
     }, subTo(i, t) {
       i[0] -= t[0], i[1] -= t[1];
     }};
-    function ft2(i, t, e) {
+    function pt2(i, t, e) {
       return t === 0 || Math.abs(t) === 1 / 0 ? Math.pow(i, e * 5) : i * t * e / (t + e * i);
     }
-    function ht2(i, t, e, n15 = 0.15) {
-      return n15 === 0 ? Xt3(i, t, e) : i < t ? -ft2(t - i, e - t, n15) + t : i > e ? +ft2(i - e, e - t, n15) + e : i;
+    function mt2(i, t, e, n15 = 0.15) {
+      return n15 === 0 ? Zt3(i, t, e) : i < t ? -pt2(t - i, e - t, n15) + t : i > e ? +pt2(i - e, e - t, n15) + e : i;
     }
-    function Jt3(i, [t, e], [n15, r]) {
+    function Qt3(i, [t, e], [n15, r]) {
       const [[c, a], [s, o]] = i;
-      return [ht2(t, c, a, n15), ht2(e, s, o, r)];
+      return [mt2(t, c, a, n15), mt2(e, s, o, r)];
     }
-    function E(i, t, e) {
+    function A2(i, t, e) {
       return t in i ? Object.defineProperty(i, t, {value: e, enumerable: true, configurable: true, writable: true}) : i[t] = e, i;
     }
-    function pt2(i, t) {
+    function gt2(i, t) {
       var e = Object.keys(i);
       if (Object.getOwnPropertySymbols) {
         var n15 = Object.getOwnPropertySymbols(i);
@@ -536,56 +536,56 @@
       }
       return e;
     }
-    function S(i) {
+    function C(i) {
       for (var t = 1; t < arguments.length; t++) {
         var e = arguments[t] != null ? arguments[t] : {};
-        t % 2 ? pt2(Object(e), true).forEach(function(n15) {
-          E(i, n15, e[n15]);
-        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(e)) : pt2(Object(e)).forEach(function(n15) {
+        t % 2 ? gt2(Object(e), true).forEach(function(n15) {
+          A2(i, n15, e[n15]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(e)) : gt2(Object(e)).forEach(function(n15) {
           Object.defineProperty(i, n15, Object.getOwnPropertyDescriptor(e, n15));
         });
       }
       return i;
     }
-    var mt2 = {pointer: {start: "down", change: "move", end: "up"}, mouse: {start: "down", change: "move", end: "up"}, touch: {start: "start", change: "move", end: "end"}, gesture: {start: "start", change: "change", end: "end"}};
-    function gt2(i) {
+    var _t2 = {pointer: {start: "down", change: "move", end: "up"}, mouse: {start: "down", change: "move", end: "up"}, touch: {start: "start", change: "move", end: "end"}, gesture: {start: "start", change: "change", end: "end"}};
+    function yt3(i) {
       return i ? i[0].toUpperCase() + i.slice(1) : "";
     }
-    function Zt3(i, t = "", e = false) {
-      const n15 = mt2[i], r = n15 && n15[t] || t;
-      return "on" + gt2(i) + gt2(r) + (e ? "Capture" : "");
+    function $t3(i, t = "", e = false) {
+      const n15 = _t2[i], r = n15 && n15[t] || t;
+      return "on" + yt3(i) + yt3(r) + (e ? "Capture" : "");
     }
-    function Qt3(i, t = "") {
-      const e = mt2[i], n15 = e && e[t] || t;
+    function te2(i, t = "") {
+      const e = _t2[i], n15 = e && e[t] || t;
       return i + n15;
     }
-    function Z2(i) {
+    function $2(i) {
       return "touches" in i;
     }
-    function $t3(i) {
+    function ee2(i) {
       return Array.from(i.touches).filter((t) => {
         var e, n15;
         return t.target === i.currentTarget || ((e = i.currentTarget) === null || e === void 0 || (n15 = e.contains) === null || n15 === void 0 ? void 0 : n15.call(e, t.target));
       });
     }
-    function te2(i) {
+    function ie3(i) {
       return i.type === "touchend" ? i.changedTouches : i.targetTouches;
     }
-    function _t2(i) {
-      return Z2(i) ? te2(i)[0] : i;
+    function bt3(i) {
+      return $2(i) ? ie3(i)[0] : i;
     }
-    function ee2(i) {
-      return $t3(i).map((t) => t.identifier);
+    function ne3(i) {
+      return ee2(i).map((t) => t.identifier);
     }
-    function Q2(i) {
-      const t = _t2(i);
-      return Z2(i) ? t.identifier : t.pointerId;
+    function tt3(i) {
+      const t = bt3(i);
+      return $2(i) ? t.identifier : t.pointerId;
     }
-    function yt3(i) {
-      const t = _t2(i);
+    function vt2(i) {
+      const t = bt3(i);
       return [t.clientX, t.clientY];
     }
-    function ie3(i) {
+    function re2(i) {
       const t = {};
       if ("buttons" in i && (t.buttons = i.buttons), "shiftKey" in i) {
         const {shiftKey: e, altKey: n15, metaKey: r, ctrlKey: c} = i;
@@ -593,24 +593,24 @@
       }
       return t;
     }
-    function W2(i, ...t) {
+    function G(i, ...t) {
       return typeof i == "function" ? i(...t) : i;
     }
-    function ne3() {
+    function se2() {
     }
-    function re2(...i) {
-      return i.length === 0 ? ne3 : i.length === 1 ? i[0] : function() {
+    function oe2(...i) {
+      return i.length === 0 ? se2 : i.length === 1 ? i[0] : function() {
         let t;
         for (const e of i)
           t = e.apply(this, arguments) || t;
         return t;
       };
     }
-    function vt2(i, t) {
+    function kt3(i, t) {
       return Object.assign({}, t, i || {});
     }
-    var se2 = 32;
-    var oe2 = class {
+    var ae2 = 32;
+    var ce2 = class {
       constructor(t, e, n15) {
         this.ctrl = t, this.args = e, this.key = n15, this.state || (this.state = {}, this.computeValues([0, 0]), this.computeInitial(), this.init && this.init(), this.reset());
       }
@@ -644,7 +644,7 @@
       }
       start(t) {
         const e = this.state, n15 = this.config;
-        e._active || (this.reset(), this.computeInitial(), e._active = true, e.target = t.target, e.currentTarget = t.currentTarget, e.lastOffset = n15.from ? W2(n15.from, e) : e.offset, e.offset = e.lastOffset), e.startTime = e.timeStamp = t.timeStamp;
+        e._active || (this.reset(), this.computeInitial(), e._active = true, e.target = t.target, e.currentTarget = t.currentTarget, e.lastOffset = n15.from ? G(n15.from, e) : e.offset, e.offset = e.lastOffset), e.startTime = e.timeStamp = t.timeStamp;
       }
       computeValues(t) {
         const e = this.state;
@@ -658,50 +658,50 @@
         const {state: e, config: n15, shared: r} = this;
         e.args = this.args;
         let c = 0;
-        if (t && (e.event = t, n15.preventDefault && t.cancelable && e.event.preventDefault(), e.type = t.type, r.touches = this.ctrl.pointerIds.size || this.ctrl.touchIds.size, r.locked = !!document.pointerLockElement, Object.assign(r, ie3(t)), r.down = r.pressed = r.buttons % 2 == 1 || r.touches > 0, c = t.timeStamp - e.timeStamp, e.timeStamp = t.timeStamp, e.elapsedTime = e.timeStamp - e.startTime), e._active) {
-          const _ = e._delta.map(Math.abs);
-          C.addTo(e._distance, _);
+        if (t && (e.event = t, n15.preventDefault && t.cancelable && e.event.preventDefault(), e.type = t.type, r.touches = this.ctrl.pointerIds.size || this.ctrl.touchIds.size, r.locked = !!document.pointerLockElement, Object.assign(r, re2(t)), r.down = r.pressed = r.buttons % 2 == 1 || r.touches > 0, c = t.timeStamp - e.timeStamp, e.timeStamp = t.timeStamp, e.elapsedTime = e.timeStamp - e.startTime), e._active) {
+          const b = e._delta.map(Math.abs);
+          O2.addTo(e._distance, b);
         }
-        const [a, s] = e._movement, [o, l] = n15.threshold, {_step: u, values: g} = e;
-        if (n15.hasCustomTransform ? (u[0] === false && (u[0] = Math.abs(a) >= o && g[0]), u[1] === false && (u[1] = Math.abs(s) >= l && g[1])) : (u[0] === false && (u[0] = Math.abs(a) >= o && Math.sign(a) * o), u[1] === false && (u[1] = Math.abs(s) >= l && Math.sign(s) * l)), e.intentional = u[0] !== false || u[1] !== false, !e.intentional)
+        const [a, s] = e._movement, [o, l] = n15.threshold, {_step: u, values: p} = e;
+        if (n15.hasCustomTransform ? (u[0] === false && (u[0] = Math.abs(a) >= o && p[0]), u[1] === false && (u[1] = Math.abs(s) >= l && p[1])) : (u[0] === false && (u[0] = Math.abs(a) >= o && Math.sign(a) * o), u[1] === false && (u[1] = Math.abs(s) >= l && Math.sign(s) * l)), e.intentional = u[0] !== false || u[1] !== false, !e.intentional)
           return;
-        const f = [0, 0];
+        const d = [0, 0];
         if (n15.hasCustomTransform) {
-          const [_, m] = g;
-          f[0] = u[0] !== false ? _ - u[0] : 0, f[1] = u[1] !== false ? m - u[1] : 0;
+          const [b, m] = p;
+          d[0] = u[0] !== false ? b - u[0] : 0, d[1] = u[1] !== false ? m - u[1] : 0;
         } else
-          f[0] = u[0] !== false ? a - u[0] : 0, f[1] = u[1] !== false ? s - u[1] : 0;
-        if (this.intent && this.intent(f), (e._active && !e._blocked || e.active) && (e.first = e._active && !e.active, e.last = !e._active && e.active, e.active = r[this.ingKey] = e._active, t)) {
-          e.first && ("bounds" in n15 && (e._bounds = W2(n15.bounds, e)), this.setup && this.setup()), e.movement = f;
-          const _ = e.offset;
-          if (this.computeOffset(), !e.last || c > se2) {
-            e.delta = C.sub(e.offset, _);
+          d[0] = u[0] !== false ? a - u[0] : 0, d[1] = u[1] !== false ? s - u[1] : 0;
+        if (this.intent && this.intent(d), (e._active && !e._blocked || e.active) && (e.first = e._active && !e.active, e.last = !e._active && e.active, e.active = r[this.ingKey] = e._active, t)) {
+          e.first && ("bounds" in n15 && (e._bounds = G(n15.bounds, e)), this.setup && this.setup()), e.movement = d;
+          const b = e.offset;
+          if (this.computeOffset(), !e.last || c > ae2) {
+            e.delta = O2.sub(e.offset, b);
             const m = e.delta.map(Math.abs);
-            C.addTo(e.distance, m), e.direction = e.delta.map(Math.sign), !e.first && c > 0 && (e.velocity = [m[0] / c, m[1] / c]);
+            O2.addTo(e.distance, m), e.direction = e.delta.map(Math.sign), !e.first && c > 0 && (e.velocity = [m[0] / c, m[1] / c]);
           }
         }
-        const d = e._active ? n15.rubberband || [0, 0] : [0, 0];
-        e.offset = Jt3(e._bounds, e.offset, d), this.computeMovement();
+        const f = e._active ? n15.rubberband || [0, 0] : [0, 0];
+        e.offset = Qt3(e._bounds, e.offset, f), this.computeMovement();
       }
       emit() {
         const t = this.state, e = this.shared, n15 = this.config;
         if (t._active || this.clean(), (t._blocked || !t.intentional) && !t._force && !n15.triggerAllEvents)
           return;
-        const r = this.handler(S(S(S({}, e), t), {}, {[this.aliasKey]: t.values}));
+        const r = this.handler(C(C(C({}, e), t), {}, {[this.aliasKey]: t.values}));
         r !== void 0 && (t.memo = r);
       }
       clean() {
         this.eventStore.clean(), this.timeoutStore.clean();
       }
     };
-    function ae2([i, t]) {
+    function le2([i, t]) {
       const e = Math.abs(i) - Math.abs(t);
       if (e > 0)
         return "x";
       if (e < 0)
         return "y";
     }
-    function ce2(i, t) {
+    function ue2(i, t) {
       switch (t) {
         case "x":
           i[1] = 0;
@@ -711,10 +711,10 @@
           break;
       }
     }
-    var le2 = class extends oe2 {
+    var fe2 = class extends ce2 {
       constructor(...t) {
         super(...t);
-        E(this, "aliasKey", "xy");
+        A2(this, "aliasKey", "xy");
       }
       reset() {
         super.reset(), this.state.axis = void 0;
@@ -723,18 +723,18 @@
         this.state.offset = [0, 0], this.state.lastOffset = [0, 0];
       }
       computeOffset() {
-        this.state.offset = C.add(this.state.lastOffset, this.state.movement);
+        this.state.offset = O2.add(this.state.lastOffset, this.state.movement);
       }
       computeMovement() {
-        this.state.movement = C.sub(this.state.offset, this.state.lastOffset);
+        this.state.movement = O2.sub(this.state.offset, this.state.lastOffset);
       }
       intent(t) {
-        this.state.axis = this.state.axis || ae2(t), this.state._blocked = (this.config.lockDirection || !!this.config.axis) && !this.state.axis || !!this.config.axis && this.config.axis !== this.state.axis, !this.state._blocked && (this.config.axis || this.config.lockDirection) && ce2(t, this.state.axis);
+        this.state.axis = this.state.axis || le2(t), this.state._blocked = (this.config.lockDirection || !!this.config.axis) && !this.state.axis || !!this.config.axis && this.config.axis !== this.state.axis, !this.state._blocked && (this.config.axis || this.config.lockDirection) && ue2(t, this.state.axis);
       }
     };
-    var ue2 = (i) => i;
-    var bt3 = 0.15;
-    var kt3 = {enabled(i = true) {
+    var de2 = (i) => i;
+    var wt3 = 0.15;
+    var St3 = {enabled(i = true) {
       return i;
     }, preventDefault(i = false) {
       return i;
@@ -743,29 +743,29 @@
     }, rubberband(i = 0) {
       switch (i) {
         case true:
-          return [bt3, bt3];
+          return [wt3, wt3];
         case false:
           return [0, 0];
         default:
-          return C.toVector(i);
+          return O2.toVector(i);
       }
     }, from(i) {
       if (typeof i == "function")
         return i;
       if (i != null)
-        return C.toVector(i);
+        return O2.toVector(i);
     }, transform(i, t, e) {
       const n15 = i || e.shared.transform;
-      return this.hasCustomTransform = !!n15, n15 || ue2;
+      return this.hasCustomTransform = !!n15, n15 || de2;
     }, threshold(i) {
-      return C.toVector(i, 0);
+      return O2.toVector(i, 0);
     }};
-    var R = S(S({}, kt3), {}, {axis(i, t, {axis: e}) {
+    var B2 = C(C({}, St3), {}, {axis(i, t, {axis: e}) {
       if (this.lockDirection = e === "lock", !this.lockDirection)
         return e;
     }, bounds(i = {}) {
       if (typeof i == "function")
-        return (c) => R.bounds(i(c));
+        return (c) => B2.bounds(i(c));
       if ("current" in i)
         return () => i.current;
       if (typeof HTMLElement == "function" && i instanceof HTMLElement)
@@ -773,12 +773,12 @@
       const {left: t = -1 / 0, right: e = 1 / 0, top: n15 = -1 / 0, bottom: r = 1 / 0} = i;
       return [[t, e], [n15, r]];
     }});
-    var q2 = 10;
-    var wt3 = {ArrowRight: (i = 1) => [q2 * i, 0], ArrowLeft: (i = 1) => [-q2 * i, 0], ArrowUp: (i = 1) => [0, -q2 * i], ArrowDown: (i = 1) => [0, q2 * i]};
-    var de2 = class extends le2 {
+    var H2 = 10;
+    var Ct3 = {ArrowRight: (i = 1) => [H2 * i, 0], ArrowLeft: (i = 1) => [-H2 * i, 0], ArrowUp: (i = 1) => [0, -H2 * i], ArrowDown: (i = 1) => [0, H2 * i]};
+    var he2 = class extends fe2 {
       constructor(...t) {
         super(...t);
-        E(this, "ingKey", "dragging");
+        A2(this, "ingKey", "dragging");
       }
       reset() {
         super.reset();
@@ -789,7 +789,7 @@
         const t = this.state;
         if (t._bounds instanceof HTMLElement) {
           const e = t._bounds.getBoundingClientRect(), n15 = t.currentTarget.getBoundingClientRect(), r = {left: e.left - n15.left + t.offset[0], right: e.right - n15.right + t.offset[0], top: e.top - n15.top + t.offset[1], bottom: e.bottom - n15.bottom + t.offset[1]};
-          t._bounds = R.bounds(r);
+          t._bounds = B2.bounds(r);
         }
       }
       cancel() {
@@ -806,7 +806,7 @@
       }
       pointerDown(t) {
         const e = this.config, n15 = this.state;
-        t.buttons != null && (Array.isArray(e.pointerButtons) ? !e.pointerButtons.includes(t.buttons) : e.pointerButtons !== -1 && e.pointerButtons !== t.buttons) || (this.ctrl.setEventIds(t), e.pointerCapture && t.target.setPointerCapture(t.pointerId), !n15._pointerActive && (this.start(t), this.setupPointer(t), n15._pointerId = Q2(t), n15._pointerActive = true, this.computeValues(yt3(t)), this.computeInitial(), e.preventScroll ? this.setupScrollPrevention(t) : e.delay > 0 ? this.setupDelayTrigger(t) : this.startPointerDrag(t)));
+        t.buttons != null && (Array.isArray(e.pointerButtons) ? !e.pointerButtons.includes(t.buttons) : e.pointerButtons !== -1 && e.pointerButtons !== t.buttons) || (this.ctrl.setEventIds(t), e.pointerCapture && t.target.setPointerCapture(t.pointerId), !n15._pointerActive && (this.start(t), this.setupPointer(t), n15._pointerId = tt3(t), n15._pointerActive = true, this.computeValues(vt2(t)), this.computeInitial(), e.preventScroll ? this.setupScrollPrevention(t) : e.delay > 0 ? this.setupDelayTrigger(t) : this.startPointerDrag(t)));
       }
       startPointerDrag(t) {
         const e = this.state;
@@ -816,11 +816,11 @@
         const e = this.state, n15 = this.config;
         if (!e._pointerActive || e.type === t.type && t.timeStamp === e.timeStamp)
           return;
-        const r = Q2(t);
+        const r = tt3(t);
         if (e._pointerId && r !== e._pointerId)
           return;
-        const c = yt3(t);
-        if (document.pointerLockElement === t.target ? e._delta = [t.movementX, t.movementY] : (e._delta = C.sub(c, e._values), this.computeValues(c)), C.addTo(e._movement, e._delta), this.compute(t), e._delayed) {
+        const c = vt2(t);
+        if (document.pointerLockElement === t.target ? e._delta = [t.movementX, t.movementY] : (e._delta = O2.sub(c, e._values), this.computeValues(c)), O2.addTo(e._movement, e._delta), this.compute(t), e._delayed) {
           this.timeoutStore.remove("dragDelay"), e.active = false, this.startPointerDrag(t);
           return;
         }
@@ -846,7 +846,7 @@
         const e = this.state, n15 = this.config;
         if (!e._pointerActive)
           return;
-        const r = Q2(t);
+        const r = tt3(t);
         if (e._pointerId && r !== e._pointerId)
           return;
         this.state._pointerActive = false, this.setActive(), this.compute(t);
@@ -854,8 +854,8 @@
         if (e.tap = c <= 3 && a <= 3, e.tap && n15.filterTaps)
           e._force = true;
         else {
-          const [s, o] = e.direction, [l, u] = e.velocity, [g, f] = e.movement, [d, _] = n15.swipe.velocity, [m, I2] = n15.swipe.distance, D3 = n15.swipe.duration;
-          e.elapsedTime < D3 && (Math.abs(l) > d && Math.abs(g) > m && (e.swipe[0] = s), Math.abs(u) > _ && Math.abs(f) > I2 && (e.swipe[1] = o));
+          const [s, o] = e.direction, [l, u] = e.velocity, [p, d] = e.movement, [f, b] = n15.swipe.velocity, [m, E] = n15.swipe.distance, L = n15.swipe.duration;
+          e.elapsedTime < L && (Math.abs(l) > f && Math.abs(p) > m && (e.swipe[0] = s), Math.abs(u) > b && Math.abs(d) > E && (e.swipe[1] = o));
         }
         this.emit();
       }
@@ -874,112 +874,112 @@
         this.state._preventScroll && t.cancelable && t.preventDefault();
       }
       setupScrollPrevention(t) {
-        fe2(t), this.eventStore.add(this.sharedConfig.window, "touch", "change", this.preventScroll.bind(this), {passive: false}), this.eventStore.add(this.sharedConfig.window, "touch", "end", this.clean.bind(this), {passive: false}), this.eventStore.add(this.sharedConfig.window, "touch", "cancel", this.clean.bind(this), {passive: false}), this.timeoutStore.add("startPointerDrag", this.startPointerDrag.bind(this), this.config.preventScroll, t);
+        pe2(t), this.eventStore.add(this.sharedConfig.window, "touch", "change", this.preventScroll.bind(this), {passive: false}), this.eventStore.add(this.sharedConfig.window, "touch", "end", this.clean.bind(this), {passive: false}), this.eventStore.add(this.sharedConfig.window, "touch", "cancel", this.clean.bind(this), {passive: false}), this.timeoutStore.add("startPointerDrag", this.startPointerDrag.bind(this), this.config.preventScroll, t);
       }
       setupDelayTrigger(t) {
         this.state._delayed = true, this.timeoutStore.add("dragDelay", this.startPointerDrag.bind(this), this.config.delay, t);
       }
       keyDown(t) {
-        const e = wt3[t.key];
+        const e = Ct3[t.key];
         if (e) {
           const n15 = this.state, r = t.shiftKey ? 10 : t.altKey ? 0.1 : 1;
-          n15._delta = e(r), this.start(t), n15._keyboardActive = true, C.addTo(n15._movement, n15._delta), this.compute(t), this.emit();
+          n15._delta = e(r), this.start(t), n15._keyboardActive = true, O2.addTo(n15._movement, n15._delta), this.compute(t), this.emit();
         }
       }
       keyUp(t) {
-        t.key in wt3 && (this.state._keyboardActive = false, this.setActive(), this.compute(t), this.emit());
+        t.key in Ct3 && (this.state._keyboardActive = false, this.setActive(), this.compute(t), this.emit());
       }
       bind(t) {
         const e = this.config.device;
         t(e, "start", this.pointerDown.bind(this)), this.config.pointerCapture && (t(e, "change", this.pointerMove.bind(this)), t(e, "end", this.pointerUp.bind(this)), t(e, "cancel", this.pointerUp.bind(this))), t("key", "down", this.keyDown.bind(this)), t("key", "up", this.keyUp.bind(this)), this.config.filterTaps && t("click", "", this.pointerClick.bind(this), {capture: true});
       }
     };
-    function fe2(i) {
+    function pe2(i) {
       "persist" in i && typeof i.persist == "function" && i.persist();
     }
-    var B2 = typeof window != "undefined" && window.document && window.document.createElement;
-    function St3() {
-      return B2 && "ontouchstart" in window;
-    }
-    function he2() {
-      return St3() || B2 && window.navigator.maxTouchPoints > 1;
-    }
-    function pe2() {
-      return B2 && "onpointerdown" in window;
+    var K2 = typeof window != "undefined" && window.document && window.document.createElement;
+    function Et3() {
+      return K2 && "ontouchstart" in window;
     }
     function me2() {
-      return B2 && "exitPointerLock" in window.document;
+      return Et3() || K2 && window.navigator.maxTouchPoints > 1;
     }
     function ge3() {
+      return K2 && "onpointerdown" in window;
+    }
+    function _e2() {
+      return K2 && "exitPointerLock" in window.document;
+    }
+    function ye3() {
       try {
         return "constructor" in GestureEvent;
       } catch {
         return false;
       }
     }
-    var T = {isBrowser: B2, gesture: ge3(), touch: St3(), touchscreen: he2(), pointer: pe2(), pointerLock: me2()};
-    var _e2 = 250;
-    var ye3 = 180;
-    var ve3 = 0.5;
-    var be2 = 50;
-    var ke2 = 250;
-    var we2 = S(S({}, R), {}, {pointerLock(i, t, {pointer: {lock: e = false, touch: n15 = false} = {}}) {
-      return this.useTouch = T.touch && n15, T.pointerLock && e;
+    var P = {isBrowser: K2, gesture: ye3(), touch: Et3(), touchscreen: me2(), pointer: ge3(), pointerLock: _e2()};
+    var be2 = 250;
+    var ve3 = 180;
+    var ke2 = 0.5;
+    var we2 = 50;
+    var Se3 = 250;
+    var Ce3 = C(C({}, B2), {}, {pointerLock(i, t, {pointer: {lock: e = false, touch: n15 = false} = {}}) {
+      return this.useTouch = P.touch && n15, P.pointerLock && e;
     }, device(i, t) {
-      return this.useTouch ? "touch" : this.pointerLock ? "mouse" : T.pointer ? "pointer" : T.touch ? "touch" : "mouse";
+      return this.useTouch ? "touch" : this.pointerLock ? "mouse" : P.pointer ? "pointer" : P.touch ? "touch" : "mouse";
     }, preventScroll(i = false, t, {preventScrollAxis: e = "y"}) {
-      return e && (this.preventScrollAxis = e), T.touchscreen ? typeof i == "number" ? i : i ? _e2 : false : false;
+      return e && (this.preventScrollAxis = e), P.touchscreen ? typeof i == "number" ? i : i ? be2 : false : false;
     }, pointerCapture(i, t, {pointer: {capture: e = true, buttons: n15 = 1} = {}}) {
       return this.pointerButtons = n15, !this.pointerLock && this.device === "pointer" && e;
     }, threshold(i, t, {filterTaps: e = false, axis: n15 = void 0}) {
-      const r = C.toVector(i, e ? 3 : n15 ? 1 : 0);
+      const r = O2.toVector(i, e ? 3 : n15 ? 1 : 0);
       return this.filterTaps = e, r;
-    }, swipe({velocity: i = ve3, distance: t = be2, duration: e = ke2} = {}) {
-      return {velocity: this.transform(C.toVector(i)), distance: this.transform(C.toVector(t)), duration: e};
+    }, swipe({velocity: i = ke2, distance: t = we2, duration: e = Se3} = {}) {
+      return {velocity: this.transform(O2.toVector(i)), distance: this.transform(O2.toVector(t)), duration: e};
     }, delay(i = 0) {
       switch (i) {
         case true:
-          return ye3;
+          return ve3;
         case false:
           return 0;
         default:
           return i;
       }
     }});
-    S(S({}, kt3), {}, {useTouch(i, t, {pointer: {touch: e = false} = {}}) {
-      return T.touch && e;
+    C(C({}, St3), {}, {useTouch(i, t, {pointer: {touch: e = false} = {}}) {
+      return P.touch && e;
     }, device(i, t, e) {
-      if (e.shared.target && !T.touch && T.gesture)
+      if (e.shared.target && !P.touch && P.gesture)
         return "gesture";
       if (this.useTouch)
         return "touch";
-      if (T.touchscreen) {
-        if (T.pointer)
+      if (P.touchscreen) {
+        if (P.pointer)
           return "pointer";
-        if (T.touch)
+        if (P.touch)
           return "touch";
       }
     }, bounds(i, t, {scaleBounds: e = {}, angleBounds: n15 = {}}) {
       const r = (a) => {
-        const s = vt2(W2(e, a), {min: -1 / 0, max: 1 / 0});
+        const s = kt3(G(e, a), {min: -1 / 0, max: 1 / 0});
         return [s.min, s.max];
       }, c = (a) => {
-        const s = vt2(W2(n15, a), {min: -1 / 0, max: 1 / 0});
+        const s = kt3(G(n15, a), {min: -1 / 0, max: 1 / 0});
         return [s.min, s.max];
       };
       return typeof e != "function" && typeof n15 != "function" ? [r(), c()] : (a) => [r(a), c(a)];
     }, threshold(i, t, e) {
-      return this.lockDirection = e.axis === "lock", C.toVector(i, this.lockDirection ? [0.1, 3] : 0);
+      return this.lockDirection = e.axis === "lock", O2.toVector(i, this.lockDirection ? [0.1, 3] : 0);
     }});
-    S(S({}, R), {}, {mouseOnly: (i = true) => i});
-    S(S({}, R), {}, {mouseOnly: (i = true) => i});
-    var Ct3 = new Map();
-    var $2 = new Map();
-    function Se3(i) {
-      Ct3.set(i.key, i.engine), $2.set(i.key, i.resolver);
+    C(C({}, B2), {}, {mouseOnly: (i = true) => i});
+    C(C({}, B2), {}, {mouseOnly: (i = true) => i});
+    var Ot3 = new Map();
+    var et3 = new Map();
+    function Ee3(i) {
+      Ot3.set(i.key, i.engine), et3.set(i.key, i.resolver);
     }
-    var Ce3 = {key: "drag", engine: de2, resolver: we2};
-    function Oe3(i, t) {
+    var Oe3 = {key: "drag", engine: he2, resolver: Ce3};
+    function Te3(i, t) {
       if (i == null)
         return {};
       var e = {}, n15 = Object.keys(i), r, c;
@@ -987,10 +987,10 @@
         r = n15[c], !(t.indexOf(r) >= 0) && (e[r] = i[r]);
       return e;
     }
-    function Ee3(i, t) {
+    function Ae3(i, t) {
       if (i == null)
         return {};
-      var e = Oe3(i, t), n15, r;
+      var e = Te3(i, t), n15, r;
       if (Object.getOwnPropertySymbols) {
         var c = Object.getOwnPropertySymbols(i);
         for (r = 0; r < c.length; r++)
@@ -998,20 +998,20 @@
       }
       return e;
     }
-    var Te3 = {target(i) {
+    var Pe3 = {target(i) {
       if (i)
         return () => "current" in i ? i.current : i;
     }, enabled(i = true) {
       return i;
-    }, window(i = T.isBrowser ? window : void 0) {
+    }, window(i = P.isBrowser ? window : void 0) {
       return i;
     }, eventOptions({passive: i = true, capture: t = false} = {}) {
       return {passive: i, capture: t};
     }, transform(i) {
       return i;
     }};
-    var Ae3 = ["target", "eventOptions", "window", "enabled", "transform"];
-    function N(i = {}, t) {
+    var xe3 = ["target", "eventOptions", "window", "enabled", "transform"];
+    function F(i = {}, t) {
       const e = {};
       for (const [n15, r] of Object.entries(t))
         switch (typeof r) {
@@ -1019,7 +1019,7 @@
             e[n15] = r.call(e, i[n15], n15, i);
             break;
           case "object":
-            e[n15] = N(i[n15], r);
+            e[n15] = F(i[n15], r);
             break;
           case "boolean":
             r && (e[n15] = i[n15]);
@@ -1027,33 +1027,33 @@
         }
       return e;
     }
-    function Pe3(i, t) {
-      const e = i, {target: n15, eventOptions: r, window: c, enabled: a, transform: s} = e, o = Ee3(e, Ae3), l = {shared: N({target: n15, eventOptions: r, window: c, enabled: a, transform: s}, Te3)};
+    function De3(i, t) {
+      const e = i, {target: n15, eventOptions: r, window: c, enabled: a, transform: s} = e, o = Ae3(e, xe3), l = {shared: F({target: n15, eventOptions: r, window: c, enabled: a, transform: s}, Pe3)};
       if (t) {
-        const u = $2.get(t);
-        l[t] = N(S({shared: l.shared}, o), u);
+        const u = et3.get(t);
+        l[t] = F(C({shared: l.shared}, o), u);
       } else
         for (const u in o) {
-          const g = $2.get(u);
-          g && (l[u] = N(S({shared: l.shared}, o[u]), g));
+          const p = et3.get(u);
+          p && (l[u] = F(C({shared: l.shared}, o[u]), p));
         }
       return l;
     }
-    var Ot3 = class {
+    var Tt3 = class {
       constructor(t) {
-        E(this, "_listeners", []), this._ctrl = t;
+        A2(this, "_listeners", []), this._ctrl = t;
       }
       add(t, e, n15, r, c) {
-        const a = Qt3(e, n15), s = S(S({}, this._ctrl.config.shared.eventOptions), c);
+        const a = te2(e, n15), s = C(C({}, this._ctrl.config.shared.eventOptions), c);
         t.addEventListener(a, r, s), this._listeners.push(() => t.removeEventListener(a, r, s));
       }
       clean() {
         this._listeners.forEach((t) => t()), this._listeners = [];
       }
     };
-    var xe3 = class {
+    var Ie3 = class {
       constructor() {
-        E(this, "_timeouts", new Map());
+        A2(this, "_timeouts", new Map());
       }
       add(t, e, n15 = 140, ...r) {
         this.remove(t), this._timeouts.set(t, window.setTimeout(e, n15, ...r));
@@ -1066,18 +1066,18 @@
         this._timeouts.forEach((t) => void window.clearTimeout(t)), this._timeouts.clear();
       }
     };
-    var De3 = class {
+    var je3 = class {
       constructor(t) {
-        E(this, "gestures", new Set()), E(this, "_targetEventStore", new Ot3(this)), E(this, "gestureEventStores", {}), E(this, "gestureTimeoutStores", {}), E(this, "handlers", {}), E(this, "config", {}), E(this, "pointerIds", new Set()), E(this, "touchIds", new Set()), E(this, "state", {shared: {shiftKey: false, metaKey: false, ctrlKey: false, altKey: false}}), Ie3(this, t);
+        A2(this, "gestures", new Set()), A2(this, "_targetEventStore", new Tt3(this)), A2(this, "gestureEventStores", {}), A2(this, "gestureTimeoutStores", {}), A2(this, "handlers", {}), A2(this, "config", {}), A2(this, "pointerIds", new Set()), A2(this, "touchIds", new Set()), A2(this, "state", {shared: {shiftKey: false, metaKey: false, ctrlKey: false, altKey: false}}), Le3(this, t);
       }
       setEventIds(t) {
-        Z2(t) ? this.touchIds = new Set(ee2(t)) : "pointerId" in t && (t.type === "pointerup" || t.type === "pointercancel" ? this.pointerIds.delete(t.pointerId) : t.type === "pointerdown" && this.pointerIds.add(t.pointerId));
+        $2(t) ? this.touchIds = new Set(ne3(t)) : "pointerId" in t && (t.type === "pointerup" || t.type === "pointercancel" ? this.pointerIds.delete(t.pointerId) : t.type === "pointerdown" && this.pointerIds.add(t.pointerId));
       }
       applyHandlers(t, e) {
         this.handlers = t, this.nativeHandlers = e;
       }
       applyConfig(t, e) {
-        this.config = Pe3(t, e);
+        this.config = De3(t, e);
       }
       clean() {
         this._targetEventStore.clean();
@@ -1092,18 +1092,18 @@
         let c;
         if (e.target && (c = e.target(), !c))
           return;
-        const a = je3(r, n15, !!c);
+        const a = Me2(r, n15, !!c);
         if (e.enabled) {
           for (const s of this.gestures)
             if (this.config[s].enabled) {
-              const o = Ct3.get(s);
+              const o = Ot3.get(s);
               new o(this, t, s).bind(a);
             }
           for (const s in this.nativeHandlers)
-            a(s, "", (o) => this.nativeHandlers[s](S(S({}, this.state.shared), {}, {event: o, args: t})), void 0, true);
+            a(s, "", (o) => this.nativeHandlers[s](C(C({}, this.state.shared), {}, {event: o, args: t})), void 0, true);
         }
         for (const s in r)
-          r[s] = re2(...r[s]);
+          r[s] = oe2(...r[s]);
         if (!c)
           return r;
         for (const s in r) {
@@ -1113,22 +1113,22 @@
         }
       }
     };
-    function M2(i, t) {
-      i.gestures.add(t), i.gestureEventStores[t] = new Ot3(i), i.gestureTimeoutStores[t] = new xe3();
+    function R(i, t) {
+      i.gestures.add(t), i.gestureEventStores[t] = new Tt3(i), i.gestureTimeoutStores[t] = new Ie3();
     }
-    function Ie3(i, t) {
-      t.drag && M2(i, "drag"), t.wheel && M2(i, "wheel"), t.scroll && M2(i, "scroll"), t.move && M2(i, "move"), t.pinch && M2(i, "pinch"), t.hover && M2(i, "hover");
+    function Le3(i, t) {
+      t.drag && R(i, "drag"), t.wheel && R(i, "wheel"), t.scroll && R(i, "scroll"), t.move && R(i, "move"), t.pinch && R(i, "pinch"), t.hover && R(i, "hover");
     }
-    var je3 = (i, t, e) => (n15, r, c, a = {}, s = false) => {
+    var Me2 = (i, t, e) => (n15, r, c, a = {}, s = false) => {
       var o, l;
-      const u = (o = a.capture) !== null && o !== void 0 ? o : t.capture, g = (l = a.passive) !== null && l !== void 0 ? l : t.passive;
-      let f = s ? n15 : Zt3(n15, r, u);
-      e && g && (f += "Passive"), i[f] = i[f] || [], i[f].push(c);
+      const u = (o = a.capture) !== null && o !== void 0 ? o : t.capture, p = (l = a.passive) !== null && l !== void 0 ? l : t.passive;
+      let d = s ? n15 : $t3(n15, r, u);
+      e && p && (d += "Passive"), i[d] = i[d] || [], i[d].push(c);
     };
-    function Le3(i, t, e) {
+    function Re3(i, t, e) {
       return t in i ? Object.defineProperty(i, t, {value: e, enumerable: true, configurable: true, writable: true}) : i[t] = e, i;
     }
-    function Et3(i, t) {
+    function At3(i, t) {
       var e = Object.keys(i);
       if (Object.getOwnPropertySymbols) {
         var n15 = Object.getOwnPropertySymbols(i);
@@ -1138,29 +1138,29 @@
       }
       return e;
     }
-    function Tt3(i) {
+    function Pt2(i) {
       for (var t = 1; t < arguments.length; t++) {
         var e = arguments[t] != null ? arguments[t] : {};
-        t % 2 ? Et3(Object(e), true).forEach(function(n15) {
-          Le3(i, n15, e[n15]);
-        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(e)) : Et3(Object(e)).forEach(function(n15) {
+        t % 2 ? At3(Object(e), true).forEach(function(n15) {
+          Re3(i, n15, e[n15]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(e)) : At3(Object(e)).forEach(function(n15) {
           Object.defineProperty(i, n15, Object.getOwnPropertyDescriptor(e, n15));
         });
       }
       return i;
     }
-    var At3 = function(t, e, n15, r, c) {
-      this._gestureKey = r, this._ctrl = new De3(e), this._ctrl.applyHandlers(e, c), this._ctrl.applyConfig(Tt3(Tt3({}, n15), {}, {target: t}), this._gestureKey), this._ctrl.effect();
+    var xt3 = function(t, e, n15, r, c) {
+      this._gestureKey = r, this._ctrl = new je3(e), this._ctrl.applyHandlers(e, c), this._ctrl.applyConfig(Pt2(Pt2({}, n15), {}, {target: t}), this._gestureKey), this._ctrl.effect();
     };
-    At3.prototype.destroy = function() {
+    xt3.prototype.destroy = function() {
       this._ctrl.clean();
     };
-    var Me2 = function(t, e, n15 = {}) {
-      return Se3(Ce3), new At3(t, {drag: e}, n15, "drag");
+    var Be3 = function(t, e, n15 = {}) {
+      return Ee3(Oe3), new xt3(t, {drag: e}, n15, "drag");
     };
-    var Re3 = () => {
-      const i = {introAnimation: yc.timeline({paused: true}), exitedArr: [], currentStack: [5, 4, 3, 2, 1, 0], shouldReturn: false, outline: null, cardToExit: null, shouldAnimate: true}, t = K2({}, i), {subscribe: e, set: n15, update: r} = Lt(i);
-      return K2({subscribe: e, set: n15, update: r}, {returnCard(a) {
+    var Ke3 = () => {
+      const i = {introAnimation: yc.timeline({paused: true}), exitedArr: [], currentStack: [5, 4, 3, 2, 1, 0], shouldReturn: false, outline: null, cardToExit: null, shouldAnimate: true}, t = z({}, i), {subscribe: e, set: n15, update: r} = Lt(i);
+      return z({subscribe: e, set: n15, update: r}, {returnCard(a) {
         r((s) => (s.exitedArr = s.exitedArr.filter((o) => o !== a), s.currentStack = [...s.currentStack, a], s));
       }, init(a) {
         r((s) => (s.outline = a, s));
@@ -1184,28 +1184,28 @@
         yc.to(".meet-the-team-card", {x: 0, stagger: {amount: 0.5, from: 6, onStart: function() {
           yc.set(this.targets()[0], {zIndex: a}), a += 1;
         }}, delay: 1.5, onComplete: function() {
-          r((s) => (s = K2({}, t), s));
+          r((s) => (s = z({}, t), s));
         }});
       }});
     };
-    var x2 = Re3();
-    var {window: Be3} = Nc;
-    function Pt2(i) {
-      let t, e, n15, r, c = i[0].description.email + "", a, s, o = i[0].description.bio && xt3(i);
+    var D3 = Ke3();
+    var {window: Ve3} = Nc;
+    function Dt3(i) {
+      let t, e, n15, r, c = i[0].description.email + "", a, s, o = i[0].description.bio && It3(i);
       return {c() {
-        t = mt("div"), e = mt("div"), o && o.c(), n15 = me(), r = mt("a"), a = ai(c), Z(r, "href", s = "mailto:" + i[0].description.email), Z(r, "class", "email svelte-19jrtov"), Z(e, "class", "bio-container svelte-19jrtov"), Z(t, "class", "description-container svelte-19jrtov");
+        t = mt("div"), e = mt("div"), o && o.c(), n15 = me(), r = mt("a"), a = ai(c), Z(r, "href", s = "mailto:" + i[0].description.email), Z(r, "class", "email svelte-7jb4c3"), Z(e, "class", "bio-container svelte-7jb4c3"), Z(t, "class", "description-container svelte-7jb4c3");
       }, m(l, u) {
-        j(l, t, u), _n(t, e), o && o.m(e, null), _n(e, n15), _n(e, r), _n(r, a);
+        j(l, t, u), _n(t, e), o && o.m(e, null), _n(e, n15), _n(e, r), _n(r, a), i[14](r);
       }, p(l, u) {
-        l[0].description.bio ? o ? o.p(l, u) : (o = xt3(l), o.c(), o.m(e, n15)) : o && (o.d(1), o = null), u & 1 && c !== (c = l[0].description.email + "") && Mc(a, c), u & 1 && s !== (s = "mailto:" + l[0].description.email) && Z(r, "href", s);
+        l[0].description.bio ? o ? o.p(l, u) : (o = It3(l), o.c(), o.m(e, n15)) : o && (o.d(1), o = null), u & 1 && c !== (c = l[0].description.email + "") && Mc(a, c), u & 1 && s !== (s = "mailto:" + l[0].description.email) && Z(r, "href", s);
       }, d(l) {
-        l && U(t), o && o.d();
+        l && U(t), o && o.d(), i[14](null);
       }};
     }
-    function xt3(i) {
+    function It3(i) {
       let t, e = i[0].description.bio + "", n15;
       return {c() {
-        t = mt("p"), n15 = ai(e), Z(t, "class", "bio pg svelte-19jrtov");
+        t = mt("p"), n15 = ai(e), Z(t, "class", "bio pg svelte-7jb4c3");
       }, m(r, c) {
         j(r, t, c), _n(t, n15);
       }, p(r, c) {
@@ -1214,92 +1214,98 @@
         r && U(t);
       }};
     }
-    function Ke3(i) {
-      let t, e, n15, r, c, a, s, o, l, u, g, f = i[0].description.email && Pt2(i);
+    function ze2(i) {
+      let t, e, n15, r, c, a, s, o, l, u, p, d = i[0].description.email && Dt3(i);
       return {c() {
-        t = mt("div"), e = mt("div"), n15 = mt("img"), c = me(), a = mt("div"), f && f.c(), s = me(), o = mt("img"), Z(n15, "draggable", "false"), ei(n15.src, r = i[0].front) || Z(n15, "src", r), Z(n15, "alt", ""), Z(n15, "class", "svelte-19jrtov"), Z(e, "draggable", "false"), Z(e, "class", "image-container front-container svelte-19jrtov"), Z(o, "draggable", "false"), ei(o.src, l = i[0].back) || Z(o, "src", l), Z(o, "alt", ""), Z(o, "class", "svelte-19jrtov"), Z(a, "draggable", "false"), Z(a, "class", "image-container back-container svelte-19jrtov"), Z(t, "draggable", "false"), Z(t, "class", "card-container meet-the-team-card svelte-19jrtov");
-      }, m(d, _) {
-        j(d, t, _), _n(t, e), _n(e, n15), _n(t, c), _n(t, a), f && f.m(a, null), _n(a, s), _n(a, o), i[15](t), u || (g = [Kn(Be3, "resize", i[12]), Kn(n15, "dragstart", Ve3), Kn(o, "dragstart", ze2), Kn(t, "mouseover", i[13]), Kn(t, "mouseout", i[14])], u = true);
-      }, p(d, [_]) {
-        _ & 1 && !ei(n15.src, r = d[0].front) && Z(n15, "src", r), d[0].description.email ? f ? f.p(d, _) : (f = Pt2(d), f.c(), f.m(a, s)) : f && (f.d(1), f = null), _ & 1 && !ei(o.src, l = d[0].back) && Z(o, "src", l);
-      }, i: Q, o: Q, d(d) {
-        d && U(t), f && f.d(), i[15](null), u = false, kt(g);
+        t = mt("div"), e = mt("div"), n15 = mt("img"), c = me(), a = mt("div"), d && d.c(), s = me(), o = mt("img"), Z(n15, "draggable", "false"), ei(n15.src, r = i[0].front) || Z(n15, "src", r), Z(n15, "alt", ""), Z(n15, "class", "svelte-7jb4c3"), Z(e, "draggable", "false"), Z(e, "class", "image-container front-container svelte-7jb4c3"), Z(o, "draggable", "false"), ei(o.src, l = i[0].back) || Z(o, "src", l), Z(o, "alt", ""), Z(o, "class", "svelte-7jb4c3"), Z(a, "draggable", "false"), Z(a, "class", "image-container back-container svelte-7jb4c3"), Z(t, "draggable", "false"), Z(t, "class", "card-container meet-the-team-card svelte-7jb4c3");
+      }, m(f, b) {
+        j(f, t, b), _n(t, e), _n(e, n15), _n(t, c), _n(t, a), d && d.m(a, null), _n(a, s), _n(a, o), i[17](t), u || (p = [Kn(Ve3, "resize", i[13]), Kn(n15, "dragstart", Ue3), Kn(o, "dragstart", Ye3), Kn(t, "mouseover", i[15]), Kn(t, "mouseleave", i[16])], u = true);
+      }, p(f, [b]) {
+        b & 1 && !ei(n15.src, r = f[0].front) && Z(n15, "src", r), f[0].description.email ? d ? d.p(f, b) : (d = Dt3(f), d.c(), d.m(a, s)) : d && (d.d(1), d = null), b & 1 && !ei(o.src, l = f[0].back) && Z(o, "src", l);
+      }, i: Q, o: Q, d(f) {
+        f && U(t), d && d.d(), i[17](null), u = false, kt(p);
       }};
     }
-    var Ve3 = (i) => {
+    var Ue3 = (i) => {
       i.preventDefault();
     };
-    var ze2 = (i) => {
+    var Ye3 = (i) => {
       i.preventDefault();
     };
-    function Ue3(i, t, e) {
+    function We3(i, t, e) {
       let n15, r, c, a, s, o;
-      pe(i, x2, (h) => e(11, o = h));
-      let {index: l} = t, {image: u} = t, {stack: g} = t, {outline: f} = t, d, _ = yc.timeline({paused: true}), m = false;
-      async function I2() {
-        e(3, m = false), x2.returnCard(l), await _i(), d && yc.to(d, {x: 0});
+      pe(i, D3, (_) => e(12, o = _));
+      let {index: l} = t, {image: u} = t, {stack: p} = t, {outline: d} = t, f, b, m = yc.timeline({paused: true}), E = false;
+      async function L() {
+        e(4, E = false), D3.returnCard(l), await _i(), f && yc.to(f, {x: 0});
       }
-      function D3() {
-        const h = f.getBoundingClientRect(), P = g.getBoundingClientRect();
-        return Tl2(h.x, P.x, h.y, P.y);
+      function x2() {
+        const _ = d.getBoundingClientRect(), I2 = p.getBoundingClientRect();
+        return Tl2(_.x, I2.x, _.y, I2.y);
       }
-      async function A2(h) {
-        e(3, m = true);
-        const P = D3();
-        x2.exit(l), await _i(), yc.to(d, {x: h ? -900 : -P});
+      async function g(_) {
+        e(4, E = true);
+        const I2 = x2();
+        D3.exit(l), await _i(), yc.to(f, {x: _ ? -900 : -I2});
       }
       na(() => {
-        console.log(u), _.to(d, {rotateY: -180}), new Me2(d, async ({xy: h, active: P, offset: tt3, tap: et3, swipe: Lt3}) => {
+        console.log(u), m.to(f, {rotateY: -180}), new Be3(f, async ({xy: _, active: I2, offset: it3, tap: nt2, swipe: Rt3}) => {
           if (c) {
-            if (et3 && !yc.isTweening(d) && m)
-              I2(), await _i();
-            else if (et3 && !m)
-              _.reversed() ? _.play() : _.reverse();
-            else if (!m)
-              if (P)
-                yc.set(d, {x: tt3[0], zIndex: 10}), yc.killTweensOf(d, "x");
-              else if (window.innerWidth >= 550 && !x2.detectCollision(d) && !P) {
-                A2();
+            if (nt2 && !yc.isTweening(f) && E)
+              L(), await _i();
+            else if (nt2 && !E)
+              m.reversed() ? m.play() : m.reverse();
+            else if (!E)
+              if (I2)
+                yc.set(f, {x: it3[0], zIndex: 10}), yc.killTweensOf(f, "x");
+              else if (window.innerWidth >= 550 && !D3.detectCollision(f) && !I2) {
+                g();
                 return;
               } else
-                window.innerWidth <= 550 && Lt3[0] === -1 ? A2(true) : yc.to(d, {x: 0});
+                window.innerWidth <= 550 && Rt3[0] === -1 ? g(true) : yc.to(f, {x: 0});
           }
         }, {eventOptions: {capture: false, passive: false}, filterTaps: true, from() {
-          return [yc.getProperty(d, "x"), 0];
-        }}), yc.set(d, {y: "-100vh", rotateZ: l * (Math.random() * 2)});
+          return [yc.getProperty(f, "x"), 0];
+        }}), yc.set(f, {y: "-100vh", rotateZ: l * (Math.random() * 2)});
       });
-      const v = () => {
-        m && yc.set(d, {x: -D3()});
-      }, G = () => {
-        !m && !n15 && yc.to(d, {scale: 1.1});
-      }, b = () => {
-        yc.to(d, {scale: 1});
+      const X3 = () => {
+        E && yc.set(f, {x: -x2()});
       };
-      function O2(h) {
-        Jn[h ? "unshift" : "push"](() => {
-          d = h, e(1, d);
+      function v(_) {
+        Jn[_ ? "unshift" : "push"](() => {
+          b = _, e(3, b);
         });
       }
-      return i.$$set = (h) => {
-        "index" in h && e(5, l = h.index), "image" in h && e(0, u = h.image), "stack" in h && e(6, g = h.stack), "outline" in h && e(7, f = h.outline);
+      const T = (_) => {
+        !E && !n15 && yc.to(f, {scale: 1.1});
+      }, k = (_) => {
+        yc.to(f, {scale: 1});
+      };
+      function V3(_) {
+        Jn[_ ? "unshift" : "push"](() => {
+          f = _, e(1, f);
+        });
+      }
+      return i.$$set = (_) => {
+        "index" in _ && e(6, l = _.index), "image" in _ && e(0, u = _.image), "stack" in _ && e(7, p = _.stack), "outline" in _ && e(8, d = _.outline);
       }, i.$$.update = () => {
-        i.$$.dirty & 2048 && e(2, {shouldReturn: n15, cardToExit: r, shouldAnimate: c} = o, n15, (e(10, r), e(11, o))), i.$$.dirty & 2080 && e(8, a = o.currentStack.indexOf(l)), i.$$.dirty & 1058 && r === l && (A2(window.innerWidth <= 550), yc.set(d, {zIndex: 10})), i.$$.dirty & 258 && d && a >= 0 && yc.set(d, {zIndex: a}), i.$$.dirty & 2080 && e(9, s = o.exitedArr.indexOf(l)), i.$$.dirty & 770 && (s >= 0 && d ? yc.to(d, {zIndex: s, delay: 0.3}) : yc.to(d, {zIndex: a})), i.$$.dirty & 4 && n15 && e(3, m = false);
-      }, [u, d, n15, m, D3, l, g, f, a, s, r, o, v, G, b, O2];
+        i.$$.dirty & 4096 && e(2, {shouldReturn: n15, cardToExit: r, shouldAnimate: c} = o, n15, (e(11, r), e(12, o))), i.$$.dirty & 4160 && e(9, a = o.currentStack.indexOf(l)), i.$$.dirty & 2114 && r === l && (g(window.innerWidth <= 550), yc.set(f, {zIndex: 10})), i.$$.dirty & 514 && f && a >= 0 && yc.set(f, {zIndex: a}), i.$$.dirty & 4160 && e(10, s = o.exitedArr.indexOf(l)), i.$$.dirty & 1538 && (s >= 0 && f ? yc.to(f, {zIndex: s, delay: 0.3}) : yc.to(f, {zIndex: a})), i.$$.dirty & 4 && n15 && e(4, E = false);
+      }, [u, f, n15, b, E, x2, l, p, d, a, s, r, o, X3, v, T, k, V3];
     }
-    var Ye3 = class extends He {
+    var qe3 = class extends He {
       constructor(t) {
         super();
-        Be(this, t, Ue3, Ke3, de, {index: 5, image: 0, stack: 6, outline: 7});
+        Be(this, t, We3, ze2, de, {index: 6, image: 0, stack: 7, outline: 8});
       }
     };
-    var Dt3 = [{front: "https://res.cloudinary.com/dt4xntymn/image/upload/v1633335279/mainSite/meet%20the%20team/Cards/front/Omar_Card_frdbxy.jpg", back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1642112370/mainSite/meet%20the%20team/Cards/back/Omar_Card_Back-Recovered_vflfbh.jpg", description: {email: "omar@apeldesign.com", bio: "Omar Santillan is the Senior Designer at Amit Apel Design Inc since 2010. He has about 14 years of design experience. By adopting the principles of Apel Design and combining them with his own aesthetic, he has a unique take on the design process."}}, {front: "https://res.cloudinary.com/dt4xntymn/image/upload/v1633335279/mainSite/meet%20the%20team/Cards/front/Luke_Card_dgfcrg.jpg", back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1642112370/mainSite/meet%20the%20team/Cards/back/Luke_Card_Back-Recovered_jl8aqz.jpg", description: {email: "luke@apeldesign.com", bio: "Luke is the senior project coordinator at Apel Design.  His passion to connect people to the art of living branches off into all aspects of the design process. With his background in architecture and engineering, along with his experience across this broad range of projects, he closely analyzes and looks at all aspects of any project parallel to the beautiful end design goal of Amit."}}, {front: "https://res.cloudinary.com/dt4xntymn/image/upload/v1633335279/mainSite/meet%20the%20team/Cards/front/Mike_Card_yyevct.jpg", back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1642112370/mainSite/meet%20the%20team/Cards/back/Mike_Card_Back-Recovered_s7gfu8.jpg", description: {email: "apeldesign@apeldesign.com", bio: "What does a licensed architect, a general contractor, a registered nurse and a licensed realtor have in common? Some may say nothing but Mike holds all of those \u201Cso-called\u201D labels. Simultaneously working in healthcare as well as architecture during the past several decades has given Mike a unique perspective. As one of only a handful of nurse-architects in the country, he combines his vision of architecture with his clinical background."}}, {front: "https://res.cloudinary.com/dt4xntymn/image/upload/v1633335279/mainSite/meet%20the%20team/Cards/front/Elchin_Card_hhfjc2.jpg", back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1642112370/mainSite/meet%20the%20team/Cards/back/Elchin_Card_Back_Recovered_t9jh9k.jpg", description: {email: "accounting@apeldesign.com", bio: "Controller at Amit Apel Design, Inc with a Bachelor's degree in Finance (Summa Cum Laude) and Law Degree combining his knowledge in two different fields to make the company more productive and customers happier. Currently, Elchin is getting his LLM degree in Alternative Dispute Resolution at Pepperdine Caruso School of Law."}}, {front: "https://res.cloudinary.com/dt4xntymn/image/upload/v1633335279/mainSite/meet%20the%20team/Cards/front/Yak_Card_c55nzc.jpg", back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1642112370/mainSite/meet%20the%20team/Cards/back/Yak_Card_Back-Recovered_eww5bu.jpg", description: {email: "apeldesign@apeldesign.com"}}, {front: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637784455/mainSite/meet%20the%20team/Cards/front/Joker_Card_pwqclu.jpg", back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637784449/mainSite/meet%20the%20team/Cards/back/Joker_Card_Back_x8eonc.jpg", description: "JOKER"}];
-    function It3(i, t, e) {
+    var jt3 = [{front: "https://res.cloudinary.com/dt4xntymn/image/upload/v1633335279/mainSite/meet%20the%20team/Cards/front/Omar_Card_frdbxy.jpg", back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1642112370/mainSite/meet%20the%20team/Cards/back/Omar_Card_Back-Recovered_vflfbh.jpg", description: {email: "omar@apeldesign.com", bio: "Omar Santillan is the Senior Designer at Amit Apel Design Inc since 2010. He has about 14 years of design experience. By adopting the principles of Apel Design and combining them with his own aesthetic, he has a unique take on the design process."}}, {front: "https://res.cloudinary.com/dt4xntymn/image/upload/v1633335279/mainSite/meet%20the%20team/Cards/front/Luke_Card_dgfcrg.jpg", back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1642112370/mainSite/meet%20the%20team/Cards/back/Luke_Card_Back-Recovered_jl8aqz.jpg", description: {email: "luke@apeldesign.com", bio: "Luke is the senior project coordinator at Apel Design.  His passion to connect people to the art of living branches off into all aspects of the design process. With his background in architecture and engineering, along with his experience across this broad range of projects, he closely analyzes and looks at all aspects of any project parallel to the beautiful end design goal of Amit."}}, {front: "https://res.cloudinary.com/dt4xntymn/image/upload/v1633335279/mainSite/meet%20the%20team/Cards/front/Mike_Card_yyevct.jpg", back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1642112370/mainSite/meet%20the%20team/Cards/back/Mike_Card_Back-Recovered_s7gfu8.jpg", description: {email: "apeldesign@apeldesign.com", bio: "What does a licensed architect, a general contractor, a registered nurse and a licensed realtor have in common? Some may say nothing but Mike holds all of those \u201Cso-called\u201D labels. Simultaneously working in healthcare as well as architecture during the past several decades has given Mike a unique perspective. As one of only a handful of nurse-architects in the country, he combines his vision of architecture with his clinical background."}}, {front: "https://res.cloudinary.com/dt4xntymn/image/upload/v1633335279/mainSite/meet%20the%20team/Cards/front/Elchin_Card_hhfjc2.jpg", back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1642112370/mainSite/meet%20the%20team/Cards/back/Elchin_Card_Back_Recovered_t9jh9k.jpg", description: {email: "accounting@apeldesign.com", bio: "Controller at Amit Apel Design, Inc with a Bachelor's degree in Finance (Summa Cum Laude) and Law Degree combining his knowledge in two different fields to make the company more productive and customers happier. Currently, Elchin is getting his LLM degree in Alternative Dispute Resolution at Pepperdine Caruso School of Law."}}, {front: "https://res.cloudinary.com/dt4xntymn/image/upload/v1633335279/mainSite/meet%20the%20team/Cards/front/Yak_Card_c55nzc.jpg", back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1642112370/mainSite/meet%20the%20team/Cards/back/Yak_Card_Back-Recovered_eww5bu.jpg", description: {email: "apeldesign@apeldesign.com"}}, {front: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637784455/mainSite/meet%20the%20team/Cards/front/Joker_Card_pwqclu.jpg", back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1637784449/mainSite/meet%20the%20team/Cards/back/Joker_Card_Back_x8eonc.jpg", description: "JOKER"}];
+    function Lt3(i, t, e) {
       const n15 = i.slice();
       return n15[12] = t[e], n15[14] = e, n15;
     }
-    function jt3(i) {
+    function Mt3(i) {
       let t, e;
-      return t = new Ye3({props: {observer: i[4], stack: i[1], outline: i[0], dropPosition: i[3], shouldReturn: false, index: i[14], image: i[12], rotate: i[2].includes(i[14]) ? i[14] * 2 : 0}}), {c() {
+      return t = new qe3({props: {observer: i[4], stack: i[1], outline: i[0], dropPosition: i[3], shouldReturn: false, index: i[14], image: i[12], rotate: i[2].includes(i[14]) ? i[14] * 2 : 0}}), {c() {
         Zt(t.$$.fragment);
       }, m(n15, r) {
         Mt(t, n15, r), e = true;
@@ -1314,81 +1320,81 @@
         Rt(t, n15);
       }};
     }
-    function We3(i) {
-      let t, e, n15, r, c, a, s, o, l, u, g, f, d, _, m, I2, D3, A2 = Dt3, v = [];
-      for (let b = 0; b < A2.length; b += 1)
-        v[b] = jt3(It3(i, A2, b));
-      const G = (b) => B(v[b], 1, 1, () => {
-        v[b] = null;
+    function Ne3(i) {
+      let t, e, n15, r, c, a, s, o, l, u, p, d, f, b, m, E, L, x2 = jt3, g = [];
+      for (let v = 0; v < x2.length; v += 1)
+        g[v] = Mt3(Lt3(i, x2, v));
+      const X3 = (v) => B(g[v], 1, 1, () => {
+        g[v] = null;
       });
       return {c() {
-        t = mt("div"), e = mt("div"), n15 = mt("div"), r = mt("div"), c = mt("div"), a = me(), s = mt("div"), o = me(), l = mt("div"), l.innerHTML = '<img src="https://res.cloudinary.com/dt4xntymn/image/upload/v1638853734/mainSite/meet%20the%20team/cardArrow_lz4ufg.png" alt="" class="svelte-14voy1k"/>', u = me(), g = mt("div"), f = mt("ul");
-        for (let b = 0; b < v.length; b += 1)
-          v[b].c();
-        d = me(), _ = mt("div"), Z(c, "class", "three-by-two aspect-ratio svelte-14voy1k"), Z(s, "class", "card-outline svelte-14voy1k"), Z(r, "class", "card-outline aspect-ratio svelte-14voy1k"), Z(l, "class", "arrow-image-container svelte-14voy1k"), Z(f, "class", "card-wrapper svelte-14voy1k"), Z(_, "class", "three-by-two aspect-ratio svelte-14voy1k"), Z(g, "draggable", "false"), Z(g, "class", "aspect-ratio svelte-14voy1k"), Z(n15, "class", "card-layout-container svelte-14voy1k"), Z(e, "class", "container svelte-14voy1k"), Z(t, "class", "wrapper svelte-14voy1k");
-      }, m(b, O2) {
-        j(b, t, O2), _n(t, e), _n(e, n15), _n(n15, r), _n(r, c), _n(r, a), _n(r, s), i[8](s), _n(n15, o), _n(n15, l), _n(n15, u), _n(n15, g), _n(g, f);
-        for (let h = 0; h < v.length; h += 1)
-          v[h].m(f, null);
-        i[10](f), _n(g, d), _n(g, _), m = true, I2 || (D3 = Kn(l, "click", i[9]), I2 = true);
-      }, p(b, [O2]) {
-        if (O2 & 31) {
-          A2 = Dt3;
-          let h;
-          for (h = 0; h < A2.length; h += 1) {
-            const P = It3(b, A2, h);
-            v[h] ? (v[h].p(P, O2), M(v[h], 1)) : (v[h] = jt3(P), v[h].c(), M(v[h], 1), v[h].m(f, null));
+        t = mt("div"), e = mt("div"), n15 = mt("div"), r = mt("div"), c = mt("div"), a = me(), s = mt("div"), o = me(), l = mt("div"), l.innerHTML = '<img src="https://res.cloudinary.com/dt4xntymn/image/upload/v1638853734/mainSite/meet%20the%20team/cardArrow_lz4ufg.png" alt="" class="svelte-14voy1k"/>', u = me(), p = mt("div"), d = mt("ul");
+        for (let v = 0; v < g.length; v += 1)
+          g[v].c();
+        f = me(), b = mt("div"), Z(c, "class", "three-by-two aspect-ratio svelte-14voy1k"), Z(s, "class", "card-outline svelte-14voy1k"), Z(r, "class", "card-outline aspect-ratio svelte-14voy1k"), Z(l, "class", "arrow-image-container svelte-14voy1k"), Z(d, "class", "card-wrapper svelte-14voy1k"), Z(b, "class", "three-by-two aspect-ratio svelte-14voy1k"), Z(p, "draggable", "false"), Z(p, "class", "aspect-ratio svelte-14voy1k"), Z(n15, "class", "card-layout-container svelte-14voy1k"), Z(e, "class", "container svelte-14voy1k"), Z(t, "class", "wrapper svelte-14voy1k");
+      }, m(v, T) {
+        j(v, t, T), _n(t, e), _n(e, n15), _n(n15, r), _n(r, c), _n(r, a), _n(r, s), i[8](s), _n(n15, o), _n(n15, l), _n(n15, u), _n(n15, p), _n(p, d);
+        for (let k = 0; k < g.length; k += 1)
+          g[k].m(d, null);
+        i[10](d), _n(p, f), _n(p, b), m = true, E || (L = Kn(l, "click", i[9]), E = true);
+      }, p(v, [T]) {
+        if (T & 31) {
+          x2 = jt3;
+          let k;
+          for (k = 0; k < x2.length; k += 1) {
+            const V3 = Lt3(v, x2, k);
+            g[k] ? (g[k].p(V3, T), M(g[k], 1)) : (g[k] = Mt3(V3), g[k].c(), M(g[k], 1), g[k].m(d, null));
           }
-          for (Kt(), h = A2.length; h < v.length; h += 1)
-            G(h);
+          for (Kt(), k = x2.length; k < g.length; k += 1)
+            X3(k);
           Qt();
         }
-      }, i(b) {
+      }, i(v) {
         if (!m) {
-          for (let O2 = 0; O2 < A2.length; O2 += 1)
-            M(v[O2]);
+          for (let T = 0; T < x2.length; T += 1)
+            M(g[T]);
           m = true;
         }
-      }, o(b) {
-        v = v.filter(Boolean);
-        for (let O2 = 0; O2 < v.length; O2 += 1)
-          B(v[O2]);
+      }, o(v) {
+        g = g.filter(Boolean);
+        for (let T = 0; T < g.length; T += 1)
+          B(g[T]);
         m = false;
-      }, d(b) {
-        b && U(t), i[8](null), Zo(v, b), i[10](null), I2 = false, D3();
+      }, d(v) {
+        v && U(t), i[8](null), Zo(g, v), i[10](null), E = false, L();
       }};
     }
-    function qe3(i, t, e) {
+    function Ge3(i, t, e) {
       let n15, r, c;
-      pe(i, Hc, (m) => e(11, r = m)), pe(i, x2, (m) => e(7, c = m));
+      pe(i, Hc, (m) => e(11, r = m)), pe(i, D3, (m) => e(7, c = m));
       const a = [0, 3, 2, 4];
-      let s, o, l, u, g;
+      let s, o, l, u, p;
       na(() => {
-        r(), x2.init(s), x2.introAnim();
+        r(), D3.init(s), D3.introAnim();
       }), ra(() => {
-        x2.init(s);
+        D3.init(s);
       });
-      function f(m) {
+      function d(m) {
         Jn[m ? "unshift" : "push"](() => {
           s = m, e(0, s);
         });
       }
-      const d = () => {
-        x2.manualExit();
+      const f = () => {
+        D3.manualExit();
       };
-      function _(m) {
+      function b(m) {
         Jn[m ? "unshift" : "push"](() => {
           o = m, e(1, o);
         });
       }
       return i.$$.update = () => {
-        i.$$.dirty & 128 && e(6, {currentStack: n15} = c, n15), i.$$.dirty & 64 && e(5, u = n15.length), i.$$.dirty & 32 && u === 0 && x2.returnAll();
-      }, [s, o, a, l, g, u, n15, c, f, d, _];
+        i.$$.dirty & 128 && e(6, {currentStack: n15} = c, n15), i.$$.dirty & 64 && e(5, u = n15.length), i.$$.dirty & 32 && u === 0 && D3.returnAll();
+      }, [s, o, a, l, p, u, n15, c, d, f, b];
     }
-    var Fe3 = class extends He {
+    var Je3 = class extends He {
       constructor(t) {
         super();
-        Be(this, t, qe3, We3, de, {});
+        Be(this, t, Ge3, Ne3, de, {});
       }
     };
   });
@@ -1877,18 +1883,18 @@
     };
   });
 
-  // dist/assets/Developments.054d54f0.js
-  var require_Developments_054d54f0 = __commonJS((exports) => {
+  // dist/assets/Developments.fb508c82.js
+  var require_Developments_fb508c82 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Z2
     });
     function T(i) {
-      let n15, e, t, a, d, v, p, u, _ = i[0].page + "", j2, M2, g, x2, b, y = i[1].data.description + "", w, A2, m, E, k, c, D3, C, G;
+      let n15, e, t, a, d, v, p, u, _ = i[0].page + "", j2, M2, g, b, x2, y = i[1].data.description + "", w, A2, m, E, k, c, D3, C, G;
       return {c() {
-        n15 = mt("div"), e = me(), t = mt("div"), a = mt("div"), d = mt("div"), v = mt("h5"), p = ai("Project, "), u = mt("span"), j2 = ai(_), M2 = me(), g = mt("div"), x2 = mt("div"), b = mt("p"), w = ai(y), A2 = me(), m = mt("button"), m.textContent = "visit site", E = me(), k = mt("div"), c = mt("img"), Z(n15, "class", "page-container"), Z(u, "class", "property-header svelte-1x765oa"), Z(v, "class", "main-header svelte-1x765oa"), Z(d, "class", "header-container svelte-1x765oa"), Z(b, "class", "description svelte-1x765oa"), Z(x2, "class", "text-content-container svelte-1x765oa"), Z(g, "class", "text-wrapper svelte-1x765oa"), Z(m, "class", "redirect-button svelte-1x765oa"), Z(a, "class", "left-page svelte-1x765oa"), Z(c, "class", "main-image svelte-1x765oa"), ei(c.src, D3 = i[1].data.img) || Z(c, "src", D3), Z(c, "alt", ""), Z(k, "class", "main-image-container svelte-1x765oa"), Z(t, "class", "container svelte-1x765oa");
+        n15 = mt("div"), e = me(), t = mt("div"), a = mt("div"), d = mt("div"), v = mt("h5"), p = ai("Project, "), u = mt("span"), j2 = ai(_), M2 = me(), g = mt("div"), b = mt("div"), x2 = mt("p"), w = ai(y), A2 = me(), m = mt("button"), m.textContent = "visit site", E = me(), k = mt("div"), c = mt("img"), Z(n15, "class", "page-container"), Z(u, "class", "property-header svelte-1x765oa"), Z(v, "class", "main-header svelte-1x765oa"), Z(d, "class", "header-container svelte-1x765oa"), Z(x2, "class", "description svelte-1x765oa"), Z(b, "class", "text-content-container svelte-1x765oa"), Z(g, "class", "text-wrapper svelte-1x765oa"), Z(m, "class", "redirect-button svelte-1x765oa"), Z(a, "class", "left-page svelte-1x765oa"), Z(c, "class", "main-image svelte-1x765oa"), ei(c.src, D3 = i[1].data.img) || Z(c, "src", D3), Z(c, "alt", ""), Z(k, "class", "main-image-container svelte-1x765oa"), Z(t, "class", "container svelte-1x765oa");
       }, m(r, f) {
-        j(r, n15, f), j(r, e, f), j(r, t, f), _n(t, a), _n(a, d), _n(d, v), _n(v, p), _n(v, u), _n(u, j2), _n(a, M2), _n(a, g), _n(g, x2), _n(x2, b), _n(b, w), _n(a, A2), _n(a, m), _n(t, E), _n(t, k), _n(k, c), C || (G = Kn(m, "click", i[2]), C = true);
+        j(r, n15, f), j(r, e, f), j(r, t, f), _n(t, a), _n(a, d), _n(d, v), _n(v, p), _n(v, u), _n(u, j2), _n(a, M2), _n(a, g), _n(g, b), _n(b, x2), _n(x2, w), _n(a, A2), _n(a, m), _n(t, E), _n(t, k), _n(k, c), C || (G = Kn(m, "click", i[2]), C = true);
       }, p(r, f) {
         f & 1 && _ !== (_ = r[0].page + "") && Mc(j2, _), f & 2 && y !== (y = r[1].data.description + "") && Mc(w, y), f & 2 && !ei(c.src, D3 = r[1].data.img) && Z(c, "src", D3);
       }, d(r) {
@@ -1928,8 +1934,8 @@
     };
   });
 
-  // dist/assets/VideoRenders.c6d06c16.js
-  var require_VideoRenders_c6d06c16 = __commonJS((exports) => {
+  // dist/assets/VideoRenders.71385f52.js
+  var require_VideoRenders_71385f52 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => ie3
@@ -2138,8 +2144,8 @@
     };
   });
 
-  // dist/assets/_layout.4a8a8ec9.js
-  var require_layout_4a8a8ec9 = __commonJS((exports) => {
+  // dist/assets/_layout.0ed62259.js
+  var require_layout_0ed62259 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => ft2
@@ -6545,7 +6551,7 @@
     }
   };
 
-  // dist/assets/index.03c2321d.js
+  // dist/assets/index.bf895789.js
   var it2 = Object.defineProperty;
   var ge2 = Object.getOwnPropertySymbols;
   var at2 = Object.prototype.hasOwnProperty;
@@ -6677,7 +6683,7 @@
     let l, r, n15;
     pe(i, Uc, (c) => e(3, r = c)), pe(i, X2, (c) => e(2, n15 = c));
     let a;
-    const u = {"private-homes": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), "multi-family": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), "mixed-use": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), hospitality: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), commercial: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), concept: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), sculptures: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), "meet-amit-apel": async () => D2(() => Promise.resolve().then(() => require_MeetAmitApel_ab97320c()), ["assets/MeetAmitApel.ab97320c.js", "assets/vendor.7ae63dc5.js"]), "meet-the-team": async () => D2(() => Promise.resolve().then(() => require_MeetTheTeam_513e41ee()), ["assets/MeetTheTeam.513e41ee.js", "assets/vendor.7ae63dc5.js"]), press: async () => D2(() => Promise.resolve().then(() => require_Press_dc1ec0e6()), ["assets/Press.dc1ec0e6.js", "assets/vendor.7ae63dc5.js"]), "contact-us": async () => D2(() => Promise.resolve().then(() => require_Contact_4b80d291()), ["assets/Contact.4b80d291.js", "assets/vendor.7ae63dc5.js"]), furniture: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), "malibu-rebuild": async () => D2(() => Promise.resolve().then(() => require_MalibuRebuild_2952215b()), ["assets/MalibuRebuild.2952215b.js", "assets/vendor.7ae63dc5.js"]), "what-we-do": async () => D2(() => Promise.resolve().then(() => require_WhatWeDo_8a6c7025()), ["assets/WhatWeDo.8a6c7025.js", "assets/vendor.7ae63dc5.js"]), aviator: async () => D2(() => Promise.resolve().then(() => require_Developments_054d54f0()), ["assets/Developments.054d54f0.js", "assets/vendor.7ae63dc5.js"]), maliview: async () => D2(() => Promise.resolve().then(() => require_Developments_054d54f0()), ["assets/Developments.054d54f0.js", "assets/vendor.7ae63dc5.js"]), "video-renders": async () => D2(() => Promise.resolve().then(() => require_VideoRenders_c6d06c16()), ["assets/VideoRenders.c6d06c16.js", "assets/vendor.7ae63dc5.js"]), map: async () => D2(() => Promise.resolve().then(() => require_Map_b14caa8d()), ["assets/Map.b14caa8d.js", "assets/vendor.7ae63dc5.js"])}, f = async (c) => {
+    const u = {"private-homes": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), "multi-family": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), "mixed-use": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), hospitality: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), commercial: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), concept: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), sculptures: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), "meet-amit-apel": async () => D2(() => Promise.resolve().then(() => require_MeetAmitApel_ab97320c()), ["assets/MeetAmitApel.ab97320c.js", "assets/vendor.7ae63dc5.js"]), "meet-the-team": async () => D2(() => Promise.resolve().then(() => require_MeetTheTeam_c029feb9()), ["assets/MeetTheTeam.c029feb9.js", "assets/vendor.7ae63dc5.js"]), press: async () => D2(() => Promise.resolve().then(() => require_Press_dc1ec0e6()), ["assets/Press.dc1ec0e6.js", "assets/vendor.7ae63dc5.js"]), "contact-us": async () => D2(() => Promise.resolve().then(() => require_Contact_4b80d291()), ["assets/Contact.4b80d291.js", "assets/vendor.7ae63dc5.js"]), furniture: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), "malibu-rebuild": async () => D2(() => Promise.resolve().then(() => require_MalibuRebuild_2952215b()), ["assets/MalibuRebuild.2952215b.js", "assets/vendor.7ae63dc5.js"]), "what-we-do": async () => D2(() => Promise.resolve().then(() => require_WhatWeDo_8a6c7025()), ["assets/WhatWeDo.8a6c7025.js", "assets/vendor.7ae63dc5.js"]), aviator: async () => D2(() => Promise.resolve().then(() => require_Developments_fb508c82()), ["assets/Developments.fb508c82.js", "assets/vendor.7ae63dc5.js"]), maliview: async () => D2(() => Promise.resolve().then(() => require_Developments_fb508c82()), ["assets/Developments.fb508c82.js", "assets/vendor.7ae63dc5.js"]), "video-renders": async () => D2(() => Promise.resolve().then(() => require_VideoRenders_71385f52()), ["assets/VideoRenders.71385f52.js", "assets/vendor.7ae63dc5.js"]), map: async () => D2(() => Promise.resolve().then(() => require_Map_b14caa8d()), ["assets/Map.b14caa8d.js", "assets/vendor.7ae63dc5.js"])}, f = async (c) => {
       c && (X2.setPage(c), X2.setCategory(r.category), await _i(), e(1, a = (await u[c]()).default));
     };
     return i.$$.update = () => {
@@ -7701,7 +7707,7 @@
       Be(this, t, yl2, gl2, de, {});
     }
   };
-  var wl2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => D2(() => Promise.resolve().then(() => require_fallback_2c724321()), ["assets/_fallback.2c724321.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages/index", id: "__category__pages_index", component: () => bt2}], isLayout: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => Lt2}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: true, prerender: true}, path: "/:category/index", id: "__category_index", component: () => Rt2}], isLayout: true, ownMeta: {preload: true, "param-is-page": true}, meta: {preload: true, "param-is-page": true, recursive: true, prerender: true}, path: "/:category", id: "__category__layout", component: () => bl2}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => D2(() => Promise.resolve().then(() => require_index_b65c1818()), ["assets/index.b65c1818.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)}], isLayout: true, path: "/", id: "__layout", component: () => D2(() => Promise.resolve().then(() => require_layout_4a8a8ec9()), ["assets/_layout.4a8a8ec9.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)};
+  var wl2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => D2(() => Promise.resolve().then(() => require_fallback_2c724321()), ["assets/_fallback.2c724321.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages/index", id: "__category__pages_index", component: () => bt2}], isLayout: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => Lt2}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: true, prerender: true}, path: "/:category/index", id: "__category_index", component: () => Rt2}], isLayout: true, ownMeta: {preload: true, "param-is-page": true}, meta: {preload: true, "param-is-page": true, recursive: true, prerender: true}, path: "/:category", id: "__category__layout", component: () => bl2}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => D2(() => Promise.resolve().then(() => require_index_b65c1818()), ["assets/index.b65c1818.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)}], isLayout: true, path: "/", id: "__layout", component: () => D2(() => Promise.resolve().then(() => require_layout_0ed62259()), ["assets/_layout.0ed62259.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)};
   var {tree: Dl2, routes: kl2} = qc(wl2);
   function $l2(i) {
     let t, e;
