@@ -13,8 +13,8 @@
       __defProp(target, name, {get: all[name], enumerable: true});
   };
 
-  // dist/assets/MasonryGallery.f9f32a24.js
-  var require_MasonryGallery_f9f32a24 = __commonJS((exports) => {
+  // dist/assets/MasonryGallery.f0219650.js
+  var require_MasonryGallery_f0219650 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Ee3
@@ -480,8 +480,8 @@
     };
   });
 
-  // dist/assets/MeetTheTeam.c029feb9.js
-  var require_MeetTheTeam_c029feb9 = __commonJS((exports) => {
+  // dist/assets/MeetTheTeam.89feca32.js
+  var require_MeetTheTeam_89feca32 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Je3
@@ -1170,7 +1170,7 @@
         const s = a.getBoundingClientRect(), o = i.outline.getBoundingClientRect();
         return !(s.left < o.right - 100);
       }, introAnim() {
-        r((a) => (a.introAnimation.to(".meet-the-team-card", {y: 0, delay: 1.2, stagger: -0.2, duration: 0.5}), a.introAnimation.progress(1), a));
+        r((a) => (a.introAnimation.to(".meet-the-team-card", {y: 0, delay: 1.2, stagger: -0.2, duration: 0.5}), a.introAnimation.play(), a));
       }, reset() {
         r((a) => (a.shouldReturn = true, a));
       }, getExitLocation(a, s) {
@@ -1883,8 +1883,8 @@
     };
   });
 
-  // dist/assets/Developments.fb508c82.js
-  var require_Developments_fb508c82 = __commonJS((exports) => {
+  // dist/assets/Developments.75dcfe32.js
+  var require_Developments_75dcfe32 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Z2
@@ -1934,18 +1934,18 @@
     };
   });
 
-  // dist/assets/VideoRenders.71385f52.js
-  var require_VideoRenders_71385f52 = __commonJS((exports) => {
+  // dist/assets/VideoRenders.62b5628b.js
+  var require_VideoRenders_62b5628b = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => ie3
     });
     function te2(r) {
-      let e, a, i;
+      let e, n15, i;
       return {c() {
-        e = Dc("svg"), a = Dc("path"), i = Dc("path"), Z(a, "d", "M0 0h24v24H0z"), Z(a, "fill", "none"), Z(i, "d", "M8 5v14l11-7z"), Z(e, "xmlns", "http://www.w3.org/2000/svg"), Z(e, "height", "100%"), Z(e, "viewBox", "0 0 24 24"), Z(e, "width", "100%"), Z(e, "fill", "#FFFFFF");
+        e = Dc("svg"), n15 = Dc("path"), i = Dc("path"), Z(n15, "d", "M0 0h24v24H0z"), Z(n15, "fill", "none"), Z(i, "d", "M8 5v14l11-7z"), Z(e, "xmlns", "http://www.w3.org/2000/svg"), Z(e, "height", "100%"), Z(e, "viewBox", "0 0 24 24"), Z(e, "width", "100%"), Z(e, "fill", "#FFFFFF");
       }, m(o, t) {
-        j(o, e, t), _n(e, a), _n(e, i);
+        j(o, e, t), _n(e, n15), _n(e, i);
       }, p: Q, i: Q, o: Q, d(o) {
         o && U(e);
       }};
@@ -1956,22 +1956,22 @@
         Be(this, e, null, te2, de, {});
       }
     };
-    function P(r, e, a) {
+    function P(r, e, n15) {
       const i = r.slice();
-      return i[3] = e[a], i;
+      return i[3] = e[n15], i;
     }
     function D3(r) {
-      let e, a, i, o, t, d, l, c, n15 = r[3].thumb.label + "", p, A2, j2, _, w, g, R, h, y, x2, m, B2, C;
+      let e, n15, i, o, t, d, l, c, a = r[3].thumb.label + "", p, A2, j2, _, w, g, R, h, y, x2, m, B2, C;
       g = new le2({});
       function G() {
         return r[1](r[3]);
       }
       return {c() {
-        e = mt("div"), a = mt("div"), i = mt("div"), o = mt("div"), t = mt("img"), l = me(), c = mt("span"), p = ai(n15), A2 = me(), j2 = mt("div"), _ = mt("div"), w = mt("div"), Zt(g.$$.fragment), R = me(), h = mt("img"), x2 = me(), ei(t.src, d = r[3].thumb.url) || Z(t, "src", d), Z(t, "alt", ""), Z(t, "class", "svelte-1je2sl4"), Z(o, "class", "image-container svelte-1je2sl4"), Z(i, "class", "thumbnail-photo svelte-1je2sl4"), Z(c, "class", "main-label svelte-1je2sl4"), Z(a, "class", "label-wrapper svelte-1je2sl4"), Z(w, "class", "play-button-container svelte-1je2sl4"), Z(h, "class", "main-image svelte-1je2sl4"), ei(h.src, y = r[3].thumb.url) || Z(h, "src", y), Z(h, "alt", ""), Z(_, "class", "video-cover image-container svelte-1je2sl4"), Z(j2, "class", "image-wrapper svelte-1je2sl4"), Z(e, "class", "card-container svelte-1je2sl4");
+        e = mt("div"), n15 = mt("div"), i = mt("div"), o = mt("div"), t = mt("img"), l = me(), c = mt("span"), p = ai(a), A2 = me(), j2 = mt("div"), _ = mt("div"), w = mt("div"), Zt(g.$$.fragment), R = me(), h = mt("img"), x2 = me(), ei(t.src, d = r[3].thumb.url) || Z(t, "src", d), Z(t, "alt", ""), Z(t, "class", "svelte-1je2sl4"), Z(o, "class", "image-container svelte-1je2sl4"), Z(i, "class", "thumbnail-photo svelte-1je2sl4"), Z(c, "class", "main-label svelte-1je2sl4"), Z(n15, "class", "label-wrapper svelte-1je2sl4"), Z(w, "class", "play-button-container svelte-1je2sl4"), Z(h, "class", "main-image svelte-1je2sl4"), ei(h.src, y = r[3].thumb.url) || Z(h, "src", y), Z(h, "alt", ""), Z(_, "class", "video-cover image-container svelte-1je2sl4"), Z(j2, "class", "image-wrapper svelte-1je2sl4"), Z(e, "class", "card-container svelte-1je2sl4");
       }, m(f, b) {
-        j(f, e, b), _n(e, a), _n(a, i), _n(i, o), _n(o, t), _n(a, l), _n(a, c), _n(c, p), _n(e, A2), _n(e, j2), _n(j2, _), _n(_, w), Mt(g, w, null), _n(_, R), _n(_, h), _n(e, x2), m = true, B2 || (C = Kn(e, "click", G), B2 = true);
+        j(f, e, b), _n(e, n15), _n(n15, i), _n(i, o), _n(o, t), _n(n15, l), _n(n15, c), _n(c, p), _n(e, A2), _n(e, j2), _n(j2, _), _n(_, w), Mt(g, w, null), _n(_, R), _n(_, h), _n(e, x2), m = true, B2 || (C = Kn(e, "click", G), B2 = true);
       }, p(f, b) {
-        r = f, (!m || b & 1 && !ei(t.src, d = r[3].thumb.url)) && Z(t, "src", d), (!m || b & 1) && n15 !== (n15 = r[3].thumb.label + "") && Mc(p, n15), (!m || b & 1 && !ei(h.src, y = r[3].thumb.url)) && Z(h, "src", y);
+        r = f, (!m || b & 1 && !ei(t.src, d = r[3].thumb.url)) && Z(t, "src", d), (!m || b & 1) && a !== (a = r[3].thumb.label + "") && Mc(p, a), (!m || b & 1 && !ei(h.src, y = r[3].thumb.url)) && Z(h, "src", y);
       }, i(f) {
         m || (M(g.$$.fragment, f), m = true);
       }, o(f) {
@@ -1981,32 +1981,32 @@
       }};
     }
     function se2(r) {
-      let e, a, i, o = r[0], t = [];
+      let e, n15, i, o = r[0], t = [];
       for (let l = 0; l < o.length; l += 1)
         t[l] = D3(P(r, o, l));
       const d = (l) => B(t[l], 1, 1, () => {
         t[l] = null;
       });
       return {c() {
-        e = mt("div"), a = mt("div");
+        e = mt("div"), n15 = mt("div");
         for (let l = 0; l < t.length; l += 1)
           t[l].c();
-        Z(a, "class", "container svelte-1je2sl4"), Z(e, "class", "wrapper svelte-1je2sl4");
+        Z(n15, "class", "container svelte-1je2sl4"), Z(e, "class", "wrapper svelte-1je2sl4");
       }, m(l, c) {
-        j(l, e, c), _n(e, a);
-        for (let n15 = 0; n15 < t.length; n15 += 1)
-          t[n15].m(a, null);
+        j(l, e, c), _n(e, n15);
+        for (let a = 0; a < t.length; a += 1)
+          t[a].m(n15, null);
         i = true;
       }, p(l, [c]) {
         if (c & 1) {
           o = l[0];
-          let n15;
-          for (n15 = 0; n15 < o.length; n15 += 1) {
-            const p = P(l, o, n15);
-            t[n15] ? (t[n15].p(p, c), M(t[n15], 1)) : (t[n15] = D3(p), t[n15].c(), M(t[n15], 1), t[n15].m(a, null));
+          let a;
+          for (a = 0; a < o.length; a += 1) {
+            const p = P(l, o, a);
+            t[a] ? (t[a].p(p, c), M(t[a], 1)) : (t[a] = D3(p), t[a].c(), M(t[a], 1), t[a].m(n15, null));
           }
-          for (Kt(), n15 = o.length; n15 < t.length; n15 += 1)
-            d(n15);
+          for (Kt(), a = o.length; a < t.length; a += 1)
+            d(a);
           Qt();
         }
       }, i(l) {
@@ -2024,13 +2024,13 @@
         l && U(e), Zo(t, l);
       }};
     }
-    function ne3(r, e, a) {
+    function ae2(r, e, n15) {
       let i;
-      pe(r, Hc, (d) => a(2, i = d));
+      pe(r, Hc, (d) => n15(2, i = d));
       let o = [];
       return na(() => {
         i(), fetch(`${window.location.origin === "http://jsdom.ssr" ? "http://localhost:9999" : window.location.origin}/.netlify/functions/get-video-renders/`).then((d) => d.json()).then(async (d) => {
-          a(0, o = Array.from(d, (l) => l));
+          n15(0, o = Array.from(d, (l) => l));
         });
       }), [o, (d) => {
         ve2.handleVisible(), ve2.setVideo(d.video);
@@ -2039,7 +2039,7 @@
     var ie3 = class extends He {
       constructor(e) {
         super();
-        Be(this, e, ne3, se2, de, {});
+        Be(this, e, ae2, se2, de, {});
       }
     };
   });
@@ -2144,8 +2144,8 @@
     };
   });
 
-  // dist/assets/_layout.0ed62259.js
-  var require_layout_0ed62259 = __commonJS((exports) => {
+  // dist/assets/_layout.3a8dc384.js
+  var require_layout_3a8dc384 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => ft2
@@ -6551,7 +6551,7 @@
     }
   };
 
-  // dist/assets/index.bf895789.js
+  // dist/assets/index.0b6814a6.js
   var it2 = Object.defineProperty;
   var ge2 = Object.getOwnPropertySymbols;
   var at2 = Object.prototype.hasOwnProperty;
@@ -6683,7 +6683,7 @@
     let l, r, n15;
     pe(i, Uc, (c) => e(3, r = c)), pe(i, X2, (c) => e(2, n15 = c));
     let a;
-    const u = {"private-homes": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), "multi-family": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), "mixed-use": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), hospitality: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), commercial: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), concept: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), sculptures: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), "meet-amit-apel": async () => D2(() => Promise.resolve().then(() => require_MeetAmitApel_ab97320c()), ["assets/MeetAmitApel.ab97320c.js", "assets/vendor.7ae63dc5.js"]), "meet-the-team": async () => D2(() => Promise.resolve().then(() => require_MeetTheTeam_c029feb9()), ["assets/MeetTheTeam.c029feb9.js", "assets/vendor.7ae63dc5.js"]), press: async () => D2(() => Promise.resolve().then(() => require_Press_dc1ec0e6()), ["assets/Press.dc1ec0e6.js", "assets/vendor.7ae63dc5.js"]), "contact-us": async () => D2(() => Promise.resolve().then(() => require_Contact_4b80d291()), ["assets/Contact.4b80d291.js", "assets/vendor.7ae63dc5.js"]), furniture: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f9f32a24()), ["assets/MasonryGallery.f9f32a24.js", "assets/vendor.7ae63dc5.js"]), "malibu-rebuild": async () => D2(() => Promise.resolve().then(() => require_MalibuRebuild_2952215b()), ["assets/MalibuRebuild.2952215b.js", "assets/vendor.7ae63dc5.js"]), "what-we-do": async () => D2(() => Promise.resolve().then(() => require_WhatWeDo_8a6c7025()), ["assets/WhatWeDo.8a6c7025.js", "assets/vendor.7ae63dc5.js"]), aviator: async () => D2(() => Promise.resolve().then(() => require_Developments_fb508c82()), ["assets/Developments.fb508c82.js", "assets/vendor.7ae63dc5.js"]), maliview: async () => D2(() => Promise.resolve().then(() => require_Developments_fb508c82()), ["assets/Developments.fb508c82.js", "assets/vendor.7ae63dc5.js"]), "video-renders": async () => D2(() => Promise.resolve().then(() => require_VideoRenders_71385f52()), ["assets/VideoRenders.71385f52.js", "assets/vendor.7ae63dc5.js"]), map: async () => D2(() => Promise.resolve().then(() => require_Map_b14caa8d()), ["assets/Map.b14caa8d.js", "assets/vendor.7ae63dc5.js"])}, f = async (c) => {
+    const u = {"private-homes": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f0219650()), ["assets/MasonryGallery.f0219650.js", "assets/vendor.7ae63dc5.js"]), "multi-family": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f0219650()), ["assets/MasonryGallery.f0219650.js", "assets/vendor.7ae63dc5.js"]), "mixed-use": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f0219650()), ["assets/MasonryGallery.f0219650.js", "assets/vendor.7ae63dc5.js"]), hospitality: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f0219650()), ["assets/MasonryGallery.f0219650.js", "assets/vendor.7ae63dc5.js"]), commercial: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f0219650()), ["assets/MasonryGallery.f0219650.js", "assets/vendor.7ae63dc5.js"]), concept: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f0219650()), ["assets/MasonryGallery.f0219650.js", "assets/vendor.7ae63dc5.js"]), sculptures: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f0219650()), ["assets/MasonryGallery.f0219650.js", "assets/vendor.7ae63dc5.js"]), "meet-amit-apel": async () => D2(() => Promise.resolve().then(() => require_MeetAmitApel_ab97320c()), ["assets/MeetAmitApel.ab97320c.js", "assets/vendor.7ae63dc5.js"]), "meet-the-team": async () => D2(() => Promise.resolve().then(() => require_MeetTheTeam_89feca32()), ["assets/MeetTheTeam.89feca32.js", "assets/vendor.7ae63dc5.js"]), press: async () => D2(() => Promise.resolve().then(() => require_Press_dc1ec0e6()), ["assets/Press.dc1ec0e6.js", "assets/vendor.7ae63dc5.js"]), "contact-us": async () => D2(() => Promise.resolve().then(() => require_Contact_4b80d291()), ["assets/Contact.4b80d291.js", "assets/vendor.7ae63dc5.js"]), furniture: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_f0219650()), ["assets/MasonryGallery.f0219650.js", "assets/vendor.7ae63dc5.js"]), "malibu-rebuild": async () => D2(() => Promise.resolve().then(() => require_MalibuRebuild_2952215b()), ["assets/MalibuRebuild.2952215b.js", "assets/vendor.7ae63dc5.js"]), "what-we-do": async () => D2(() => Promise.resolve().then(() => require_WhatWeDo_8a6c7025()), ["assets/WhatWeDo.8a6c7025.js", "assets/vendor.7ae63dc5.js"]), aviator: async () => D2(() => Promise.resolve().then(() => require_Developments_75dcfe32()), ["assets/Developments.75dcfe32.js", "assets/vendor.7ae63dc5.js"]), maliview: async () => D2(() => Promise.resolve().then(() => require_Developments_75dcfe32()), ["assets/Developments.75dcfe32.js", "assets/vendor.7ae63dc5.js"]), "video-renders": async () => D2(() => Promise.resolve().then(() => require_VideoRenders_62b5628b()), ["assets/VideoRenders.62b5628b.js", "assets/vendor.7ae63dc5.js"]), map: async () => D2(() => Promise.resolve().then(() => require_Map_b14caa8d()), ["assets/Map.b14caa8d.js", "assets/vendor.7ae63dc5.js"])}, f = async (c) => {
       c && (X2.setPage(c), X2.setCategory(r.category), await _i(), e(1, a = (await u[c]()).default));
     };
     return i.$$.update = () => {
@@ -7707,7 +7707,7 @@
       Be(this, t, yl2, gl2, de, {});
     }
   };
-  var wl2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => D2(() => Promise.resolve().then(() => require_fallback_2c724321()), ["assets/_fallback.2c724321.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages/index", id: "__category__pages_index", component: () => bt2}], isLayout: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => Lt2}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: true, prerender: true}, path: "/:category/index", id: "__category_index", component: () => Rt2}], isLayout: true, ownMeta: {preload: true, "param-is-page": true}, meta: {preload: true, "param-is-page": true, recursive: true, prerender: true}, path: "/:category", id: "__category__layout", component: () => bl2}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => D2(() => Promise.resolve().then(() => require_index_b65c1818()), ["assets/index.b65c1818.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)}], isLayout: true, path: "/", id: "__layout", component: () => D2(() => Promise.resolve().then(() => require_layout_0ed62259()), ["assets/_layout.0ed62259.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)};
+  var wl2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => D2(() => Promise.resolve().then(() => require_fallback_2c724321()), ["assets/_fallback.2c724321.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages/index", id: "__category__pages_index", component: () => bt2}], isLayout: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => Lt2}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: true, prerender: true}, path: "/:category/index", id: "__category_index", component: () => Rt2}], isLayout: true, ownMeta: {preload: true, "param-is-page": true}, meta: {preload: true, "param-is-page": true, recursive: true, prerender: true}, path: "/:category", id: "__category__layout", component: () => bl2}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => D2(() => Promise.resolve().then(() => require_index_b65c1818()), ["assets/index.b65c1818.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)}], isLayout: true, path: "/", id: "__layout", component: () => D2(() => Promise.resolve().then(() => require_layout_3a8dc384()), ["assets/_layout.3a8dc384.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)};
   var {tree: Dl2, routes: kl2} = qc(wl2);
   function $l2(i) {
     let t, e;

@@ -68,9 +68,9 @@ const store = () => {
           stagger: -0.2,
           duration: 0.5,
         });
-        // s.introAnimation.play();
+        s.introAnimation.play();
 
-        s.introAnimation.progress(1);
+        // s.introAnimation.progress(1);
         return s;
       });
     },
