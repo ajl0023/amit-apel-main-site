@@ -451,24 +451,7 @@
     "label": "los feliz",
     "category": "multi-family"
   },
-  {
-    "asset_id": "4716fe90386a004e75da9a9f677e44c9",
-    "public_id": "mainSite/multi-family/23. moment hotel/gtm34evqzxxobajqmtbc",
-    "format": "jpg",
-    "version": 1641952943,
-    "resource_type": "image",
-    "type": "upload",
-    "created_at": "2022-01-12T02:02:23Z",
-    "bytes": 47531,
-    "width": 640,
-    "height": 426,
-    "url": "http://res.cloudinary.com/dt4xntymn/image/upload/v1641952943/mainSite/multi-family/23.%20moment%20hotel/gtm34evqzxxobajqmtbc.jpg",
-    "secure_url": "https://res.cloudinary.com/dt4xntymn/image/upload/v1641952943/mainSite/multi-family/23.%20moment%20hotel/gtm34evqzxxobajqmtbc.jpg",
-    "tags": ["0", "true"],
-    "key": "832ab32a-38ab-493f-8b92-acdfb63cfd15",
-    "label": "moment hotel",
-    "category": "multi-family"
-  },
+
   {
     "asset_id": "2c83a103449811dc3f9fce92440fe900",
     "public_id": "mainSite/multi-family/24. monterey/pwutf1c3b2tdygev1pun",
@@ -669,24 +652,6 @@
     "category": "multi-family"
   },
 
-  {
-    "asset_id": "4b81f5551735911eca1f2705908ba256",
-    "public_id": "mainSite/multi-family/38. restaurant/ru42zzvsysfrkfbbvkjq",
-    "format": "jpg",
-    "version": 1641952943,
-    "resource_type": "image",
-    "type": "upload",
-    "created_at": "2022-01-12T02:02:23Z",
-    "bytes": 88067,
-    "width": 900,
-    "height": 675,
-    "url": "http://res.cloudinary.com/dt4xntymn/image/upload/v1641952943/mainSite/multi-family/38.%20restaurant/ru42zzvsysfrkfbbvkjq.jpg",
-    "secure_url": "https://res.cloudinary.com/dt4xntymn/image/upload/v1641952943/mainSite/multi-family/38.%20restaurant/ru42zzvsysfrkfbbvkjq.jpg",
-    "tags": ["0", "true"],
-    "key": "71b0e696-a600-4b0e-bdef-2353a2435f94",
-    "label": "restaurant",
-    "category": "multi-family"
-  },
   {
     "asset_id": "a70c989a8fd1b948d14bce8fac6d865c",
     "public_id": "mainSite/multi-family/39. san juan/x9spm1e5ivlzfiqfract",
