@@ -42,6 +42,7 @@ export const cardImages = [
     back: "https://res.cloudinary.com/dt4xntymn/image/upload/v1642112370/mainSite/meet%20the%20team/Cards/back/Yak_Card_Back-Recovered_eww5bu.jpg",
     description: {
       email: "apeldesign@apeldesign.com",
+      bio: "Yak joined the team in the beginning of 2021. Studying both architecture and civil engineering, he has always been intrigued by design and problem solving. Yak spends his time split in between the studio and in the field bridging the gap from paper to structure. He is passionate about art, nature, and motorcycles.",
     },
   },
 
