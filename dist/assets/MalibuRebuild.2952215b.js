@@ -1,4 +1,4 @@
-import{S as n,i,s as r,e as c,a as h,c as d,n as o,g as m,h as p,a6 as u,E as v}from"./vendor.9203d4ca.js";function g(s){let e;return{c(){e=c("div"),e.innerHTML=`<h3 class="svelte-1oa95lk">Dear Friends and Neighbors,</h3> 
+import{S as n,i,s as r,e as c,a as h,c as d,n as o,g as m,h as p,a6 as u,E as v}from"./vendor.7ae63dc5.js";function g(s){let e;return{c(){e=c("div"),e.innerHTML=`<h3 class="svelte-1oa95lk">Dear Friends and Neighbors,</h3> 
   <div class="text-container svelte-1oa95lk"><p class="svelte-1oa95lk">If you&#39;re like me and my neighbors that have had your homes damaged or
       completely burnt from the wildfires, I want to extend my hand to you and
       support you as much as I can. While rebuilding my own personal loss, I&#39;ve
