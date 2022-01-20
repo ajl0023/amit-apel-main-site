@@ -13,8 +13,8 @@
       __defProp(target, name, {get: all[name], enumerable: true});
   };
 
-  // dist/assets/MasonryGallery.902f73bb.js
-  var require_MasonryGallery_902f73bb = __commonJS((exports) => {
+  // dist/assets/MasonryGallery.bf1a200d.js
+  var require_MasonryGallery_bf1a200d = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Ee3
@@ -480,8 +480,8 @@
     };
   });
 
-  // dist/assets/MeetTheTeam.78d34efd.js
-  var require_MeetTheTeam_78d34efd = __commonJS((exports) => {
+  // dist/assets/MeetTheTeam.513e41ee.js
+  var require_MeetTheTeam_513e41ee = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Fe3
@@ -606,7 +606,7 @@
         return t;
       };
     }
-    function bt3(i, t) {
+    function vt2(i, t) {
       return Object.assign({}, t, i || {});
     }
     var se2 = 32;
@@ -733,7 +733,7 @@
       }
     };
     var ue2 = (i) => i;
-    var vt2 = 0.15;
+    var bt3 = 0.15;
     var kt3 = {enabled(i = true) {
       return i;
     }, preventDefault(i = false) {
@@ -743,7 +743,7 @@
     }, rubberband(i = 0) {
       switch (i) {
         case true:
-          return [vt2, vt2];
+          return [bt3, bt3];
         case false:
           return [0, 0];
         default:
@@ -920,8 +920,8 @@
     var T = {isBrowser: B2, gesture: ge3(), touch: St3(), touchscreen: he2(), pointer: pe2(), pointerLock: me2()};
     var _e2 = 250;
     var ye3 = 180;
-    var be2 = 0.5;
-    var ve3 = 50;
+    var ve3 = 0.5;
+    var be2 = 50;
     var ke2 = 250;
     var we2 = S(S({}, R), {}, {pointerLock(i, t, {pointer: {lock: e = false, touch: n15 = false} = {}}) {
       return this.useTouch = T.touch && n15, T.pointerLock && e;
@@ -934,7 +934,7 @@
     }, threshold(i, t, {filterTaps: e = false, axis: n15 = void 0}) {
       const r = C.toVector(i, e ? 3 : n15 ? 1 : 0);
       return this.filterTaps = e, r;
-    }, swipe({velocity: i = be2, distance: t = ve3, duration: e = ke2} = {}) {
+    }, swipe({velocity: i = ve3, distance: t = be2, duration: e = ke2} = {}) {
       return {velocity: this.transform(C.toVector(i)), distance: this.transform(C.toVector(t)), duration: e};
     }, delay(i = 0) {
       switch (i) {
@@ -961,10 +961,10 @@
       }
     }, bounds(i, t, {scaleBounds: e = {}, angleBounds: n15 = {}}) {
       const r = (a) => {
-        const s = bt3(W2(e, a), {min: -1 / 0, max: 1 / 0});
+        const s = vt2(W2(e, a), {min: -1 / 0, max: 1 / 0});
         return [s.min, s.max];
       }, c = (a) => {
-        const s = bt3(W2(n15, a), {min: -1 / 0, max: 1 / 0});
+        const s = vt2(W2(n15, a), {min: -1 / 0, max: 1 / 0});
         return [s.min, s.max];
       };
       return typeof e != "function" && typeof n15 != "function" ? [r(), c()] : (a) => [r(a), c(a)];
@@ -1092,7 +1092,7 @@
         let c;
         if (e.target && (c = e.target(), !c))
           return;
-        const a = Le3(r, n15, !!c);
+        const a = je3(r, n15, !!c);
         if (e.enabled) {
           for (const s of this.gestures)
             if (this.config[s].enabled) {
@@ -1119,13 +1119,13 @@
     function Ie3(i, t) {
       t.drag && M2(i, "drag"), t.wheel && M2(i, "wheel"), t.scroll && M2(i, "scroll"), t.move && M2(i, "move"), t.pinch && M2(i, "pinch"), t.hover && M2(i, "hover");
     }
-    var Le3 = (i, t, e) => (n15, r, c, a = {}, s = false) => {
+    var je3 = (i, t, e) => (n15, r, c, a = {}, s = false) => {
       var o, l;
       const u = (o = a.capture) !== null && o !== void 0 ? o : t.capture, g = (l = a.passive) !== null && l !== void 0 ? l : t.passive;
       let f = s ? n15 : Zt3(n15, r, u);
       e && g && (f += "Passive"), i[f] = i[f] || [], i[f].push(c);
     };
-    function je3(i, t, e) {
+    function Le3(i, t, e) {
       return t in i ? Object.defineProperty(i, t, {value: e, enumerable: true, configurable: true, writable: true}) : i[t] = e, i;
     }
     function Et3(i, t) {
@@ -1142,7 +1142,7 @@
       for (var t = 1; t < arguments.length; t++) {
         var e = arguments[t] != null ? arguments[t] : {};
         t % 2 ? Et3(Object(e), true).forEach(function(n15) {
-          je3(i, n15, e[n15]);
+          Le3(i, n15, e[n15]);
         }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(e)) : Et3(Object(e)).forEach(function(n15) {
           Object.defineProperty(i, n15, Object.getOwnPropertyDescriptor(e, n15));
         });
@@ -1193,7 +1193,7 @@
     function Pt2(i) {
       let t, e, n15, r, c = i[0].description.email + "", a, s, o = i[0].description.bio && xt3(i);
       return {c() {
-        t = mt("div"), e = mt("div"), o && o.c(), n15 = me(), r = mt("a"), a = ai(c), Z(r, "href", s = "mailto:" + i[0].description.email), Z(r, "class", "email svelte-6kp6yk"), Z(e, "class", "bio-container svelte-6kp6yk"), Z(t, "class", "description-container svelte-6kp6yk");
+        t = mt("div"), e = mt("div"), o && o.c(), n15 = me(), r = mt("a"), a = ai(c), Z(r, "href", s = "mailto:" + i[0].description.email), Z(r, "class", "email svelte-19jrtov"), Z(e, "class", "bio-container svelte-19jrtov"), Z(t, "class", "description-container svelte-19jrtov");
       }, m(l, u) {
         j(l, t, u), _n(t, e), o && o.m(e, null), _n(e, n15), _n(e, r), _n(r, a);
       }, p(l, u) {
@@ -1205,7 +1205,7 @@
     function xt3(i) {
       let t, e = i[0].description.bio + "", n15;
       return {c() {
-        t = mt("p"), n15 = ai(e), Z(t, "class", "bio pg svelte-6kp6yk");
+        t = mt("p"), n15 = ai(e), Z(t, "class", "bio pg svelte-19jrtov");
       }, m(r, c) {
         j(r, t, c), _n(t, n15);
       }, p(r, c) {
@@ -1217,7 +1217,7 @@
     function Ke3(i) {
       let t, e, n15, r, c, a, s, o, l, u, g, f = i[0].description.email && Pt2(i);
       return {c() {
-        t = mt("div"), e = mt("div"), n15 = mt("img"), c = me(), a = mt("div"), f && f.c(), s = me(), o = mt("img"), Z(n15, "draggable", "false"), ei(n15.src, r = i[0].front) || Z(n15, "src", r), Z(n15, "alt", ""), Z(n15, "class", "svelte-6kp6yk"), Z(e, "draggable", "false"), Z(e, "class", "image-container front-container svelte-6kp6yk"), Z(o, "draggable", "false"), ei(o.src, l = i[0].back) || Z(o, "src", l), Z(o, "alt", ""), Z(o, "class", "svelte-6kp6yk"), Z(a, "draggable", "false"), Z(a, "class", "image-container back-container svelte-6kp6yk"), Z(t, "draggable", "false"), Z(t, "class", "card-container meet-the-team-card svelte-6kp6yk");
+        t = mt("div"), e = mt("div"), n15 = mt("img"), c = me(), a = mt("div"), f && f.c(), s = me(), o = mt("img"), Z(n15, "draggable", "false"), ei(n15.src, r = i[0].front) || Z(n15, "src", r), Z(n15, "alt", ""), Z(n15, "class", "svelte-19jrtov"), Z(e, "draggable", "false"), Z(e, "class", "image-container front-container svelte-19jrtov"), Z(o, "draggable", "false"), ei(o.src, l = i[0].back) || Z(o, "src", l), Z(o, "alt", ""), Z(o, "class", "svelte-19jrtov"), Z(a, "draggable", "false"), Z(a, "class", "image-container back-container svelte-19jrtov"), Z(t, "draggable", "false"), Z(t, "class", "card-container meet-the-team-card svelte-19jrtov");
       }, m(d, _) {
         j(d, t, _), _n(t, e), _n(e, n15), _n(t, c), _n(t, a), f && f.m(a, null), _n(a, s), _n(a, o), i[15](t), u || (g = [Kn(Be3, "resize", i[12]), Kn(n15, "dragstart", Ve3), Kn(o, "dragstart", ze2), Kn(t, "mouseover", i[13]), Kn(t, "mouseout", i[14])], u = true);
       }, p(d, [_]) {
@@ -1249,7 +1249,7 @@
         x2.exit(l), await _i(), yc.to(d, {x: h ? -900 : -P});
       }
       na(() => {
-        _.to(d, {rotateY: -180}), new Me2(d, async ({xy: h, active: P, offset: tt3, tap: et3, swipe: jt3}) => {
+        console.log(u), _.to(d, {rotateY: -180}), new Me2(d, async ({xy: h, active: P, offset: tt3, tap: et3, swipe: Lt3}) => {
           if (c) {
             if (et3 && !yc.isTweening(d) && m)
               I2(), await _i();
@@ -1262,18 +1262,18 @@
                 A2();
                 return;
               } else
-                window.innerWidth <= 550 && jt3[0] === -1 ? A2(true) : yc.to(d, {x: 0});
+                window.innerWidth <= 550 && Lt3[0] === -1 ? A2(true) : yc.to(d, {x: 0});
           }
         }, {eventOptions: {capture: false, passive: false}, filterTaps: true, from() {
           return [yc.getProperty(d, "x"), 0];
         }}), yc.set(d, {y: "-100vh", rotateZ: l * (Math.random() * 2)});
       });
-      const b = () => {
+      const v = () => {
         m && yc.set(d, {x: -D3()});
       }, G = () => {
-        !m && !n15 && !window.matchMedia("(pointer: coarse)").matches && yc.to(d, {scale: 1.1});
-      }, v = () => {
-        window.matchMedia("(pointer: coarse)").matches || yc.to(d, {scale: 1});
+        !m && !n15 && yc.to(d, {scale: 1.1});
+      }, b = () => {
+        yc.to(d, {scale: 1});
       };
       function O2(h) {
         Jn[h ? "unshift" : "push"](() => {
@@ -1284,7 +1284,7 @@
         "index" in h && e(5, l = h.index), "image" in h && e(0, u = h.image), "stack" in h && e(6, g = h.stack), "outline" in h && e(7, f = h.outline);
       }, i.$$.update = () => {
         i.$$.dirty & 2048 && e(2, {shouldReturn: n15, cardToExit: r, shouldAnimate: c} = o, n15, (e(10, r), e(11, o))), i.$$.dirty & 2080 && e(8, a = o.currentStack.indexOf(l)), i.$$.dirty & 1058 && r === l && (A2(window.innerWidth <= 550), yc.set(d, {zIndex: 10})), i.$$.dirty & 258 && d && a >= 0 && yc.set(d, {zIndex: a}), i.$$.dirty & 2080 && e(9, s = o.exitedArr.indexOf(l)), i.$$.dirty & 770 && (s >= 0 && d ? yc.to(d, {zIndex: s, delay: 0.3}) : yc.to(d, {zIndex: a})), i.$$.dirty & 4 && n15 && e(3, m = false);
-      }, [u, d, n15, m, D3, l, g, f, a, s, r, o, b, G, v, O2];
+      }, [u, d, n15, m, D3, l, g, f, a, s, r, o, v, G, b, O2];
     }
     var Ye3 = class extends He {
       constructor(t) {
@@ -1297,7 +1297,7 @@
       const n15 = i.slice();
       return n15[12] = t[e], n15[14] = e, n15;
     }
-    function Lt3(i) {
+    function jt3(i) {
       let t, e;
       return t = new Ye3({props: {observer: i[4], stack: i[1], outline: i[0], dropPosition: i[3], shouldReturn: false, index: i[14], image: i[12], rotate: i[2].includes(i[14]) ? i[14] * 2 : 0}}), {c() {
         Zt(t.$$.fragment);
@@ -1315,47 +1315,47 @@
       }};
     }
     function We3(i) {
-      let t, e, n15, r, c, a, s, o, l, u, g, f, d, _, m, I2, D3, A2 = Dt3, b = [];
-      for (let v = 0; v < A2.length; v += 1)
-        b[v] = Lt3(It3(i, A2, v));
-      const G = (v) => B(b[v], 1, 1, () => {
-        b[v] = null;
+      let t, e, n15, r, c, a, s, o, l, u, g, f, d, _, m, I2, D3, A2 = Dt3, v = [];
+      for (let b = 0; b < A2.length; b += 1)
+        v[b] = jt3(It3(i, A2, b));
+      const G = (b) => B(v[b], 1, 1, () => {
+        v[b] = null;
       });
       return {c() {
-        t = mt("div"), e = mt("div"), n15 = mt("div"), r = mt("div"), c = mt("div"), a = me(), s = mt("div"), o = me(), l = mt("div"), l.innerHTML = '<img src="https://res.cloudinary.com/dt4xntymn/image/upload/v1638853734/mainSite/meet%20the%20team/cardArrow_lz4ufg.png" alt="" class="svelte-wu99c5"/>', u = me(), g = mt("div"), f = mt("ul");
-        for (let v = 0; v < b.length; v += 1)
-          b[v].c();
-        d = me(), _ = mt("div"), Z(c, "class", "three-by-two aspect-ratio svelte-wu99c5"), Z(s, "class", "card-outline svelte-wu99c5"), Z(r, "class", "card-outline aspect-ratio svelte-wu99c5"), Z(l, "class", "arrow-image-container svelte-wu99c5"), Z(f, "class", "card-wrapper svelte-wu99c5"), Z(_, "class", "three-by-two aspect-ratio svelte-wu99c5"), Z(g, "draggable", "false"), Z(g, "class", "aspect-ratio svelte-wu99c5"), Z(n15, "class", "card-layout-container svelte-wu99c5"), Z(e, "class", "container svelte-wu99c5"), Z(t, "class", "wrapper svelte-wu99c5");
-      }, m(v, O2) {
-        j(v, t, O2), _n(t, e), _n(e, n15), _n(n15, r), _n(r, c), _n(r, a), _n(r, s), i[8](s), _n(n15, o), _n(n15, l), _n(n15, u), _n(n15, g), _n(g, f);
-        for (let h = 0; h < b.length; h += 1)
-          b[h].m(f, null);
+        t = mt("div"), e = mt("div"), n15 = mt("div"), r = mt("div"), c = mt("div"), a = me(), s = mt("div"), o = me(), l = mt("div"), l.innerHTML = '<img src="https://res.cloudinary.com/dt4xntymn/image/upload/v1638853734/mainSite/meet%20the%20team/cardArrow_lz4ufg.png" alt="" class="svelte-14voy1k"/>', u = me(), g = mt("div"), f = mt("ul");
+        for (let b = 0; b < v.length; b += 1)
+          v[b].c();
+        d = me(), _ = mt("div"), Z(c, "class", "three-by-two aspect-ratio svelte-14voy1k"), Z(s, "class", "card-outline svelte-14voy1k"), Z(r, "class", "card-outline aspect-ratio svelte-14voy1k"), Z(l, "class", "arrow-image-container svelte-14voy1k"), Z(f, "class", "card-wrapper svelte-14voy1k"), Z(_, "class", "three-by-two aspect-ratio svelte-14voy1k"), Z(g, "draggable", "false"), Z(g, "class", "aspect-ratio svelte-14voy1k"), Z(n15, "class", "card-layout-container svelte-14voy1k"), Z(e, "class", "container svelte-14voy1k"), Z(t, "class", "wrapper svelte-14voy1k");
+      }, m(b, O2) {
+        j(b, t, O2), _n(t, e), _n(e, n15), _n(n15, r), _n(r, c), _n(r, a), _n(r, s), i[8](s), _n(n15, o), _n(n15, l), _n(n15, u), _n(n15, g), _n(g, f);
+        for (let h = 0; h < v.length; h += 1)
+          v[h].m(f, null);
         i[10](f), _n(g, d), _n(g, _), m = true, I2 || (D3 = Kn(l, "click", i[9]), I2 = true);
-      }, p(v, [O2]) {
+      }, p(b, [O2]) {
         if (O2 & 31) {
           A2 = Dt3;
           let h;
           for (h = 0; h < A2.length; h += 1) {
-            const P = It3(v, A2, h);
-            b[h] ? (b[h].p(P, O2), M(b[h], 1)) : (b[h] = Lt3(P), b[h].c(), M(b[h], 1), b[h].m(f, null));
+            const P = It3(b, A2, h);
+            v[h] ? (v[h].p(P, O2), M(v[h], 1)) : (v[h] = jt3(P), v[h].c(), M(v[h], 1), v[h].m(f, null));
           }
-          for (Kt(), h = A2.length; h < b.length; h += 1)
+          for (Kt(), h = A2.length; h < v.length; h += 1)
             G(h);
           Qt();
         }
-      }, i(v) {
+      }, i(b) {
         if (!m) {
           for (let O2 = 0; O2 < A2.length; O2 += 1)
-            M(b[O2]);
+            M(v[O2]);
           m = true;
         }
-      }, o(v) {
-        b = b.filter(Boolean);
-        for (let O2 = 0; O2 < b.length; O2 += 1)
-          B(b[O2]);
+      }, o(b) {
+        v = v.filter(Boolean);
+        for (let O2 = 0; O2 < v.length; O2 += 1)
+          B(v[O2]);
         m = false;
-      }, d(v) {
-        v && U(t), i[8](null), Zo(b, v), i[10](null), I2 = false, D3();
+      }, d(b) {
+        b && U(t), i[8](null), Zo(v, b), i[10](null), I2 = false, D3();
       }};
     }
     function qe3(i, t, e) {
@@ -1877,18 +1877,18 @@
     };
   });
 
-  // dist/assets/Developments.66f96388.js
-  var require_Developments_66f96388 = __commonJS((exports) => {
+  // dist/assets/Developments.054d54f0.js
+  var require_Developments_054d54f0 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => Z2
     });
     function T(i) {
-      let n15, e, t, a, d, v, p, u, _ = i[0].page + "", j2, M2, g, b, x2, y = i[1].data.description + "", w, A2, m, E, k, c, D3, C, G;
+      let n15, e, t, a, d, v, p, u, _ = i[0].page + "", j2, M2, g, x2, b, y = i[1].data.description + "", w, A2, m, E, k, c, D3, C, G;
       return {c() {
-        n15 = mt("div"), e = me(), t = mt("div"), a = mt("div"), d = mt("div"), v = mt("h5"), p = ai("Project, "), u = mt("span"), j2 = ai(_), M2 = me(), g = mt("div"), b = mt("div"), x2 = mt("p"), w = ai(y), A2 = me(), m = mt("button"), m.textContent = "visit site", E = me(), k = mt("div"), c = mt("img"), Z(n15, "class", "page-container"), Z(u, "class", "property-header svelte-1x765oa"), Z(v, "class", "main-header svelte-1x765oa"), Z(d, "class", "header-container svelte-1x765oa"), Z(x2, "class", "description svelte-1x765oa"), Z(b, "class", "text-content-container svelte-1x765oa"), Z(g, "class", "text-wrapper svelte-1x765oa"), Z(m, "class", "redirect-button svelte-1x765oa"), Z(a, "class", "left-page svelte-1x765oa"), Z(c, "class", "main-image svelte-1x765oa"), ei(c.src, D3 = i[1].data.img) || Z(c, "src", D3), Z(c, "alt", ""), Z(k, "class", "main-image-container svelte-1x765oa"), Z(t, "class", "container svelte-1x765oa");
+        n15 = mt("div"), e = me(), t = mt("div"), a = mt("div"), d = mt("div"), v = mt("h5"), p = ai("Project, "), u = mt("span"), j2 = ai(_), M2 = me(), g = mt("div"), x2 = mt("div"), b = mt("p"), w = ai(y), A2 = me(), m = mt("button"), m.textContent = "visit site", E = me(), k = mt("div"), c = mt("img"), Z(n15, "class", "page-container"), Z(u, "class", "property-header svelte-1x765oa"), Z(v, "class", "main-header svelte-1x765oa"), Z(d, "class", "header-container svelte-1x765oa"), Z(b, "class", "description svelte-1x765oa"), Z(x2, "class", "text-content-container svelte-1x765oa"), Z(g, "class", "text-wrapper svelte-1x765oa"), Z(m, "class", "redirect-button svelte-1x765oa"), Z(a, "class", "left-page svelte-1x765oa"), Z(c, "class", "main-image svelte-1x765oa"), ei(c.src, D3 = i[1].data.img) || Z(c, "src", D3), Z(c, "alt", ""), Z(k, "class", "main-image-container svelte-1x765oa"), Z(t, "class", "container svelte-1x765oa");
       }, m(r, f) {
-        j(r, n15, f), j(r, e, f), j(r, t, f), _n(t, a), _n(a, d), _n(d, v), _n(v, p), _n(v, u), _n(u, j2), _n(a, M2), _n(a, g), _n(g, b), _n(b, x2), _n(x2, w), _n(a, A2), _n(a, m), _n(t, E), _n(t, k), _n(k, c), C || (G = Kn(m, "click", i[2]), C = true);
+        j(r, n15, f), j(r, e, f), j(r, t, f), _n(t, a), _n(a, d), _n(d, v), _n(v, p), _n(v, u), _n(u, j2), _n(a, M2), _n(a, g), _n(g, x2), _n(x2, b), _n(b, w), _n(a, A2), _n(a, m), _n(t, E), _n(t, k), _n(k, c), C || (G = Kn(m, "click", i[2]), C = true);
       }, p(r, f) {
         f & 1 && _ !== (_ = r[0].page + "") && Mc(j2, _), f & 2 && y !== (y = r[1].data.description + "") && Mc(w, y), f & 2 && !ei(c.src, D3 = r[1].data.img) && Z(c, "src", D3);
       }, d(r) {
@@ -1928,8 +1928,8 @@
     };
   });
 
-  // dist/assets/VideoRenders.5ceadc7a.js
-  var require_VideoRenders_5ceadc7a = __commonJS((exports) => {
+  // dist/assets/VideoRenders.c6d06c16.js
+  var require_VideoRenders_c6d06c16 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => ie3
@@ -2138,8 +2138,8 @@
     };
   });
 
-  // dist/assets/_layout.f99cf623.js
-  var require_layout_f99cf623 = __commonJS((exports) => {
+  // dist/assets/_layout.4a8a8ec9.js
+  var require_layout_4a8a8ec9 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
       default: () => ft2
@@ -6545,7 +6545,7 @@
     }
   };
 
-  // dist/assets/index.06ebfe47.js
+  // dist/assets/index.03c2321d.js
   var it2 = Object.defineProperty;
   var ge2 = Object.getOwnPropertySymbols;
   var at2 = Object.prototype.hasOwnProperty;
@@ -6677,7 +6677,7 @@
     let l, r, n15;
     pe(i, Uc, (c) => e(3, r = c)), pe(i, X2, (c) => e(2, n15 = c));
     let a;
-    const u = {"private-homes": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_902f73bb()), ["assets/MasonryGallery.902f73bb.js", "assets/vendor.7ae63dc5.js"]), "multi-family": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_902f73bb()), ["assets/MasonryGallery.902f73bb.js", "assets/vendor.7ae63dc5.js"]), "mixed-use": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_902f73bb()), ["assets/MasonryGallery.902f73bb.js", "assets/vendor.7ae63dc5.js"]), hospitality: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_902f73bb()), ["assets/MasonryGallery.902f73bb.js", "assets/vendor.7ae63dc5.js"]), commercial: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_902f73bb()), ["assets/MasonryGallery.902f73bb.js", "assets/vendor.7ae63dc5.js"]), concept: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_902f73bb()), ["assets/MasonryGallery.902f73bb.js", "assets/vendor.7ae63dc5.js"]), sculptures: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_902f73bb()), ["assets/MasonryGallery.902f73bb.js", "assets/vendor.7ae63dc5.js"]), "meet-amit-apel": async () => D2(() => Promise.resolve().then(() => require_MeetAmitApel_ab97320c()), ["assets/MeetAmitApel.ab97320c.js", "assets/vendor.7ae63dc5.js"]), "meet-the-team": async () => D2(() => Promise.resolve().then(() => require_MeetTheTeam_78d34efd()), ["assets/MeetTheTeam.78d34efd.js", "assets/vendor.7ae63dc5.js"]), press: async () => D2(() => Promise.resolve().then(() => require_Press_dc1ec0e6()), ["assets/Press.dc1ec0e6.js", "assets/vendor.7ae63dc5.js"]), "contact-us": async () => D2(() => Promise.resolve().then(() => require_Contact_4b80d291()), ["assets/Contact.4b80d291.js", "assets/vendor.7ae63dc5.js"]), furniture: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_902f73bb()), ["assets/MasonryGallery.902f73bb.js", "assets/vendor.7ae63dc5.js"]), "malibu-rebuild": async () => D2(() => Promise.resolve().then(() => require_MalibuRebuild_2952215b()), ["assets/MalibuRebuild.2952215b.js", "assets/vendor.7ae63dc5.js"]), "what-we-do": async () => D2(() => Promise.resolve().then(() => require_WhatWeDo_8a6c7025()), ["assets/WhatWeDo.8a6c7025.js", "assets/vendor.7ae63dc5.js"]), aviator: async () => D2(() => Promise.resolve().then(() => require_Developments_66f96388()), ["assets/Developments.66f96388.js", "assets/vendor.7ae63dc5.js"]), maliview: async () => D2(() => Promise.resolve().then(() => require_Developments_66f96388()), ["assets/Developments.66f96388.js", "assets/vendor.7ae63dc5.js"]), "video-renders": async () => D2(() => Promise.resolve().then(() => require_VideoRenders_5ceadc7a()), ["assets/VideoRenders.5ceadc7a.js", "assets/vendor.7ae63dc5.js"]), map: async () => D2(() => Promise.resolve().then(() => require_Map_b14caa8d()), ["assets/Map.b14caa8d.js", "assets/vendor.7ae63dc5.js"])}, f = async (c) => {
+    const u = {"private-homes": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), "multi-family": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), "mixed-use": async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), hospitality: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), commercial: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), concept: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), sculptures: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), "meet-amit-apel": async () => D2(() => Promise.resolve().then(() => require_MeetAmitApel_ab97320c()), ["assets/MeetAmitApel.ab97320c.js", "assets/vendor.7ae63dc5.js"]), "meet-the-team": async () => D2(() => Promise.resolve().then(() => require_MeetTheTeam_513e41ee()), ["assets/MeetTheTeam.513e41ee.js", "assets/vendor.7ae63dc5.js"]), press: async () => D2(() => Promise.resolve().then(() => require_Press_dc1ec0e6()), ["assets/Press.dc1ec0e6.js", "assets/vendor.7ae63dc5.js"]), "contact-us": async () => D2(() => Promise.resolve().then(() => require_Contact_4b80d291()), ["assets/Contact.4b80d291.js", "assets/vendor.7ae63dc5.js"]), furniture: async () => D2(() => Promise.resolve().then(() => require_MasonryGallery_bf1a200d()), ["assets/MasonryGallery.bf1a200d.js", "assets/vendor.7ae63dc5.js"]), "malibu-rebuild": async () => D2(() => Promise.resolve().then(() => require_MalibuRebuild_2952215b()), ["assets/MalibuRebuild.2952215b.js", "assets/vendor.7ae63dc5.js"]), "what-we-do": async () => D2(() => Promise.resolve().then(() => require_WhatWeDo_8a6c7025()), ["assets/WhatWeDo.8a6c7025.js", "assets/vendor.7ae63dc5.js"]), aviator: async () => D2(() => Promise.resolve().then(() => require_Developments_054d54f0()), ["assets/Developments.054d54f0.js", "assets/vendor.7ae63dc5.js"]), maliview: async () => D2(() => Promise.resolve().then(() => require_Developments_054d54f0()), ["assets/Developments.054d54f0.js", "assets/vendor.7ae63dc5.js"]), "video-renders": async () => D2(() => Promise.resolve().then(() => require_VideoRenders_c6d06c16()), ["assets/VideoRenders.c6d06c16.js", "assets/vendor.7ae63dc5.js"]), map: async () => D2(() => Promise.resolve().then(() => require_Map_b14caa8d()), ["assets/Map.b14caa8d.js", "assets/vendor.7ae63dc5.js"])}, f = async (c) => {
       c && (X2.setPage(c), X2.setCategory(r.category), await _i(), e(1, a = (await u[c]()).default));
     };
     return i.$$.update = () => {
@@ -7701,7 +7701,7 @@
       Be(this, t, yl2, gl2, de, {});
     }
   };
-  var wl2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => D2(() => Promise.resolve().then(() => require_fallback_2c724321()), ["assets/_fallback.2c724321.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages/index", id: "__category__pages_index", component: () => bt2}], isLayout: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => Lt2}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: true, prerender: true}, path: "/:category/index", id: "__category_index", component: () => Rt2}], isLayout: true, ownMeta: {preload: true, "param-is-page": true}, meta: {preload: true, "param-is-page": true, recursive: true, prerender: true}, path: "/:category", id: "__category__layout", component: () => bl2}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => D2(() => Promise.resolve().then(() => require_index_b65c1818()), ["assets/index.b65c1818.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)}], isLayout: true, path: "/", id: "__layout", component: () => D2(() => Promise.resolve().then(() => require_layout_f99cf623()), ["assets/_layout.f99cf623.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)};
+  var wl2 = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => D2(() => Promise.resolve().then(() => require_fallback_2c724321()), ["assets/_fallback.2c724321.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)}, {isDir: true, children: [{isDir: true, children: [{isIndex: true, isPage: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages/index", id: "__category__pages_index", component: () => bt2}], isLayout: true, meta: {recursive: true, preload: true, prerender: true}, path: "/:category/:pages", id: "__category__pages__layout", component: () => Lt2}, {isIndex: true, isPage: true, ownMeta: {"param-is-page": true}, meta: {"param-is-page": true, recursive: true, preload: true, prerender: true}, path: "/:category/index", id: "__category_index", component: () => Rt2}], isLayout: true, ownMeta: {preload: true, "param-is-page": true}, meta: {preload: true, "param-is-page": true, recursive: true, prerender: true}, path: "/:category", id: "__category__layout", component: () => bl2}, {isIndex: true, isPage: true, ownMeta: {shouldAnimate: true}, meta: {shouldAnimate: true, recursive: true, preload: false, prerender: true}, path: "/index", id: "_index", component: () => D2(() => Promise.resolve().then(() => require_index_b65c1818()), ["assets/index.b65c1818.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)}], isLayout: true, path: "/", id: "__layout", component: () => D2(() => Promise.resolve().then(() => require_layout_4a8a8ec9()), ["assets/_layout.4a8a8ec9.js", "assets/vendor.7ae63dc5.js"]).then((i) => i.default)};
   var {tree: Dl2, routes: kl2} = qc(wl2);
   function $l2(i) {
     let t, e;

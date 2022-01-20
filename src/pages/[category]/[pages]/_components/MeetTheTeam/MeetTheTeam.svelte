@@ -1,6 +1,5 @@
 <script>
   import { onDestroy, onMount } from "svelte";
-
   import Card from "./_components/Card.svelte";
   import { cardImages } from "./_misc/images";
   import { cardStore } from "./_store/cardStore";
@@ -13,7 +12,6 @@
   let observer;
   $: ({ currentStack } = $cardStore);
   $: stackLength = currentStack.length;
-
   onMount(() => {
     $ready();
     cardStore.init(outline);
@@ -94,19 +92,16 @@
       width: 100%;
       height: 100%;
       top: 0;
-
       left: 0;
       position: absolute;
     }
   }
   $cardSizeWidth: 300px;
   $cardSizeHeight: 500px;
-
   .card-layout-container {
     display: flex;
     width: 100%;
     margin-top: 40px;
-    align-items: center;
     margin-bottom: 140px;
     align-items: center;
     justify-content: center;
@@ -127,12 +122,11 @@
     display: flex;
     align-items: center;
   }
-
   .container {
     max-width: 1600px;
     width: 100%;
+    overflow: hidden;
   }
-
   .arrow-image-container {
     position: relative;
   }
@@ -140,7 +134,6 @@
     width: 100%;
     height: 100%;
     display: flex;
-
     align-items: center;
     justify-content: center;
   }

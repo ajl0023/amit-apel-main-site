@@ -1,26 +1,20 @@
 <script>
   import { DragGesture } from "@use-gesture/vanilla";
   import gsap from "gsap";
-
   import { onMount, tick } from "svelte";
   import { spring, tweened } from "svelte/motion";
   import { derived } from "svelte/store";
   import { distance } from "../../../../_stores/utils";
   import { cardStore } from "../_store/cardStore";
-
   export let index;
-
   export let image;
   export let stack;
   export let outline;
-
   $: ({ shouldReturn, cardToExit, shouldAnimate } = $cardStore);
   $: cardZ = $cardStore.currentStack.indexOf(index);
   let ele;
   let rotateY = gsap.timeline({ paused: true });
-
   let exited = false;
-
   async function returnCard() {
     exited = false;
     cardStore.returnCard(index);
@@ -51,8 +45,8 @@
       x: mobile ? -900 : -distanceRes,
     });
   }
-
   onMount(() => {
+    console.log(image);
     rotateY.to(ele, {
       rotateY: -180,
     });
@@ -82,7 +76,6 @@
               !active
             ) {
               exitCard();
-
               return;
             } else if (window.innerWidth <= 550 && swipe[0] === -1) {
               exitCard(true);
@@ -99,18 +92,16 @@
         filterTaps: true,
         from: function () {
           const position = gsap.getProperty(ele, "x");
-
           return [position, 0];
         },
       }
     );
-
     gsap.set(ele, {
       y: "-100vh",
       rotateZ: index * (Math.random() * 2),
     });
   });
-  //make this await tick i dontknow lol
+
   $: {
     if (cardToExit === index) {
       exitCard(window.innerWidth <= 550);
@@ -119,7 +110,6 @@
       });
     }
   }
-
   $: {
     // if card is in currentStack, make zIndex its position in the stack
     // if card is exited, make zIndex its position in the exited stack
@@ -130,7 +120,6 @@
     }
   }
   $: cardZExited = $cardStore.exitedArr.indexOf(index);
-
   $: {
     if (cardZExited >= 0 && ele) {
       gsap.to(ele, { zIndex: cardZExited, delay: 0.3 });
@@ -157,22 +146,16 @@
 <!-- svelte-ignore a11y-mouse-events-have-key-events -->
 <div
   on:mouseover="{() => {
-    if (
-      !exited &&
-      !shouldReturn &&
-      !window.matchMedia('(pointer: coarse)').matches
-    ) {
+    if (!exited && !shouldReturn) {
       gsap.to(ele, {
         scale: 1.1,
       });
     }
   }}"
   on:mouseout="{() => {
-    if (!window.matchMedia('(pointer: coarse)').matches) {
-      gsap.to(ele, {
-        scale: 1,
-      });
-    }
+    gsap.to(ele, {
+      scale: 1,
+    });
   }}"
   bind:this="{ele}"
   draggable="false"
@@ -217,12 +200,10 @@
 <style lang="scss">
   .description-container {
     position: absolute;
-
     font-family: "Montserrat", sans-serif;
     width: 100%;
     padding: 0 30px;
     top: 20%;
-
     transform-box: fill-box;
     .bio-container {
       display: flex;
@@ -243,6 +224,7 @@
       font-weight: 500;
     }
   }
+
   .card-container {
     display: flex;
     pointer-events: all;
@@ -254,7 +236,6 @@
     transform-style: preserve-3d;
     will-change: transform;
     touch-action: none;
-
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -267,11 +248,11 @@
   }
   .image-container {
     overflow: hidden;
-    position: relative;
     border-radius: 10px;
     backface-visibility: hidden;
-    box-shadow: 0 12.5px 100px -10px rgb(50 50 73 / 20%),
-      0 10px 10px -10px rgb(50 50 73 / 20%);
+    -webkit-appearance: none;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     height: 100%;
   }
   img {
@@ -283,6 +264,6 @@
     position: absolute;
     display: block;
     width: 100%;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) translateZ(1px);
   }
 </style>
